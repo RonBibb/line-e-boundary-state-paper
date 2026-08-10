@@ -29,9 +29,9 @@ near two resolved spike candidates is
 Ordinary four-function velocity-dominated data lose the spike, reaching a
 known-answer distance of \(0.5715\), whereas an enriched centered-spike state
 restores reconstruction to \(2.38\times10^{-4}\). Analytic differentiation
-verifies the exact control equations to \(3.11\times10^{-15}\), and unseen
-shifted controls converge at second order and reproduce their centered
-counterparts exactly under discrete periodic translation. The exceptional
+verifies the exact control equations to \(3.11\times10^{-15}\). Unseen
+half-cell-shifted controls converge at second order, while integer cyclic
+shifts provide a separate exact equivariance check on the implementation. The exceptional
 status of Gowdy spikes is known analytically; the new result is a quantitative,
 observable-relative measure of reconstruction loss and a controlled
 identification of the enrichment that repairs it. Thus the method both closes in a weakly stressed
@@ -367,7 +367,7 @@ closes on both the areal and density clocks, with fine residuals
 \(D_{\lambda_R}=3.10\times10^{-7}\).
 
 A Schwarzschild/Kantowski--Sachs interior compared with stiff FLRW supplies an
-exact adverse control. It terminates at the invariant-mismatch stage because
+exact negative control. It terminates at the invariant-mismatch stage because
 the vacuum-versus-matter Ricci structure, normalized shear, and Weyl fraction
 cannot agree. This demonstrates that the protocol is not a generic
 time-reversal matcher.
@@ -531,7 +531,7 @@ observation surface is \(\tau=2\).
 
 The principal numerical acceptance criteria are:
 
-**Table 2. Principal numerical acceptance and adverse-control criteria.**
+**Table 2. Principal numerical acceptance and negative-control criteria.**
 
 | Check | Decision rule |
 |---|---|
@@ -576,7 +576,7 @@ comparison surfaces \(\tau=2,4,8\). The four-function VTD state is extracted
 over a width-2 window and evolved backward independently. The pointwise score
 combines hyperbolic target-space distance, hyperbolic-velocity error, and
 normalized \(\lambda_{,\tau}\) error. Localized components must span at least
-four cells; a resolution-stable component score above \(10^{-2}\) is adverse.
+four cells; a resolution-stable component score above \(10^{-2}\) is a failure.
 Exact transformed-unpolarized, false-spike, homogeneous, and momentum-
 constraint convergence tests must pass before the generic calculation is
 interpreted.
@@ -714,9 +714,11 @@ depth dependence are therefore properties of this alternate metric
 quadrature, not of the declared reconstruction or the extracted field data.
 The endpoint-copy field estimator is retained separately as a lossy baseline.
 
-### 6.2 Shape versus full marked geometry: the global modulus
+### 6.2 Method validation: shape versus full marked geometry
 
-In the exact benchmark, the five-part data object
+The global-modulus ablation is used here as validation of the diagnostic, not
+as a claim that the familiar additive metric mode is newly discovered. In the
+exact benchmark, the five-part data object
 \((v_P,v_\phi,P_\infty,\phi_\infty,c_\lambda)\) reproduces both normalized
 shape and absolute metric observables. The corresponding production object
 uses \(a_f\) in place of the independently recovered limiting modulus.
@@ -932,7 +934,7 @@ the four-function reconstruction distances are
 D_{\rm loc}=(0.82012,0.81689,0.82215).
 \]
 
-The spread is below 1% and the values exceed the adverse criterion by more
+The spread is below 1% and the values exceed the mismatch criterion by more
 than a factor of 80. This is not a truncation-floor result: the proposed VTD
 state is insufficient in the localized region. The original ordinary-region
 supremum is not interpreted because the fixed mask is contaminated by the
@@ -952,16 +954,27 @@ centered-family parameters \((w,Q_0,Q_2,x_0)\) reduces the maximum distance to
 flag a mismatch: on a known exact family it distinguishes an insufficient
 state from a tested state that preserves the spike.
 
-The translated-control qualification is now closed. The earlier implementation
+The earlier translated-control implementation
 re-evaluated a nonperiodic local Lim formula as \(x-x_0\), thereby changing its
 artificial seam jump instead of translating a periodic grid state. In the
-corrected test, periodic translation is an integer cyclic shift applied to the
-centered representative and to every exact comparison slice. For the lower-
-velocity unseen family, the finest \((\tau=2,4)\) errors are
-\((2.6369\times10^{-3},2.2809\times10^{-4})\); for the higher-velocity family
-they are \((2.1388\times10^{-6},1.9881\times10^{-7})\). Both sequences converge
-at second order over \(N=(1024,2048,4096)\), remain finite, and have zero
-centered--shifted error gap at each resolution. The generic production feature is therefore called a resolved spike
+corrected implementation check, an integer cyclic shift is applied to the
+centered representative and every exact comparison slice. The resulting zero
+centered--shifted gap is the expected discrete shift equivariance of the
+periodic scheme; it is an indexing and Fourier-phase check, not evidence of
+positional robustness.
+
+A separate non-equivariant control shifts the trigonometric interpolant by
+half a grid cell, so the spike is sampled at non-grid-aligned locations. For
+the lower-velocity unseen family, its finest \((\tau=2,4)\) errors are
+\((2.5271\times10^{-3},2.6196\times10^{-3})\), with observed orders
+\((1.95,1.99)\) and \((2.01,2.00)\) across successive refinements. For the
+higher-velocity family, the finest errors are
+\((8.5994\times10^{-6},3.8759\times10^{-5})\), with corresponding orders
+\((2.10,1.72)\) and \((1.86,2.04)\). Both half-cell sequences therefore
+converge at approximately second order and lie below \(10^{-2}\) on the finest
+grid. The lower-velocity family and the centered enriched calculation have
+different error constants, but both remain truncation-limited at the finest
+grid. The generic production feature is therefore called a resolved spike
 candidate, not asserted to be a member of the exact family. A subsequent
 dual-scale footprint calculation localized the exceptional region but could
 not establish zero-measure decay within its sealed window; deeper runs stopped
@@ -979,9 +992,9 @@ separately [11,18,13]. We therefore do not claim that failure of ordinary VTD
 data at a spike is new. The contribution here is operational and quantitative:
 the declared observable score measures the reconstruction loss, demonstrates
 its resolution stability in a nonlinear evolution, and uses exact controls to
-identify which enriched data repair that loss. The translated-control campaign
-further verifies covariance under the discrete periodic translation used by
-the numerical scheme.
+identify which enriched data repair that loss. The translated controls further
+separate an exact integer-shift implementation check from a half-cell test of
+positional robustness.
 
 The present construction does not compete with Fuchsian existence theory on
 its strongest ground. Fuchsian theory begins with admissible singular data and
@@ -1178,7 +1191,7 @@ the vacuum Kasner exponents \((-1/3,2/3,2/3)\). It therefore has nonzero
 normalized shear and unit Weyl fraction, whereas spatially flat stiff FLRW has
 zero shear and zero Weyl fraction. Its Ricci tensor is also vacuum rather than
 scalar sourced. The comparison is rejected before any reconstruction score is
-formed, providing an exact invariant adverse control.
+formed, providing an exact invariant negative control.
 
 For the homogeneous anisotropic Einstein--scalar control, let \(N=\ln a\),
 \(\Sigma\) be the signed normalized shear amplitude, and
@@ -1206,7 +1219,7 @@ former is retained only as a constraint-drift diagnostic. This separation
 prevents numerical violation of the Friedmann constraint from being counted
 as physical failure of collapse--expansion equivalence. All clock matches are
 interpolated on their common invariant domains, and the same parity and norm
-definitions are applied to the positive, adverse, and shear-stratified tests.
+definitions are applied to the positive, negative-control, and shear-stratified tests.
 
 ## Acknowledgments
 
@@ -1217,7 +1230,7 @@ this research—and for saying yes on June 20th, in the middle of all of it.
 ## Data and code availability
 
 The specifications, source code, machine-readable outputs, and independent
-result-chain verifier supporting this study are publicly available at
+verification script supporting this study are publicly available at
 https://github.com/RonBibb/line-e-boundary-state-paper together with the linked
 computational repositories and machine-readable result records.
 

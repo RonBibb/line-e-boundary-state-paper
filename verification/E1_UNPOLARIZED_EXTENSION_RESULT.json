@@ -6,20 +6,53 @@
     "enriched_centered_spike_recovery": true,
     "footprint_nonclosure_retained": true,
     "four_function_exact_spike_loss": true,
+    "half_cell_positional_robustness_pass": true,
     "independent_footprint_verifier_32_of_32": true,
+    "integer_shift_equivariance_check_pass": true,
     "localized_mismatch_above_1e-2": true,
     "localized_mismatch_resolution_stable_1pct": true,
     "nonlinear_controls_pass": true,
     "physical_width_resolution_stable_10pct": true,
     "printed_formula_negative_control_fails": true,
-    "spike_resolved_at_all_resolutions": true,
-    "translated_exact_controls_pass": true
+    "spike_resolved_at_all_resolutions": true
   },
   "classification": "E1-U1-ADVERSE-LOCALIZED: four-function VTD is insufficient near the resolved unpolarized spike candidate; enriched exact centered-spike data recover the tested exact family; generic almost-everywhere sufficiency remains unresolved",
   "exact_family": {
     "analytic_amended_max": 3.1086244689504383e-15,
     "enriched_centered_recovery_max": 0.00023812486803388133,
     "four_function_center_loss_max": 0.5715037363307021,
+    "half_cell_finest_errors": {
+      "U1": {
+        "2.0": 0.0025271361572118006,
+        "4.0": 0.002619557319041891
+      },
+      "U2": {
+        "2.0": 8.599351547957383e-06,
+        "4.0": 3.875944701449929e-05
+      }
+    },
+    "half_cell_shifted_orders": {
+      "U1": {
+        "2.0": [
+          1.948169135575046,
+          1.9871345595135617
+        ],
+        "4.0": [
+          2.0061999823946874,
+          2.0022396036902537
+        ]
+      },
+      "U2": {
+        "2.0": [
+          2.1028879693535476,
+          1.724901158920156
+        ],
+        "4.0": [
+          1.8581730106688128,
+          2.0361096038019397
+        ]
+      }
+    },
     "printed_negative_control_max": 3.5873294885796434,
     "translated_finest_errors": {
       "U1": {

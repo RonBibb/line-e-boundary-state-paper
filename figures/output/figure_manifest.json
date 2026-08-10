@@ -62,7 +62,7 @@
       ]
     },
     {
-      "caption": "The generic unpolarized mismatch is resolution stable and localized; enriched spike data repair the exact family and translated controls close covariantly.",
+      "caption": "The generic unpolarized mismatch is resolution stable and localized; enriched spike data repair the exact family.",
       "figure": "figure_6_unpolarized_spike_extension",
       "files": [
         "figures/output/figure_6_unpolarized_spike_extension.pdf",

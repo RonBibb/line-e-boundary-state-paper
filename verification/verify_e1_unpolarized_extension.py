@@ -57,11 +57,15 @@ def main():
         "printed_formula_negative_control_fails": bool(printed_max > 1e-4),
         "four_function_exact_spike_loss": bool(ordinary_vtd_loss > 1e-2),
         "enriched_centered_spike_recovery": bool(enriched_max < 1e-2),
-        "translated_exact_controls_pass": bool(
+        "integer_shift_equivariance_check_pass": bool(
             unseen["outcome"] == "CBE-3T-R1-A"
             and all(c["passes"] for c in unseen["unseen_cases"])
             and all(c["finest_translation_gap"] == 0.0
                     for c in unseen["unseen_cases"])),
+        "half_cell_positional_robustness_pass": bool(
+            unseen["outcome"] == "CBE-3T-R1-A"
+            and all(c["positional_robustness_passes"]
+                    for c in unseen["subcell_shift_cases"])),
         "footprint_nonclosure_retained": bool(
             footprint["outcome"] == "CBE-D-architecture"),
         "deep_numerical_stop_retained": bool(
@@ -102,6 +106,14 @@ def main():
             "translated_finest_gaps": {
                 c["case"]: c["finest_translation_gap"]
                 for c in unseen["unseen_cases"]
+            },
+            "half_cell_finest_errors": {
+                c["case"]: c["shifted"][-1]["backward_sup_D"]
+                for c in unseen["subcell_shift_cases"]
+            },
+            "half_cell_shifted_orders": {
+                c["case"]: c["convergence_orders"]["shifted"]
+                for c in unseen["subcell_shift_cases"]
             },
         },
         "standing_limits": {

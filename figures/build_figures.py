@@ -119,13 +119,16 @@ def figure_2():
     data = read(VERIFY / "E1_DEPTH_NORM_SENSITIVITY_RESULT.json")
     ns = np.array([256, 512, 1024])
     depths = np.array([8, 12, 16, 24])
-    styles = ((8, COLORS["red"], "D"), (12, COLORS["green"], "^"),
-              (16, COLORS["blue"], "o"), (24, COLORS["orange"], "s"))
+    styles = ((8, COLORS["red"], "D", "-"),
+              (12, COLORS["green"], "^", "-"),
+              (16, COLORS["blue"], "o", "--"),
+              (24, COLORS["orange"], "s", "-"))
     fig, axes = plt.subplots(1, 2, figsize=(7.2, 3.1))
     ax = axes[0]
-    for depth, color, marker in styles:
+    for depth, color, marker, linestyle in styles:
         vals = data["summary"][str(depth)]["identity_l2"]["values"]
-        ax.loglog(ns, vals, marker=marker, color=color, label=fr"$\tau_f={depth}$")
+        ax.loglog(ns, vals, marker=marker, color=color, linestyle=linestyle,
+                  label=fr"$\tau_f={depth}$")
     ax.axhline(1e-3, color=COLORS["red"], linestyle=":",
                label=r"acceptance threshold $10^{-3}$")
     ax.set_xticks(ns, [str(n) for n in ns]); ax.xaxis.set_minor_formatter(NullFormatter())
@@ -133,8 +136,8 @@ def figure_2():
     ax.set_ylabel(r"Geometric reconstruction distance $D_{\rm geo}$")
     ax.grid(True, which="both", alpha=0.25)
     ax.legend(frameon=False, ncol=2, fontsize=8.2)
-    ax.text(0.02, 0.95, "(a) spatial refinement", transform=ax.transAxes,
-            va="top", fontweight="bold")
+    ax.text(0.02, 1.03, "(a) spatial refinement", transform=ax.transAxes,
+            va="bottom", fontweight="bold", clip_on=False)
 
     ax = axes[1]
     norm_styles = (("identity_l2", "identity $L_2$", COLORS["blue"], "o"),
@@ -150,8 +153,8 @@ def figure_2():
     ax.set_ylabel(r"Weighted reconstruction distance $D_W$")
     ax.grid(True, which="both", alpha=0.25)
     ax.legend(frameon=False, fontsize=7.8)
-    ax.text(0.02, 0.95, "(b) norm sensitivity", transform=ax.transAxes,
-            va="top", fontweight="bold")
+    ax.text(0.02, 1.03, "(b) norm sensitivity", transform=ax.transAxes,
+            va="bottom", fontweight="bold", clip_on=False)
     fig.tight_layout(w_pad=1.1)
     return save(fig, "figure_2_production_convergence",
                 "Common-surface depth and norm-sensitivity audit: shallow truncation fails while deep cases converge under all declared weights.",
@@ -279,7 +282,7 @@ def figure_6():
     fig, axes = plt.subplots(1, 2, figsize=(7.2, 3.15))
     ax = axes[0]
     ax.plot(ns, distances, "o-", color=COLORS["red"], label="localized distance")
-    ax.axhline(1e-2, color=COLORS["gray"], linestyle=":", label=r"adverse criterion $10^{-2}$")
+    ax.axhline(1e-2, color=COLORS["gray"], linestyle=":", label=r"mismatch criterion $10^{-2}$")
     ax.set_xticks(ns, [str(n) for n in ns])
     ax.set_ylim(0, 0.9)
     ax.set_xlabel("Periodic grid points, $N$")
@@ -309,7 +312,7 @@ def figure_6():
 
     fig.tight_layout(w_pad=1.2)
     return save(fig, "figure_6_unpolarized_spike_extension",
-                "The generic unpolarized mismatch is resolution stable and localized; enriched spike data repair the exact family and translated controls close covariantly.",
+                "The generic unpolarized mismatch is resolution stable and localized; enriched spike data repair the exact family.",
                 ["verification/E1_UNPOLARIZED_EXTENSION_RESULT.json"])
 
 

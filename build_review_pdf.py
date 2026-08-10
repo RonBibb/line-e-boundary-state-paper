@@ -23,7 +23,7 @@ FIGURE_INSERTS = {
     ),
     "### 6.1 Predictive finite-window reconstruction": (
         "figure_2_production_convergence.pdf",
-        "Common-surface depth and norm sensitivity. (a) The shallow depth-8 extraction fails while the deeper cases close under refinement. (b) The conclusion is stable under identity, shape-emphasized, clock-emphasized, and component-maximum scores.",
+        "Common-surface depth and norm sensitivity. (a) The shallow depth-8 extraction fails while the deeper cases close under refinement; the depth-16 dashed and depth-24 solid curves coincide at displayed scale. (b) The conclusion is stable under identity, shape-emphasized, clock-emphasized, and component-maximum scores.",
         "fig:production",
     ),
     "### 6.2 Shape versus full marked geometry: the global modulus": (
