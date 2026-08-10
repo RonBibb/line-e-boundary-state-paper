@@ -1,0 +1,83 @@
+{
+  "figures": [
+    {
+      "caption": "Extraction, holdout, reconstruction, and geometric-scoring protocol.",
+      "figure": "figure_1_method_architecture",
+      "files": [
+        "figures/output/figure_1_method_architecture.pdf",
+        "figures/output/figure_1_method_architecture.svg",
+        "figures/output/figure_1_method_architecture.png"
+      ],
+      "sources": [
+        "PAPER_E1_MANUSCRIPT_DRAFT_01_2026-08-09.md"
+      ]
+    },
+    {
+      "caption": "Common-surface depth and norm-sensitivity audit: shallow truncation fails while deep cases converge under all declared weights.",
+      "figure": "figure_2_production_convergence",
+      "files": [
+        "figures/output/figure_2_production_convergence.pdf",
+        "figures/output/figure_2_production_convergence.svg",
+        "figures/output/figure_2_production_convergence.png"
+      ],
+      "sources": [
+        "verification/E1_DEPTH_NORM_SENSITIVITY_RESULT.json"
+      ]
+    },
+    {
+      "caption": "Exact and window/asymptotic routes coincide; finite-slice metric error is larger but second order.",
+      "figure": "figure_3_metric_error_budget",
+      "files": [
+        "figures/output/figure_3_metric_error_budget.pdf",
+        "figures/output/figure_3_metric_error_budget.svg",
+        "figures/output/figure_3_metric_error_budget.png"
+      ],
+      "sources": [
+        "verification/E1_FG1_EXTENSION_RESULT.json"
+      ]
+    },
+    {
+      "caption": "Ablating the global metric datum leaves normalized shape unchanged but destroys marked-geometric closure.",
+      "figure": "figure_4_global_modulus_ablation",
+      "files": [
+        "figures/output/figure_4_global_modulus_ablation.pdf",
+        "figures/output/figure_4_global_modulus_ablation.svg",
+        "figures/output/figure_4_global_modulus_ablation.png"
+      ],
+      "sources": [
+        "reconstruction-adjudication/E1_RA1_RESULT.json"
+      ]
+    },
+    {
+      "caption": "Known-answer remainder decay and production modulus recovery under spatial refinement.",
+      "figure": "figure_5_modulus_recovery",
+      "files": [
+        "figures/output/figure_5_modulus_recovery.pdf",
+        "figures/output/figure_5_modulus_recovery.svg",
+        "figures/output/figure_5_modulus_recovery.png"
+      ],
+      "sources": [
+        "verification/E1_CLAMBDA_ESTIMATOR_RESULT.json",
+        "verification/E1_PRODUCTION_CLAMBDA_RESULT.json"
+      ]
+    },
+    {
+      "caption": "The generic unpolarized mismatch is resolution stable and localized; enriched centered-spike data repair the exact family.",
+      "figure": "figure_6_unpolarized_spike_extension",
+      "files": [
+        "figures/output/figure_6_unpolarized_spike_extension.pdf",
+        "figures/output/figure_6_unpolarized_spike_extension.svg",
+        "figures/output/figure_6_unpolarized_spike_extension.png"
+      ],
+      "sources": [
+        "verification/E1_UNPOLARIZED_EXTENSION_RESULT.json"
+      ]
+    }
+  ],
+  "formats": [
+    "pdf",
+    "svg",
+    "png"
+  ],
+  "pipeline": "Paper E1 publication figures"
+}

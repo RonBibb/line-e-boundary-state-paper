@@ -1,0 +1,558 @@
+{
+  "all_pass": true,
+  "checks": [
+    {
+      "detail": {
+        "flrw_pair": {
+          "D_max": 0.0,
+          "pair": "FLRW stiff crunch vs FLRW stiff bang",
+          "passes": true
+        },
+        "passes": true,
+        "schwarzschild_control": {
+          "classification_if_declared": "CBE-C \u2014 invariant mismatch",
+          "early_terminated": true,
+          "early_termination_gates": {
+            "shear_gate_C4": true,
+            "vacuum_vs_matter_ricci": true,
+            "weyl_ricci_gate_C5": true
+          },
+          "pair": "Schwarzschild/Kantowski-Sachs interior vs FLRW",
+          "passes": true,
+          "sigma2_limit": 1.0000000000000002,
+          "weyl_fraction": 1.0
+        }
+      },
+      "name": "CBE1 stage-0 controls",
+      "passes": true
+    },
+    {
+      "detail": {
+        "D_lam_R": 3.096742503656231e-07,
+        "D_lam_rho": 4.97602186798983e-07,
+        "constraint_residual_max": 0.0,
+        "free_evolution_residual_C7_diagnostic": 0.020682777979138055
+      },
+      "name": "CBE1 two-clock fine gate",
+      "passes": true
+    },
+    {
+      "detail": {
+        "constraint": {
+          "orders": [
+            2.000247717563526,
+            2.000006515050233
+          ],
+          "passes": true,
+          "rows": [
+            {
+              "N": 256,
+              "residual": 0.00016755554751000682
+            },
+            {
+              "N": 512,
+              "residual": 4.188169497491921e-05
+            },
+            {
+              "N": 1024,
+              "residual": 1.0470376460568292e-05
+            }
+          ]
+        },
+        "homogeneous": {
+          "Omega_series": [
+            2.3024512491189606,
+            2.302451249118959,
+            2.302451249118959
+          ],
+          "Sigma2_series": [
+            3.325945649620175,
+            3.3259456496201745,
+            3.3259456496201736
+          ],
+          "backward_roundtrip_error": 1.6063539387545234e-15,
+          "invariant_drift": 1.7763568394002505e-15,
+          "passes": true
+        },
+        "manufactured": {
+          "orders": [
+            1.9997164297615062,
+            1.9999292594904998
+          ],
+          "passes": true,
+          "rows": [
+            {
+              "N": 128,
+              "sup_error": 0.010571324734474863
+            },
+            {
+              "N": 256,
+              "sup_error": 0.002643350698765645
+            },
+            {
+              "N": 512,
+              "sup_error": 0.0006608700787259503
+            }
+          ]
+        }
+      },
+      "name": "CBE2I controls",
+      "passes": true
+    },
+    {
+      "detail": {
+        "D": [
+          0.00020089053866252242,
+          5.0212623541435234e-05,
+          1.2552583926517961e-05
+        ],
+        "ratios": [
+          4.000797498596114,
+          4.00018226011288
+        ]
+      },
+      "name": "CBE2I depth-16 second-order trend",
+      "passes": true
+    },
+    {
+      "detail": {
+        "D": [
+          0.0002966507992206048,
+          7.414402442423653e-05,
+          1.8534713150047505e-05
+        ],
+        "ratios": [
+          4.001007519139119,
+          4.00027903448004
+        ]
+      },
+      "name": "CBE2I depth-24 second-order trend",
+      "passes": true
+    },
+    {
+      "detail": {
+        "D_max_by_arm": {
+          "V0-A0": {
+            "depth16_N1024": 1.2552583926517961e-05,
+            "depth16_N256": 0.00020089053866252242,
+            "depth16_N512": 5.0212623541435234e-05,
+            "depth24_N1024": 1.8534721601080815e-05,
+            "depth24_N256": 0.0002966507987757636,
+            "depth24_N512": 7.414402442423653e-05
+          },
+          "V0-A1": {
+            "depth16_N1024": 29.37216720210285,
+            "depth16_N256": 29.36927735593371,
+            "depth16_N512": 29.37158905608332,
+            "depth24_N1024": 106.2787982554851,
+            "depth24_N256": 106.26479273909584,
+            "depth24_N512": 106.2759961818853
+          },
+          "V1-A0": {
+            "depth16_N1024": 1.2552627585741531e-05,
+            "depth16_N256": 0.00020089058271955028,
+            "depth16_N512": 5.0212666520013e-05,
+            "depth24_N1024": 1.8534724509298203e-05,
+            "depth24_N256": 0.0002966507980845549,
+            "depth24_N512": 7.41440234843644e-05
+          },
+          "V1-A1": {
+            "depth16_N1024": 29.37216720159349,
+            "depth16_N256": 29.36927735541846,
+            "depth16_N512": 29.37158905556603,
+            "depth24_N1024": 106.27879825546671,
+            "depth24_N256": 106.26479273909214,
+            "depth24_N512": 106.2759961818733
+          }
+        },
+        "anchor_ablation_V0_A1_below_gate": false,
+        "baseline_reproduction": {
+          "cases": {
+            "depth16_N1024": {
+              "abs_difference": 0.0,
+              "new": 1.2552583926517961e-05,
+              "original": 1.2552583926517961e-05,
+              "passes": true,
+              "tolerance": 6.276291963258981e-07
+            },
+            "depth16_N256": {
+              "abs_difference": 0.0,
+              "new": 0.00020089053866252242,
+              "original": 0.00020089053866252242,
+              "passes": true,
+              "tolerance": 1.0044526933126121e-05
+            },
+            "depth16_N512": {
+              "abs_difference": 0.0,
+              "new": 5.0212623541435234e-05,
+              "original": 5.0212623541435234e-05,
+              "passes": true,
+              "tolerance": 2.510631177071762e-06
+            },
+            "depth24_N1024": {
+              "abs_difference": 8.451033309839293e-12,
+              "new": 1.8534721601080815e-05,
+              "original": 1.8534713150047505e-05,
+              "passes": true,
+              "tolerance": 9.267356575023753e-07
+            },
+            "depth24_N256": {
+              "abs_difference": 4.4484121247689856e-13,
+              "new": 0.0002966507987757636,
+              "original": 0.0002966507992206048,
+              "passes": true,
+              "tolerance": 1.4832539961030242e-05
+            },
+            "depth24_N512": {
+              "abs_difference": 0.0,
+              "new": 7.414402442423653e-05,
+              "original": 7.414402442423653e-05,
+              "passes": true,
+              "tolerance": 3.7072012212118268e-06
+            }
+          },
+          "passes": true
+        },
+        "explicit_parity_closes": true,
+        "holdout_V1_A0": {
+          "below_gate": true,
+          "decreases_with_resolution": true
+        },
+        "specified_constraint_gate_passes_fine": true,
+        "strict_V1_A1": {
+          "below_gate": false,
+          "decreases_with_resolution": false
+        }
+      },
+      "name": "RA1 baseline and holdout",
+      "passes": true
+    },
+    {
+      "detail": {
+        "V0-A0": {
+          "depth16_N1024": 1.2552583926517961e-05,
+          "depth16_N256": 0.00020089053866252242,
+          "depth16_N512": 5.0212623541435234e-05,
+          "depth24_N1024": 1.8534721601080815e-05,
+          "depth24_N256": 0.0002966507987757636,
+          "depth24_N512": 7.414402442423653e-05
+        },
+        "V0-A1": {
+          "depth16_N1024": 29.37216720210285,
+          "depth16_N256": 29.36927735593371,
+          "depth16_N512": 29.37158905608332,
+          "depth24_N1024": 106.2787982554851,
+          "depth24_N256": 106.26479273909584,
+          "depth24_N512": 106.2759961818853
+        },
+        "V1-A0": {
+          "depth16_N1024": 1.2552627585741531e-05,
+          "depth16_N256": 0.00020089058271955028,
+          "depth16_N512": 5.0212666520013e-05,
+          "depth24_N1024": 1.8534724509298203e-05,
+          "depth24_N256": 0.0002966507980845549,
+          "depth24_N512": 7.41440234843644e-05
+        },
+        "V1-A1": {
+          "depth16_N1024": 29.37216720159349,
+          "depth16_N256": 29.36927735541846,
+          "depth16_N512": 29.37158905556603,
+          "depth24_N1024": 106.27879825546671,
+          "depth24_N256": 106.26479273909214,
+          "depth24_N512": 106.2759961818733
+        }
+      },
+      "name": "RA1 anchor ablation fails as classified",
+      "passes": true
+    },
+    {
+      "detail": {
+        "classification": "independent global metric/modulus datum",
+        "rows": [
+          {
+            "c": -2.0,
+            "checks": {
+              "Htheta": 3.5376094673575543e-16,
+              "Hx": 3.6060853269968123e-16,
+              "Hy": 2.7993181946596263e-16,
+              "Omega": 2.140168999434096e-15,
+              "Sigma2": 1.0365412650642662e-15,
+              "clock_rate": 5.512873859936736e-16,
+              "lambda_rho": 6.648153833686863e-16,
+              "lambda_tau_derivative_unchanged": 0.0,
+              "lambda_theta_derivative_unchanged": 0.0,
+              "lapse": 2.205475884378177e-16,
+              "proper_theta_density": 6.524336164151881e-16,
+              "rho": 1.188939603078102e-15,
+              "s_P": 6.805020215772442e-16
+            },
+            "form_preserving_coordinate_transform": {
+              "symmetric_x_period_ratio_prime_to_original": 0.7165313105737893,
+              "symmetric_y_period_ratio_prime_to_original": 0.7165313105737893,
+              "tau_prime_minus_tau": -0.6666666666666666,
+              "theta_period_ratio_prime_to_original": 1.9477340410546757
+            },
+            "max_relative_discrepancy": 2.140168999434096e-15
+          },
+          {
+            "c": 1.0,
+            "checks": {
+              "Htheta": 2.2838298919930966e-16,
+              "Hx": 2.944132252111827e-16,
+              "Hy": 2.7934738133645287e-16,
+              "Omega": 1.573987870682793e-15,
+              "Sigma2": 1.0113870760690696e-15,
+              "clock_rate": 6.476069537110633e-16,
+              "lambda_rho": 6.551678423205182e-16,
+              "lambda_tau_derivative_unchanged": 0.0,
+              "lambda_theta_derivative_unchanged": 3.258990103856918e-14,
+              "lapse": 2.9339759409471795e-16,
+              "proper_theta_density": 6.528207703855348e-16,
+              "rho": 1.0807973607928188e-15,
+              "s_P": 6.853215210206636e-16
+            },
+            "form_preserving_coordinate_transform": {
+              "symmetric_x_period_ratio_prime_to_original": 1.1813604128656459,
+              "symmetric_y_period_ratio_prime_to_original": 1.1813604128656459,
+              "tau_prime_minus_tau": 0.3333333333333333,
+              "theta_period_ratio_prime_to_original": 0.7165313105737893
+            },
+            "max_relative_discrepancy": 3.258990103856918e-14
+          },
+          {
+            "c": 3.0,
+            "checks": {
+              "Htheta": 3.273130672498166e-16,
+              "Hx": 3.4797047054451053e-16,
+              "Hy": 3.653963413647077e-16,
+              "Omega": 1.8079742441767634e-15,
+              "Sigma2": 1.2061202115177091e-15,
+              "clock_rate": 6.658197541486022e-16,
+              "lambda_rho": 6.146164449693428e-16,
+              "lambda_tau_derivative_unchanged": 0.0,
+              "lambda_theta_derivative_unchanged": 4.368845730161148e-14,
+              "lapse": 2.2182613100707815e-16,
+              "proper_theta_density": 6.476217724906002e-16,
+              "rho": 1.1592372159905503e-15,
+              "s_P": 6.631105939707637e-16
+            },
+            "form_preserving_coordinate_transform": {
+              "symmetric_x_period_ratio_prime_to_original": 1.6487212707001282,
+              "symmetric_y_period_ratio_prime_to_original": 1.6487212707001282,
+              "tau_prime_minus_tau": 1.0,
+              "theta_period_ratio_prime_to_original": 0.36787944117144233
+            },
+            "max_relative_discrepancy": 4.368845730161148e-14
+          }
+        ]
+      },
+      "name": "RA2 modulus scaling",
+      "passes": true
+    },
+    {
+      "detail": {
+        "classification": "E1-RA3-LOCAL-INJECTIVITY-A",
+        "direction_gates_pass": true,
+        "expected_ranks_pass": true,
+        "linearity_pass": true,
+        "resolution_stability_pass": true
+      },
+      "name": "RA3 rank and null directions",
+      "passes": true
+    },
+    {
+      "detail": {
+        "a4_explanation_supported": false,
+        "a6_scaling_supported": true,
+        "classification": "E1-CJ1-CONSTRAINED-VALID / A4-EXPLANATION-RETIRED",
+        "median_fitted_slope": 6.000461064388633
+      },
+      "name": "CJ1 constrained reduction and a6 correction",
+      "passes": true
+    },
+    {
+      "detail": {
+        "corrected_gates": {
+          "FUCHSIAN_constraint_below_gate": true,
+          "FUCHSIAN_data_depth_decreases_or_exact": true,
+          "FUCHSIAN_fine_full_below_gate": true,
+          "FUCHSIAN_resolution_improves": true,
+          "WINDOW_constraint_below_gate": true,
+          "WINDOW_data_depth_decreases": true,
+          "WINDOW_fine_full_below_gate": true,
+          "WINDOW_resolution_improves": true,
+          "compatibility": true
+        },
+        "governing_classification": "E1-FG1-FUCHSIAN-GEOMETRIC-A-R",
+        "malformed_gate": "FUCHSIAN_data_depth_decreases",
+        "original_classification": "E1-FG1-NONCLOSURE"
+      },
+      "name": "FG1 exact Fuchsian and geometric benchmark",
+      "passes": true
+    },
+    {
+      "detail": {
+        "N512_full_distances": {
+          "exact_fuchsian": 4.4695830151463953e-05,
+          "window_asymptotic_metric": 4.4695825668341144e-05,
+          "window_finite_metric": 0.00014077250164440215
+        },
+        "exact_orders": {
+          "full_D": [
+            1.9989794039496187,
+            1.9999104618232082
+          ],
+          "lambda": [
+            1.9988318854391114,
+            1.9999138645703778
+          ],
+          "momentum_residual": [
+            1.998993986104773,
+            1.999759288033361
+          ]
+        }
+      },
+      "name": "FG1 third resolution and metric-route decomposition",
+      "passes": true
+    },
+    {
+      "detail": {
+        "depth16_N1024_D_max": 2.343184706670439e-06,
+        "depth24_N1024_D_max": 2.343207675006489e-06,
+        "interpretation": "Changes only the spatial metric route while preserving the finite-depth theta=0 anchor; c_hat_no_remainder is not an independent c_lambda estimate.",
+        "relative_depth_gap": 9.802187588821344e-06
+      },
+      "name": "Production holdout depth-24 metric-route closure",
+      "passes": true
+    },
+    {
+      "detail": {
+        "depths": [
+          8.0,
+          12.0,
+          16.0
+        ],
+        "exact_remainder_recovers_to_roundoff": true,
+        "known_c_lambda": 0.4,
+        "zero_remainder_errors": [
+          6.127651930309952e-08,
+          3.329103659410748e-11,
+          1.454392162258955e-14
+        ]
+      },
+      "name": "Known-answer global-modulus estimator",
+      "passes": true
+    },
+    {
+      "detail": {
+        "continuum_depth_gap": 2.849975117014125e-10,
+        "fine_depth_gap": 2.801350262870983e-10,
+        "interpretation": "The production estimator has no known truth value. It converges spatially at second order and its depth-16/24 estimates agree to about 3e-10; the depth gap is not claimed to converge spatially.",
+        "richardson_estimates": {
+          "16": 0.11803247426559693,
+          "24": 0.11803247398059942
+        },
+        "spatial_convergence": {
+          "16": {
+            "difference_ratio": 3.999649262378603,
+            "successive_differences": [
+              6.697408235112334e-06,
+              1.6744988862171795e-06
+            ]
+          },
+          "24": {
+            "difference_ratio": 3.999608653013588,
+            "successive_differences": [
+              6.697398578836555e-06,
+              1.6745134736595446e-06
+            ]
+          }
+        }
+      },
+      "name": "Production global-modulus depth consistency",
+      "passes": true
+    },
+    {
+      "detail": {
+        "deep_difference_ratios": [
+          3.999108054764816,
+          3.999108084248574,
+          3.9991080529220815,
+          3.9991080527992318,
+          3.9991114015766636,
+          3.999111422079717,
+          3.9991114002952233,
+          3.9991114002097934
+        ],
+        "deep_fine_norm_max": 1.739755547320695e-06,
+        "depth8_fine_identity": 0.002584569750328096,
+        "interpretation": "Observable-relative production audit with imported finite-depth metric anchor; tests shallower extraction and norm sensitivity, not source-independent recovery of the limiting modulus."
+      },
+      "name": "Production shallow-depth and norm sensitivity",
+      "passes": true
+    },
+    {
+      "detail": {
+        "all_pass": true,
+        "checks": {
+          "amended_exact_formulas_pass": true,
+          "deep_numerical_stop_retained": true,
+          "enriched_centered_spike_recovery": true,
+          "footprint_nonclosure_retained": true,
+          "four_function_exact_spike_loss": true,
+          "independent_footprint_verifier_32_of_32": true,
+          "localized_mismatch_above_1e-2": true,
+          "localized_mismatch_resolution_stable_1pct": true,
+          "nonlinear_controls_pass": true,
+          "physical_width_resolution_stable_10pct": true,
+          "printed_formula_negative_control_fails": true,
+          "spike_resolved_at_all_resolutions": true,
+          "unseen_shifted_cases_retained_as_failure": true
+        },
+        "classification": "E1-U1-ADVERSE-LOCALIZED: four-function VTD is insufficient near the resolved unpolarized spike candidate; enriched exact centered-spike data recover the tested exact family; generic almost-everywhere sufficiency remains unresolved",
+        "exact_family": {
+          "analytic_amended_max": 3.1086244689504383e-15,
+          "enriched_centered_recovery_max": 0.00023812486803388133,
+          "four_function_center_loss_max": 0.5715037363307021,
+          "printed_negative_control_max": 3.5873294885796434,
+          "unseen_outcome": "CBE-3T-R1-B"
+        },
+        "production": {
+          "fine_ordinary_D": 3.0340171246637033,
+          "fine_spike_D": 0.8221535621247615,
+          "per_class": {
+            "ordinary": "intermediate",
+            "transient_spike": "absent",
+            "true_spike": "mismatch"
+          },
+          "physical_width_radians": [
+            0.030679615757712823,
+            0.030679615757712823,
+            0.02914563496982718
+          ],
+          "resolutions": [
+            1024,
+            2048,
+            4096
+          ],
+          "spike_D_tau2": [
+            0.8201166482098101,
+            0.8168860794273479,
+            0.8221535621247615
+          ]
+        },
+        "standing_limits": {
+          "almost_everywhere_sufficiency": "not established",
+          "deep_campaign": "CBE-D-numerical",
+          "footprint": "CBE-D-architecture",
+          "generic_family_membership": "not established"
+        }
+      },
+      "name": "Unpolarized localized insufficiency and exact-spike controls",
+      "passes": true
+    }
+  ],
+  "passed": 17,
+  "total": 17,
+  "verifier": "E1 result-chain verifier"
+}

@@ -1,0 +1,86 @@
+{
+  "N": 512,
+  "classification": "independent global metric/modulus datum",
+  "derivative_equations_leave_additive_mode_free": true,
+  "period_preserving_transform_exists_for_nonzero_c": false,
+  "rows": [
+    {
+      "c": -2.0,
+      "checks": {
+        "Htheta": 3.5376094673575543e-16,
+        "Hx": 3.6060853269968123e-16,
+        "Hy": 2.7993181946596263e-16,
+        "Omega": 2.140168999434096e-15,
+        "Sigma2": 1.0365412650642662e-15,
+        "clock_rate": 5.512873859936736e-16,
+        "lambda_rho": 6.648153833686863e-16,
+        "lambda_tau_derivative_unchanged": 0.0,
+        "lambda_theta_derivative_unchanged": 0.0,
+        "lapse": 2.205475884378177e-16,
+        "proper_theta_density": 6.524336164151881e-16,
+        "rho": 1.188939603078102e-15,
+        "s_P": 6.805020215772442e-16
+      },
+      "form_preserving_coordinate_transform": {
+        "symmetric_x_period_ratio_prime_to_original": 0.7165313105737893,
+        "symmetric_y_period_ratio_prime_to_original": 0.7165313105737893,
+        "tau_prime_minus_tau": -0.6666666666666666,
+        "theta_period_ratio_prime_to_original": 1.9477340410546757
+      },
+      "max_relative_discrepancy": 2.140168999434096e-15
+    },
+    {
+      "c": 1.0,
+      "checks": {
+        "Htheta": 2.2838298919930966e-16,
+        "Hx": 2.944132252111827e-16,
+        "Hy": 2.7934738133645287e-16,
+        "Omega": 1.573987870682793e-15,
+        "Sigma2": 1.0113870760690696e-15,
+        "clock_rate": 6.476069537110633e-16,
+        "lambda_rho": 6.551678423205182e-16,
+        "lambda_tau_derivative_unchanged": 0.0,
+        "lambda_theta_derivative_unchanged": 3.258990103856918e-14,
+        "lapse": 2.9339759409471795e-16,
+        "proper_theta_density": 6.528207703855348e-16,
+        "rho": 1.0807973607928188e-15,
+        "s_P": 6.853215210206636e-16
+      },
+      "form_preserving_coordinate_transform": {
+        "symmetric_x_period_ratio_prime_to_original": 1.1813604128656459,
+        "symmetric_y_period_ratio_prime_to_original": 1.1813604128656459,
+        "tau_prime_minus_tau": 0.3333333333333333,
+        "theta_period_ratio_prime_to_original": 0.7165313105737893
+      },
+      "max_relative_discrepancy": 3.258990103856918e-14
+    },
+    {
+      "c": 3.0,
+      "checks": {
+        "Htheta": 3.273130672498166e-16,
+        "Hx": 3.4797047054451053e-16,
+        "Hy": 3.653963413647077e-16,
+        "Omega": 1.8079742441767634e-15,
+        "Sigma2": 1.2061202115177091e-15,
+        "clock_rate": 6.658197541486022e-16,
+        "lambda_rho": 6.146164449693428e-16,
+        "lambda_tau_derivative_unchanged": 0.0,
+        "lambda_theta_derivative_unchanged": 4.368845730161148e-14,
+        "lapse": 2.2182613100707815e-16,
+        "proper_theta_density": 6.476217724906002e-16,
+        "rho": 1.1592372159905503e-15,
+        "s_P": 6.631105939707637e-16
+      },
+      "form_preserving_coordinate_transform": {
+        "symmetric_x_period_ratio_prime_to_original": 1.6487212707001282,
+        "symmetric_y_period_ratio_prime_to_original": 1.6487212707001282,
+        "tau_prime_minus_tau": 1.0,
+        "theta_period_ratio_prime_to_original": 0.36787944117144233
+      },
+      "max_relative_discrepancy": 4.368845730161148e-14
+    }
+  ],
+  "scaling_laws_pass": true,
+  "tau": 8.0,
+  "test_id": "E1-RA2"
+}

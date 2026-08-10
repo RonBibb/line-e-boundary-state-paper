@@ -1,0 +1,44 @@
+{
+  "continuum_depth_gap": 2.849975117014125e-10,
+  "depth_gaps_by_resolution": {
+    "1024": 2.801350262870983e-10,
+    "256": 2.752038597009232e-10,
+    "512": 2.6554758392194344e-10
+  },
+  "estimates": {
+    "16": {
+      "1024": 0.11803303243189234,
+      "256": 0.11804140433901367,
+      "512": 0.11803470693077855
+    },
+    "24": {
+      "1024": 0.11803303215175731,
+      "256": 0.11804140406380981,
+      "512": 0.11803470666523097
+    }
+  },
+  "fine_depth_gap": 2.801350262870983e-10,
+  "interpretation": "The production estimator has no known truth value. It converges spatially at second order and its depth-16/24 estimates agree to about 3e-10; the depth gap is not claimed to converge spatially.",
+  "richardson_continuum_estimates": {
+    "16": 0.11803247426559693,
+    "24": 0.11803247398059942
+  },
+  "second_order_spatial_consistency": true,
+  "spatial_convergence": {
+    "16": {
+      "difference_ratio": 3.999649262378603,
+      "successive_differences": [
+        6.697408235112334e-06,
+        1.6744988862171795e-06
+      ]
+    },
+    "24": {
+      "difference_ratio": 3.999608653013588,
+      "successive_differences": [
+        6.697398578836555e-06,
+        1.6745134736595446e-06
+      ]
+    }
+  },
+  "test_id": "E1-PRODUCTION-CLAMBDA"
+}

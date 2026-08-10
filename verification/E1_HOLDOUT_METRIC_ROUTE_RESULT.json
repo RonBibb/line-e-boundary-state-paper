@@ -1,0 +1,78 @@
+{
+  "interpretation": "Changes only the spatial metric route while preserving the finite-depth theta=0 anchor; c_hat_no_remainder is not an independent c_lambda estimate.",
+  "rows": {
+    "depth16_N1024": {
+      "D_by_surface": {
+        "12.0": 2.343184706670439e-06,
+        "2.0": 6.804942517421938e-07,
+        "4.0": 8.698550504564285e-07,
+        "8.0": 1.4244647264650827e-06
+      },
+      "D_max": 2.343184706670439e-06,
+      "c_hat_no_remainder": 0.11803303243189234,
+      "initial_lambda_error": 4.932750556463361e-06,
+      "initial_momentum_residual": 9.328228729444723e-06
+    },
+    "depth16_N256": {
+      "D_by_surface": {
+        "12.0": 3.747796112568478e-05,
+        "2.0": 1.0881568293646352e-05,
+        "4.0": 1.3913919203612015e-05,
+        "8.0": 2.2782856384883512e-05
+      },
+      "D_max": 3.747796112568478e-05,
+      "c_hat_no_remainder": 0.11804140433901367,
+      "initial_lambda_error": 7.887684233764958e-05,
+      "initial_momentum_residual": 0.00014922091099102574
+    },
+    "depth16_N512": {
+      "D_by_surface": {
+        "12.0": 9.371532158066952e-06,
+        "2.0": 2.72191076196602e-06,
+        "4.0": 3.479132537844751e-06,
+        "8.0": 5.696865565861573e-06
+      },
+      "D_max": 9.371532158066952e-06,
+      "c_hat_no_remainder": 0.11803470693077855,
+      "initial_lambda_error": 1.9729846229665782e-05,
+      "initial_momentum_residual": 3.731467212105328e-05
+    },
+    "depth24_N1024": {
+      "D_by_surface": {
+        "12.0": 2.343207675006489e-06,
+        "2.0": 6.805146879855673e-07,
+        "4.0": 8.69875106381848e-07,
+        "8.0": 1.4244886328325132e-06
+      },
+      "D_max": 2.343207675006489e-06,
+      "c_hat_no_remainder": 0.11803303215175731,
+      "initial_lambda_error": 4.932865643070272e-06,
+      "initial_momentum_residual": 8.629378905915138e-06
+    },
+    "depth24_N256": {
+      "D_by_surface": {
+        "12.0": 3.74779764085176e-05,
+        "2.0": 1.088158908579897e-05,
+        "4.0": 1.3913940318800531e-05,
+        "8.0": 2.2782878659644012e-05
+      },
+      "D_max": 3.74779764085176e-05,
+      "c_hat_no_remainder": 0.11804140406380981,
+      "initial_lambda_error": 7.887692620300868e-05,
+      "initial_momentum_residual": 0.0001380102697231761
+    },
+    "depth24_N512": {
+      "D_by_surface": {
+        "12.0": 9.371542164959898e-06,
+        "2.0": 2.7219308217854376e-06,
+        "4.0": 3.479152451720101e-06,
+        "8.0": 5.696885377659677e-06
+      },
+      "D_max": 9.371542164959898e-06,
+      "c_hat_no_remainder": 0.11803470666523097,
+      "initial_lambda_error": 1.9729906803434005e-05,
+      "initial_momentum_residual": 3.45180698476673e-05
+    }
+  },
+  "test_id": "E1-HOLDOUT-METRIC-ROUTE"
+}

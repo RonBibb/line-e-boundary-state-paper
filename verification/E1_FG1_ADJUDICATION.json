@@ -1,0 +1,25 @@
+{
+  "corrected_all_pass": true,
+  "corrected_gates": {
+    "FUCHSIAN_constraint_below_gate": true,
+    "FUCHSIAN_data_depth_decreases_or_exact": true,
+    "FUCHSIAN_fine_full_below_gate": true,
+    "FUCHSIAN_resolution_improves": true,
+    "WINDOW_constraint_below_gate": true,
+    "WINDOW_data_depth_decreases": true,
+    "WINDOW_fine_full_below_gate": true,
+    "WINDOW_resolution_improves": true,
+    "compatibility": true
+  },
+  "fuchsian_data_errors_by_depth": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "governing_scientific_classification": "E1-FG1-FUCHSIAN-GEOMETRIC-A-R",
+  "malformed_gate": "FUCHSIAN_data_depth_decreases",
+  "original_all_pass": false,
+  "original_classification": "E1-FG1-NONCLOSURE",
+  "reason": "The exact Fuchsian arm is initialized from analytic asymptotic data, so its data error is identically zero at every depth and cannot strictly decrease. Exact zero is stronger than the intended gate.",
+  "test_id": "E1-FG1"
+}

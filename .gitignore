@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# Generated LaTeX and visual-QA intermediates.
+tmp/
+output/pdf/*.aux
+output/pdf/*.fdb_latexmk
+output/pdf/*.fls
+output/pdf/*.log
+output/pdf/*.out
+output/pdf/*.synctex.gz
+output/pdf/*.xdv
+output/pdf/PAPER_E1_REVIEW_DRAFT_*.pdf
+
+# Final submission PDFs and the reproducibility archive remain versioned.

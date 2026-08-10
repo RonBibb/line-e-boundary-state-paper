@@ -1,0 +1,1793 @@
+{
+  "cases": {
+    "depth16_N1024": {
+      "arms": {
+        "V0-A0": {
+          "D_max": 1.2552583926517961e-05,
+          "endpoint_errors": {
+            "P": 0.0,
+            "Pt": 9.168221737354543e-13,
+            "anchor_imported": true,
+            "anchor_value": 9.904010875127433,
+            "lambda": 0.00010276552648136317,
+            "phi": 0.0,
+            "phit": 8.852918398360998e-13
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 1.4454264236719984e-05,
+          "reconstruction_constraint_specified": 1.4454461639352415e-05,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 1.036972790147195e-05,
+              "D_explicit_parity": 1.036972790147195e-05,
+              "component_sup": {
+                "Omega": 3.0953017926549364e-11,
+                "Sigma2": 2.249223030048597e-11,
+                "clock_rate": 1.0369727901471393e-05,
+                "s_P": 3.2747138334343617e-12
+              },
+              "lambda_rho_relative_gap": 2.569105258053325e-05,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 5.392544856178521
+            },
+            "2.0": {
+              "D_common_normal": 1.2552583926517961e-05,
+              "D_explicit_parity": 1.2552583926517961e-05,
+              "component_sup": {
+                "Omega": 8.921947625140092e-10,
+                "Sigma2": 7.622205089319323e-10,
+                "clock_rate": 1.2552583926184191e-05,
+                "s_P": 7.05902003517167e-11
+              },
+              "lambda_rho_relative_gap": 2.5691058254900133e-05,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.4235924047146202
+            },
+            "4.0": {
+              "D_common_normal": 1.1058194303340509e-05,
+              "D_explicit_parity": 1.1058194303340509e-05,
+              "component_sup": {
+                "Omega": 3.1959679347437486e-10,
+                "Sigma2": 2.4918556107422773e-10,
+                "clock_rate": 1.1058194303026347e-05,
+                "s_P": 2.4788615604620645e-11
+              },
+              "lambda_rho_relative_gap": 2.5691058472018414e-05,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.8304652029440458
+            },
+            "8.0": {
+              "D_common_normal": 9.548653931880734e-06,
+              "D_explicit_parity": 9.548653931880734e-06,
+              "component_sup": {
+                "Omega": 3.0736302392142534e-11,
+                "Sigma2": 2.2113866293693718e-11,
+                "clock_rate": 9.548653931878981e-06,
+                "s_P": 3.2358560275724813e-12
+              },
+              "lambda_rho_relative_gap": 2.5691053304613485e-05,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 3.1305705455161403
+            }
+          }
+        },
+        "V0-A1": {
+          "D_max": 29.37216720210285,
+          "endpoint_errors": {
+            "P": 0.0,
+            "Pt": 9.168221737354543e-13,
+            "anchor_imported": false,
+            "anchor_value": 0.0,
+            "lambda": 9.904113640653915,
+            "phi": 0.0,
+            "phit": 8.852918398360998e-13
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 1.445426421667433e-05,
+          "reconstruction_constraint_specified": 1.4454461619306778e-05,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 29.37216720210285,
+              "D_explicit_parity": 29.37216720210285,
+              "component_sup": {
+                "Omega": 3.0958346997067565e-11,
+                "Sigma2": 2.249134212206627e-11,
+                "clock_rate": 29.37216720210285,
+                "s_P": 3.2744917888294367e-12
+              },
+              "lambda_rho_relative_gap": 0.9159235193260521,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 34.76471503452721
+            },
+            "2.0": {
+              "D_common_normal": 7.754035346891634,
+              "D_explicit_parity": 7.754035346891634,
+              "component_sup": {
+                "Omega": 8.921938743355895e-10,
+                "Sigma2": 7.622178443966732e-10,
+                "clock_rate": 7.754035346891634,
+                "s_P": 7.059064444092655e-11
+              },
+              "lambda_rho_relative_gap": 0.9159235193265285,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 9.177628845511425
+            },
+            "4.0": {
+              "D_common_normal": 9.970190356888283,
+              "D_explicit_parity": 9.970190356888283,
+              "component_sup": {
+                "Omega": 3.1960212254489306e-10,
+                "Sigma2": 2.4919177832316564e-10,
+                "clock_rate": 9.970190356888283,
+                "s_P": 2.4789059693830495e-11
+              },
+              "lambda_rho_relative_gap": 0.9159235193265467,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 11.800657469699948
+            },
+            "8.0": {
+              "D_common_normal": 17.05161978277429,
+              "D_explicit_parity": 17.05161978277429,
+              "component_sup": {
+                "Omega": 3.072919696478493e-11,
+                "Sigma2": 2.2114754472113418e-11,
+                "clock_rate": 17.05161978277429,
+                "s_P": 3.235411938362631e-12
+              },
+              "lambda_rho_relative_gap": 0.9159235193261124,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 20.182192543724504
+            }
+          }
+        },
+        "V1-A0": {
+          "D_max": 1.2552627585741531e-05,
+          "endpoint_errors": {
+            "P": 6.374634153871739e-11,
+            "Pt": 3.239730705928423e-11,
+            "anchor_imported": true,
+            "anchor_value": 9.904010875127433,
+            "lambda": 0.00010276545608434162,
+            "phi": 4.7272408210119465e-11,
+            "phit": 2.3706370200216043e-11
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 1.4454254793587337e-05,
+          "reconstruction_constraint_specified": 1.445445219609223e-05,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 1.0369729991563603e-05,
+              "D_explicit_parity": 1.0369729991563603e-05,
+              "component_sup": {
+                "Omega": 7.730651674364708e-10,
+                "Sigma2": 4.3801140492405466e-10,
+                "clock_rate": 1.0369729990911125e-05,
+                "s_P": 9.210587847974239e-11
+              },
+              "lambda_rho_relative_gap": 2.569109144474735e-05,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 5.3925448561354745
+            },
+            "2.0": {
+              "D_common_normal": 1.2552627585741531e-05,
+              "D_explicit_parity": 1.2552627585741531e-05,
+              "component_sup": {
+                "Omega": 7.038778448986704e-10,
+                "Sigma2": 3.999680586730392e-10,
+                "clock_rate": 1.2552627566053687e-05,
+                "s_P": 7.440292826288442e-11
+              },
+              "lambda_rho_relative_gap": 2.569117202904186e-05,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.4235924046748858
+            },
+            "4.0": {
+              "D_common_normal": 1.1058224260854419e-05,
+              "D_explicit_parity": 1.1058224260854419e-05,
+              "component_sup": {
+                "Omega": 8.065850209959535e-10,
+                "Sigma2": 4.738245351632031e-10,
+                "clock_rate": 1.1058224230642288e-05,
+                "s_P": 9.434986125711475e-11
+              },
+              "lambda_rho_relative_gap": 2.5691164048501988e-05,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.8304652029025612
+            },
+            "8.0": {
+              "D_common_normal": 9.548661900835137e-06,
+              "D_explicit_parity": 9.548661900835137e-06,
+              "component_sup": {
+                "Omega": 7.73052732938595e-10,
+                "Sigma2": 4.3797143689516815e-10,
+                "clock_rate": 9.548661896063848e-06,
+                "s_P": 9.210543439053254e-11
+              },
+              "lambda_rho_relative_gap": 2.5691127412978035e-05,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 3.130570545470393
+            }
+          }
+        },
+        "V1-A1": {
+          "D_max": 29.37216720159349,
+          "endpoint_errors": {
+            "P": 6.374634153871739e-11,
+            "Pt": 3.239730705928423e-11,
+            "anchor_imported": false,
+            "anchor_value": 0.0,
+            "lambda": 9.904113640583518,
+            "phi": 4.7272408210119465e-11,
+            "phit": 2.3706370200216043e-11
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 1.4454254793587337e-05,
+          "reconstruction_constraint_specified": 1.445445219609194e-05,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 29.37216720159349,
+              "D_explicit_parity": 29.37216720159349,
+              "component_sup": {
+                "Omega": 7.730687201501496e-10,
+                "Sigma2": 4.3801584581615316e-10,
+                "clock_rate": 29.37216720159349,
+                "s_P": 9.210587847974239e-11
+              },
+              "lambda_rho_relative_gap": 0.9159235193293207,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 34.76471503401785
+            },
+            "2.0": {
+              "D_common_normal": 7.754035346419478,
+              "D_explicit_parity": 7.754035346419478,
+              "component_sup": {
+                "Omega": 7.038778448986704e-10,
+                "Sigma2": 3.999671704946195e-10,
+                "clock_rate": 7.754035346419478,
+                "s_P": 7.440292826288442e-11
+              },
+              "lambda_rho_relative_gap": 0.9159235193360978,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 9.17762884503927
+            },
+            "4.0": {
+              "D_common_normal": 9.970190356394772,
+              "D_explicit_parity": 9.970190356394772,
+              "component_sup": {
+                "Omega": 8.065903500664717e-10,
+                "Sigma2": 4.738227588063637e-10,
+                "clock_rate": 9.970190356394772,
+                "s_P": 9.434986125711475e-11
+              },
+              "lambda_rho_relative_gap": 0.9159235193354267,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 11.800657469206437
+            },
+            "8.0": {
+              "D_common_normal": 17.051619782230564,
+              "D_explicit_parity": 17.051619782230564,
+              "component_sup": {
+                "Omega": 7.730474038680768e-10,
+                "Sigma2": 4.3796966053832875e-10,
+                "clock_rate": 17.051619782230564,
+                "s_P": 9.210521234592761e-11
+              },
+              "lambda_rho_relative_gap": 0.915923519332346,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 20.18219254318078
+            }
+          }
+        }
+      },
+      "collapse_constraint_implemented": 8.76006105530792e-06,
+      "collapse_constraint_specified": 8.760076808988744e-06
+    },
+    "depth16_N256": {
+      "arms": {
+        "V0-A0": {
+          "D_max": 0.00020089053866252242,
+          "endpoint_errors": {
+            "P": 0.0,
+            "Pt": 6.520339823623544e-13,
+            "anchor_imported": true,
+            "anchor_value": 9.903776489643441,
+            "lambda": 0.0016443783987405425,
+            "phi": 0.0,
+            "phit": 5.413447468072263e-13
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 0.00023127024713622858,
+          "reconstruction_constraint_specified": 0.00023132053586464728,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 0.00016595066346647425,
+              "D_explicit_parity": 0.00016595066346647425,
+              "component_sup": {
+                "Omega": 1.8239632026961772e-11,
+                "Sigma2": 9.745981799369474e-12,
+                "clock_rate": 0.00016595066346647425,
+                "s_P": 1.943556426908799e-12
+              },
+              "lambda_rho_relative_gap": 0.0004110101127553035,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 5.3924120260744
+            },
+            "2.0": {
+              "D_common_normal": 0.00020089053866252242,
+              "D_explicit_parity": 0.00020089053866252242,
+              "component_sup": {
+                "Omega": 6.8089534011051e-11,
+                "Sigma2": 3.7119640694527334e-11,
+                "clock_rate": 0.0002008905386625126,
+                "s_P": 4.235944928154822e-12
+              },
+              "lambda_rho_relative_gap": 0.00041101011545214997,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.4235979240209455
+            },
+            "4.0": {
+              "D_common_normal": 0.0001769755789748943,
+              "D_explicit_parity": 0.0001769755789748943,
+              "component_sup": {
+                "Omega": 4.0541792145631916e-11,
+                "Sigma2": 2.0689228108494717e-11,
+                "clock_rate": 0.0001769755789748917,
+                "s_P": 2.8830271503466065e-12
+              },
+              "lambda_rho_relative_gap": 0.00041101011431914704,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.830476359116603
+            },
+            "8.0": {
+              "D_common_normal": 0.0001528130092458558,
+              "D_explicit_parity": 0.0001528130092458558,
+              "component_sup": {
+                "Omega": 1.823607931328297e-11,
+                "Sigma2": 9.737988193592173e-12,
+                "clock_rate": 0.00015281300924585572,
+                "s_P": 1.943334382303874e-12
+              },
+              "lambda_rho_relative_gap": 0.0004110101133023284,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 3.1305110341646314
+            }
+          }
+        },
+        "V0-A1": {
+          "D_max": 29.36927735593371,
+          "endpoint_errors": {
+            "P": 0.0,
+            "Pt": 6.520339823623544e-13,
+            "anchor_imported": false,
+            "anchor_value": 0.0,
+            "lambda": 9.905420868042182,
+            "phi": 0.0,
+            "phit": 5.413447468072263e-13
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 0.00023127024713376858,
+          "reconstruction_constraint_specified": 0.00023132053586218617,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 29.36927735593371,
+              "D_explicit_parity": 29.36927735593371,
+              "component_sup": {
+                "Omega": 1.823785567012237e-11,
+                "Sigma2": 9.740652728851273e-12,
+                "clock_rate": 29.36927735593371,
+                "s_P": 1.943334382303874e-12
+              },
+              "lambda_rho_relative_gap": 0.9159509916062942,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 34.76173693344669
+            },
+            "2.0": {
+              "D_common_normal": 7.753461615050602,
+              "D_explicit_parity": 7.753461615050602,
+              "component_sup": {
+                "Omega": 6.80930867247298e-11,
+                "Sigma2": 3.7120528872947034e-11,
+                "clock_rate": 7.753461615050602,
+                "s_P": 4.235500838944972e-12
+              },
+              "lambda_rho_relative_gap": 0.9159509916065208,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 9.177077346019145
+            },
+            "4.0": {
+              "D_common_normal": 9.969428701494625,
+              "D_explicit_parity": 9.969428701494625,
+              "component_sup": {
+                "Omega": 4.054534485931072e-11,
+                "Sigma2": 2.0691892643753818e-11,
+                "clock_rate": 9.969428701494625,
+                "s_P": 2.8832491949515315e-12
+              },
+              "lambda_rho_relative_gap": 0.9159509916064255,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 11.79993560469073
+            },
+            "8.0": {
+              "D_common_normal": 17.049986581204895,
+              "D_explicit_parity": 17.049986581204895,
+              "component_sup": {
+                "Omega": 1.8239632026961772e-11,
+                "Sigma2": 9.747758156208874e-12,
+                "clock_rate": 17.049986581204895,
+                "s_P": 1.943334382303874e-12
+              },
+              "lambda_rho_relative_gap": 0.91595099160634,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 20.180533682517318
+            }
+          }
+        },
+        "V1-A0": {
+          "D_max": 0.00020089058271955028,
+          "endpoint_errors": {
+            "P": 6.351186243591656e-11,
+            "Pt": 3.240296919670982e-11,
+            "anchor_imported": true,
+            "anchor_value": 9.903776489643441,
+            "lambda": 0.0016443783284891822,
+            "phi": 4.664713060265058e-11,
+            "phit": 2.3691937300895916e-11
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 0.0002312702469590249,
+          "reconstruction_constraint_specified": 0.00023132053568743042,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 0.0001659506653790981,
+              "D_explicit_parity": 0.0001659506653790981,
+              "component_sup": {
+                "Omega": 7.72688579786518e-10,
+                "Sigma2": 4.375975137804744e-10,
+                "clock_rate": 0.00016595066537905545,
+                "s_P": 9.20377107860304e-11
+              },
+              "lambda_rho_relative_gap": 0.00041101015195787864,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 5.392412026031071
+            },
+            "2.0": {
+              "D_common_normal": 0.00020089058271955028,
+              "D_explicit_parity": 0.00020089058271955028,
+              "component_sup": {
+                "Omega": 6.070592917239992e-10,
+                "Sigma2": 3.4301805840186717e-10,
+                "clock_rate": 0.0002008905827184937,
+                "s_P": 6.869038671197814e-11
+              },
+              "lambda_rho_relative_gap": 0.00041101023467092436,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.4235979239795835
+            },
+            "4.0": {
+              "D_common_normal": 0.00017697560806243879,
+              "D_explicit_parity": 0.00017697560806243879,
+              "component_sup": {
+                "Omega": 7.720668548927279e-10,
+                "Sigma2": 4.354410165774425e-10,
+                "clock_rate": 0.00017697560806045898,
+                "s_P": 9.180234350480987e-11
+              },
+              "lambda_rho_relative_gap": 0.0004110102238313163,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.8304763590748707
+            },
+            "8.0": {
+              "D_common_normal": 0.00015281301690469408,
+              "D_explicit_parity": 0.00015281301690469408,
+              "component_sup": {
+                "Omega": 7.726956852138755e-10,
+                "Sigma2": 4.375966256020547e-10,
+                "clock_rate": 0.0001528130169043962,
+                "s_P": 9.203704465221563e-11
+              },
+              "lambda_rho_relative_gap": 0.00041101018792137926,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 3.1305110341196505
+            }
+          }
+        },
+        "V1-A1": {
+          "D_max": 29.36927735541846,
+          "endpoint_errors": {
+            "P": 6.351186243591656e-11,
+            "Pt": 3.240296919670982e-11,
+            "anchor_imported": false,
+            "anchor_value": 0.0,
+            "lambda": 9.905420867971928,
+            "phi": 4.664713060265058e-11,
+            "phit": 2.3691937300895916e-11
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 0.0002312702469590249,
+          "reconstruction_constraint_specified": 0.00023132053568743042,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 29.36927735541846,
+              "D_explicit_parity": 29.36927735541846,
+              "component_sup": {
+                "Omega": 7.726939088570361e-10,
+                "Sigma2": 4.375939610667956e-10,
+                "clock_rate": 29.36927735541846,
+                "s_P": 9.203748874142548e-11
+              },
+              "lambda_rho_relative_gap": 0.9159509916095906,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 34.76173693293144
+            },
+            "2.0": {
+              "D_common_normal": 7.753461614558372,
+              "D_explicit_parity": 7.753461614558372,
+              "component_sup": {
+                "Omega": 6.070575153671598e-10,
+                "Sigma2": 3.4302161111554597e-10,
+                "clock_rate": 7.753461614558372,
+                "s_P": 6.869083080118799e-11
+              },
+              "lambda_rho_relative_gap": 0.9159509916165451,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 9.177077345526914
+            },
+            "4.0": {
+              "D_common_normal": 9.969428700998673,
+              "D_explicit_parity": 9.969428700998673,
+              "component_sup": {
+                "Omega": 7.720704076064067e-10,
+                "Sigma2": 4.354374638637637e-10,
+                "clock_rate": 9.969428700998673,
+                "s_P": 9.180234350480987e-11
+              },
+              "lambda_rho_relative_gap": 0.9159509916156339,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 11.79993560419478
+            },
+            "8.0": {
+              "D_common_normal": 17.049986580669906,
+              "D_explicit_parity": 17.049986580669906,
+              "component_sup": {
+                "Omega": 7.726956852138755e-10,
+                "Sigma2": 4.375992901373138e-10,
+                "clock_rate": 17.049986580669906,
+                "s_P": 9.20368226076107e-11
+              },
+              "lambda_rho_relative_gap": 0.9159509916126143,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 20.18053368198233
+            }
+          }
+        }
+      },
+      "collapse_constraint_implemented": 0.00014017697693696274,
+      "collapse_constraint_specified": 0.0001401809317381168
+    },
+    "depth16_N512": {
+      "arms": {
+        "V0-A0": {
+          "D_max": 5.0212623541435234e-05,
+          "endpoint_errors": {
+            "P": 0.0,
+            "Pt": 7.182032746300138e-13,
+            "anchor_imported": true,
+            "anchor_value": 9.903963991369388,
+            "lambda": 0.0004110685999165753,
+            "phi": 0.0,
+            "phit": 6.059597268404104e-13
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 5.78164639336377e-05,
+          "reconstruction_constraint_specified": 5.781963793692588e-05,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 4.1480307587327166e-05,
+              "D_explicit_parity": 4.1480307587327166e-05,
+              "component_sup": {
+                "Omega": 2.0946799850207753e-11,
+                "Sigma2": 1.3642420526593924e-11,
+                "clock_rate": 4.1480307587327125e-05,
+                "s_P": 2.2457591342117666e-12
+              },
+              "lambda_rho_relative_gap": 0.00010276187114848102,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 5.3925182830940885
+            },
+            "2.0": {
+              "D_common_normal": 5.0212623541435234e-05,
+              "D_explicit_parity": 5.0212623541435234e-05,
+              "component_sup": {
+                "Omega": 2.370637020021604e-10,
+                "Sigma2": 2.050351000093542e-10,
+                "clock_rate": 5.021262354143463e-05,
+                "s_P": 1.9094281711318217e-11
+              },
+              "lambda_rho_relative_gap": 0.00010276187271525988,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.4235928142211665
+            },
+            "4.0": {
+              "D_common_normal": 4.42350019875852e-05,
+              "D_explicit_parity": 4.42350019875852e-05,
+              "component_sup": {
+                "Omega": 8.212541757757208e-11,
+                "Sigma2": 6.509548455824188e-11,
+                "clock_rate": 4.423500198758035e-05,
+                "s_P": 6.479705660922264e-12
+              },
+              "lambda_rho_relative_gap": 0.0001027618723063723,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.830467433244537
+            },
+            "8.0": {
+              "D_common_normal": 3.8196343229546643e-05,
+              "D_explicit_parity": 3.8196343229546643e-05,
+              "component_sup": {
+                "Omega": 2.0941470779689553e-11,
+                "Sigma2": 1.361222246032412e-11,
+                "clock_rate": 3.819634322954624e-05,
+                "s_P": 2.241318242113266e-12
+              },
+              "lambda_rho_relative_gap": 0.00010276187210375621,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 3.1305516444416215
+            }
+          }
+        },
+        "V0-A1": {
+          "D_max": 29.37158905608332,
+          "endpoint_errors": {
+            "P": 0.0,
+            "Pt": 7.182032746300138e-13,
+            "anchor_imported": false,
+            "anchor_value": 0.0,
+            "lambda": 9.904375059969304,
+            "phi": 0.0,
+            "phit": 6.059597268404104e-13
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 5.78164639336377e-05,
+          "reconstruction_constraint_specified": 5.7819637936926175e-05,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 29.37158905608332,
+              "D_explicit_parity": 29.37158905608332,
+              "component_sup": {
+                "Omega": 2.0950352563886554e-11,
+                "Sigma2": 1.3641532348174223e-11,
+                "clock_rate": 29.37158905608332,
+                "s_P": 2.2457591342117666e-12
+              },
+              "lambda_rho_relative_gap": 0.9159290139505442,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 34.76411924073223
+            },
+            "2.0": {
+              "D_common_normal": 7.7539166991497,
+              "D_explicit_parity": 7.7539166991497,
+              "component_sup": {
+                "Omega": 2.3706547835899983e-10,
+                "Sigma2": 2.050368763661936e-10,
+                "clock_rate": 7.7539166991497,
+                "s_P": 1.9094281711318217e-11
+              },
+              "lambda_rho_relative_gap": 0.9159290139506757,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 9.177513965761298
+            },
+            "4.0": {
+              "D_common_normal": 9.970037985301332,
+              "D_explicit_parity": 9.970037985301332,
+              "component_sup": {
+                "Omega": 8.212541757757208e-11,
+                "Sigma2": 6.509637273666158e-11,
+                "clock_rate": 9.970037985301332,
+                "s_P": 6.479483616317339e-12
+              },
+              "lambda_rho_relative_gap": 0.9159290139506413,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 11.80051305732345
+            },
+            "8.0": {
+              "D_common_normal": 17.051256864877463,
+              "D_explicit_parity": 17.051256864877463,
+              "component_sup": {
+                "Omega": 2.0948576207047154e-11,
+                "Sigma2": 1.361488699558322e-11,
+                "clock_rate": 17.051256864877463,
+                "s_P": 2.241096197508341e-12
+              },
+              "lambda_rho_relative_gap": 0.9159290139506241,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 20.181817202788398
+            }
+          }
+        },
+        "V1-A0": {
+          "D_max": 5.0212666520013e-05,
+          "endpoint_errors": {
+            "P": 6.360245663472597e-11,
+            "Pt": 3.2399749549938406e-11,
+            "anchor_imported": true,
+            "anchor_value": 9.903963991369388,
+            "lambda": 0.0004110685301874639,
+            "phi": 4.6625814320577774e-11,
+            "phit": 2.3690605033266365e-11
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 5.781646459954435e-05,
+          "reconstruction_constraint_specified": 5.7819638602870694e-05,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 4.1480309457557245e-05,
+              "D_explicit_parity": 4.1480309457557245e-05,
+              "component_sup": {
+                "Omega": 7.727436468485394e-10,
+                "Sigma2": 4.375824147473395e-10,
+                "clock_rate": 4.148030945738679e-05,
+                "s_P": 9.206457818322633e-11
+              },
+              "lambda_rho_relative_gap": 0.00010276190986764018,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 5.39251828305059
+            },
+            "2.0": {
+              "D_common_normal": 5.0212666520013e-05,
+              "D_explicit_parity": 5.0212666520013e-05,
+              "component_sup": {
+                "Omega": 6.271978492122798e-10,
+                "Sigma2": 3.4863045783595226e-10,
+                "clock_rate": 5.02126665156144e-05,
+                "s_P": 6.932365792522432e-11
+              },
+              "lambda_rho_relative_gap": 0.00010276199301555672,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.4235928141798238
+            },
+            "4.0": {
+              "D_common_normal": 4.423503071532141e-05,
+              "D_explicit_parity": 4.423503071532141e-05,
+              "component_sup": {
+                "Omega": 7.779714650268943e-10,
+                "Sigma2": 4.384563823123244e-10,
+                "clock_rate": 4.423503070727364e-05,
+                "s_P": 9.228684483275629e-11
+              },
+              "lambda_rho_relative_gap": 0.00010276198193341816,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.8304674332028292
+            },
+            "8.0": {
+              "D_common_normal": 3.819635093590837e-05,
+              "D_explicit_parity": 3.819635093590837e-05,
+              "component_sup": {
+                "Omega": 7.727223305664666e-10,
+                "Sigma2": 4.375788620336607e-10,
+                "clock_rate": 3.819635093471607e-05,
+                "s_P": 9.20643561386214e-11
+              },
+              "lambda_rho_relative_gap": 0.00010276194582034392,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 3.1305516443966264
+            }
+          }
+        },
+        "V1-A1": {
+          "D_max": 29.37158905556603,
+          "endpoint_errors": {
+            "P": 6.360245663472597e-11,
+            "Pt": 3.2399749549938406e-11,
+            "anchor_imported": false,
+            "anchor_value": 0.0,
+            "lambda": 9.904375059899577,
+            "phi": 4.6625814320577774e-11,
+            "phit": 2.3690605033266365e-11
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 5.781646460950607e-05,
+          "reconstruction_constraint_specified": 5.781963861283325e-05,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 29.37158905556603,
+              "D_explicit_parity": 29.37158905556603,
+              "component_sup": {
+                "Omega": 7.727454232053788e-10,
+                "Sigma2": 4.375815265689198e-10,
+                "clock_rate": 29.37158905556603,
+                "s_P": 9.206480022783126e-11
+              },
+              "lambda_rho_relative_gap": 0.9159290139538014,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 34.76411924021494
+            },
+            "2.0": {
+              "D_common_normal": 7.753916698657921,
+              "D_explicit_parity": 7.753916698657921,
+              "component_sup": {
+                "Omega": 6.271907437849222e-10,
+                "Sigma2": 3.4862956965753256e-10,
+                "clock_rate": 7.753916698657921,
+                "s_P": 6.932387996982925e-11
+              },
+              "lambda_rho_relative_gap": 0.9159290139607924,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 9.177513965269519
+            },
+            "4.0": {
+              "D_common_normal": 9.970037984805812,
+              "D_explicit_parity": 9.970037984805812,
+              "component_sup": {
+                "Omega": 7.779714650268943e-10,
+                "Sigma2": 4.384554941339047e-10,
+                "clock_rate": 9.970037984805812,
+                "s_P": 9.228640074354644e-11
+              },
+              "lambda_rho_relative_gap": 0.9159290139598606,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 11.80051305682793
+            },
+            "8.0": {
+              "D_common_normal": 17.05125686434282,
+              "D_explicit_parity": 17.05125686434282,
+              "component_sup": {
+                "Omega": 7.727170014959484e-10,
+                "Sigma2": 4.375788620336607e-10,
+                "clock_rate": 17.05125686434282,
+                "s_P": 9.206457818322633e-11
+              },
+              "lambda_rho_relative_gap": 0.9159290139568242,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 20.181817202253757
+            }
+          }
+        }
+      },
+      "collapse_constraint_implemented": 3.5039036056937615e-05,
+      "collapse_constraint_specified": 3.503929273874686e-05
+    },
+    "depth24_N1024": {
+      "arms": {
+        "V0-A0": {
+          "D_max": 1.8534721601080815e-05,
+          "endpoint_errors": {
+            "P": 0.0,
+            "Pt": 7.227551890309769e-13,
+            "anchor_imported": true,
+            "anchor_value": 14.796999796615543,
+            "lambda": 0.00015173362645271027,
+            "phi": 0.0,
+            "phit": 1.446620601086579e-12
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 1.3868063577258253e-05,
+          "reconstruction_constraint_specified": 1.3868245523729769e-05,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 1.539575460685442e-05,
+              "D_explicit_parity": 1.539575460685442e-05,
+              "component_sup": {
+                "Omega": 5.668177038842259e-11,
+                "Sigma2": 4.275957365962313e-11,
+                "clock_rate": 1.539575460685061e-05,
+                "s_P": 4.354072657974939e-12
+              },
+              "lambda_rho_relative_gap": 3.793267791734639e-05,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 5.39254357876241
+            },
+            "2.0": {
+              "D_common_normal": 1.8534721601080815e-05,
+              "D_explicit_parity": 1.8534721601080815e-05,
+              "component_sup": {
+                "Omega": 6.611115210830576e-09,
+                "Sigma2": 3.5784912810754577e-09,
+                "clock_rate": 1.8534721597851522e-05,
+                "s_P": 2.8387536765706045e-10
+              },
+              "lambda_rho_relative_gap": 3.793268927749507e-05,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.4235919015004237
+            },
+            "4.0": {
+              "D_common_normal": 1.6320566241897442e-05,
+              "D_explicit_parity": 1.6320566241897442e-05,
+              "component_sup": {
+                "Omega": 2.0081696305851438e-09,
+                "Sigma2": 1.2119567571744483e-09,
+                "clock_rate": 1.6320566241512235e-05,
+                "s_P": 1.1431966484565237e-10
+              },
+              "lambda_rho_relative_gap": 3.7932691026332715e-05,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.830464421608823
+            },
+            "8.0": {
+              "D_common_normal": 1.4123276336879396e-05,
+              "D_explicit_parity": 1.4123276336879396e-05,
+              "component_sup": {
+                "Omega": 5.4656723591506307e-11,
+                "Sigma2": 4.022204791453987e-11,
+                "clock_rate": 1.4123276336874824e-05,
+                "s_P": 4.240385820253323e-12
+              },
+              "lambda_rho_relative_gap": 3.793267554631948e-05,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 3.1305696350590058
+            }
+          }
+        },
+        "V0-A1": {
+          "D_max": 106.2787982554851,
+          "endpoint_errors": {
+            "P": 0.0,
+            "Pt": 7.227551890309769e-13,
+            "anchor_imported": false,
+            "anchor_value": 0.0,
+            "lambda": 14.797151530241994,
+            "phi": 0.0,
+            "phit": 1.446620601086579e-12
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 1.386806355136207e-05,
+          "reconstruction_constraint_specified": 1.3868245497833154e-05,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 106.2787982554851,
+              "D_explicit_parity": 106.2787982554851,
+              "component_sup": {
+                "Omega": 5.6692428529458994e-11,
+                "Sigma2": 4.275602094594433e-11,
+                "clock_rate": 106.2787982554851,
+                "s_P": 4.353850613370014e-12
+              },
+              "lambda_rho_relative_gap": 0.9752588612048527,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 111.67134608790946
+            },
+            "2.0": {
+              "D_common_normal": 28.0568123994731,
+              "D_explicit_parity": 28.0568123994731,
+              "component_sup": {
+                "Omega": 6.6111134344737366e-09,
+                "Sigma2": 3.5784939456107168e-09,
+                "clock_rate": 28.0568123994731,
+                "s_P": 2.838755897016654e-10
+              },
+              "lambda_rho_relative_gap": 0.975258861205134,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 29.480405898092886
+            },
+            "4.0": {
+              "D_common_normal": 36.07563237020755,
+              "D_explicit_parity": 36.07563237020755,
+              "component_sup": {
+                "Omega": 2.008162525157786e-09,
+                "Sigma2": 1.2119558689960286e-09,
+                "clock_rate": 36.07563237020755,
+                "s_P": 1.1432010893486222e-10
+              },
+              "lambda_rho_relative_gap": 0.9752588612051774,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 37.90609948301921
+            },
+            "8.0": {
+              "D_common_normal": 61.69873279633348,
+              "D_explicit_parity": 61.69873279633348,
+              "component_sup": {
+                "Omega": 5.4654947234666906e-11,
+                "Sigma2": 4.021760702244137e-11,
+                "clock_rate": 61.69873279633348,
+                "s_P": 4.240385820253323e-12
+              },
+              "lambda_rho_relative_gap": 0.9752588612047943,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 64.8293055572837
+            }
+          }
+        },
+        "V1-A0": {
+          "D_max": 1.8534724509298203e-05,
+          "endpoint_errors": {
+            "P": 2.071232074740692e-12,
+            "Pt": 7.227551890309769e-13,
+            "anchor_imported": true,
+            "anchor_value": 14.796999796615543,
+            "lambda": 0.00015173362506715193,
+            "phi": 2.7924329515371937e-12,
+            "phit": 1.446620601086579e-12
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 1.386806355136207e-05,
+          "reconstruction_constraint_specified": 1.3868245497833244e-05,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 1.5395754412122027e-05,
+              "D_explicit_parity": 1.5395754412122027e-05,
+              "component_sup": {
+                "Omega": 5.7200466585527465e-11,
+                "Sigma2": 4.275779730278373e-11,
+                "clock_rate": 1.539575441211749e-05,
+                "s_P": 4.354516747184789e-12
+              },
+              "lambda_rho_relative_gap": 3.7932683921116546e-05,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 5.392543578761957
+            },
+            "2.0": {
+              "D_common_normal": 1.8534724509298203e-05,
+              "D_explicit_parity": 1.8534724509298203e-05,
+              "component_sup": {
+                "Omega": 6.6461165459941185e-09,
+                "Sigma2": 3.6253924307061425e-09,
+                "clock_rate": 1.85347245029166e-05,
+                "s_P": 2.4722335290050523e-10
+              },
+              "lambda_rho_relative_gap": 3.793269368263597e-05,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.4235919014934333
+            },
+            "4.0": {
+              "D_common_normal": 1.6320566165468355e-05,
+              "D_explicit_parity": 1.6320566165468355e-05,
+              "component_sup": {
+                "Omega": 2.0081767360125014e-09,
+                "Sigma2": 1.2119585335312877e-09,
+                "clock_rate": 1.632056616507338e-05,
+                "s_P": 1.143198868902573e-10
+              },
+              "lambda_rho_relative_gap": 3.7932695128221134e-05,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.8304644216141006
+            },
+            "8.0": {
+              "D_common_normal": 1.4123276921197645e-05,
+              "D_explicit_parity": 1.4123276921197645e-05,
+              "component_sup": {
+                "Omega": 5.4994231390992354e-11,
+                "Sigma2": 4.022204791453987e-11,
+                "clock_rate": 1.4123276921185202e-05,
+                "s_P": 4.240385820253323e-12
+              },
+              "lambda_rho_relative_gap": 3.7932682083141665e-05,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 3.130569635058742
+            }
+          }
+        },
+        "V1-A1": {
+          "D_max": 106.27879825546671,
+          "endpoint_errors": {
+            "P": 2.071232074740692e-12,
+            "Pt": 7.227551890309769e-13,
+            "anchor_imported": false,
+            "anchor_value": 0.0,
+            "lambda": 14.797151530240608,
+            "phi": 2.7924329515371937e-12,
+            "phit": 1.446620601086579e-12
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 1.3868063564230726e-05,
+          "reconstruction_constraint_specified": 1.386824551070198e-05,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 106.27879825546671,
+              "D_explicit_parity": 106.27879825546671,
+              "component_sup": {
+                "Omega": 5.7205795656045666e-11,
+                "Sigma2": 4.275779730278373e-11,
+                "clock_rate": 106.27879825546671,
+                "s_P": 4.354072657974939e-12
+              },
+              "lambda_rho_relative_gap": 0.9752588612048642,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 111.67134608789107
+            },
+            "2.0": {
+              "D_common_normal": 28.05681239919077,
+              "D_explicit_parity": 28.05681239919077,
+              "component_sup": {
+                "Omega": 6.6461165459941185e-09,
+                "Sigma2": 3.625393318884562e-09,
+                "clock_rate": 28.05681239919077,
+                "s_P": 2.472231308559003e-10
+              },
+              "lambda_rho_relative_gap": 0.9752588612051056,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 29.480405897810556
+            },
+            "4.0": {
+              "D_common_normal": 36.075632370420436,
+              "D_explicit_parity": 36.075632370420436,
+              "component_sup": {
+                "Omega": 2.0081731832988226e-09,
+                "Sigma2": 1.2119567571744483e-09,
+                "clock_rate": 36.075632370420436,
+                "s_P": 1.143198868902573e-10
+              },
+              "lambda_rho_relative_gap": 0.9752588612051413,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 37.9060994832321
+            },
+            "8.0": {
+              "D_common_normal": 61.6987327963228,
+              "D_explicit_parity": 61.6987327963228,
+              "component_sup": {
+                "Omega": 5.4996007747831754e-11,
+                "Sigma2": 4.022027155770047e-11,
+                "clock_rate": 61.6987327963228,
+                "s_P": 4.240163775648398e-12
+              },
+              "lambda_rho_relative_gap": 0.9752588612048186,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 64.82930555727302
+            }
+          }
+        }
+      },
+      "collapse_constraint_implemented": 8.261521356323394e-06,
+      "collapse_constraint_specified": 8.261536024617661e-06
+    },
+    "depth24_N256": {
+      "arms": {
+        "V0-A0": {
+          "D_max": 0.0002966507987757636,
+          "endpoint_errors": {
+            "P": 0.0,
+            "Pt": 1.8096635301390052e-13,
+            "anchor_imported": true,
+            "anchor_value": 14.796644032431344,
+            "lambda": 0.0024278646729172237,
+            "phi": 0.0,
+            "phit": 3.610445276081009e-13
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 0.0002218311458219382,
+          "reconstruction_constraint_specified": 0.00022187771860441988,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 0.00024639212967203505,
+              "D_explicit_parity": 0.00024639212967203505,
+              "component_sup": {
+                "Omega": 1.1780798558902461e-11,
+                "Sigma2": 8.548717289613705e-12,
+                "clock_rate": 0.00024639212967203505,
+                "s_P": 8.459899447643693e-13
+              },
+              "lambda_rho_relative_gap": 0.0006067820009762138,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 5.392391622719872
+            },
+            "2.0": {
+              "D_common_normal": 0.0002966507987757636,
+              "D_explicit_parity": 0.0002966507987757636,
+              "component_sup": {
+                "Omega": 3.12017078840654e-10,
+                "Sigma2": 2.2677326683151477e-10,
+                "clock_rate": 0.00029665079877572165,
+                "s_P": 2.360822648483918e-11
+              },
+              "lambda_rho_relative_gap": 0.0006067820040113977,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.423589749739524
+            },
+            "4.0": {
+              "D_common_normal": 0.00026122035289656906,
+              "D_explicit_parity": 0.00026122035289656906,
+              "component_sup": {
+                "Omega": 1.20561338690095e-10,
+                "Sigma2": 7.851053140939257e-11,
+                "clock_rate": 0.00026122035289655177,
+                "s_P": 8.828937581029095e-12
+              },
+              "lambda_rho_relative_gap": 0.000606782001628187,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.8304638649274414
+            },
+            "8.0": {
+              "D_common_normal": 0.00022602947866845469,
+              "D_explicit_parity": 0.00022602947866845469,
+              "component_sup": {
+                "Omega": 1.177014041786606e-11,
+                "Sigma2": 8.503420190208999e-12,
+                "clock_rate": 0.00022602947866845469,
+                "s_P": 8.428813202954188e-13
+              },
+              "lambda_rho_relative_gap": 0.000606782000554529,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 3.130496250494473
+            }
+          }
+        },
+        "V0-A1": {
+          "D_max": 106.26479273909584,
+          "endpoint_errors": {
+            "P": 0.0,
+            "Pt": 1.8096635301390052e-13,
+            "anchor_imported": false,
+            "anchor_value": 0.0,
+            "lambda": 14.799071897104259,
+            "phi": 0.0,
+            "phit": 3.610445276081009e-13
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 0.00022183114581860155,
+          "reconstruction_constraint_specified": 0.00022187771860108293,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 106.26479273909584,
+              "D_explicit_parity": 106.26479273909584,
+              "component_sup": {
+                "Omega": 1.1766587704187259e-11,
+                "Sigma2": 8.545164575934905e-12,
+                "clock_rate": 106.26479273909584,
+                "s_P": 8.457679001594443e-13
+              },
+              "lambda_rho_relative_gap": 0.975270736369944,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 111.65725231660883
+            },
+            "2.0": {
+              "D_common_normal": 28.05370648470402,
+              "D_explicit_parity": 28.05370648470402,
+              "component_sup": {
+                "Omega": 3.120188551974934e-10,
+                "Sigma2": 2.2677237865309507e-10,
+                "clock_rate": 28.05370648470402,
+                "s_P": 2.3608448529444104e-11
+              },
+              "lambda_rho_relative_gap": 0.9752707363700189,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 29.47732221567256
+            },
+            "4.0": {
+              "D_common_normal": 36.071496085597516,
+              "D_explicit_parity": 36.071496085597516,
+              "component_sup": {
+                "Omega": 1.205737731879708e-10,
+                "Sigma2": 7.850964323097287e-11,
+                "clock_rate": 36.071496085597516,
+                "s_P": 8.82871553642417e-12
+              },
+              "lambda_rho_relative_gap": 0.97527073636996,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 37.902002988793626
+            },
+            "8.0": {
+              "D_common_normal": 61.69067188626709,
+              "D_explicit_parity": 61.69067188626709,
+              "component_sup": {
+                "Omega": 1.1757705919990258e-11,
+                "Sigma2": 8.502532011789299e-12,
+                "clock_rate": 61.69067188626709,
+                "s_P": 8.426592756904938e-13
+              },
+              "lambda_rho_relative_gap": 0.9752707363699336,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 64.82121898757951
+            }
+          }
+        },
+        "V1-A0": {
+          "D_max": 0.0002966507980845549,
+          "endpoint_errors": {
+            "P": 5.186961971048731e-13,
+            "Pt": 1.8096635301390052e-13,
+            "anchor_imported": true,
+            "anchor_value": 14.796644032431344,
+            "lambda": 0.002427864672789326,
+            "phi": 7.247535904753022e-13,
+            "phit": 3.610445276081009e-13
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 0.0002218311458219382,
+          "reconstruction_constraint_specified": 0.00022187771860441988,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 0.0002463921296448346,
+              "D_explicit_parity": 0.0002463921296448346,
+              "component_sup": {
+                "Omega": 1.2002843163827492e-11,
+                "Sigma2": 8.543388219095505e-12,
+                "clock_rate": 0.0002463921296448346,
+                "s_P": 8.457679001594443e-13
+              },
+              "lambda_rho_relative_gap": 0.0006067819994688459,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 5.392391622719781
+            },
+            "2.0": {
+              "D_common_normal": 0.0002966507980845549,
+              "D_explicit_parity": 0.0002966507980845549,
+              "component_sup": {
+                "Omega": 3.12017078840654e-10,
+                "Sigma2": 2.2788526621297933e-10,
+                "clock_rate": 0.0002966507980844968,
+                "s_P": 2.3830493134369135e-11
+              },
+              "lambda_rho_relative_gap": 0.0006067820030126543,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.4235897497404255
+            },
+            "4.0": {
+              "D_common_normal": 0.00026122035288013776,
+              "D_explicit_parity": 0.00026122035288013776,
+              "component_sup": {
+                "Omega": 1.205631150469344e-10,
+                "Sigma2": 7.850875505255317e-11,
+                "clock_rate": 0.00026122035288012047,
+                "s_P": 1.0717426945916486e-11
+              },
+              "lambda_rho_relative_gap": 0.0006067820001604294,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.8304638649274276
+            },
+            "8.0": {
+              "D_common_normal": 0.00022602947963690226,
+              "D_explicit_parity": 0.00022602947963690226,
+              "component_sup": {
+                "Omega": 1.1949552458645485e-11,
+                "Sigma2": 8.499867476530198e-12,
+                "clock_rate": 0.00022602947963690223,
+                "s_P": 8.426592756904938e-13
+              },
+              "lambda_rho_relative_gap": 0.0006067819989266441,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 3.130496250494419
+            }
+          }
+        },
+        "V1-A1": {
+          "D_max": 106.26479273909214,
+          "endpoint_errors": {
+            "P": 5.186961971048731e-13,
+            "Pt": 1.8096635301390052e-13,
+            "anchor_imported": false,
+            "anchor_value": 0.0,
+            "lambda": 14.799071897104133,
+            "phi": 7.247535904753022e-13,
+            "phit": 3.610445276081009e-13
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 0.0002218311458219382,
+          "reconstruction_constraint_specified": 0.00022187771860441988,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 106.26479273909214,
+              "D_explicit_parity": 106.26479273909214,
+              "component_sup": {
+                "Omega": 1.2001066806988092e-11,
+                "Sigma2": 8.545164575934905e-12,
+                "clock_rate": 106.26479273909214,
+                "s_P": 8.459899447643693e-13
+              },
+              "lambda_rho_relative_gap": 0.9752707363699383,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 111.65725231660514
+            },
+            "2.0": {
+              "D_common_normal": 28.053706484740776,
+              "D_explicit_parity": 28.053706484740776,
+              "component_sup": {
+                "Omega": 3.120206315543328e-10,
+                "Sigma2": 2.2789059528349753e-10,
+                "clock_rate": 28.053706484740776,
+                "s_P": 2.3830937223578985e-11
+              },
+              "lambda_rho_relative_gap": 0.975270736370026,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 29.477322215709318
+            },
+            "4.0": {
+              "D_common_normal": 36.07149608559705,
+              "D_explicit_parity": 36.07149608559705,
+              "component_sup": {
+                "Omega": 1.20561338690095e-10,
+                "Sigma2": 7.851141958781227e-11,
+                "clock_rate": 36.07149608559705,
+                "s_P": 1.0717426945916486e-11
+              },
+              "lambda_rho_relative_gap": 0.9752707363699554,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 37.90200298879316
+            },
+            "8.0": {
+              "D_common_normal": 61.69067188626483,
+              "D_explicit_parity": 61.69067188626483,
+              "component_sup": {
+                "Omega": 1.1945999744966684e-11,
+                "Sigma2": 8.5051965470484e-12,
+                "clock_rate": 61.69067188626483,
+                "s_P": 8.426592756904938e-13
+              },
+              "lambda_rho_relative_gap": 0.9752707363699249,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 64.82121898757725
+            }
+          }
+        }
+      },
+      "collapse_constraint_implemented": 0.0001321288149956539,
+      "collapse_constraint_specified": 0.0001321325677769086
+    },
+    "depth24_N512": {
+      "arms": {
+        "V0-A0": {
+          "D_max": 7.414402442423653e-05,
+          "endpoint_errors": {
+            "P": 0.0,
+            "Pt": 4.5419223937415154e-13,
+            "anchor_imported": true,
+            "anchor_value": 14.796928633727028,
+            "lambda": 0.0006069414460121436,
+            "phi": 0.0,
+            "phit": 7.23643367450677e-13
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 5.547205767305431e-05,
+          "reconstruction_constraint_specified": 5.5474968888139015e-05,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 6.158460682359486e-05,
+              "D_explicit_parity": 6.158460682359486e-05,
+              "component_sup": {
+                "Omega": 2.892797112963308e-11,
+                "Sigma2": 2.1747048606357566e-11,
+                "clock_rate": 6.158460682359479e-05,
+                "s_P": 2.2082335959794364e-12
+              },
+              "lambda_rho_relative_gap": 0.00015172385508496647,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 5.392513175203698
+            },
+            "2.0": {
+              "D_common_normal": 7.414402442423653e-05,
+              "D_explicit_parity": 7.414402442423653e-05,
+              "component_sup": {
+                "Omega": 1.0175682518820395e-09,
+                "Sigma2": 7.762910314568217e-10,
+                "clock_rate": 7.414402442346146e-05,
+                "s_P": 1.0684564344387582e-10
+              },
+              "lambda_rho_relative_gap": 0.00015172384876641578,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.4235907703105717
+            },
+            "4.0": {
+              "D_common_normal": 6.528682240564337e-05,
+              "D_explicit_parity": 6.528682240564337e-05,
+              "component_sup": {
+                "Omega": 3.6564884453582636e-10,
+                "Sigma2": 3.000995008051177e-10,
+                "clock_rate": 6.528682240564132e-05,
+                "s_P": 3.75806052943517e-11
+              },
+              "lambda_rho_relative_gap": 0.00015172385668541077,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.8304643082936978
+            },
+            "8.0": {
+              "D_common_normal": 5.649643872973649e-05,
+              "D_explicit_parity": 5.649643872973649e-05,
+              "component_sup": {
+                "Omega": 2.8851587785538868e-11,
+                "Sigma2": 2.162714451969805e-11,
+                "clock_rate": 5.64964387297362e-05,
+                "s_P": 2.1933566074494593e-12
+              },
+              "lambda_rho_relative_gap": 0.00015172385642325752,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 3.1305480627399493
+            }
+          }
+        },
+        "V0-A1": {
+          "D_max": 106.2759961818853,
+          "endpoint_errors": {
+            "P": 0.0,
+            "Pt": 4.5419223937415154e-13,
+            "anchor_imported": false,
+            "anchor_value": 0.0,
+            "lambda": 14.79753557517304,
+            "phi": 0.0,
+            "phit": 7.23643367450677e-13
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 5.547205768592322e-05,
+          "reconstruction_constraint_specified": 5.5474968901007885e-05,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 106.2759961818853,
+              "D_explicit_parity": 106.2759961818853,
+              "component_sup": {
+                "Omega": 2.893152384331188e-11,
+                "Sigma2": 2.1751489498456067e-11,
+                "clock_rate": 106.2759961818853,
+                "s_P": 2.2082335959794364e-12
+              },
+              "lambda_rho_relative_gap": 0.9752612365183132,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 111.66852636653421
+            },
+            "2.0": {
+              "D_common_normal": 28.056176843149547,
+              "D_explicit_parity": 28.056176843149547,
+              "component_sup": {
+                "Omega": 1.0175700282388789e-09,
+                "Sigma2": 7.76290143278402e-10,
+                "clock_rate": 28.056176843149547,
+                "s_P": 1.0684542139927089e-10
+              },
+              "lambda_rho_relative_gap": 0.9752612365181569,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 29.47977410976115
+            },
+            "4.0": {
+              "D_common_normal": 36.074804881708936,
+              "D_explicit_parity": 36.074804881708936,
+              "component_sup": {
+                "Omega": 3.6564973271424606e-10,
+                "Sigma2": 3.001012771619571e-10,
+                "clock_rate": 36.074804881708936,
+                "s_P": 3.7580383249746774e-11
+              },
+              "lambda_rho_relative_gap": 0.9752612365183527,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 37.905279953731046
+            },
+            "8.0": {
+              "D_common_normal": 61.69699267935235,
+              "D_explicit_parity": 61.69699267935235,
+              "component_sup": {
+                "Omega": 2.8853364142378268e-11,
+                "Sigma2": 2.162092727076015e-11,
+                "clock_rate": 61.69699267935235,
+                "s_P": 2.192690473634684e-12
+              },
+              "lambda_rho_relative_gap": 0.9752612365183463,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 64.82755301726328
+            }
+          }
+        },
+        "V1-A0": {
+          "D_max": 7.41440234843644e-05,
+          "endpoint_errors": {
+            "P": 1.0338396805309458e-12,
+            "Pt": 3.58046925441613e-13,
+            "anchor_imported": true,
+            "anchor_value": 14.796928633727028,
+            "lambda": 0.000606941446068987,
+            "phi": 1.4424017535930034e-12,
+            "phit": 7.23643367450677e-13
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 5.547205769895101e-05,
+          "reconstruction_constraint_specified": 5.5474968914036356e-05,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 6.158460673078023e-05,
+              "D_explicit_parity": 6.158460673078023e-05,
+              "component_sup": {
+                "Omega": 2.7677415914695302e-11,
+                "Sigma2": 2.1745272249518166e-11,
+                "clock_rate": 6.158460673078014e-05,
+                "s_P": 2.2080115513745113e-12
+              },
+              "lambda_rho_relative_gap": 0.0001517238550991438,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 5.392513175203403
+            },
+            "2.0": {
+              "D_common_normal": 7.41440234843644e-05,
+              "D_explicit_parity": 7.41440234843644e-05,
+              "component_sup": {
+                "Omega": 1.0025011931702466e-09,
+                "Sigma2": 7.869918050573688e-10,
+                "clock_rate": 7.41440234838242e-05,
+                "s_P": 7.811662428025556e-11
+              },
+              "lambda_rho_relative_gap": 0.00015172384875970543,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.423590770315444
+            },
+            "4.0": {
+              "D_common_normal": 6.528682241013944e-05,
+              "D_explicit_parity": 6.528682241013944e-05,
+              "component_sup": {
+                "Omega": 3.6565506178476426e-10,
+                "Sigma2": 3.001048298756359e-10,
+                "clock_rate": 6.528682241013772e-05,
+                "s_P": 2.7679192271534703e-11
+              },
+              "lambda_rho_relative_gap": 0.00015172385629857532,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 1.8304643082935368
+            },
+            "8.0": {
+              "D_common_normal": 5.649643844607425e-05,
+              "D_explicit_parity": 5.649643844607425e-05,
+              "component_sup": {
+                "Omega": 2.751754379914928e-11,
+                "Sigma2": 2.162003909234045e-11,
+                "clock_rate": 5.6496438446074215e-05,
+                "s_P": 2.192690473634684e-12
+              },
+              "lambda_rho_relative_gap": 0.0001517238564374714,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 3.130548062739778
+            }
+          }
+        },
+        "V1-A1": {
+          "D_max": 106.2759961818733,
+          "endpoint_errors": {
+            "P": 1.0338396805309458e-12,
+            "Pt": 3.58046925441613e-13,
+            "anchor_imported": false,
+            "anchor_value": 0.0,
+            "lambda": 14.797535575173095,
+            "phi": 1.4424017535930034e-12,
+            "phit": 7.23643367450677e-13
+          },
+          "parity_closure_max": 0.0,
+          "reconstruction_constraint_implemented": 5.547205768592322e-05,
+          "reconstruction_constraint_specified": 5.5474968901007885e-05,
+          "surfaces": {
+            "12.0": {
+              "D_common_normal": 106.2759961818733,
+              "D_explicit_parity": 106.2759961818733,
+              "component_sup": {
+                "Omega": 2.7688074055731704e-11,
+                "Sigma2": 2.1748824963196967e-11,
+                "clock_rate": 106.2759961818733,
+                "s_P": 2.2082335959794364e-12
+              },
+              "lambda_rho_relative_gap": 0.9752612365183135,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 111.6685263665222
+            },
+            "2.0": {
+              "D_common_normal": 28.05617684334648,
+              "D_explicit_parity": 28.05617684334648,
+              "component_sup": {
+                "Omega": 1.0024976404565678e-09,
+                "Sigma2": 7.869980223063067e-10,
+                "clock_rate": 28.05617684334648,
+                "s_P": 7.811706836946541e-11
+              },
+              "lambda_rho_relative_gap": 0.9752612365181571,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 29.479774109958083
+            },
+            "4.0": {
+              "D_common_normal": 36.07480488170219,
+              "D_explicit_parity": 36.07480488170219,
+              "component_sup": {
+                "Omega": 3.6564618000056726e-10,
+                "Sigma2": 3.000977244482783e-10,
+                "clock_rate": 36.07480488170219,
+                "s_P": 2.7679414316139628e-11
+              },
+              "lambda_rho_relative_gap": 0.9752612365183434,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 37.9052799537243
+            },
+            "8.0": {
+              "D_common_normal": 61.696992679345385,
+              "D_explicit_parity": 61.696992679345385,
+              "component_sup": {
+                "Omega": 2.751576744230988e-11,
+                "Sigma2": 2.162270362759955e-11,
+                "clock_rate": 61.696992679345385,
+                "s_P": 2.1931345628445342e-12
+              },
+              "lambda_rho_relative_gap": 0.9752612365183467,
+              "parity_vs_common_abs": 0.0,
+              "raw_future_clock_gap_without_T": 64.82755301725632
+            }
+          }
+        }
+      },
+      "collapse_constraint_implemented": 3.304817814935292e-05,
+      "collapse_constraint_specified": 3.30484128475257e-05
+    }
+  },
+  "source": "/Users/ronbibb/Library/CloudStorage/OneDrive-Personal(2)/Documents/Academic/bb-cbe2i/run_cbe2i.py",
+  "spec": "RECONSTRUCTION_ADJUDICATION_SPEC_2026-08-09.md",
+  "summary": {
+    "D_max_by_arm": {
+      "V0-A0": {
+        "depth16_N1024": 1.2552583926517961e-05,
+        "depth16_N256": 0.00020089053866252242,
+        "depth16_N512": 5.0212623541435234e-05,
+        "depth24_N1024": 1.8534721601080815e-05,
+        "depth24_N256": 0.0002966507987757636,
+        "depth24_N512": 7.414402442423653e-05
+      },
+      "V0-A1": {
+        "depth16_N1024": 29.37216720210285,
+        "depth16_N256": 29.36927735593371,
+        "depth16_N512": 29.37158905608332,
+        "depth24_N1024": 106.2787982554851,
+        "depth24_N256": 106.26479273909584,
+        "depth24_N512": 106.2759961818853
+      },
+      "V1-A0": {
+        "depth16_N1024": 1.2552627585741531e-05,
+        "depth16_N256": 0.00020089058271955028,
+        "depth16_N512": 5.0212666520013e-05,
+        "depth24_N1024": 1.8534724509298203e-05,
+        "depth24_N256": 0.0002966507980845549,
+        "depth24_N512": 7.41440234843644e-05
+      },
+      "V1-A1": {
+        "depth16_N1024": 29.37216720159349,
+        "depth16_N256": 29.36927735541846,
+        "depth16_N512": 29.37158905556603,
+        "depth24_N1024": 106.27879825546671,
+        "depth24_N256": 106.26479273909214,
+        "depth24_N512": 106.2759961818733
+      }
+    },
+    "anchor_ablation_V0_A1_below_gate": false,
+    "baseline_reproduction": {
+      "cases": {
+        "depth16_N1024": {
+          "abs_difference": 0.0,
+          "new": 1.2552583926517961e-05,
+          "original": 1.2552583926517961e-05,
+          "passes": true,
+          "tolerance": 6.276291963258981e-07
+        },
+        "depth16_N256": {
+          "abs_difference": 0.0,
+          "new": 0.00020089053866252242,
+          "original": 0.00020089053866252242,
+          "passes": true,
+          "tolerance": 1.0044526933126121e-05
+        },
+        "depth16_N512": {
+          "abs_difference": 0.0,
+          "new": 5.0212623541435234e-05,
+          "original": 5.0212623541435234e-05,
+          "passes": true,
+          "tolerance": 2.510631177071762e-06
+        },
+        "depth24_N1024": {
+          "abs_difference": 8.451033309839293e-12,
+          "new": 1.8534721601080815e-05,
+          "original": 1.8534713150047505e-05,
+          "passes": true,
+          "tolerance": 9.267356575023753e-07
+        },
+        "depth24_N256": {
+          "abs_difference": 4.4484121247689856e-13,
+          "new": 0.0002966507987757636,
+          "original": 0.0002966507992206048,
+          "passes": true,
+          "tolerance": 1.4832539961030242e-05
+        },
+        "depth24_N512": {
+          "abs_difference": 0.0,
+          "new": 7.414402442423653e-05,
+          "original": 7.414402442423653e-05,
+          "passes": true,
+          "tolerance": 3.7072012212118268e-06
+        }
+      },
+      "passes": true
+    },
+    "explicit_parity_closes": true,
+    "holdout_V1_A0": {
+      "below_gate": true,
+      "decreases_with_resolution": true
+    },
+    "specified_constraint_gate_passes_fine": true,
+    "strict_V1_A1": {
+      "below_gate": false,
+      "decreases_with_resolution": false
+    }
+  },
+  "test_id": "E1-RA1"
+}
