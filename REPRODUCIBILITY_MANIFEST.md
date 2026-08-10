@@ -71,5 +71,7 @@ The manuscript source, scripts, specifications, machine-readable results,
 figure sources, dependency lock, and frozen production records are public at
 `https://github.com/RonBibb/line-e-boundary-state-paper`. The linked nonlinear
 repositories `bb-cbe3`, `bb-cbe3t`, `bb-cbe3b`, `bb-cbe3c`, and
-`bb-cbe-deep40-cp1` are also public under the `RonBibb` GitHub account. A
-version-specific archival DOI may be added after Zenodo deposition.
+`bb-cbe-deep40-cp1` are also public under the `RonBibb` GitHub account. The
+Zenodo concept DOI `10.5281/zenodo.21873511` resolves to the latest published
+version; the initial `v0.9` record has version DOI
+`10.5281/zenodo.21873512`.

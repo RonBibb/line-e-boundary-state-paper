@@ -1241,7 +1241,10 @@ this research—and for saying yes on June 20th, in the middle of all of it.
 The specifications, source code, machine-readable outputs, and independent
 verification script supporting this study are publicly available at
 https://github.com/RonBibb/line-e-boundary-state-paper together with the linked
-computational repositories and machine-readable result records.
+computational repositories and machine-readable result records. The archival
+record is available under the concept DOI
+https://doi.org/10.5281/zenodo.21873511, which resolves to the latest published
+version.
 
 ## References
 
