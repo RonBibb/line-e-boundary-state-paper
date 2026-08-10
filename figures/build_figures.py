@@ -128,7 +128,8 @@ def figure_2():
     for depth, color, marker, linestyle in styles:
         vals = data["summary"][str(depth)]["identity_l2"]["values"]
         ax.loglog(ns, vals, marker=marker, color=color, linestyle=linestyle,
-                  label=fr"$\tau_f={depth}$")
+                  label=fr"$\tau_f={depth}$",
+                  zorder=(5 if depth == 16 else 3))
     ax.axhline(1e-3, color=COLORS["red"], linestyle=":",
                label=r"acceptance threshold $10^{-3}$")
     ax.set_xticks(ns, [str(n) for n in ns]); ax.xaxis.set_minor_formatter(NullFormatter())

@@ -585,11 +585,15 @@ The exact-spike tests use \(N=(1024,2048,4096)\). Analytically differentiated
 field equations require residual below \(10^{-12}\), with the literal printed
 formula alternatives retained as negative controls. Ordinary VTD loss is
 compared with an enriched centered-family reconstruction at \(\tau=2,4\).
-Unseen translated cases are preserved as independent tests of periodic-domain
-robustness. Translation is the discrete circle action: the centered periodic
-representative and every exact comparison slice are shifted by the same
-integer number of cells. Centered and shifted errors must agree, remain finite,
-converge at second order, and fall below \(10^{-2}\) on the finest grid.
+Two translation controls are reported with distinct purposes. In the first,
+an integer cyclic shift is applied to the centered periodic representative and
+every exact comparison slice. It must reproduce the centered errors exactly;
+this is an implementation check on indexing and Fourier phase, and exact
+agreement is expected from discrete shift equivariance. In the second, a
+half-cell shift of the trigonometric interpolant places the spike at
+non-grid-aligned sample points. The shifted reconstructions must remain finite,
+converge at approximately second order, and fall below \(10^{-2}\) on the
+finest grid. The latter is the positional-robustness test.
 
 The validation hierarchy is:
 
@@ -974,7 +978,12 @@ higher-velocity family, the finest errors are
 converge at approximately second order and lie below \(10^{-2}\) on the finest
 grid. The lower-velocity family and the centered enriched calculation have
 different error constants, but both remain truncation-limited at the finest
-grid. The generic production feature is therefore called a resolved spike
+grid. The larger \(\tau=4\) half-cell errors are consistent with the spike
+being narrower and steeper nearer the asymptotic boundary, where displaced
+sampling contributes more strongly; the feature broadens during evolution
+toward \(\tau=2\). The modest order scatter in U2 occurs at much smaller
+absolute errors, where interpolation and parameter-recovery contributions are
+no longer negligible, and is not interpreted as superconvergence. The generic production feature is therefore called a resolved spike
 candidate, not asserted to be a member of the exact family. A subsequent
 dual-scale footprint calculation localized the exceptional region but could
 not establish zero-measure decay within its sealed window; deeper runs stopped
