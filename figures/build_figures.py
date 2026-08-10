@@ -126,10 +126,11 @@ def figure_2():
     for depth, color, marker in styles:
         vals = data["summary"][str(depth)]["identity_l2"]["values"]
         ax.loglog(ns, vals, marker=marker, color=color, label=fr"$\tau_f={depth}$")
-    ax.axhline(1e-3, color=COLORS["red"], linestyle=":", label=r"gate $10^{-3}$")
+    ax.axhline(1e-3, color=COLORS["red"], linestyle=":",
+               label=r"acceptance threshold $10^{-3}$")
     ax.set_xticks(ns, [str(n) for n in ns]); ax.xaxis.set_minor_formatter(NullFormatter())
     ax.set_xlabel("Periodic grid points, $N$")
-    ax.set_ylabel("Identity-weight audit distance")
+    ax.set_ylabel(r"Geometric reconstruction distance $D_{\rm geo}$")
     ax.grid(True, which="both", alpha=0.25)
     ax.legend(frameon=False, ncol=2, fontsize=8.2)
     ax.text(0.02, 0.95, "(a) spatial refinement", transform=ax.transAxes,
@@ -146,7 +147,7 @@ def figure_2():
     ax.axhline(1e-3, color=COLORS["red"], linestyle=":")
     ax.set_xticks(depths)
     ax.set_xlabel(r"Extraction depth $\tau_f$ at $N=1024$")
-    ax.set_ylabel("Alternative audit distance")
+    ax.set_ylabel(r"Weighted reconstruction distance $D_W$")
     ax.grid(True, which="both", alpha=0.25)
     ax.legend(frameon=False, fontsize=7.8)
     ax.text(0.02, 0.95, "(b) norm sensitivity", transform=ax.transAxes,
@@ -308,7 +309,7 @@ def figure_6():
 
     fig.tight_layout(w_pad=1.2)
     return save(fig, "figure_6_unpolarized_spike_extension",
-                "The generic unpolarized mismatch is resolution stable and localized; enriched centered-spike data repair the exact family.",
+                "The generic unpolarized mismatch is resolution stable and localized; enriched spike data repair the exact family and translated controls close covariantly.",
                 ["verification/E1_UNPOLARIZED_EXTENSION_RESULT.json"])
 
 

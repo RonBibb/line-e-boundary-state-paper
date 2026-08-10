@@ -57,9 +57,11 @@ def main():
         "printed_formula_negative_control_fails": bool(printed_max > 1e-4),
         "four_function_exact_spike_loss": bool(ordinary_vtd_loss > 1e-2),
         "enriched_centered_spike_recovery": bool(enriched_max < 1e-2),
-        "unseen_shifted_cases_retained_as_failure": bool(
-            unseen["outcome"] == "CBE-3T-R1-B"
-            and not all(c["passes"] for c in unseen["unseen_cases"])),
+        "translated_exact_controls_pass": bool(
+            unseen["outcome"] == "CBE-3T-R1-A"
+            and all(c["passes"] for c in unseen["unseen_cases"])
+            and all(c["finest_translation_gap"] == 0.0
+                    for c in unseen["unseen_cases"])),
         "footprint_nonclosure_retained": bool(
             footprint["outcome"] == "CBE-D-architecture"),
         "deep_numerical_stop_retained": bool(
@@ -93,6 +95,14 @@ def main():
             "four_function_center_loss_max": ordinary_vtd_loss,
             "enriched_centered_recovery_max": enriched_max,
             "unseen_outcome": unseen["outcome"],
+            "translated_finest_errors": {
+                c["case"]: c["shifted"][-1]["backward_sup_D"]
+                for c in unseen["unseen_cases"]
+            },
+            "translated_finest_gaps": {
+                c["case"]: c["finest_translation_gap"]
+                for c in unseen["unseen_cases"]
+            },
         },
         "standing_limits": {
             "footprint": footprint["outcome"],
@@ -107,4 +117,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

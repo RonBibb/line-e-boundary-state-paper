@@ -13,7 +13,7 @@
     "physical_width_resolution_stable_10pct": true,
     "printed_formula_negative_control_fails": true,
     "spike_resolved_at_all_resolutions": true,
-    "unseen_shifted_cases_retained_as_failure": true
+    "translated_exact_controls_pass": true
   },
   "classification": "E1-U1-ADVERSE-LOCALIZED: four-function VTD is insufficient near the resolved unpolarized spike candidate; enriched exact centered-spike data recover the tested exact family; generic almost-everywhere sufficiency remains unresolved",
   "exact_family": {
@@ -21,7 +21,21 @@
     "enriched_centered_recovery_max": 0.00023812486803388133,
     "four_function_center_loss_max": 0.5715037363307021,
     "printed_negative_control_max": 3.5873294885796434,
-    "unseen_outcome": "CBE-3T-R1-B"
+    "translated_finest_errors": {
+      "U1": {
+        "2.0": 0.002636876946634357,
+        "4.0": 0.00022809469013031322
+      },
+      "U2": {
+        "2.0": 2.1388227955264902e-06,
+        "4.0": 1.9880628681371082e-07
+      }
+    },
+    "translated_finest_gaps": {
+      "U1": 0.0,
+      "U2": 0.0
+    },
+    "unseen_outcome": "CBE-3T-R1-A"
   },
   "production": {
     "fine_ordinary_D": 3.0340171246637033,

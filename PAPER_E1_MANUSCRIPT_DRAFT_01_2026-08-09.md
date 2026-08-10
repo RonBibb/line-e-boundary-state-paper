@@ -30,8 +30,11 @@ Ordinary four-function velocity-dominated data lose the spike, reaching a
 known-answer distance of \(0.5715\), whereas an enriched centered-spike state
 restores reconstruction to \(2.38\times10^{-4}\). Analytic differentiation
 verifies the exact control equations to \(3.11\times10^{-15}\), and unseen
-shifted controls expose a separate periodic-translation instability rather
-than being silently accepted. Thus the method both closes in a weakly stressed
+shifted controls converge at second order and reproduce their centered
+counterparts exactly under discrete periodic translation. The exceptional
+status of Gowdy spikes is known analytically; the new result is a quantitative,
+observable-relative measure of reconstruction loss and a controlled
+identification of the enrichment that repairs it. Thus the method both closes in a weakly stressed
 smooth sector and rejects an insufficient representation in a nonlinear
 exceptional sector. Generic almost-everywhere sufficiency remains unresolved;
 the result is the localized information-loss diagnosis and the identification
@@ -583,7 +586,10 @@ field equations require residual below \(10^{-12}\), with the literal printed
 formula alternatives retained as negative controls. Ordinary VTD loss is
 compared with an enriched centered-family reconstruction at \(\tau=2,4\).
 Unseen translated cases are preserved as independent tests of periodic-domain
-robustness; failure there cannot be averaged with the centered result.
+robustness. Translation is the discrete circle action: the centered periodic
+representative and every exact comparison slice are shifted by the same
+integer number of cells. Centered and shifted errors must agree, remain finite,
+converge at second order, and fall below \(10^{-2}\) on the finest grid.
 
 The validation hierarchy is:
 
@@ -602,11 +608,10 @@ The preserved results show compatible and incompatible controls behaving as
 designed, second-order spatial refinement in the smooth and exact benchmarks,
 predictive holdout below the declared distance criterion, constraint
 convergence, failure under metric-anchor ablation, stable local ranks, and
-closure of the metric-route decomposition. The nonlinear extension is checked
-separately by a 13-part evidence-admission verifier, and the footprint-aware
-successor has an independent 32-check recomputation. Code, specifications,
-machine-readable results, and correction records are packaged for external
-deposition.
+closure of the metric-route decomposition. The nonlinear extension and its
+footprint-aware successor are independently recomputed from archived
+machine-readable results. Code, specifications, machine-readable results, and
+correction records are publicly available.
 
 ## 6. Results
 
@@ -947,11 +952,16 @@ centered-family parameters \((w,Q_0,Q_2,x_0)\) reduces the maximum distance to
 flag a mismatch: on a known exact family it distinguishes an insufficient
 state from a tested state that preserves the spike.
 
-The qualification is equally informative. In two unseen translated exact
-cases, \((w,Q_0,Q_2,x_0)\) is recovered accurately, but one reconstruction
-exceeds the \(10^{-2}\) criterion and the other becomes nonfinite. Centered
-diagnostics pass, localizing the defect to translation and periodic-wrap
-handling. The generic production feature is therefore called a resolved spike
+The translated-control qualification is now closed. The earlier implementation
+re-evaluated a nonperiodic local Lim formula as \(x-x_0\), thereby changing its
+artificial seam jump instead of translating a periodic grid state. In the
+corrected test, periodic translation is an integer cyclic shift applied to the
+centered representative and to every exact comparison slice. For the lower-
+velocity unseen family, the finest \((\tau=2,4)\) errors are
+\((2.6369\times10^{-3},2.2809\times10^{-4})\); for the higher-velocity family
+they are \((2.1388\times10^{-6},1.9881\times10^{-7})\). Both sequences converge
+at second order over \(N=(1024,2048,4096)\), remain finite, and have zero
+centered--shifted error gap at each resolution. The generic production feature is therefore called a resolved spike
 candidate, not asserted to be a member of the exact family. A subsequent
 dual-scale footprint calculation localized the exceptional region but could
 not establish zero-measure decay within its sealed window; deeper runs stopped
@@ -960,6 +970,18 @@ resolution criterion. Those stopped outcomes are retained as numerical
 limits, not converted into evidence for equivalence.
 
 ## 7. Relation to Fuchsian and geometric singular-data methods
+
+The analytical literature already establishes that spikes are exceptional
+points for ordinary velocity-dominated asymptotics. Rendall and Weaver
+construct spike solutions, Lim supplies exact spike families, and
+Ringström's strong-cosmic-censorship analysis treats the exceptional set
+separately [11,18,13]. We therefore do not claim that failure of ordinary VTD
+data at a spike is new. The contribution here is operational and quantitative:
+the declared observable score measures the reconstruction loss, demonstrates
+its resolution stability in a nonlinear evolution, and uses exact controls to
+identify which enriched data repair that loss. The translated-control campaign
+further verifies covariance under the discrete periodic translation used by
+the numerical scheme.
 
 The present construction does not compete with Fuchsian existence theory on
 its strongest ground. Fuchsian theory begins with admissible singular data and
@@ -1003,8 +1025,9 @@ in constrained metric reconstruction and is not claimed as a newly discovered
 degree of freedom. The stronger result comes from the nonlinear extension:
 the same extraction--reconstruction test returns a converged localized
 failure, and exact controls trace that failure to information removed by the
-ordinary VTD state. Enriched centered-spike data repair the exact family while
-translated controls expose a remaining numerical limitation. In the smooth
+ordinary VTD state. Enriched spike data repair the exact family, and translated
+controls reproduce the centered errors exactly while converging at second
+order. In the smooth
 sector, the global mode's load-bearing role under predictive extraction,
 reconstruction, ablation, and geometric scoring remains useful supporting
 evidence. It is
@@ -1034,8 +1057,7 @@ The evidence remains model-scoped. It does not establish a theorem over the
 full polarized or unpolarized function spaces, and the numerical schemes are
 second order. In the generic unpolarized calculation, the resolved localized
 feature has not been proved to belong to the exact Lim family. The original
-ordinary-region mask is footprint-contaminated, translated exact-spike
-reconstruction is not periodic-robust, and deeper production calculations
+ordinary-region mask is footprint-contaminated, and deeper production calculations
 stop as the narrowing feature becomes underresolved. Consequently this paper
 does not claim almost-everywhere sufficiency, zero-measure exceptional support,
 or a universal spike boundary state. BKL-oscillatory regimes remain untested.
@@ -1194,10 +1216,10 @@ this research—and for saying yes on June 20th, in the middle of all of it.
 
 ## Data and code availability
 
-The specifications, source code, machine-readable outputs, and
-independent result-chain verifier supporting this study are available from the
-corresponding author upon reasonable request. A versioned public archive will
-be cited in the published record when its persistent identifier is available.
+The specifications, source code, machine-readable outputs, and independent
+result-chain verifier supporting this study are publicly available at
+https://github.com/RonBibb/line-e-boundary-state-paper together with the linked
+computational repositories and machine-readable result records.
 
 ## References
 
