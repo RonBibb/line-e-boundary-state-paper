@@ -76,7 +76,7 @@
 \fancyhfoffset[L]{27mm}
 \fancyhead[L]{{\small \sf IOP Publishing}\hspace{5mm} {\it Classical and Quantum Gravity}}
 \fancyhead[C]{}
-\fancyhead[R]{Bibb}
+\fancyhead[R]{Ronald Bibb}
 \fancyfoot[LR]{}
 \fancyfoot[C]{\thepage}
 \renewcommand{\headrulewidth}{0.5pt}

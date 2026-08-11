@@ -89,6 +89,7 @@ def main() -> None:
 \newcolumntype{{Y}}{{>{{\raggedright\arraybackslash}}X}}
 \setlength{{\emergencystretch}}{{2em}}
 \setlist{{nosep,leftmargin=1.6em}}
+\hypersetup{{pdftitle={{{title}}},pdfauthor={{Ronald Bibb}}}}
 
 \begin{{document}}
 

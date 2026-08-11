@@ -1236,7 +1236,7 @@ definitions are applied to the positive, negative-control, and shear-stratified 
 ## Acknowledgments
 
 This research was conducted independently, without institutional or grant
-support. R.B. thanks Hazel for her tireless support and patience throughout
+support. Ronald Bibb thanks Hazel for her tireless support and patience throughout
 this research—and for saying yes on June 20th, in the middle of all of it.
 
 ## Data and code availability

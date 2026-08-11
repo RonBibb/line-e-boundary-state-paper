@@ -238,7 +238,9 @@ PREAMBLE = r"""
 \usepackage{xcolor,hyperref,fancyhdr,microtype,enumitem,fancyvrb}
 \usepackage{pifont}
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
-\hypersetup{colorlinks=true,linkcolor=blue!50!black,urlcolor=blue!50!black,citecolor=blue!50!black}
+\hypersetup{colorlinks=true,linkcolor=blue!50!black,urlcolor=blue!50!black,citecolor=blue!50!black,
+  pdftitle={Testing Singular Boundary-State Sufficiency in Gowdy Cosmology: Smooth Closure and Spike-Localized Failure},
+  pdfauthor={Ronald Bibb}}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{Boundary-State Sufficiency in Gowdy Cosmology}

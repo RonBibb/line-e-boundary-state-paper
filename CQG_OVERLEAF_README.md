@@ -5,7 +5,7 @@ The Overleaf main document is `CQG_OVERLEAF_SUBMISSION_2026-08-10.tex`.
 The project uses IOP Publishing's official `iopjournal.cls` from the July 2025
 template package. The generic display placeholders (`Journal Name`, `Journal
 vv (yyyy) aaaaaa`, and `Author et al`) are specialized to *Classical and
-Quantum Gravity* and `Bibb`; no layout or functional class code is changed.
+Quantum Gravity* and `Ronald Bibb`; no layout or functional class code is changed.
 Compile with pdfLaTeX. The repository-relative figure paths are already
 configured.
 
