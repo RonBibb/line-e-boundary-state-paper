@@ -74,9 +74,9 @@
 %Headers and footers
 \pagestyle{fancy}
 \fancyhfoffset[L]{27mm}
-\fancyhead[L]{{\small \sf IOP Publishing}\hspace{5mm} {\it Journal} {\bf vv} (yyyy) aaaaaa}
+\fancyhead[L]{{\small \sf IOP Publishing}\hspace{5mm} {\it Classical and Quantum Gravity}}
 \fancyhead[C]{}
-\fancyhead[R]{Author {\it et al}\ }
+\fancyhead[R]{Bibb}
 \fancyfoot[LR]{}
 \fancyfoot[C]{\thepage}
 \renewcommand{\headrulewidth}{0.5pt}
@@ -90,7 +90,7 @@
 
 %Article title, type and left-column content
 
-\newcommand{\articletype}[1]{{\vspace*{-8mm}\noindent \Large \sf Journal Name}
+\newcommand{\articletype}[1]{{\vspace*{-8mm}\noindent \Large \sf Classical and Quantum Gravity}
 
 \vspace*{8mm} \noindent\reversemarginpar
 \marginpar{\vspace{-3mm} {\color{gray}\hrule} \ \\ Crossmark\\ {\color{gray}\hrule} \ \\ \tiny {\sf RECEIVED} {\small \\ dd Month yyyy}\\ \\ {\sf REVISED} {\small \\ dd Month yyyy}}{\scriptsize \sf{\bfseries \MakeUppercase{#1}}}}

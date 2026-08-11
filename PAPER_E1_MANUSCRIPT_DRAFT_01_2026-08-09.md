@@ -519,12 +519,15 @@ The exact benchmark parameters are:
 
 **Table 1. Exact multimode Bessel benchmark parameters.**
 
-| Field | Homogeneous constant | Homogeneous velocity | \(k\) | Parity | \(A_k\) | \(B_k\) |
+| Field | Constant | Velocity | \(k\) | Parity | \(A_k\) | \(B_k\) |
 |---|---:|---:|---:|---|---:|---:|
 | \(P\) | 0.2 | 0.35 | 2 | cosine | 0.30 | 0.12 |
 | \(P\) | 0.2 | 0.35 | 3 | cosine | -0.15 | 0.05 |
 | \(\phi\) | -0.1 | 0.65 | 1 | sine | 0.25 | -0.08 |
 | \(\phi\) | -0.1 | 0.65 | 4 | sine | 0.10 | 0.04 |
+
+The first two numerical columns give the homogeneous offset and homogeneous
+velocity, respectively.
 
 Here \(c_\lambda=0.4\), the extraction depths are \(8,12,16\), and the
 observation surface is \(\tau=2\).

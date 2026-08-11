@@ -99,7 +99,7 @@ def main() -> None:
 \author{{Ronald Bibb\orcid{{0009-0004-1153-2464}}}}
 \affil{{Independent Researcher, Lilburn, GA 30047, USA}}
 \email{{ronbibb@gmail.com}}
-\keywords{{cosmological singularities, Gowdy spacetimes, Fuchsian asymptotics, numerical relativity, spike solutions}}
+\par\noindent\keywords{{cosmological singularities, Gowdy spacetimes, Fuchsian asymptotics, numerical relativity, spike solutions}}\par
 
 \begin{{abstract}}
 {abstract}
