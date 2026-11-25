@@ -1,0 +1,389 @@
+{
+  "platform": "Linux-7.0.0-42-generic-aarch64-with-glibc2.43",
+  "independent_continuum_reference": [
+    {
+      "modulus": "0.118032473980512106116311098079928988044701186",
+      "cutoff_tau": 34.0,
+      "analytic_integral_tail_bound": "2.03220302061e-28",
+      "q_at_origin": "0.611624626862882865716821906579648213320222861"
+    },
+    {
+      "modulus": "0.118032473980512106116311098079928988044701186",
+      "cutoff_tau": 34.0,
+      "analytic_integral_tail_bound": "2.03220302061e-28",
+      "q_at_origin": "0.611624626862882865716821906579648213320222861"
+    }
+  ],
+  "grids": {
+    "256": {
+      "discrete_exact_reference": {
+        "modulus": 0.11804140406779107,
+        "q_at_origin": 0.6116084428470846,
+        "tail_from_anchor_used_in_estimator": 0.11804140406779107,
+        "double_quadrature_reported_error": 4.824074696211764e-15
+      },
+      "estimates": {
+        "8": {
+          "historical_endpoint_constant": 0.11854551776036981,
+          "earlier_anchor_constant": 0.11842048174161812,
+          "q_zero_remainder_estimate": 0.6115454261924109,
+          "tail_corrected_matched_stencil": {
+            "modulus": 0.11804140406641409,
+            "q_at_origin": 0.6116084428485716,
+            "tail_from_anchor_used_in_estimator": -9.777382395706979e-07,
+            "double_quadrature_reported_error": 8.440582160046949e-16
+          },
+          "tail_corrected_continuum_bessel": {
+            "modulus": 0.11804133717110322,
+            "q_at_origin": 0.6116084539829527,
+            "tail_from_anchor_used_in_estimator": -9.778272641461917e-07,
+            "double_quadrature_reported_error": 1.3765768531953526e-15
+          }
+        },
+        "12": {
+          "historical_endpoint_constant": 0.1180418358378077,
+          "earlier_anchor_constant": 0.11804176247724385,
+          "q_zero_remainder_estimate": 0.611608406863154,
+          "tail_corrected_matched_stencil": {
+            "modulus": 0.11804140406642157,
+            "q_at_origin": 0.6116084428485713,
+            "tail_from_anchor_used_in_estimator": 1.4433508467703097e-09,
+            "double_quadrature_reported_error": 1.706599922382e-15
+          },
+          "tail_corrected_continuum_bessel": {
+            "modulus": 0.11804140400855016,
+            "q_at_origin": 0.6116084428543945,
+            "tail_from_anchor_used_in_estimator": 1.4437110867008659e-09,
+            "double_quadrature_reported_error": 3.821222312520662e-16
+          }
+        },
+        "16": {
+          "historical_endpoint_constant": 0.1180414043390865,
+          "earlier_anchor_constant": 0.1180414043034066,
+          "q_zero_remainder_estimate": 0.6116084428315279,
+          "tail_corrected_matched_stencil": {
+            "modulus": 0.11804140406641841,
+            "q_at_origin": 0.6116084428485709,
+            "tail_from_anchor_used_in_estimator": 1.6138478687786557e-12,
+            "double_quadrature_reported_error": 2.7448321249959177e-15
+          },
+          "tail_corrected_continuum_bessel": {
+            "modulus": 0.1180414040663814,
+            "q_at_origin": 0.6116084428485735,
+            "tail_from_anchor_used_in_estimator": 1.6141335698140137e-12,
+            "double_quadrature_reported_error": 6.003739914795096e-18
+          }
+        },
+        "24": {
+          "historical_endpoint_constant": 0.11804140406388797,
+          "earlier_anchor_constant": 0.11804140406418284,
+          "q_zero_remainder_estimate": 0.6116084428486472,
+          "tail_corrected_matched_stencil": {
+            "modulus": 0.11804140406703025,
+            "q_at_origin": 0.6116084428485178,
+            "tail_from_anchor_used_in_estimator": -9.193844479575136e-17,
+            "double_quadrature_reported_error": 1.2205277692577163e-16
+          },
+          "tail_corrected_continuum_bessel": {
+            "modulus": 0.11804140406703377,
+            "q_at_origin": 0.6116084428485177,
+            "tail_from_anchor_used_in_estimator": -1.2347685026827553e-16,
+            "double_quadrature_reported_error": 1.1337405152141215e-16
+          }
+        }
+      }
+    },
+    "512": {
+      "discrete_exact_reference": {
+        "modulus": 0.11803470665814605,
+        "q_at_origin": 0.6116205802943648,
+        "tail_from_anchor_used_in_estimator": 0.11803470665814605,
+        "double_quadrature_reported_error": 8.325644519039605e-15
+      },
+      "estimates": {
+        "8": {
+          "historical_endpoint_constant": 0.11853885559296629,
+          "earlier_anchor_constant": 0.11841381030166032,
+          "q_zero_remainder_estimate": 0.6115575592303806,
+          "tail_corrected_matched_stencil": {
+            "modulus": 0.11803470665804294,
+            "q_at_origin": 0.6116205802944573,
+            "tail_from_anchor_used_in_estimator": -9.772591567161139e-07,
+            "double_quadrature_reported_error": 1.0396391617860156e-15
+          },
+          "tail_corrected_continuum_bessel": {
+            "modulus": 0.11803468993421769,
+            "q_at_origin": 0.611620583078056,
+            "tail_from_anchor_used_in_estimator": -9.772813898582914e-07,
+            "double_quadrature_reported_error": 4.588312727423292e-16
+          }
+        },
+        "12": {
+          "historical_endpoint_constant": 0.11803513843109403,
+          "earlier_anchor_constant": 0.11803506506952832,
+          "q_zero_remainder_estimate": 0.6116205443088985,
+          "tail_corrected_matched_stencil": {
+            "modulus": 0.11803470665804808,
+            "q_at_origin": 0.6116205802944561,
+            "tail_from_anchor_used_in_estimator": 1.4440961985035515e-09,
+            "double_quadrature_reported_error": 6.405576949395345e-16
+          },
+          "tail_corrected_continuum_bessel": {
+            "modulus": 0.11803470664357722,
+            "q_at_origin": 0.611620580295912,
+            "tail_from_anchor_used_in_estimator": 1.444184373748972e-09,
+            "double_quadrature_reported_error": 8.735606017010837e-16
+          }
+        },
+        "16": {
+          "historical_endpoint_constant": 0.11803470693081941,
+          "earlier_anchor_constant": 0.11803470689512707,
+          "q_zero_remainder_estimate": 0.6116205802774067,
+          "tail_corrected_matched_stencil": {
+            "modulus": 0.11803470665807347,
+            "q_at_origin": 0.6116205802944544,
+            "tail_from_anchor_used_in_estimator": 1.614152781875304e-12,
+            "double_quadrature_reported_error": 2.346285599629769e-15
+          },
+          "tail_corrected_continuum_bessel": {
+            "modulus": 0.11803470665806347,
+            "q_at_origin": 0.6116205802944552,
+            "tail_from_anchor_used_in_estimator": 1.6148031922460931e-12,
+            "double_quadrature_reported_error": 3.2649206949354645e-17
+          }
+        },
+        "24": {
+          "historical_endpoint_constant": 0.11803470666517057,
+          "earlier_anchor_constant": 0.11803470666424509,
+          "q_zero_remainder_estimate": 0.6116205802942415,
+          "tail_corrected_matched_stencil": {
+            "modulus": 0.11803470666082914,
+            "q_at_origin": 0.6116205802943967,
+            "tail_from_anchor_used_in_estimator": -2.054961939927774e-17,
+            "double_quadrature_reported_error": 9.539973608322687e-17
+          },
+          "tail_corrected_continuum_bessel": {
+            "modulus": 0.11803470666082913,
+            "q_at_origin": 0.6116205802943967,
+            "tail_from_anchor_used_in_estimator": -3.020549158988157e-17,
+            "double_quadrature_reported_error": 7.556129246530674e-17
+          }
+        }
+      }
+    },
+    "1024": {
+      "discrete_exact_reference": {
+        "modulus": 0.11803303215965447,
+        "q_at_origin": 0.6116236151854679,
+        "tail_from_anchor_used_in_estimator": 0.11803303215965447,
+        "double_quadrature_reported_error": 2.325385655917363e-15
+      },
+      "estimates": {
+        "8": {
+          "historical_endpoint_constant": 0.11853718989980955,
+          "earlier_anchor_constant": 0.11841214229149521,
+          "q_zero_remainder_estimate": 0.6115605930200593,
+          "tail_corrected_matched_stencil": {
+            "modulus": 0.11803303215967827,
+            "q_at_origin": 0.6116236151854738,
+            "tail_from_anchor_used_in_estimator": -9.771393301636907e-07,
+            "double_quadrature_reported_error": 1.3339571111709676e-15
+          },
+          "tail_corrected_continuum_bessel": {
+            "modulus": 0.1180330279787229,
+            "q_at_origin": 0.6116236158813737,
+            "tail_from_anchor_used_in_estimator": -9.771448859497084e-07,
+            "double_quadrature_reported_error": 4.580634468139032e-16
+          }
+        },
+        "12": {
+          "historical_endpoint_constant": 0.11803346393300451,
+          "earlier_anchor_constant": 0.11803339057117146,
+          "q_zero_remainder_estimate": 0.6116235791999105,
+          "tail_corrected_matched_stencil": {
+            "modulus": 0.1180330321598103,
+            "q_at_origin": 0.6116236151854748,
+            "tail_from_anchor_used_in_estimator": 1.4442819033953193e-09,
+            "double_quadrature_reported_error": 9.976752034799346e-16
+          },
+          "tail_corrected_continuum_bessel": {
+            "modulus": 0.118033032156196,
+            "q_at_origin": 0.6116236151858385,
+            "tail_from_anchor_used_in_estimator": 1.4443046870171946e-09,
+            "double_quadrature_reported_error": 6.483874556310098e-16
+          }
+        },
+        "16": {
+          "historical_endpoint_constant": 0.11803303243180707,
+          "earlier_anchor_constant": 0.11803303239615026,
+          "q_zero_remainder_estimate": 0.6116236151684877,
+          "tail_corrected_matched_stencil": {
+            "modulus": 0.1180330321599643,
+            "q_at_origin": 0.6116236151854736,
+            "tail_from_anchor_used_in_estimator": 1.6149307451478354e-12,
+            "double_quadrature_reported_error": 4.923363733028742e-16
+          },
+          "tail_corrected_continuum_bessel": {
+            "modulus": 0.1180330321599604,
+            "q_at_origin": 0.6116236151854738,
+            "tail_from_anchor_used_in_estimator": 1.6145779534784922e-12,
+            "double_quadrature_reported_error": 1.0492589369114246e-15
+          }
+        },
+        "24": {
+          "historical_endpoint_constant": 0.11803303215071281,
+          "earlier_anchor_constant": 0.11803303215097216,
+          "q_zero_remainder_estimate": 0.6116236151859912,
+          "tail_corrected_matched_stencil": {
+            "modulus": 0.11803303216137452,
+            "q_at_origin": 0.6116236151855183,
+            "tail_from_anchor_used_in_estimator": 1.047235783638384e-17,
+            "double_quadrature_reported_error": 8.544879168550423e-17
+          },
+          "tail_corrected_continuum_bessel": {
+            "modulus": 0.11803303216137624,
+            "q_at_origin": 0.6116236151855182,
+            "tail_from_anchor_used_in_estimator": -4.2106276487960915e-17,
+            "double_quadrature_reported_error": 7.169998059309759e-17
+          }
+        }
+      }
+    },
+    "2048": {
+      "discrete_exact_reference": {
+        "modulus": 0.11803261352590719,
+        "q_at_origin": 0.6116243739413239,
+        "tail_from_anchor_used_in_estimator": 0.11803261352590719,
+        "double_quadrature_reported_error": 1.666551941658621e-14
+      },
+      "estimates": {
+        "8": {
+          "historical_endpoint_constant": 0.11853677346701197,
+          "earlier_anchor_constant": 0.11841172527964838,
+          "q_zero_remainder_estimate": 0.6115613515006008,
+          "tail_corrected_matched_stencil": {
+            "modulus": 0.11803261352591742,
+            "q_at_origin": 0.6116243739413281,
+            "tail_from_anchor_used_in_estimator": -9.771093673256477e-07,
+            "double_quadrature_reported_error": 6.141662669048941e-16
+          },
+          "tail_corrected_continuum_bessel": {
+            "modulus": 0.1180326124806758,
+            "q_at_origin": 0.6116243741153032,
+            "tail_from_anchor_used_in_estimator": -9.771107577096703e-07,
+            "double_quadrature_reported_error": 2.23040810021291e-16
+          }
+        },
+        "12": {
+          "historical_endpoint_constant": 0.11803304529959746,
+          "earlier_anchor_constant": 0.11803297193769957,
+          "q_zero_remainder_estimate": 0.6116243379557053,
+          "tail_corrected_matched_stencil": {
+            "modulus": 0.11803261352579525,
+            "q_at_origin": 0.6116243739413286,
+            "tail_from_anchor_used_in_estimator": 1.4443293795941114e-09,
+            "double_quadrature_reported_error": 4.525765739683322e-16
+          },
+          "tail_corrected_continuum_bessel": {
+            "modulus": 0.11803261352488857,
+            "q_at_origin": 0.6116243739414198,
+            "tail_from_anchor_used_in_estimator": 1.4443348631611016e-09,
+            "double_quadrature_reported_error": 3.972036120051901e-16
+          }
+        },
+        "16": {
+          "historical_endpoint_constant": 0.11803261379844265,
+          "earlier_anchor_constant": 0.11803261376295282,
+          "q_zero_remainder_estimate": 0.6116243739242712,
+          "tail_corrected_matched_stencil": {
+            "modulus": 0.1180326135256364,
+            "q_at_origin": 0.6116243739413376,
+            "tail_from_anchor_used_in_estimator": 1.6142405812647022e-12,
+            "double_quadrature_reported_error": 8.944542162402366e-15
+          },
+          "tail_corrected_continuum_bessel": {
+            "modulus": 0.11803261352563535,
+            "q_at_origin": 0.6116243739413377,
+            "tail_from_anchor_used_in_estimator": 1.614961022357387e-12,
+            "double_quadrature_reported_error": 7.688027373595921e-16
+          }
+        },
+        "24": {
+          "historical_endpoint_constant": 0.11803261348683236,
+          "earlier_anchor_constant": 0.11803261349249539,
+          "q_zero_remainder_estimate": 0.6116243739429706,
+          "tail_corrected_matched_stencil": {
+            "modulus": 0.11803261353206008,
+            "q_at_origin": 0.6116243739411723,
+            "tail_from_anchor_used_in_estimator": -9.535300754127695e-17,
+            "double_quadrature_reported_error": 1.0154696430397478e-16
+          },
+          "tail_corrected_continuum_bessel": {
+            "modulus": 0.11803261353206189,
+            "q_at_origin": 0.6116243739411722,
+            "tail_from_anchor_used_in_estimator": -7.394934348151429e-17,
+            "double_quadrature_reported_error": 9.711326519159407e-17
+          }
+        }
+      }
+    }
+  },
+  "continuum_errors": {
+    "8": {
+      "historical_endpoint_constant": {
+        "256": 0.0005130437798577109,
+        "512": 0.0005063816124541848,
+        "1024": 0.0005047159192974465,
+        "2048": 0.0005042994864998679
+      },
+      "earlier_anchor_constant": {
+        "256": 0.0003880077611060212,
+        "512": 0.00038133632114821514,
+        "1024": 0.00037966831098311393,
+        "2048": 0.0003792512991362823
+      }
+    },
+    "12": {
+      "historical_endpoint_constant": {
+        "256": 9.361857295595022e-06,
+        "512": 2.6644505819323205e-06,
+        "1024": 9.899524924111835e-07,
+        "2048": 5.713190853601224e-07
+      },
+      "earlier_anchor_constant": {
+        "256": 9.28849673174914e-06,
+        "512": 2.591089016221182e-06,
+        "1024": 9.165906593583406e-07,
+        "2048": 4.979571874702549e-07
+      }
+    },
+    "16": {
+      "historical_endpoint_constant": {
+        "256": 8.930358574396613e-06,
+        "512": 2.2329503073098556e-06,
+        "1024": 5.584512949713405e-07,
+        "2048": 1.3981793055284353e-07
+      },
+      "earlier_anchor_constant": {
+        "256": 8.930322894493137e-06,
+        "512": 2.2329146149718815e-06,
+        "1024": 5.584156381605032e-07,
+        "2048": 1.3978244071954915e-07
+      }
+    },
+    "24": {
+      "historical_endpoint_constant": {
+        "256": 8.930083375865983e-06,
+        "512": 2.2326846584735938e-06,
+        "1024": 5.581702007123601e-07,
+        "2048": 1.395063202597191e-07
+      },
+      "earlier_anchor_constant": {
+        "256": 8.930083670741218e-06,
+        "512": 2.2326837329916804e-06,
+        "1024": 5.581704600604587e-07,
+        "2048": 1.395119832853231e-07
+      }
+    }
+  }
+}

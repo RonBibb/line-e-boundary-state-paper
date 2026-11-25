@@ -1,0 +1,98 @@
+\subsection{Identical finite metrics with different limiting velocity profiles}
+\label{sec:different-velocity-same-metrics}
+In the polarized class a common-node pair can also change
+the limiting speed map itself while preserving both
+induced metrics. In contrast to the rank-two example of
+Section~\ref{sec:same-speed-different-modulus}, the
+metric ambiguity here includes the leading local speed.
+
+Fix regular times $a,b$ and let
+$\mathcal K=\{k\ge1:u_k(b)=0\}$, using
+\eqref{eq:invisible}. Consider polarized solutions
+with prescribed constant $P(a),P(b)$ and $Q=Q_0$,
+with $\lambda(a)$ constant fixed.
+Then every compatible $P$ has the form
+\begin{equation}
+ P(t,\theta)=P(a)+\mu\log(t/a)+
+ \sum_{k\in\mathcal K}u_k(t)
+       (A_k\cos(k\theta)+B_k\sin(k\theta)),
+ \quad \mu=\frac{P(b)-P(a)}{\log(b/a)}.
+ \label{eq:polarized-fibre}
+\end{equation}
+This is the Fourier solution of the scalar equation
+with the two prescribed constant displacements.
+At both nodes the momentum constraint makes
+$\lambda(a),\lambda(b)$ spatially constant.
+The mean time quadrature gives
+\begin{equation}
+ \lambda(a)-\lambda(b)
+  =\mu^2\log(b/a)+
+     \frac12\sum_{k\in\mathcal K}(A_k^2+B_k^2)
+         \int_a^b t\big(u_k'(t)^2+k^2u_k(t)^2\big)\,dt .
+ \label{eq:fibre-energy}
+\end{equation}
+All the weights in the sum are positive.
+This describes the full-metric fibre for
+these constant observed orbit fields, with no
+mode hidden in the zero-frequency part.
+In particular, adding the terminal metric
+fixes one weighted quadratic radius.
+
+\begin{proposition}
+\label{prop:different-velocity-same-metrics}
+There exist polarized vacuum three-torus pairs with
+identical induced spatial metrics and $Q_t$ at two
+regular slices, but different angular profiles of
+asymptotic speed. Both profiles can be bounded
+strictly between zero and one everywhere.
+The profiles can be attained on non-equivalent
+histories under torus-equivariant isometries
+preserving the observed boundary slices.
+The construction is available for a dense set of
+areal-time ratios $b/a>1$.
+\end{proposition}
+
+\begin{proof}
+Choose two distinct modes in $\mathcal K$ with
+$J_0(k a)\ne0$ for both. The modes $1,6$
+from Proposition~\ref{prop:same-speed-different-modulus}
+are one choice.
+Use just one mode in each branch of
+\eqref{eq:polarized-fibre}, matching the two
+positive energies in \eqref{eq:fibre-energy}
+by rescaling their nonzero amplitudes.
+Here both $Q_t$ traces vanish since $Q$ is
+constant. For $0<\mu<1$ and sufficiently
+small amplitudes the two limiting profiles are
+$\mu+\epsilon_j J_0(k_j a)\cos(k_j\theta)$
+with values in $(0,1)$.
+The distinct Fourier frequencies make them different.
+For a geometric distinction already at the initial
+boundary, its quotient metric is constant, so a
+torus-equivariant isometry induces a rotation or
+reflection of its circle. The mean curvature
+depends there on $P_t^2$ with a common nonzero
+factor and common additive term, since the
+lapse and $\lambda(a)$ agree.
+With nonzero $\mu$, the smallest nonzero harmonic
+of this quantity is $k_j$ in branch $j$,
+which no circle isometry can change.
+
+For density, the ratio $\nu_5(\mathcal R)/
+\nu_1(\mathcal R)$ of annular Dirichlet frequencies
+is real analytic and nonconstant on $(1,\infty)$.
+The limits at its endpoints, $5$ and
+$j_{0,5}/j_{0,1}$, differ.
+On each open interval of $\mathcal R$ its image
+therefore contains an interval.
+Choose a rational value $k_2/k_1$ in that image
+and put $a=\nu_1(\mathcal R)/k_1$.
+The two modes have common nodes.
+The values $J_0(\nu_1(\mathcal R))$ and
+$J_0(\nu_5(\mathcal R))$ vanish at most on
+discrete sets of $\mathcal R$: each eigenvalue
+is analytic and nonconstant.
+Restrict the interval first to avoid those
+discrete sets. This gives the required dense
+collection of placements.
+\end{proof}

@@ -1,0 +1,422 @@
+{
+  "arms": {
+    "131072": {
+      "checkpoints": [
+        18.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "failing": {
+        "D_HM": 0.0011102476762296749,
+        "diag": {
+          "finite": true,
+          "footprint_radius": 0.40444362210597357,
+          "gap_ambiguous": false,
+          "gradient_energy_max": 0.043498627410342265,
+          "gradient_scale": 0.0003367442370699229,
+          "gradient_scale_cells": 7.024739599959628,
+          "momentum_residual": 0.003286169782567126,
+          "parity": 0.0,
+          "passes_four_cell_width": true,
+          "passes_local": false,
+          "tau": 38.0
+        },
+        "envelope_ok": true,
+        "integrability": 1.2850068825167277e-19
+      },
+      "last_completed_tau": 38.0,
+      "slices": {
+        "12.0": {
+          "D_HM": null,
+          "envelope_ok": true,
+          "footprint_radius": 0.0,
+          "gradient_scale_cells": 1282.8438876959176,
+          "integrability": 1.755307710376838e-17,
+          "segment_odd_max": 1.929962372694491e-13
+        },
+        "14.0": {
+          "D_HM": 6.412271226956412e-08,
+          "envelope_ok": true,
+          "footprint_radius": 0.0,
+          "gradient_scale_cells": 888.2102271992509,
+          "integrability": 0.0,
+          "segment_odd_max": 6.775824421606258e-21
+        },
+        "16.0": {
+          "D_HM": 1.3700649776732453e-07,
+          "envelope_ok": true,
+          "footprint_radius": 0.3784138856115391,
+          "gradient_scale_cells": 607.3164879872908,
+          "integrability": 0.0,
+          "segment_odd_max": 8.47021068922729e-22
+        },
+        "18.0": {
+          "D_HM": 2.896983293098058e-07,
+          "envelope_ok": true,
+          "footprint_radius": 0.4287955671136581,
+          "gradient_scale_cells": 411.70666514849114,
+          "integrability": 1.469521268994084e-17,
+          "segment_odd_max": 1.3234875816734311e-23
+        },
+        "20.0": {
+          "D_HM": null,
+          "envelope_ok": true,
+          "footprint_radius": 0.43191146558905086,
+          "gradient_scale_cells": 277.29113633152605,
+          "integrability": 5.1131919667363325e-18,
+          "segment_odd_max": 1.6543603214717906e-24
+        },
+        "22.0": {
+          "D_HM": 1.4467020240825232e-06,
+          "envelope_ok": true,
+          "footprint_radius": 0.4276450815227439,
+          "gradient_scale_cells": 185.839400697122,
+          "integrability": 3.48051752097506e-18,
+          "segment_odd_max": 5.169878558461617e-26
+        },
+        "24.0": {
+          "D_HM": 3.2893426517320544e-06,
+          "envelope_ok": true,
+          "footprint_radius": 0.422372022564387,
+          "gradient_scale_cells": 124.05475659392229,
+          "integrability": 0.0,
+          "segment_odd_max": 0.0
+        },
+        "26.0": {
+          "D_HM": 7.524725989606593e-06,
+          "envelope_ok": true,
+          "footprint_radius": 0.41753039570262296,
+          "gradient_scale_cells": 82.54574719702123,
+          "integrability": 1.554989543455553e-18,
+          "segment_odd_max": 0.0
+        },
+        "28.0": {
+          "D_HM": 1.7280810548601254e-05,
+          "envelope_ok": true,
+          "footprint_radius": 0.41350369613442317,
+          "gradient_scale_cells": 54.792303045929785,
+          "integrability": 0.0,
+          "segment_odd_max": 0.0
+        },
+        "30.0": {
+          "D_HM": 3.974117208994414e-05,
+          "envelope_ok": true,
+          "footprint_radius": 0.41038779765903044,
+          "gradient_scale_cells": 36.31388206685244,
+          "integrability": 2.0408870569355715e-18,
+          "segment_odd_max": 0.0
+        },
+        "32.0": {
+          "D_HM": 9.145274262904035e-05,
+          "envelope_ok": true,
+          "footprint_radius": 0.40803888957758055,
+          "gradient_scale_cells": 24.03961211699207,
+          "integrability": 2.24107343762167e-18,
+          "segment_odd_max": 0.0
+        },
+        "34.0": {
+          "D_HM": 0.00021047204003207248,
+          "envelope_ok": true,
+          "footprint_radius": 0.40640903499045206,
+          "gradient_scale_cells": 15.927081369133713,
+          "integrability": 8.862357866379736e-19,
+          "segment_odd_max": 0.0
+        },
+        "36.0": {
+          "D_HM": 0.0004839217556264179,
+          "envelope_ok": true,
+          "footprint_radius": 0.4052585493995378,
+          "gradient_scale_cells": 10.571206530798497,
+          "integrability": 3.895467360306979e-19,
+          "segment_odd_max": 0.0
+        },
+        "38.0": {
+          "D_HM": 0.0011102476762296749,
+          "envelope_ok": true,
+          "footprint_radius": 0.40444362210597357,
+          "gradient_scale_cells": 7.024739599959628,
+          "integrability": 1.2850068825167277e-19,
+          "segment_odd_max": 0.0
+        }
+      },
+      "state": "stopped"
+    },
+    "32768": {
+      "checkpoints": [
+        18.0,
+        24.0,
+        30.0
+      ],
+      "failing": {
+        "D_HM": 0.0014540101152522352,
+        "diag": {
+          "finite": true,
+          "footprint_radius": 0.40803888957758055,
+          "gap_ambiguous": false,
+          "gradient_energy_max": 0.043618046210462454,
+          "gradient_scale": 0.0011746716540887454,
+          "gradient_scale_cells": 6.126134894859283,
+          "momentum_residual": 0.004277672498088501,
+          "parity": 0.0,
+          "passes_four_cell_width": true,
+          "passes_local": false,
+          "tau": 32.0
+        },
+        "envelope_ok": true,
+        "integrability": 8.979057802749764e-19
+      },
+      "last_completed_tau": 32.0,
+      "slices": {
+        "12.0": {
+          "D_HM": null,
+          "envelope_ok": true,
+          "footprint_radius": 0.0,
+          "gradient_scale_cells": 320.7130593736733,
+          "integrability": 1.7553091147411608e-17,
+          "segment_odd_max": 5.789455877342992e-14
+        },
+        "14.0": {
+          "D_HM": 9.748369279351976e-07,
+          "envelope_ok": true,
+          "footprint_radius": 0.0,
+          "gradient_scale_cells": 222.05897677388575,
+          "integrability": 0.0,
+          "segment_odd_max": 1.6940105647254309e-21
+        },
+        "16.0": {
+          "D_HM": 2.0762023678547417e-06,
+          "envelope_ok": true,
+          "footprint_radius": 0.37831801181229624,
+          "gradient_scale_cells": 151.83330941786417,
+          "integrability": 1.023331455458722e-17,
+          "segment_odd_max": 4.2351156781360526e-22
+        },
+        "18.0": {
+          "D_HM": 4.5499711249540635e-06,
+          "envelope_ok": true,
+          "footprint_radius": 0.4287476302140367,
+          "gradient_scale_cells": 102.93857310970961,
+          "integrability": 0.0,
+          "segment_odd_max": 2.5849334555201584e-26
+        },
+        "20.0": {
+          "D_HM": null,
+          "envelope_ok": true,
+          "footprint_radius": 0.431815591789808,
+          "gradient_scale_cells": 69.34317070737015,
+          "integrability": 1.022875207491341e-17,
+          "segment_odd_max": 1.6155863886602554e-27
+        },
+        "22.0": {
+          "D_HM": 2.301738987780619e-05,
+          "envelope_ok": true,
+          "footprint_radius": 0.4275971446231225,
+          "gradient_scale_cells": 46.48088168573563,
+          "integrability": 0.0,
+          "segment_odd_max": 2.0194836342998855e-28
+        },
+        "24.0": {
+          "D_HM": 5.251388152060198e-05,
+          "envelope_ok": true,
+          "footprint_radius": 0.42222821186552273,
+          "gradient_scale_cells": 31.045425742023596,
+          "integrability": 4.673454847596384e-18,
+          "segment_odd_max": 6.310887112443764e-30
+        },
+        "26.0": {
+          "D_HM": 0.00012027345026467632,
+          "envelope_ok": true,
+          "footprint_radius": 0.4174345219033801,
+          "gradient_scale_cells": 20.688107703724704,
+          "integrability": 0.0,
+          "segment_odd_max": 7.888609002131228e-31
+        },
+        "28.0": {
+          "D_HM": 0.00027614704289369757,
+          "envelope_ok": true,
+          "footprint_radius": 0.4134078223351803,
+          "gradient_scale_cells": 13.752291770411206,
+          "integrability": 0.0,
+          "segment_odd_max": 2.465190326253766e-32
+        },
+        "30.0": {
+          "D_HM": 0.0006330830218865187,
+          "envelope_ok": true,
+          "footprint_radius": 0.41033986075940904,
+          "gradient_scale_cells": 9.160538657875572,
+          "integrability": 0.0,
+          "segment_odd_max": 0.0
+        },
+        "32.0": {
+          "D_HM": 0.0014540101152522352,
+          "envelope_ok": true,
+          "footprint_radius": 0.40803888957758055,
+          "gradient_scale_cells": 6.126134894859283,
+          "integrability": 8.979057802749764e-19,
+          "segment_odd_max": 0.0
+        }
+      },
+      "state": "stopped"
+    },
+    "65536": {
+      "checkpoints": [
+        18.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "failing": {
+        "D_HM": 0.0019187209003545078,
+        "diag": {
+          "finite": true,
+          "footprint_radius": 0.4052585493995378,
+          "gap_ambiguous": false,
+          "gradient_energy_max": 0.04348466179663797,
+          "gradient_scale": 0.0005204060429737085,
+          "gradient_scale_cells": 5.428031924086966,
+          "momentum_residual": 0.005614422609935591,
+          "parity": 0.0,
+          "passes_four_cell_width": true,
+          "passes_local": false,
+          "tau": 36.0
+        },
+        "envelope_ok": true,
+        "integrability": 1.95289509284062e-19
+      },
+      "last_completed_tau": 36.0,
+      "slices": {
+        "12.0": {
+          "D_HM": null,
+          "envelope_ok": true,
+          "footprint_radius": 0.0,
+          "gradient_scale_cells": 641.4230413484318,
+          "integrability": 0.0,
+          "segment_odd_max": 1.041325963542765e-13
+        },
+        "14.0": {
+          "D_HM": 2.4386571414883686e-07,
+          "envelope_ok": true,
+          "footprint_radius": 0.0,
+          "gradient_scale_cells": 444.1090296987198,
+          "integrability": 0.0,
+          "segment_odd_max": 3.388025457307193e-21
+        },
+        "16.0": {
+          "D_HM": 5.198279078289878e-07,
+          "envelope_ok": true,
+          "footprint_radius": 0.3784138856115391,
+          "gradient_scale_cells": 303.6579646354999,
+          "integrability": 2.0465859828929842e-17,
+          "segment_odd_max": 8.470222426405796e-22
+        },
+        "18.0": {
+          "D_HM": 1.1385835397103514e-06,
+          "envelope_ok": true,
+          "footprint_radius": 0.4287476302140367,
+          "gradient_scale_cells": 205.86024908342398,
+          "integrability": 1.4699144732142496e-17,
+          "segment_odd_max": 2.646972753745359e-23
+        },
+        "20.0": {
+          "D_HM": null,
+          "envelope_ok": true,
+          "footprint_radius": 0.43191146558905086,
+          "gradient_scale_cells": 138.66517494289008,
+          "integrability": 0.0,
+          "segment_odd_max": 1.6155863894096682e-27
+        },
+        "22.0": {
+          "D_HM": 5.757464961932474e-06,
+          "envelope_ok": true,
+          "footprint_radius": 0.4275971446231225,
+          "gradient_scale_cells": 92.9325132996222,
+          "integrability": 0.0,
+          "segment_odd_max": 2.019483636692804e-28
+        },
+        "24.0": {
+          "D_HM": 1.312760987645142e-05,
+          "envelope_ok": true,
+          "footprint_radius": 0.4223240856647656,
+          "gradient_scale_cells": 62.035565043271866,
+          "integrability": 0.0,
+          "segment_odd_max": 6.3108871206505786e-30
+        },
+        "26.0": {
+          "D_HM": 3.0093857669264573e-05,
+          "envelope_ok": true,
+          "footprint_radius": 0.41753039570262296,
+          "gradient_scale_cells": 41.28525786936508,
+          "integrability": 1.5553522694878527e-18,
+          "segment_odd_max": 7.888609005981932e-31
+        },
+        "28.0": {
+          "D_HM": 6.908536438768055e-05,
+          "envelope_ok": true,
+          "footprint_radius": 0.41350369613442317,
+          "gradient_scale_cells": 27.41729041875917,
+          "integrability": 0.0,
+          "segment_odd_max": 4.930380651934774e-32
+        },
+        "30.0": {
+          "D_HM": 0.00015890159676878378,
+          "envelope_ok": true,
+          "footprint_radius": 0.41033986075940904,
+          "gradient_scale_cells": 18.188589708549987,
+          "integrability": 6.803836635805155e-19,
+          "segment_odd_max": 1.5407439552700165e-33
+        },
+        "32.0": {
+          "D_HM": 0.0003648993625921906,
+          "envelope_ok": true,
+          "footprint_radius": 0.40803888957758055,
+          "gradient_scale_cells": 12.070863278147314,
+          "integrability": 4.483656900335905e-19,
+          "segment_odd_max": 0.0
+        },
+        "34.0": {
+          "D_HM": 0.0008375395907914447,
+          "envelope_ok": true,
+          "footprint_radius": 0.40640903499045206,
+          "gradient_scale_cells": 8.081221673173712,
+          "integrability": 5.914787971502319e-19,
+          "segment_odd_max": 0.0
+        },
+        "36.0": {
+          "D_HM": 0.0019187209003545078,
+          "envelope_ok": true,
+          "footprint_radius": 0.4052585493995378,
+          "gradient_scale_cells": 5.428031924086966,
+          "integrability": 1.95289509284062e-19,
+          "segment_odd_max": 0.0
+        }
+      },
+      "state": "stopped"
+    }
+  },
+  "continuation": {
+    "best_checkpoints": {
+      "131072": 36.0,
+      "32768": 30.0,
+      "65536": 36.0
+    },
+    "tau60_authorized": false
+  },
+  "created_unix": 1785968939.24766,
+  "frozen_rule_basis": "not all arms complete at tau=40 => numerical_ok false => CBE-D-numerical",
+  "gate_a": "CP1-A-PASS",
+  "line": "E",
+  "outcome": "CBE-D-numerical",
+  "overlap_gate": {
+    "passes": true
+  },
+  "phase": "GATE-B",
+  "program": "BB-CBE-DEEP40-CP1",
+  "stop_summary": {
+    "131072": "D_HM 1.110e-3 > 1e-3 at tau=38 (width ~7 cells)",
+    "32768": "D_HM 1.454e-3 > 1e-3 at tau=32 (width 6.1 cells)",
+    "65536": "D_HM 1.919e-3 > 1e-3 at tau=36 (width 5.4 cells)"
+  },
+  "terminal_path": "gate-stop (repaired terminal handling; no rerun, no gate change)",
+  "unscored_observation": "All arms show monotone post-peak footprint shrinkage to their stops (fine: 0.4280 at 18 -> 0.40444 at 38), resolution-converged where arms overlap. Retained as motivation only, per the frozen rules."
+}

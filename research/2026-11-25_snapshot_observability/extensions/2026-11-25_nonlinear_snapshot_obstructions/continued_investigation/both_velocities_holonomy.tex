@@ -1,0 +1,323 @@
+\section{Recovering both initial velocities from orbit snapshots}
+\label{sec:both-velocities}
+The original record supplies one component of the
+initial velocity. When both are withheld, the two
+null-ray transports act on a vector rather than on
+one initial direction. A closed sequence of ray shifts
+then gives a matrix condition for stable recovery.
+This section concerns two full orbit snapshots and one
+initial metric anchor. It does not give a negative
+result when a full metric potential is supplied as an
+additional spatial field.
+
+Let the missing velocity variation be
+$f\in H^s(\mathbb T;\mathbb R^2)$ in the chosen
+orthonormal frame. The initial orbit position is fixed.
+Replace the columns $A_\pm$ of
+\eqref{eq:transport-leading} by the full parallel
+transport matrices on the two null rays, and let $h$
+be the componentwise mean-zero primitive of $f$.
+The same leading formula and compact remainder hold.
+After rotating the terminal output by $A_-^{-1}$,
+the principal operator on $H(\theta)=h(\theta+d)$ is
+\[
+ I-\mathcal U_d,\qquad
+ (\mathcal U_d H)(\theta)
+  =W_d(\theta)H(\theta-2d),\qquad
+ W_d=A_-^{-1}A_+\in \mathrm{SO}(2).
+\]
+This is a unitary weighted rotation in $L^2$.
+An equivalent $H^{s+1}$ conjugation changes the
+operator by a compact term because the coefficient
+matrix is smooth.
+
+\begin{proposition}[A rational ray-holonomy test]
+\label{prop:both-ray-holonomy}
+For irrational $d/\pi$ the linearized two-orbit-snapshot
+map cannot have an energy-norm lower bound for both
+missing velocity components, even after excluding
+finitely many directions.
+For rational $d/\pi=p/q$ in lowest terms define
+\[
+ \mathcal H_d(\theta)=
+     \prod_{j=0}^{q-1} W_d(\theta-2jd) .
+\]
+The principal operator is bounded below precisely when
+$I-\mathcal H_d$ is uniformly invertible.
+In that case the exact observation derivative has a
+lower bound up to an $H^{s-1}$ velocity remainder.
+A sufficiently early finite set of extra low-mode
+orbit observations gives a bounded-below derivative
+and a local nonlinear Lipschitz inverse.
+\end{proposition}
+
+\begin{proof}
+For irrational rotation, conjugating $\mathcal U_d$
+by multiplication by $e^{im\theta}$ on the
+complexified space multiplies it by $e^{-2imd}$.
+Its nonempty essential spectrum is therefore the
+whole unit circle. Since the operator is unitary,
+the point $1$ has a weakly null approximate sequence.
+Conjugation to the Sobolev norm and the smoothing
+observation remainder do not remove this sequence.
+The mean and the linearized integral momentum
+constraint amount to finitely many restrictions,
+also harmless for the weakly null sequence.
+
+For rational rotation $\mathcal U_d^q$ is
+multiplication by $\mathcal H_d$.
+If $I-\mathcal H_d$ is uniformly invertible,
+factor $I-\mathcal U_d^q$ to obtain the claimed
+principal lower bound:
+\[
+ I-\mathcal U_d^q
+    =(I+\mathcal U_d+\cdots+\mathcal U_d^{q-1})(I-\mathcal U_d).
+\]
+If $\mathcal H_d(\theta_0)$ has eigenvalue one, use
+an envelope supported near $\theta_0$ and a vector
+fixed by that holonomy. Sum its first $q$ weighted
+translates; they have disjoint supports for small
+enough envelopes, and the residual telescopes to
+$(I-\mathcal U_d^q)$ applied to the original envelope.
+It becomes arbitrarily small as the support shrinks.
+Attach a high Fourier carrier with frequency a
+multiple of $q$ to commute with each shift.
+Taking account of the Sobolev normalization and
+the compact remainders by choosing arbitrarily
+large carriers shows failure of an energy lower
+bound even after compact corrections.
+The vector energy estimate and the earlier low-mode
+argument of Theorem~\ref{th:fixed-rank-two} prove
+the final claim. The local nonlinear argument
+is unchanged when both initial velocities vary
+subject to the affine momentum constraint.
+\end{proof}
+
+\begin{theorem}
+\label{th:both-circular}
+For a fixed sufficiently short rational delay,
+there are circular-loop Gowdy backgrounds, and open
+neighborhoods containing general nearby Cauchy data,
+on which two full orbit snapshots are locally
+bi-Lipschitz for both missing initial velocities.
+The construction works for all sufficiently small
+nonzero initial radii outside a countable set.
+\end{theorem}
+
+\begin{proof}
+Take a circular-loop solution with angular winding
+$k_0\ge1$, initial radius $\rho>0$, and zero initial
+radial velocity. The chosen interval is short
+enough that the radius stays positive for small
+$\rho$.
+In the radial and unit angular frame,
+the spatial connection is $k_0\cosh R(t)$ times
+the generator of rotations, and the temporal
+connection vanishes. Hence the angle of the
+holonomy in Proposition~\ref{prop:both-ray-holonomy}
+is
+\[
+ -2k_0 q\int_a^c\cosh R(t)\,dt
+   \equiv -2k_0q\int_a^c(\cosh R(t)-1)\,dt
+                   \pmod{2\pi}.
+\]
+For any sufficiently small $\rho>0$ the
+last integral is positive and the angle
+is strictly between $-2\pi$ and zero.
+The principal lower bound therefore holds.
+
+In this frame all coefficients of the exact
+linearized equation are independent of $\theta$,
+so there is a $2\times2$ terminal transfer matrix
+on each complex Fourier mode.
+These matrices depend analytically on $\rho$,
+including $\rho=0$ by using the rotating
+orthonormal frame at the target center.
+At $\rho=0$ the equation is the constant-background
+scalar Gowdy equation on each physical component.
+A Fourier mode $k$ written in the rotating frame
+has the two shifts $k\pm k_0$ in the fixed frame.
+Choose the rational delay as in
+Proposition~\ref{prop:safe-gap}, so every one of
+those scalar transfers, including zero frequency,
+is nonzero. For each fixed $k$ the transfer
+determinant is analytic and nonzero at
+$\rho=0$. The union of its zero sets over all
+integer $k$ is countable.
+Away from this set the derivative has no kernel.
+The lower bound up to compact remainder then
+gives a full energy lower bound, by the same
+compactness argument as before.
+Continuity of the derivative in the Cauchy
+data proves stability in nearby fully nonlinear
+solutions.
+\end{proof}
+
+
+\paragraph{The holonomy of the Ernst pair.}
+At a short rational delay $d=\pi/L$ with $L>2k_0$,
+the rank-two Ernst pair also satisfies the principal
+test for both velocities when its amplitude is
+small and nonzero.
+Its relative ray rotation is $-2B(w(c,\theta))$.
+Use $B(w)=q w-(qg/2)w^2+O(w^3)$.
+Summing the first harmonic over the $L$ ray shifts
+gives zero, while the sum of its square is $L/2$.
+The resulting holonomy angle is therefore
+\[
+ \frac{qgL}{2}\,\epsilon^2u_{k_0}(c)^2+O(\epsilon^3),
+\]
+uniformly in $\theta$ and with the sign of the
+chosen geodesic branch. It is nonzero for small
+nonzero amplitude and $\;gq\ne0$.
+One full terminal orbit snapshot consequently
+gives the high-frequency estimate in this family.
+A finite set of early low-mode coefficients
+removes any finite-dimensional kernel.
+The next theorem gives explicit two-terminal
+placements that do not require locating this kernel.
+
+
+\paragraph{The local two-time compatibility equation.}
+At the circular-loop backgrounds of
+Theorem~\ref{th:both-circular}, the bounded-below
+two-component derivative is also onto the two
+terminal orbit fields. To see this, extend the
+mean-zero primitive to an isomorphism from $H^s$
+to $H^{s+1}$ by adding the mean mode.
+Its difference from the leading expression is
+finite rank. The rational holonomy condition
+makes its composition with $I-\mathcal U_d$
+invertible. The exact observation derivative is
+a compact perturbation of this invertible
+operator, hence has index zero.
+Its trivial kernel then gives surjectivity.
+
+It follows from the inverse function theorem that
+the reduced wave-map problem with prescribed orbit
+positions on the two slices has a locally smooth
+solution for initial positions and terminal values
+in their natural Sobolev neighborhoods.
+The periodic vacuum metric exists with a specified
+anchor exactly on the image of the momentum condition
+\[
+ \int_{\mathbb T}\langle U_t(a),U_\theta(a)\rangle\,d\theta=0 .
+\]
+When $U_\theta(a)$ is nonzero somewhere, this is
+locally one compatibility equation on the measured
+orbit positions. Indeed its derivative in the recovered
+velocity is a nonzero linear functional, and the
+two-snapshot reconstruction is a local diffeomorphism
+for the reduced equations. At the circular-loop
+reference with the initial orbit position held fixed,
+the linearized compatibility condition is that the
+mean angular component of the terminal displacement
+in the rotating frame vanish. The initial angular
+velocity enters the constraint only through its
+zero Fourier mode, and that mode is decoupled
+with nonzero scalar transfer in this frame.
+
+\subsection{Three orbit snapshots in the exact rank-two family}
+
+\begin{theorem}
+\label{th:both-ernst}
+At each sufficiently small nonzero amplitude of the
+single-mode rank-two Gowdy-to-Ernst pair, two suitably
+placed later full orbit snapshots together with the
+initial full orbit snapshot recover \emph{both} missing
+initial velocities locally with a Lipschitz estimate
+in the wave-energy Sobolev norms. The placements
+can be chosen as different short rational gaps,
+independently of the amplitude.
+\end{theorem}
+
+\begin{proof}
+Let the two delays be $d_i=\pi/L_i$, $i=1,2$,
+with both integers $L_i$ sufficiently large,
+distinct, and greater than $2k_0$.
+At the zero-amplitude vertical background, the two
+time-scaled linearized channels have inverse-square
+potentials $1/(4t^2)$ and $-3/(4t^2)$.
+At these short rational placements neither scalar
+channel has a finite-frequency kernel.
+For the negative potential the Pr\"ufer correction
+to $kd_i$ has the opposite sign from the
+positive-potential case and absolute magnitude
+less than $\pi/L_i$ for large $k$.
+For remaining modes choose $L_i$ large so that
+$\varphi(c_i)<\pi$; the phase remains strictly
+positive since its derivative is $k$ at each
+zero of $\varphi$. The zero spatial mode has
+nonzero Jacobi transfers.
+On high frequencies both channels have leading
+normalized gain $\sin(kd_i)$.
+
+Write $\mathcal A_\epsilon$ for the joint derivative
+with respect to the unknown two-component velocity
+and $\epsilon$ for the seed amplitude.
+It has the norm expansion
+$\mathcal A_\epsilon=\mathcal A_0+
+\epsilon \mathcal A_1+O(\epsilon^2)$.
+Let $L$ be the least common multiple of $L_1,L_2$.
+Split the velocity into $f_B$, its high modes
+divisible by $L$, and $f_G$, the remaining modes.
+The free joint map $\mathcal A_0$ is bounded below on
+$G$, since all finite transfers are nonzero and
+each large noncommon multiple has a nonzero free
+gain at one of the times.
+
+At each output Fourier mode, project the four
+observations orthogonally away from the two
+columns of $\mathcal A_0$ there, in the
+energy-normalized coordinates. Call this bounded
+projection $\Pi^\perp$.
+For an input high common multiple $k$, the first
+variation of the transport angles maps to sidebands
+$k\pm k_0$. Up to the common rotation of the
+velocity vector and Fourier normalization, its
+two time coefficients at each sideband are
+\[
+ \big((-1)^{k/L_1}u_{k_0}(a+d_1),
+      (-1)^{k/L_2}u_{k_0}(a+d_2)\big).
+\]
+Indeed the two shifted primitives coincide at each
+common resonance and the rotations change with
+opposite signs on the two rays.
+The leading free column at that sideband has time
+coefficients proportional to
+\[
+ \big((-1)^{k/L_1}\sin(k_0d_1),
+      (-1)^{k/L_2}\sin(k_0d_2)\big).
+\]
+The two vectors are not collinear: near zero,
+\[
+ \frac{u_{k_0}(a+d)}{\sin(k_0d)}
+    =\frac1{a k_0}-\frac{d}{2a^2 k_0}+O(d^2)
+\]
+is strictly decreasing. The relative signs at
+the two sidebands do not affect the projected gain.
+Distinct high common multiples give disjoint
+sidebands because $L>2k_0$.
+The exact free projections at those sidebands
+approach the displayed limiting projection with
+error $O(1/|k|)$, uniformly along the resonant
+subsequence. The differentiated transport remainder
+is compact as before. Consequently
+$\Pi^\perp\mathcal A_1$ is bounded below on $B$
+after increasing the finite cutoff if needed.
+
+The good-mode estimate and the projected estimate
+therefore give
+\begin{align*}
+ \|f_G\|_{H^s}
+   &\le C\big(\|\mathcal A_\epsilon f\|+
+                 |\epsilon|\|f\|_{H^s}\big),\\
+ \|f_B\|_{H^s}
+   &\le C'\big(\|\mathcal A_\epsilon f\|/|\epsilon|+
+                  \|f_G\|_{H^s}+|\epsilon|\|f\|_{H^s}\big).
+\end{align*}
+For small nonzero amplitude the error terms
+are absorbed. The exact derivative is then bounded
+below, and continuity of the nonlinear derivative
+gives the local result.
+\end{proof}

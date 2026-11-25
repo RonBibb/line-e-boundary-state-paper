@@ -1,0 +1,32 @@
+{
+  "platform": "Linux-7.0.0-42-generic-aarch64-with-glibc2.43",
+  "ratio": 260.9127383136308,
+  "a": 0.0017397911257593386,
+  "b": 0.45393366671562346,
+  "outer_bessel_roots": [
+    2.7236020002937407,
+    5.901137667303115
+  ],
+  "inner_bessel_frequencies": [
+    0.010438746754556031,
+    0.0226172846348714
+  ],
+  "initial_ernst_Q_peak_to_peak": 0.0039728780597106834,
+  "both_snapshots_P_Q_Qt_gap": 4.440892098500626e-16,
+  "both_snapshots_lambda_gap_from_transform": 8.881784197001252e-16,
+  "initial_Pt_gap": 21.494643439630636,
+  "smaller_maximum_absolute_rank_determinant_at_a": 8.879972426242373,
+  "interior_P_gap": 0.10280078162080164,
+  "terminal_metric_shifts_from_quadrature": [
+    -5.570694455104031,
+    -5.570694455104031
+  ],
+  "expected_branch_parameters": [
+    1.2170322005213243,
+    -1.2170322005213243
+  ],
+  "recovered_branch_parameters": [
+    1.2170322005213314,
+    -1.2170322005213208
+  ]
+}

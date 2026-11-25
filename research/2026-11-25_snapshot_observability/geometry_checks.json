@@ -1,0 +1,786 @@
+{
+  "platform": "Linux-7.0.0-42-generic-aarch64-with-glibc2.43",
+  "homogeneous": {
+    "(1.0, 0.0)": {
+      "relative_ADM_error": 0.0,
+      "Omega": 0.0,
+      "Sigma2": 1.0000000000000004
+    },
+    "(0.0, 1.7320508075688772)": {
+      "relative_ADM_error": 1.8786766430718055e-16,
+      "Omega": 0.9999999999999998,
+      "Sigma2": 5.214375162409539e-33
+    },
+    "(0.37, 0.85)": {
+      "relative_ADM_error": 0.0,
+      "Omega": 0.5820757580984885,
+      "Sigma2": 0.4179242419015116
+    }
+  },
+  "production": {
+    "8_256": {
+      "pre_endpoint_metric": {
+        "asymptotic_constant": 0.11842048174162123,
+        "surfaces": {
+          "2.0": {
+            "D": 0.0003160093847265642,
+            "shape_D": 0.00012855224128878123,
+            "density_relative_error": 0.0001665456558990197
+          },
+          "4.0": {
+            "D": 0.0005518343455867822,
+            "shape_D": 0.00014678923546931628,
+            "density_relative_error": 0.0001385228828694185
+          }
+        },
+        "D_max": 0.0005518343455867822
+      },
+      "imported_endpoint_metric": {
+        "asymptotic_constant": 0.11854551776037603,
+        "surfaces": {
+          "2.0": {
+            "D": 0.0002434076890668817,
+            "shape_D": 0.00012855224128872244,
+            "density_relative_error": 0.0001352819337980815
+          },
+          "4.0": {
+            "D": 0.000310936491038605,
+            "shape_D": 0.00014678923546934582,
+            "density_relative_error": 0.00010726003671845952
+          }
+        },
+        "D_max": 0.000310936491038605
+      },
+      "zero_asymptotic_constant": {
+        "asymptotic_constant": 0.0,
+        "surfaces": {
+          "2.0": {
+            "D": 0.07528843651155893,
+            "shape_D": 0.00012855224128873748,
+            "density_relative_error": 0.03021925881583898
+          },
+          "4.0": {
+            "D": 0.2328050236827599,
+            "shape_D": 0.00014678923546924323,
+            "density_relative_error": 0.03019039402268353
+          }
+        },
+        "D_max": 0.2328050236827599
+      }
+    },
+    "8_512": {
+      "pre_endpoint_metric": {
+        "asymptotic_constant": 0.11841381030164966,
+        "surfaces": {
+          "2.0": {
+            "D": 0.00028128679748928544,
+            "shape_D": 0.00012855570713312422,
+            "density_relative_error": 0.00015583242871164416
+          },
+          "4.0": {
+            "D": 0.00048905102800048,
+            "shape_D": 0.0001467858250391197,
+            "density_relative_error": 0.00012796590487473836
+          }
+        },
+        "D_max": 0.00048905102800048
+      },
+      "imported_endpoint_metric": {
+        "asymptotic_constant": 0.11853885559295163,
+        "surfaces": {
+          "2.0": {
+            "D": 0.00021120451407284462,
+            "shape_D": 0.00012855570713331548,
+            "density_relative_error": 0.0001245667230644898
+          },
+          "4.0": {
+            "D": 0.00024816569632836867,
+            "shape_D": 0.0001467858250391197,
+            "density_relative_error": 9.67010703583071e-05
+          }
+        },
+        "D_max": 0.00024816569632836867
+      },
+      "zero_asymptotic_constant": {
+        "asymptotic_constant": 0.0,
+        "surfaces": {
+          "2.0": {
+            "D": 0.07524633688344269,
+            "shape_D": 0.00012855570713315363,
+            "density_relative_error": 0.03020650543907233
+          },
+          "4.0": {
+            "D": 0.2326797182268208,
+            "shape_D": 0.00014678582503917885,
+            "density_relative_error": 0.030177801637913948
+          }
+        },
+        "D_max": 0.2326797182268208
+      }
+    },
+    "8_1024": {
+      "pre_endpoint_metric": {
+        "asymptotic_constant": 0.11841214229147301,
+        "surfaces": {
+          "2.0": {
+            "D": 0.00027273293474788584,
+            "shape_D": 0.00012855660155440353,
+            "density_relative_error": 0.00015316539622922676
+          },
+          "4.0": {
+            "D": 0.0004758623671591944,
+            "shape_D": 0.00014678497142062768,
+            "density_relative_error": 0.00012535082801301556
+          }
+        },
+        "D_max": 0.0004758623671591944
+      },
+      "imported_endpoint_metric": {
+        "asymptotic_constant": 0.11853718989977846,
+        "surfaces": {
+          "2.0": {
+            "D": 0.00020345340805742482,
+            "shape_D": 0.00012855660155443297,
+            "density_relative_error": 0.00012189919463412302
+          },
+          "4.0": {
+            "D": 0.0002444284644338538,
+            "shape_D": 0.00014678497142058417,
+            "density_relative_error": 9.408549594080995e-05
+          }
+        },
+        "D_max": 0.0002444284644338538
+      },
+      "zero_asymptotic_constant": {
+        "asymptotic_constant": 0.0,
+        "surfaces": {
+          "2.0": {
+            "D": 0.07523616369720065,
+            "shape_D": 0.00012855660155437402,
+            "density_relative_error": 0.030203328675457497
+          },
+          "4.0": {
+            "D": 0.23264838194449158,
+            "shape_D": 0.00014678497142043637,
+            "density_relative_error": 0.03017467840292598
+          }
+        },
+        "D_max": 0.23264838194449158
+      }
+    },
+    "12_256": {
+      "pre_endpoint_metric": {
+        "asymptotic_constant": 0.11804176247720832,
+        "surfaces": {
+          "2.0": {
+            "D": 5.104543533310521e-05,
+            "shape_D": 6.314561116655771e-08,
+            "density_relative_error": 1.983771344060692e-05
+          },
+          "4.0": {
+            "D": 0.00015732928484143733,
+            "shape_D": 8.230154884731249e-08,
+            "density_relative_error": 1.9793446198068665e-05
+          }
+        },
+        "D_max": 0.00015732928484143733
+      },
+      "imported_endpoint_metric": {
+        "asymptotic_constant": 0.11804183583777217,
+        "surfaces": {
+          "2.0": {
+            "D": 5.0998294110975885e-05,
+            "shape_D": 6.314561116655771e-08,
+            "density_relative_error": 1.981937293615843e-05
+          },
+          "4.0": {
+            "D": 0.00015718371422768711,
+            "shape_D": 8.230154884731249e-08,
+            "density_relative_error": 1.9775105693398132e-05
+          }
+        },
+        "D_max": 0.00015718371422768711
+      },
+      "zero_asymptotic_constant": {
+        "asymptotic_constant": 0.0,
+        "surfaces": {
+          "2.0": {
+            "D": 0.07481835051363475,
+            "shape_D": 6.314561116655771e-08,
+            "density_relative_error": 0.029970620590278996
+          },
+          "4.0": {
+            "D": 0.23172678691459023,
+            "shape_D": 8.230154871417703e-08,
+            "density_relative_error": 0.029970574997223887
+          }
+        },
+        "D_max": 0.23172678691459023
+      }
+    },
+    "12_512": {
+      "pre_endpoint_metric": {
+        "asymptotic_constant": 0.11803506506952743,
+        "surfaces": {
+          "2.0": {
+            "D": 1.3038920520257834e-05,
+            "shape_D": 6.314377508086059e-08,
+            "density_relative_error": 5.050662514438642e-06
+          },
+          "4.0": {
+            "D": 3.9951722962065354e-05,
+            "shape_D": 8.230318708276864e-08,
+            "density_relative_error": 5.0062393837091435e-06
+          }
+        },
+        "D_max": 3.9951722962065354e-05
+      },
+      "imported_endpoint_metric": {
+        "asymptotic_constant": 0.11803513843109137,
+        "surfaces": {
+          "2.0": {
+            "D": 1.299177250926745e-05,
+            "shape_D": 6.314377505866246e-08,
+            "density_relative_error": 5.032322030862346e-06
+          },
+          "4.0": {
+            "D": 3.9806151261822916e-05,
+            "shape_D": 8.230318703578965e-08,
+            "density_relative_error": 4.987898900576937e-06
+          }
+        },
+        "D_max": 3.9806151261822916e-05
+      },
+      "zero_asymptotic_constant": {
+        "asymptotic_constant": 0.0,
+        "surfaces": {
+          "2.0": {
+            "D": 0.07477607023025593,
+            "shape_D": 6.31437748964544e-08,
+            "density_relative_error": 0.029953666158044623
+          },
+          "4.0": {
+            "D": 0.23160091712204495,
+            "shape_D": 8.230318711147725e-08,
+            "density_relative_error": 0.029953620404508996
+          }
+        },
+        "D_max": 0.23160091712204495
+      }
+    },
+    "12_1024": {
+      "pre_endpoint_metric": {
+        "asymptotic_constant": 0.11803339057117856,
+        "surfaces": {
+          "2.0": {
+            "D": 3.5293706273358675e-06,
+            "shape_D": 6.314252125005521e-08,
+            "density_relative_error": 1.3514541823411719e-06
+          },
+          "4.0": {
+            "D": 1.0597997955720291e-05,
+            "shape_D": 8.230345876879393e-08,
+            "density_relative_error": 1.3071079716375777e-06
+          }
+        },
+        "D_max": 1.0597997955720291e-05
+      },
+      "imported_endpoint_metric": {
+        "asymptotic_constant": 0.11803346393301162,
+        "surfaces": {
+          "2.0": {
+            "D": 3.4822282809034466e-06,
+            "shape_D": 6.314252138577247e-08,
+            "density_relative_error": 1.33311369943101e-06
+          },
+          "4.0": {
+            "D": 1.0452378974292392e-05,
+            "shape_D": 8.230345878707915e-08,
+            "density_relative_error": 1.2887674898376389e-06
+          }
+        },
+        "D_max": 1.0452378974292392e-05
+      },
+      "zero_asymptotic_constant": {
+        "asymptotic_constant": 0.0,
+        "surfaces": {
+          "2.0": {
+            "D": 0.07476566338323616,
+            "shape_D": 6.314252133708274e-08,
+            "density_relative_error": 0.02994942500186104
+          },
+          "4.0": {
+            "D": 0.23156978116656363,
+            "shape_D": 8.230345868266419e-08,
+            "density_relative_error": 0.02994937932756825
+          }
+        },
+        "D_max": 0.23156978116656363
+      }
+    },
+    "16_256": {
+      "pre_endpoint_metric": {
+        "asymptotic_constant": 0.11804140430339949,
+        "surfaces": {
+          "2.0": {
+            "D": 5.0686832961060595e-05,
+            "shape_D": 2.6737266402460964e-11,
+            "density_relative_error": 1.9719526077599525e-05
+          },
+          "4.0": {
+            "D": 0.00015651910710979102,
+            "shape_D": 3.871508338477564e-11,
+            "density_relative_error": 1.9719502399206945e-05
+          }
+        },
+        "D_max": 0.00015651910710979102
+      },
+      "imported_endpoint_metric": {
+        "asymptotic_constant": 0.11804140433907406,
+        "surfaces": {
+          "2.0": {
+            "D": 5.0686810036287404e-05,
+            "shape_D": 2.6737337678682842e-11,
+            "density_relative_error": 1.971951715873388e-05
+          },
+          "4.0": {
+            "D": 0.00015651903631486554,
+            "shape_D": 3.8715216892159205e-11,
+            "density_relative_error": 1.971949347989721e-05
+          }
+        },
+        "D_max": 0.00015651903631486554
+      },
+      "zero_asymptotic_constant": {
+        "asymptotic_constant": 0.0,
+        "surfaces": {
+          "2.0": {
+            "D": 0.07481778088505608,
+            "shape_D": 2.6737147666402984e-11,
+            "density_relative_error": 0.029970406636072422
+          },
+          "4.0": {
+            "D": 0.2317252880120071,
+            "shape_D": 3.8715216892159205e-11,
+            "density_relative_error": 0.029970406611684597
+          }
+        },
+        "D_max": 0.2317252880120071
+      }
+    },
+    "16_512": {
+      "pre_endpoint_metric": {
+        "asymptotic_constant": 0.11803470689511819,
+        "surfaces": {
+          "2.0": {
+            "D": 1.2680467289992476e-05,
+            "shape_D": 2.7035149075349765e-11,
+            "density_relative_error": 4.93259499534382e-06
+          },
+          "4.0": {
+            "D": 3.914102590220527e-05,
+            "shape_D": 3.893068675179185e-11,
+            "density_relative_error": 4.932571445070977e-06
+          }
+        },
+        "D_max": 3.914102590220527e-05
+      },
+      "imported_endpoint_metric": {
+        "asymptotic_constant": 0.11803470693080875,
+        "surfaces": {
+          "2.0": {
+            "D": 1.26804443523407e-05,
+            "shape_D": 2.7034963422956774e-11,
+            "density_relative_error": 4.932586072481371e-06
+          },
+          "4.0": {
+            "D": 3.914095507974626e-05,
+            "shape_D": 3.893077204982387e-11,
+            "density_relative_error": 4.932562522208528e-06
+          }
+        },
+        "D_max": 3.914095507974626e-05
+      },
+      "zero_asymptotic_constant": {
+        "asymptotic_constant": 0.0,
+        "surfaces": {
+          "2.0": {
+            "D": 0.07477550045859926,
+            "shape_D": 2.7034962086180744e-11,
+            "density_relative_error": 0.02995345232883828
+          },
+          "4.0": {
+            "D": 0.23159941776738435,
+            "shape_D": 3.89307151734349e-11,
+            "density_relative_error": 0.02995345230458235
+          }
+        },
+        "D_max": 0.23159941776738435
+      }
+    },
+    "16_1024": {
+      "pre_endpoint_metric": {
+        "asymptotic_constant": 0.11803303239618046,
+        "surfaces": {
+          "2.0": {
+            "D": 3.1705437671780353e-06,
+            "shape_D": 2.934012364235797e-11,
+            "density_relative_error": 1.2333084804527772e-06
+          },
+          "4.0": {
+            "D": 9.786467857491922e-06,
+            "shape_D": 3.9562337478825655e-11,
+            "density_relative_error": 1.2332855006125243e-06
+          }
+        },
+        "D_max": 9.786467857491922e-06
+      },
+      "imported_endpoint_metric": {
+        "asymptotic_constant": 0.11803303243184082,
+        "surfaces": {
+          "2.0": {
+            "D": 3.170520848622093e-06,
+            "shape_D": 2.934005612185033e-11,
+            "density_relative_error": 1.2332995653618894e-06
+          },
+          "4.0": {
+            "D": 9.786397098981758e-06,
+            "shape_D": 3.956223283762642e-11,
+            "density_relative_error": 1.2332765859657258e-06
+          }
+        },
+        "D_max": 9.786397098981758e-06
+      },
+      "zero_asymptotic_constant": {
+        "asymptotic_constant": 0.0,
+        "surfaces": {
+          "2.0": {
+            "D": 0.07476509324169633,
+            "shape_D": 2.934007151224205e-11,
+            "density_relative_error": 0.02994921109240889
+          },
+          "4.0": {
+            "D": 0.2315682822826064,
+            "shape_D": 3.9562128179871423e-11,
+            "density_relative_error": 0.0299492110687416
+          }
+        },
+        "D_max": 0.2315682822826064
+      }
+    },
+    "24_256": {
+      "pre_endpoint_metric": {
+        "asymptotic_constant": 0.11804140406408514,
+        "surfaces": {
+          "2.0": {
+            "D": 5.0686538681788e-05,
+            "shape_D": 1.2236252013038015e-11,
+            "density_relative_error": 1.9719418694386093e-05
+          },
+          "4.0": {
+            "D": 0.00015651840007802067,
+            "shape_D": 4.44437702848671e-12,
+            "density_relative_error": 1.9719427941877754e-05
+          }
+        },
+        "D_max": 0.00015651840007802067
+      },
+      "imported_endpoint_metric": {
+        "asymptotic_constant": 0.11804140406379027,
+        "surfaces": {
+          "2.0": {
+            "D": 5.0686538870970004e-05,
+            "shape_D": 1.2236105586705125e-11,
+            "density_relative_error": 1.97194187681049e-05
+          },
+          "4.0": {
+            "D": 0.00015651840065622483,
+            "shape_D": 4.444485846658886e-12,
+            "density_relative_error": 1.971942801493043e-05
+          }
+        },
+        "D_max": 0.00015651840065622483
+      },
+      "zero_asymptotic_constant": {
+        "asymptotic_constant": 0.0,
+        "surfaces": {
+          "2.0": {
+            "D": 0.07481778045946053,
+            "shape_D": 1.2236087541154684e-11,
+            "density_relative_error": 0.029970406463851074
+          },
+          "4.0": {
+            "D": 0.23172528685384552,
+            "shape_D": 4.44445433200164e-12,
+            "density_relative_error": 0.029970406473375233
+          }
+        },
+        "D_max": 0.23172528685384552
+      }
+    },
+    "24_512": {
+      "pre_endpoint_metric": {
+        "asymptotic_constant": 0.11803470666254512,
+        "surfaces": {
+          "2.0": {
+            "D": 1.2680176082025192e-05,
+            "shape_D": 5.486942760735014e-11,
+            "density_relative_error": 4.9324906885583886e-06
+          },
+          "4.0": {
+            "D": 3.9140320763132216e-05,
+            "shape_D": 2.28252343082486e-11,
+            "density_relative_error": 4.932506234345269e-06
+          }
+        },
+        "D_max": 3.9140320763132216e-05
+      },
+      "imported_endpoint_metric": {
+        "asymptotic_constant": 0.11803470666346882,
+        "surfaces": {
+          "2.0": {
+            "D": 1.2680175488722008e-05,
+            "shape_D": 5.486950427486413e-11,
+            "density_relative_error": 4.9324904576319994e-06
+          },
+          "4.0": {
+            "D": 3.914031892993196e-05,
+            "shape_D": 2.2825227978943276e-11,
+            "density_relative_error": 4.932506003640924e-06
+          }
+        },
+        "D_max": 3.914031892993196e-05
+      },
+      "zero_asymptotic_constant": {
+        "asymptotic_constant": 0.0,
+        "surfaces": {
+          "2.0": {
+            "D": 0.0747755000205137,
+            "shape_D": 5.4869580942495636e-11,
+            "density_relative_error": 0.029953452161522565
+          },
+          "4.0": {
+            "D": 0.23159941660695083,
+            "shape_D": 2.2825224715517934e-11,
+            "density_relative_error": 0.02995345217753398
+          }
+        },
+        "D_max": 0.23159941660695083
+      }
+    },
+    "24_1024": {
+      "pre_endpoint_metric": {
+        "asymptotic_constant": 0.11803303215209304,
+        "surfaces": {
+          "2.0": {
+            "D": 3.1703118997171858e-06,
+            "shape_D": 1.591958343078077e-10,
+            "density_relative_error": 1.233235664255261e-06
+          },
+          "4.0": {
+            "D": 9.785733587016742e-06,
+            "shape_D": 5.779512659246677e-11,
+            "density_relative_error": 1.2332341972065564e-06
+          }
+        },
+        "D_max": 9.785733587016742e-06
+      },
+      "imported_endpoint_metric": {
+        "asymptotic_constant": 0.1180330321518337,
+        "surfaces": {
+          "2.0": {
+            "D": 3.1703120662506386e-06,
+            "shape_D": 1.5919583133772097e-10,
+            "density_relative_error": 1.2332357288702411e-06
+          },
+          "4.0": {
+            "D": 9.785734103048405e-06,
+            "shape_D": 5.779505144232623e-11,
+            "density_relative_error": 1.233234262043581e-06
+          }
+        },
+        "D_max": 9.785734103048405e-06
+      },
+      "zero_asymptotic_constant": {
+        "asymptotic_constant": 0.0,
+        "surfaces": {
+          "2.0": {
+            "D": 0.07476509273409526,
+            "shape_D": 1.5919578361482598e-10,
+            "density_relative_error": 0.029949210954562933
+          },
+          "4.0": {
+            "D": 0.23156828101622473,
+            "shape_D": 5.779493142763822e-11,
+            "density_relative_error": 0.029949210953051253
+          }
+        },
+        "D_max": 0.23156828101622473
+      }
+    }
+  },
+  "bessel": {
+    "8_256": {
+      "analytic_coefficients": {
+        "D": 0.00021327426311549757,
+        "shape_D": 1.5114618815876287e-05,
+        "density_relative_error": 0.00013669771748536785,
+        "P_error": 5.164255438727672e-06,
+        "phi_error": 3.05132615452397e-06,
+        "lambda_error": 0.0004960551352907183
+      },
+      "pre_endpoint_holdout": {
+        "D": 0.00035188218553174104,
+        "shape_D": 8.674599451661752e-05,
+        "density_relative_error": 0.00020308955225378789,
+        "P_error": 0.0004206552068505287,
+        "phi_error": 9.081756225060023e-05,
+        "lambda_error": 0.0008970210386088917
+      }
+    },
+    "8_512": {
+      "analytic_coefficients": {
+        "D": 5.3295753227108964e-05,
+        "shape_D": 3.8380119464497045e-06,
+        "density_relative_error": 3.419036377050322e-05,
+        "P_error": 2.5548547837317415e-06,
+        "phi_error": 5.877063704584629e-07,
+        "lambda_error": 0.00012391287614244018
+      },
+      "pre_endpoint_holdout": {
+        "D": 0.00020176071621987398,
+        "shape_D": 8.718445165363686e-05,
+        "density_relative_error": 0.0001064233497123368,
+        "P_error": 0.00042326027297912017,
+        "phi_error": 9.301801331329518e-05,
+        "lambda_error": 0.000530787193201876
+      }
+    },
+    "8_1024": {
+      "analytic_coefficients": {
+        "D": 1.3267471688479368e-05,
+        "shape_D": 1.0202742604832664e-06,
+        "density_relative_error": 8.528968310606011e-06,
+        "P_error": 1.9023900577064268e-06,
+        "phi_error": 5.063943981920005e-07,
+        "lambda_error": 3.078759532715303e-05
+      },
+      "pre_endpoint_holdout": {
+        "D": 0.00019259047215412423,
+        "shape_D": 8.741478098125487e-05,
+        "density_relative_error": 9.585911049336815e-05,
+        "P_error": 0.0004239116538853338,
+        "phi_error": 9.35772416621461e-05,
+        "lambda_error": 0.0004411462086751916
+      }
+    },
+    "12_256": {
+      "analytic_coefficients": {
+        "D": 0.00021335774193070707,
+        "shape_D": 1.5036559669015347e-05,
+        "density_relative_error": 0.00013672152899046885,
+        "P_error": 4.3204179340783355e-06,
+        "phi_error": 3.285552064524744e-06,
+        "lambda_error": 0.0004963027803079889
+      },
+      "pre_endpoint_holdout": {
+        "D": 0.00021337945188110125,
+        "shape_D": 1.501653826208084e-05,
+        "density_relative_error": 0.00013672345492155014,
+        "P_error": 4.080091381863937e-06,
+        "phi_error": 3.372688276104263e-06,
+        "lambda_error": 0.0004963656772871694
+      }
+    },
+    "12_512": {
+      "analytic_coefficients": {
+        "D": 5.337214055835022e-05,
+        "shape_D": 3.7598489377750258e-06,
+        "density_relative_error": 3.42169674319992e-05,
+        "P_error": 1.080547510134977e-06,
+        "phi_error": 8.212816150487967e-07,
+        "lambda_error": 0.00012417633134831352
+      },
+      "pre_endpoint_holdout": {
+        "D": 5.339141899057604e-05,
+        "shape_D": 3.7398191720006305e-06,
+        "density_relative_error": 3.421728599239948e-05,
+        "P_error": 8.402254365602602e-07,
+        "phi_error": 1.0104030496727034e-06,
+        "lambda_error": 0.00012424401250077377
+      }
+    },
+    "12_1024": {
+      "analytic_coefficients": {
+        "D": 1.3343737409472691e-05,
+        "shape_D": 9.400372555697982e-07,
+        "density_relative_error": 8.554940800209465e-06,
+        "P_error": 2.7045366501887713e-07,
+        "phi_error": 2.0503949382799647e-07,
+        "lambda_error": 3.1046073864726687e-05
+      },
+      "pre_endpoint_holdout": {
+        "D": 1.3363627819126284e-05,
+        "shape_D": 9.200660877878928e-07,
+        "density_relative_error": 8.555236550633616e-06,
+        "P_error": 3.196434524843639e-07,
+        "phi_error": 4.2668788713395855e-07,
+        "lambda_error": 3.1113685608707975e-05
+      }
+    },
+    "16_256": {
+      "analytic_coefficients": {
+        "D": 0.0002133576513528213,
+        "shape_D": 1.50365162525789e-05,
+        "density_relative_error": 0.00013672142498133422,
+        "P_error": 4.320007332747622e-06,
+        "phi_error": 3.2859414560437727e-06,
+        "lambda_error": 0.0004963025844595403
+      },
+      "pre_endpoint_holdout": {
+        "D": 0.000213357622046927,
+        "shape_D": 1.5036503516686854e-05,
+        "density_relative_error": 0.00013672139010956208,
+        "P_error": 4.319892376924983e-06,
+        "phi_error": 3.2860593961459017e-06,
+        "lambda_error": 0.0004963025217917805
+      }
+    },
+    "16_512": {
+      "analytic_coefficients": {
+        "D": 5.33720440226552e-05,
+        "shape_D": 3.759805707316861e-06,
+        "density_relative_error": 3.4216859957969525e-05,
+        "P_error": 1.080136639242113e-06,
+        "phi_error": 8.2167132164912e-07,
+        "lambda_error": 0.00012417614778559294
+      },
+      "pre_endpoint_holdout": {
+        "D": 5.3372012560395056e-05,
+        "shape_D": 3.759792275642619e-06,
+        "density_relative_error": 3.42168236227014e-05,
+        "P_error": 1.080021676758136e-06,
+        "phi_error": 8.217891926953769e-07,
+        "lambda_error": 0.0001241760879560072
+      }
+    },
+    "16_1024": {
+      "analytic_coefficients": {
+        "D": 1.3343641606410639e-05,
+        "shape_D": 9.399949447725712e-07,
+        "density_relative_error": 8.554835531970895e-06,
+        "P_error": 2.700427905732994e-07,
+        "phi_error": 2.0542943235390965e-07,
+        "lambda_error": 3.104589047242534e-05
+      },
+      "pre_endpoint_holdout": {
+        "D": 1.3343610611719262e-05,
+        "shape_D": 9.399812737277882e-07,
+        "density_relative_error": 8.554800769666748e-06,
+        "P_error": 2.6992787183210964e-07,
+        "phi_error": 2.0554743818124166e-07,
+        "lambda_error": 3.104582956325874e-05
+      }
+    }
+  }
+}

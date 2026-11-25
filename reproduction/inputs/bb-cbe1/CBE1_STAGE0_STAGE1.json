@@ -1,0 +1,119 @@
+{
+  "classification": "CBE-B \u2014 exact-control equivalence with Sigma^2-stratified basin (homogeneous scope; inhomogeneous Stage 2 and Stage 3 not executed)",
+  "declared_action": "GR + one massless scalar (stiff, w=1), 8piG=1, flat homogeneous control",
+  "frozen": {
+    "clocks": [
+      "lam_rho = rho^-1/2",
+      "lam_R = Kretschmann^-1/4"
+    ],
+    "refinement_factor": 0.5,
+    "sigma2_perturbation_set": [
+      0.0001,
+      0.01,
+      0.1
+    ],
+    "tolerance_D": 1e-06,
+    "weights": "unit weight on (Omega, Sigma^2, R2/36, w_eff, parity)"
+  },
+  "program": "BB-CBE-1",
+  "program_doc": "Discussion/BB_COLLAPSE_BANG_SINGULAR_BOUNDARY_EQUIVALENCE_PROGRAM_2026-08-04.md",
+  "stage0": {
+    "flrw_pair": {
+      "D_max": 0.0,
+      "pair": "FLRW stiff crunch vs FLRW stiff bang",
+      "passes": true
+    },
+    "passes": true,
+    "schwarzschild_control": {
+      "classification_if_declared": "CBE-C \u2014 invariant mismatch",
+      "early_terminated": true,
+      "early_termination_gates": {
+        "shear_gate_C4": true,
+        "vacuum_vs_matter_ricci": true,
+        "weyl_ricci_gate_C5": true
+      },
+      "pair": "Schwarzschild/Kantowski-Sachs interior vs FLRW",
+      "passes": true,
+      "sigma2_limit": 1.0000000000000002,
+      "weyl_fraction": 1.0
+    }
+  },
+  "stage1": {
+    "clocks_agree": true,
+    "coarse": {
+      "D_lam_R": 0.0001311539737010034,
+      "D_lam_rho": 0.00021074565945789332,
+      "constraint_residual_max": 0.0,
+      "free_evolution_residual_C7_diagnostic": 0.007162113387020986
+    },
+    "fine": {
+      "D_lam_R": 3.096742503656231e-07,
+      "D_lam_rho": 4.97602186798983e-07,
+      "constraint_residual_max": 0.0,
+      "free_evolution_residual_C7_diagnostic": 0.020682777979138055
+    },
+    "passes": true,
+    "refinement_closes": true
+  },
+  "stage2_homogeneous": {
+    "radiation_shear_dominates_boundary": true,
+    "reading": "Stiff/scalar collapse carries Sigma^2 to the boundary unchanged: the perturbed collapse does NOT return to the unperturbed expanding target's basin, but matches the expanding solution of the SAME Sigma^2 stratum. Open-basin toward a single target fails; pairwise type-equivalence survives stratum-by-stratum.",
+    "rows": [
+      {
+        "drift": 0.0,
+        "isotropized": false,
+        "role": "scored-stiff",
+        "shear_dominated": false,
+        "sigma2_at_boundary": 0.0001,
+        "sigma2_initial": 0.0001,
+        "w": 1.0
+      },
+      {
+        "drift": 0.9998999999997396,
+        "isotropized": false,
+        "role": "contrast-radiation",
+        "shear_dominated": true,
+        "sigma2_at_boundary": 0.9999999999997395,
+        "sigma2_initial": 0.0001,
+        "w": 0.3333333333333333
+      },
+      {
+        "drift": 1.734723475976807e-18,
+        "isotropized": false,
+        "role": "scored-stiff",
+        "shear_dominated": false,
+        "sigma2_at_boundary": 0.010000000000000002,
+        "sigma2_initial": 0.01,
+        "w": 1.0
+      },
+      {
+        "drift": 0.9899999999998037,
+        "isotropized": false,
+        "role": "contrast-radiation",
+        "shear_dominated": true,
+        "sigma2_at_boundary": 0.9999999999998037,
+        "sigma2_initial": 0.01,
+        "w": 0.3333333333333333
+      },
+      {
+        "drift": 0.0,
+        "isotropized": false,
+        "role": "scored-stiff",
+        "shear_dominated": false,
+        "sigma2_at_boundary": 0.1,
+        "sigma2_initial": 0.1,
+        "w": 1.0
+      },
+      {
+        "drift": 0.899999999999843,
+        "isotropized": false,
+        "role": "contrast-radiation",
+        "shear_dominated": true,
+        "sigma2_at_boundary": 0.999999999999843,
+        "sigma2_initial": 0.1,
+        "w": 0.3333333333333333
+      }
+    ],
+    "stiff_sigma2_conserved": true
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "controls_pass": false,
+  "classification": {
+    "aggregate": "controls failed \u2014 campaign not started"
+  }
+}

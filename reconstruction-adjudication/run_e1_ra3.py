@@ -10,8 +10,8 @@ import numpy as np
 
 
 HERE = Path(__file__).resolve().parent
-ACADEMIC = HERE.parents[1]
-SOURCE = ACADEMIC / "bb-cbe2i" / "run_cbe2i.py"
+INPUTS = HERE.parent / "reproduction" / "inputs"
+SOURCE = INPUTS / "bb-cbe2i" / "run_cbe2i.py"
 OUTPUT = HERE / "E1_RA3_RESULT.json"
 
 N_VALUES = (256, 512)

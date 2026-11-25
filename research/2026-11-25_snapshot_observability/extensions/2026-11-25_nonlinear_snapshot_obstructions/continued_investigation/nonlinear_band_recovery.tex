@@ -1,0 +1,237 @@
+\section{Stable frequency-assigned recovery in the nonlinear equations}
+\label{sec:nonlinear-band}
+The lower bounds at fixed snapshot times concern the information
+record. Allowing each Fourier coefficient of a displacement field
+to use a prescribed observation time changes that record. We now
+give a nonlinear result valid in a regular-time neighborhood of
+arbitrary smooth Gowdy data. The positive delay in the schedule is
+independent of the spatial bandwidth.
+
+Fix $a>0$, $s>1/2$ and a class of solutions on $[a,a+T]$ whose
+$\|(P,Q)\|_{H^{s+1}}+\|(P_t,Q_t)\|_{H^s}$ are uniformly bounded.
+Write $U=(P,Q)$ and write the coordinate field equations as
+$U_{tt}-U_{\theta\theta}=\mathcal F(t,U,U_t,U_\theta)$,
+where
+\[
+ \mathcal F=
+ \begin{pmatrix}
+ -P_t/t+e^{2P}(Q_t^2-Q_\theta^2)\\
+ -Q_t/t-2(P_tQ_t-P_\theta Q_\theta)
+ \end{pmatrix}.
+\]
+On this bounded class there is a Lipschitz constant $L$ such that
+for the difference $Y=U-\widehat U$ and source difference $F$,
+\[
+ \|F(t)\|_{H^s}\le L E_s(Y(t)),\qquad
+ E_s(Y)^2=\|Y_t\|_{H^s}^2+\|Y_\theta\|_{H^s}^2+\|Y\|_{H^s}^2.
+\]
+This follows from the algebra property of $H^s(\mathbb T)$ and
+the Sobolev composition estimate for $e^{2P}$ on bounded sets.
+For common initial $U(a)$, $E_s(Y(a))=\|Y_t(a)\|_{H^s}$.
+The energy identity and Gronwall give
+$E_s(Y(a+r))\le e^{(L+1)r}E_s(Y(a))$.
+In particular let
+\[
+ \varepsilon_T = \frac{L}{L+1}\big(e^{(L+1)T}-1\big).
+\]
+
+For each recorded Fourier frequency $k$, use a delay $d_k\in(0,T]$
+with $d_{-k}=d_k$ and set
+\[
+ w_k=\max\{|k|,1/d_k\},\qquad
+ g_k=w_k S_k(d_k),\qquad
+ S_k(r)=
+ \begin{cases}
+ \sin(|k|r)/|k|,& k\ne0,\\
+ r,& k=0.
+ \end{cases}
+\]
+We record $\widehat P(k,a+d_k)$, with the same initial
+$P(a),Q(a),Q_t(a)$ for all compared solutions.
+For comparing records, multiply each measured difference by $w_k$
+and use the $H^s$ norm of the resulting Fourier sequence.
+For a decoder, subtract the known free displacement
+$\cos(|k|d_k)\widehat P(k,a)$ before multiplying.
+The analogous record for both displacement fields
+allows both initial velocities to be unknown.
+
+\begin{theorem}[Nonlinear sampling estimate]
+\label{th:nonlinear-band}
+Suppose $\inf_k |g_k|\ge\gamma>\varepsilon_T$ on the
+recorded frequencies. For two Gowdy solutions in the
+bounded class, with common initial position and common
+initial $Q_t$, write $f=P_t(a)-\widehat P_t(a)$,
+and let $\mathcal M$ be the weighted record. With all
+frequencies observed,
+\[
+ (\gamma-\varepsilon_T)\|f\|_{H^s}
+ \le \|\mathcal M(U)-\mathcal M(\widehat U)\|_{H^s}
+ \le (1+\varepsilon_T)\|f\|_{H^s}.
+\]
+With only $|k|\le K$ observed, the lower estimate becomes
+\[
+ (\gamma-\varepsilon_T)\|\Pi_K f\|_{H^s}
+ \le \|\mathcal M_K(U)-\mathcal M_K(\widehat U)\|_{H^s}
+       +\varepsilon_T\|(1-\Pi_K)f\|_{H^s}.
+\]
+The same estimates hold for both missing initial velocity
+fields when both displacements are read.
+\end{theorem}
+
+\begin{proof}
+Duhamel gives the observed $P$-difference on mode $k$
+as $S_k(d_k)f_k+\int_0^{d_k} S_k(d_k-r)F_{P,k}(a+r)\,dr$.
+For $0\le r\le d_k$, $w_k|S_k(d_k-r)|\le1$.
+Indeed the two possible factors in $w_k$ use either
+$|\sin x|\le1$ or $|S_k(r)|\le r$.
+For the weighted sequence of integrals, use Minkowski after
+extending each integral by zero to the common interval $[0,T]$.
+The entire remainder is bounded in $H^s$ by
+$\int_0^T\|F(a+r)\|_{H^s}\,dr\le\varepsilon_T\|f\|_{H^s}$.
+This argument requires no diagonal structure for $F$ and admits
+arbitrary coupling between modes.
+The diagonal free term has gain between $\gamma$ and one.
+The triangle inequality gives the two bounds and the version
+with the omitted velocity tail. Vector-valued data use
+the same argument. The periodic Gowdy momentum constraint
+restricts the set of compared Cauchy data and does not
+change the estimate.
+\end{proof}
+
+\paragraph{An explicit schedule with positive minimum delay.}
+Set $N=\lceil 2\pi/T\rceil$ and $d_0=T/4$.
+Read frequencies $|k|<N$ at $d_0$.
+Their free phases have magnitudes below $\pi/2$, giving
+$|g_k|\ge\sin(1)$, including $g_0=1$.
+Group the remaining frequencies as
+$N2^j\le |k|<N2^{j+1}$ for $j\ge0$.
+For each group use the baseline $d_0$ and the option
+$d_0+\pi/(4N2^j)$. For each mode keep the reading at
+whichever of the two times gives the larger
+$|\sin(|k|d)|$. Their phase separation is in
+$[\pi/4,\pi/2)$, so the chosen magnitude is at least
+$\gamma=\sin(\pi/8)$. These modes have $w_k=|k|$.
+All chosen times are in $[a+T/4,a+3T/8]$.
+There are at most $1+\max(0,1+\lfloor\log_2(K/N)\rfloor)$
+distinct times through bandwidth $K$, and one saved
+coefficient per frequency in addition to the initial
+data. Since $1/d_k\le4/T$, the observation norm is
+equivalent to $H^{s+1}$ on the assembled displacement
+sequence, with constants independent of $K$.
+At fixed $a$ and a fixed bounded set of nearby Cauchy data,
+local existence gives a common regular-time interval and a common
+bound, so $T$ can be reduced until $\varepsilon_T<\gamma$.
+This includes neighborhoods of non-geodesic-image
+solutions and the rank-two examples above.
+
+\paragraph{Stable decoding and truncated data.}
+Regard the forward map as $D v+R(v)$, with $D$ the
+diagonal multipliers $g_k$ and $R$ Lipschitz with
+constant $\varepsilon_T$. The subtraction of the known
+free displacement has been included. Let $B$ be a closed
+convex ball of trial velocities intersected with the
+affine momentum constraint, and suppose the same forward
+bound holds for every point of $B$.
+For $|k|\le K$ take trial velocities in a fixed affine
+band-limited slice, with their high-frequency part held fixed.
+For both the infinite and finite-dimensional cases,
+\[
+ v_{n+1}=\operatorname{proj}_{B}
+ \big[v_n+D^{-1}(\mathcal M_{\mathrm{data}}-\mathcal M(v_n))\big]
+\]
+is a contraction with ratio at most $\varepsilon_T/\gamma$.
+In the affine finite-band case the multiplier inverse in
+this formula acts only on the measured modes.
+The projection is in the relevant Hilbert $H^s$ norm.
+Consistent data recover the true velocity in $B$.
+For additive error $\eta$ in the weighted record, the
+resulting velocity error is at most
+$\|\eta\|_{H^s}/(\gamma-\varepsilon_T)$ whenever the
+true velocity lies in $B$. The truncated comparison
+bound gives the additional $H^s$ tail term when the
+true velocities are not in the same band-limited slice.
+For an a priori $H^{s+r}$ bound, this tail is of order
+$K^{-r}$ for $r>0$.
+
+\paragraph{Timing errors.}
+For known actual observation delays the proof applies
+as written to those delays. For unknown timing errors
+$\eta_k$ with both the nominal and actual times in
+$[a,a+T]$, set $\eta_*=\sup_k w_k|\eta_k|$ using the
+nominal weights. The change in the nominally weighted
+record has norm bounded by
+\[
+ \eta_*\left(\|P_t(a)\|_{H^s}+\|P_\theta(a)\|_{H^s}
+           +\int_0^T\|\mathcal F_P(a+r)\|_{H^s}\,dr\right).
+\]
+To see this, bound each temporal difference by
+$|\eta_k|\sup_t|\widehat P_t(k,t)|$ and apply the
+cosine propagator formula to $P_t$.
+The bound is independent of the number of slots.
+At high frequencies it corresponds to a clock error
+on the order of $1/K$ for a uniform comparison.
+
+\paragraph{Why the number of delayed slots grows.}
+Consider a class containing the constant wave map and
+suppose a uniform energy-normalized inverse estimate
+holds with one later reading per mode and $m$ possible
+delays in a fixed interval $[d_{\min},T]$, where
+$d_{\min}>0$. Differentiate along a polarized single-mode
+Cauchy family at the constant solution. The linear scalar
+transfer in energy normalization is
+$\sqrt{a/(a+d)}\{\sin(kd)+O(1/k)\}$,
+uniformly on the fixed interval. For $k\ge 1/d_{\min}$
+the prescribed weight is exactly $k$.
+Choose a fixed integer $\ell$ large enough for the error
+to be smaller than a quarter of the required lower gain
+on multiples of $\ell$. Partition $[0,1)^m$ into
+$R^m$ boxes for a fixed sufficiently large integer $R$.
+Among $R^m+1$ multiples of the vector
+$(\ell d_i/\pi)_{i=1}^m$ modulo one, two
+belong to the same box. Their index difference gives
+$k\in[\ell,\ell R^m]$ with $|\sin(kd_i)|\le\pi/R$
+at every slot. This contradicts the required gain if
+$\ell R^m\le K$. Thus the order $\log K$ is necessary
+for uniform modewise energy conditioning in this class
+when one reading per frequency is saved. The same
+argument applies if the maximum of all available
+readings per mode is used.
+
+\paragraph{Spatial dispersion in a numerical decoder.}
+A centered spatial stencil changes the free frequency
+from $|k|$ to a known $\omega_h(k)$.
+Even when $kh$ resolves the wave, a delayed slot incurs
+phase error $d_k(\omega_h(k)-|k|)$.
+For a stencil of order $p$ and all recorded modes
+through $K$ with $Kh$ in the resolved range, a
+sufficient condition to preserve the continuum phase
+margin is $T K(Kh)^p\ll1$.
+This differs from a requirement expressed only in
+points per spatial wavelength.
+For observations generated by a specified discretization
+one can instead place the slots using its own
+$\omega_h(k)$ in the two-phase rule.
+
+A second option, when using a coarse inverse against
+continuum-like data, corrects the modeled linear
+transfer and retains the computed nonlinear remainder.
+Write $\mathcal M_h(v)=C_h U(a)+D_h v+R_h(v)$,
+where $C_h,D_h$ are the exact scalar damped-wave
+transfers at the stencil frequencies, including the
+observation weights. Replace the prediction by
+\[
+ \mathcal M_h^{\,\mathrm{corr}}(v)
+    =\mathcal M_h(v)+(C-C_h)U(a)+(D-D_h)v .
+\]
+The correction uses the known initial displacement
+and the current trial velocity.
+If $\|R_h(v)-R_h(\widehat v)\|\le\epsilon_h\|v-\widehat v\|$
+and the continuum diagonal $D$ has lower gain
+$\gamma>\epsilon_h$, the correction makes the same
+contraction proof apply to the inverse.
+For a true continuum datum, the remaining error is
+controlled by $R_h(v)-R(v)$ at the true initial
+velocity, in addition to measurement noise.
+Thus phase correction and nonlinear model bias are
+separate. In the tests below the principal correction
+removed the observed coarse-grid instability.

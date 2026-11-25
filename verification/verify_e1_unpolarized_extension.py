@@ -8,12 +8,12 @@ from pathlib import Path
 import numpy as np
 
 
-ROOT = Path(__file__).resolve().parents[2]
+INPUTS = Path(__file__).resolve().parents[1] / "reproduction" / "inputs"
 OUT = Path(__file__).with_name("E1_UNPOLARIZED_EXTENSION_RESULT.json")
 
 
 def load(path: str):
-    return json.loads((ROOT / path).read_text())
+    return json.loads((INPUTS / path).read_text())
 
 
 def main():

@@ -1,0 +1,353 @@
+{
+  "campaign": {
+    "depth12_N1024": {
+      "lam_mean_residual": -4.0771684088669795e-14,
+      "momentum_residual_collapse_end": 0.004843185205464766,
+      "region_cells": {
+        "ordinary": 1024,
+        "spike": 0,
+        "unsettled": 0
+      },
+      "spike_components": [],
+      "surfaces": {
+        "2.0": {
+          "ordinary": 0.4314414924982972,
+          "spike": null,
+          "unsettled": null
+        },
+        "4.0": {
+          "ordinary": 0.24596263487667475,
+          "spike": null,
+          "unsettled": null
+        },
+        "8.0": {
+          "ordinary": 0.17273354364740093,
+          "spike": null,
+          "unsettled": null
+        }
+      }
+    },
+    "depth12_N2048": {
+      "lam_mean_residual": 1.1740243167758763e-13,
+      "momentum_residual_collapse_end": 0.001224435025241702,
+      "region_cells": {
+        "ordinary": 2048,
+        "spike": 0,
+        "unsettled": 0
+      },
+      "spike_components": [],
+      "surfaces": {
+        "2.0": {
+          "ordinary": 0.43196160626785474,
+          "spike": null,
+          "unsettled": null
+        },
+        "4.0": {
+          "ordinary": 0.24630913250825134,
+          "spike": null,
+          "unsettled": null
+        },
+        "8.0": {
+          "ordinary": 0.17281031926173407,
+          "spike": null,
+          "unsettled": null
+        }
+      }
+    },
+    "depth12_N4096": {
+      "lam_mean_residual": -7.436112495933157e-14,
+      "momentum_residual_collapse_end": 0.0003069503207751627,
+      "region_cells": {
+        "ordinary": 4096,
+        "spike": 0,
+        "unsettled": 0
+      },
+      "spike_components": [],
+      "surfaces": {
+        "2.0": {
+          "ordinary": 0.43207489029082013,
+          "spike": null,
+          "unsettled": null
+        },
+        "4.0": {
+          "ordinary": 0.24635789474892356,
+          "spike": null,
+          "unsettled": null
+        },
+        "8.0": {
+          "ordinary": 0.1728400011070491,
+          "spike": null,
+          "unsettled": null
+        }
+      }
+    },
+    "depth18_N1024": {
+      "lam_mean_residual": -6.483181388422665e-14,
+      "momentum_residual_collapse_end": 0.002553319731181301,
+      "region_cells": {
+        "ordinary": 982,
+        "spike": 42,
+        "unsettled": 0
+      },
+      "spike_components": [
+        {
+          "cells": [
+            59,
+            63
+          ],
+          "center": 61,
+          "kind": "TRUE",
+          "v_center": 1.0746785998589523,
+          "v_max": 1.159065975128339,
+          "width_cells": 5
+        },
+        {
+          "cells": [
+            961,
+            965
+          ],
+          "center": 963,
+          "kind": "TRUE",
+          "v_center": 1.0746785998610715,
+          "v_max": 1.1590659751292538,
+          "width_cells": 5
+        }
+      ],
+      "surfaces": {
+        "2.0": {
+          "ordinary": 2.7328770252670433,
+          "spike": 0.8201166482098101,
+          "unsettled": null
+        },
+        "4.0": {
+          "ordinary": 0.24395446302712648,
+          "spike": 0.6345228669467685,
+          "unsettled": null
+        },
+        "8.0": {
+          "ordinary": 0.21448348580867194,
+          "spike": 0.24518582741057063,
+          "unsettled": null
+        }
+      }
+    },
+    "depth18_N2048": {
+      "lam_mean_residual": 8.411201675368066e-14,
+      "momentum_residual_collapse_end": 0.0006431226684094041,
+      "region_cells": {
+        "ordinary": 1996,
+        "spike": 52,
+        "unsettled": 0
+      },
+      "spike_components": [
+        {
+          "cells": [
+            117,
+            126
+          ],
+          "center": 122,
+          "kind": "TRUE",
+          "v_center": 1.0744765094528415,
+          "v_max": 1.1589131559607626,
+          "width_cells": 10
+        },
+        {
+          "cells": [
+            1922,
+            1931
+          ],
+          "center": 1926,
+          "kind": "TRUE",
+          "v_center": 1.0744765094529978,
+          "v_max": 1.1589131559613097,
+          "width_cells": 10
+        }
+      ],
+      "surfaces": {
+        "2.0": {
+          "ordinary": 3.0945895371088312,
+          "spike": 0.8168860794273479,
+          "unsettled": null
+        },
+        "4.0": {
+          "ordinary": 0.35999024172602856,
+          "spike": 0.6285724958235085,
+          "unsettled": null
+        },
+        "8.0": {
+          "ordinary": 0.220148879268005,
+          "spike": 0.24692178969825573,
+          "unsettled": null
+        }
+      }
+    },
+    "depth18_N4096": {
+      "lam_mean_residual": -1.0461322569276835e-13,
+      "momentum_residual_collapse_end": 0.0001610759818533116,
+      "region_cells": {
+        "ordinary": 4026,
+        "spike": 70,
+        "unsettled": 0
+      },
+      "spike_components": [
+        {
+          "cells": [
+            234,
+            252
+          ],
+          "center": 245,
+          "kind": "TRUE",
+          "v_center": 1.0855691746024139,
+          "v_max": 1.1588749068799835,
+          "width_cells": 19
+        },
+        {
+          "cells": [
+            3844,
+            3862
+          ],
+          "center": 3851,
+          "kind": "TRUE",
+          "v_center": 1.0855691746149585,
+          "v_max": 1.1588749068763722,
+          "width_cells": 19
+        }
+      ],
+      "surfaces": {
+        "2.0": {
+          "ordinary": 3.0340171246637033,
+          "spike": 0.8221535621247615,
+          "unsettled": null
+        },
+        "4.0": {
+          "ordinary": 0.4037512241742955,
+          "spike": 0.6273951904173899,
+          "unsettled": null
+        },
+        "8.0": {
+          "ordinary": 0.22014846396586185,
+          "spike": 0.2473285098949005,
+          "unsettled": null
+        }
+      }
+    }
+  },
+  "classification": {
+    "D_ordinary_fine": 3.0340171246637033,
+    "D_spike_fine": 0.8221535621247615,
+    "aggregate": "intermediate/CBE-D \u2014 see per-class table",
+    "per_class": {
+      "ordinary": "intermediate",
+      "transient_spike": "absent",
+      "true_spike": "mismatch"
+    },
+    "true_spike_widths": [
+      19,
+      19
+    ]
+  },
+  "controls": {
+    "constraint": {
+      "orders": [
+        1.9836255410552748,
+        1.9959194457636946
+      ],
+      "passes": true,
+      "rows": [
+        {
+          "N": 1024,
+          "residual": 0.007274492030078485
+        },
+        {
+          "N": 2048,
+          "residual": 0.001839381797424325
+        },
+        {
+          "N": 4096,
+          "residual": 0.0004611479286806811
+        }
+      ]
+    },
+    "exact_unpolarized": {
+      "label": "sign-fixed seed",
+      "orders": [
+        2.0002385480333285,
+        2.000052049182222
+      ],
+      "passes": true,
+      "rows": [
+        {
+          "N": 128,
+          "sup_dH2_error": 0.015729842383093422
+        },
+        {
+          "N": 256,
+          "sup_dH2_error": 0.003931810421506692
+        },
+        {
+          "N": 512,
+          "sup_dH2_error": 0.0009829171433040026
+        }
+      ]
+    },
+    "false_spike": {
+      "convergence": {
+        "label": "false-spike seed",
+        "orders": [
+          1.997645532772756,
+          1.9994127947551465
+        ],
+        "passes": true,
+        "rows": [
+          {
+            "N": 128,
+            "sup_dH2_error": 0.010481046904791595
+          },
+          {
+            "N": 256,
+            "sup_dH2_error": 0.0026245414645123337
+          },
+          {
+            "N": 512,
+            "sup_dH2_error": 0.0006564024804783486
+          }
+        ]
+      },
+      "detected_features": [
+        {
+          "cells": [
+            103,
+            153
+          ],
+          "center": 128,
+          "kind": "TRANSIENT",
+          "v_center": 5.809346281254735e-05,
+          "v_max": 0.13639915954755943,
+          "width_cells": 51
+        },
+        {
+          "cells": [
+            359,
+            409
+          ],
+          "center": 384,
+          "kind": "TRANSIENT",
+          "v_center": 5.809346280305494e-05,
+          "v_max": 0.13639915954755844,
+          "width_cells": 51
+        }
+      ],
+      "detector_classifies_false": true,
+      "passes": true
+    },
+    "homogeneous": {
+      "backward_roundtrip_error": 2.6645352591003757e-15,
+      "passes": true,
+      "piQ_drift": 1.514899317101026e-12
+    }
+  },
+  "controls_pass": true,
+  "line": "E",
+  "program": "BB-CBE-3",
+  "spec": "BB_CBE3_UNPOLARIZED_SPIKE_EQUIVALENCE_SPEC_2026-08-04.md"
+}

@@ -1,0 +1,42 @@
+{
+  "platform": "Linux-7.0.0-42-generic-aarch64-with-glibc2.43",
+  "resonant_loop": {
+    "initial_time": 4.0,
+    "initial_radius": 0.32,
+    "terminal_signed_radius": -0.29363475290310076,
+    "areal_delay": 0.7672845304404081,
+    "connection_angle": 3.141592653589793,
+    "probes": [
+      {
+        "mode": 86,
+        "free_phase_gain": 0.013023524303271587,
+        "both_full_metrics_gain": 0.013056451990860328
+      },
+      {
+        "mode": 217,
+        "free_phase_gain": 0.00366752646858709,
+        "both_full_metrics_gain": 0.0036751834251397618
+      },
+      {
+        "mode": 434,
+        "free_phase_gain": 0.007335003606025188,
+        "both_full_metrics_gain": 0.007338885901406792
+      },
+      {
+        "mode": 954,
+        "free_phase_gain": 0.0016462455288790915,
+        "both_full_metrics_gain": 0.0016475742032183243
+      },
+      {
+        "mode": 1691,
+        "free_phase_gain": 0.0003750421367955007,
+        "both_full_metrics_gain": 0.0003743855003164658
+      },
+      {
+        "mode": 3382,
+        "free_phase_gain": 0.0007500842208388462,
+        "both_full_metrics_gain": 0.0007497234436686719
+      }
+    ]
+  }
+}

@@ -13,8 +13,8 @@ from scipy.special import j0, j1, y0, y1
 
 HERE = Path(__file__).resolve().parent
 PAPER = HERE.parent
-ACADEMIC = PAPER.parent
-SOURCE = ACADEMIC / "bb-cbe2i" / "run_cbe2i.py"
+INPUTS = PAPER / "reproduction" / "inputs"
+SOURCE = INPUTS / "bb-cbe2i" / "run_cbe2i.py"
 OUTPUT = HERE / "E1_FG1_RESULT.json"
 DEPTHS = (8.0, 12.0, 16.0)
 NS = (256, 512)

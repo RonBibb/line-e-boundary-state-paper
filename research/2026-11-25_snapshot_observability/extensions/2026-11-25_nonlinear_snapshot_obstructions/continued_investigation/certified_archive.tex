@@ -1,0 +1,206 @@
+\section{A certified nonlinear basin on the archived grids}
+\label{sec:certified-archive}
+The earlier measured tangent near the boundary tape can be
+replaced by a uniform finite-grid bound over a velocity ball.
+Use the centered periodic stencil of the historical trace,
+start from the depth-$18$ fields, and hold $P,Q,Q_\tau$ fixed
+there. Write $V$ for the missing $P_\tau(18)$,
+$V_*$ for the archived value, and
+\[
+ \mathcal F_{\mathrm{arch}}(V)
+  =\frac{P(18)-P(16;V)}2,\qquad
+ Y_{\mathrm{arch}}=\frac{P_{\mathrm{archive}}(18)-
+                              P_{\mathrm{archive}}(16)}2 .
+\]
+The archived velocity is used to locate a proof ball.
+It is not needed to run the reconstruction.
+
+\begin{theorem}[Archive certificate]
+\label{th:archive-certificate}
+For each $N=1024,2048,4096$, the exact centered-stencil
+ordinary differential equation initialized by the stored
+floating-point arrays is well defined throughout the
+window for all $\|V-V_*\|_\infty\le0.06$.
+On that entire ball,
+\[
+ \|D\mathcal F_{\mathrm{arch}}(V)-I\|_\infty < 0.10725 .
+\]
+The recorded $Y_{\mathrm{arch}}$ lies in the image of the
+ball, and there is a unique compatible velocity in it.
+The iteration
+\[
+ V^{(0)}=Y_{\mathrm{arch}},\qquad
+ V^{(m+1)}=V^{(m)}+Y_{\mathrm{arch}}
+                         -\mathcal F_{\mathrm{arch}}(V^{(m)})
+\]
+starts in the ball and converges to that velocity.
+Additional noise in the normalized record of supremum
+norm at most $0.05095$ still gives a unique solution in
+the same ball, with velocity error at most $1.121$
+times the record noise. The certificate uses the exact
+semidiscrete equations for each stated $N$.
+\end{theorem}
+
+\begin{proof}
+Let $x=18-\tau\in[0,2]$ and denote spatial difference
+operators by $D_1,D_2$. At each site set
+\[
+ B=e^P Q_\tau,\qquad C=e^{P-\tau}D_1Q,\qquad
+ Z_i=e^{P_i-\tau}\frac{Q_{i+1}-Q_i}{\Delta\theta},
+ \qquad \xi=e^{-\tau}/\Delta\theta .
+\]
+The exact reduced equations give
+\begin{align*}
+ V_x&=C^2-B^2-e^{-2\tau}D_2P,\\
+ B_x&=VB-e^{P-2\tau}(D_2Q+2D_1P D_1Q),\\
+ C_x&=(1-V)C-e^{P-\tau}D_1Q_\tau,\\
+ (Z_i)_x&=(1-V_i)Z_i-\xi
+          (e^{P_i-P_{i+1}}B_{i+1}-B_i).
+\end{align*}
+Bootstrap $0.31\le V\le1.425$,
+$|B|\le0.035$, $|C|\le0.276$ and $|Z|\le0.965$.
+The adjacent $P$ increments are bounded by
+$0.18+2(1.425-0.31)=2.41=:J$.
+With $E=e^J$, the spatial term in the $V$ equation is
+bounded by $2\xi^2 J$. The absolute forcing bounds
+for $B,C,Z$ after their displayed local terms are
+respectively
+\[
+ \xi\big((1+E)|Z|+2J|C|\big),\qquad
+ \xi E|B|,\qquad \xi(1+E)|B|.
+\]
+These follow directly from the two neighboring edge
+differences. Integrating the scalar growth inequalities
+bounds $V,B,Z$ strictly inside their proposed limits.
+
+For $C$, compare the pair $(u,C)=(1-V,C)$ to the
+sitewise velocity-dominated system
+$u_x=-C^2$, $C_x=uC$ with the same initial values.
+This system conserves $u^2+C^2=\sigma^2$ and admits the
+explicit transfer
+\[
+ C_{\mathrm{ref}}(x)
+ =\frac{C(0)}{\cosh(\sigma x)-(u(0)/\sigma)\sinh(\sigma x)}.
+\]
+When $u$ starts nonpositive the amplitude decreases.
+Otherwise its maximum occurs at the end of the window
+or when $u=0$, and the growth estimate
+$|C_{\mathrm{ref}}(x)|\le |C(0)|e^{x\max(u(0),0)}$
+holds throughout. These bounds provide the interval
+maximum for each possible initial $V$ in the ball.
+The comparison Jacobian in $(u,C)$ has maximum row
+norm bounded by
+$\max\{2|C|,|C|+|u|\}$ on the segment between the
+two solutions. If $L$ and $f$ bound that norm and
+the forcing in the two-component comparison, its
+maximum error at backward time $x$ is
+$f(e^{Lx}-1)/L$. The resulting bound on $C$ strictly
+improves the proposed cap. Continuation closes the
+bootstrap for every velocity in the ball.
+
+For the tangent derivative, use the scaled perturbations
+$(p,v,y,z)=(\delta P,\delta P_\tau,e^P\delta Q,
+e^P\delta Q_\tau)$, with $p=y=z=0$ initially.
+The component supremum norms satisfy a comparison
+inequality with a constant nonnegative matrix $M$.
+Writing $B_*,C_*,V_{\max}$ for the established bounds
+and $\xi_*=\max_{[0,2]}\xi$, the rows of one such $M$ are
+\[
+ \begin{pmatrix}
+ 0&1&0&0\\
+ 2\max(B_*^2,C_*^2)+4\xi_*^2&0&2\xi_*C_*E&2B_*\\
+ 0&0&0&1\\
+ 2\xi_*C_*&2B_*&[2+2E(1+J)]\xi_*^2&V_{\max}
+ \end{pmatrix}.
+\]
+For example, the $\xi_*^2$ terms come from the centered
+second difference in $P$ and the corresponding weighted
+difference in $Q$. The term $-V y$ in the backward
+equation can be dropped for this upper comparison.
+Since $p_x=-v$, bounding the feedback into $v$ gives
+\[
+ \|D\mathcal F_{\mathrm{arch}}-I\|_\infty
+ \le \frac12 (e^{2M}e_v)_p-1 ,
+ \qquad e_v=(0,1,0,0)^{\mathsf T}.
+\]
+The subtraction here removes the free contribution
+of the initial velocity. In detail the difference from
+the free position is the time integral of the $v$
+feedback with kernel $2-x$, bounded by the same
+integral in the positive comparison system.
+
+The normalized position transfer of the sitewise
+comparison at $V_*$ is
+\[
+ Y_{\mathrm{ref}}=
+ 1+\tfrac12\log\!\left(\cosh(2\sigma)
+       -(u(0)/\sigma)\sinh(2\sigma)\right).
+\]
+Integrating the $u$ error above bounds
+$\|\mathcal F_{\mathrm{arch}}(V_*)-Y_{\mathrm{ref}}\|_\infty$.
+The measured $Y_{\mathrm{arch}}-Y_{\mathrm{ref}}$
+is enclosed separately using the stored arrays.
+The interval script checks the bootstrap,
+evaluation of $Y_{\mathrm{ref}}$, and the matrix
+exponential by positive terms through order $24$ with
+a geometric tail bound. It uses interval evaluations
+of the initial floating-point arrays and records
+their SHA-256 hashes. Its results are
+\[
+\begin{array}{rccc}
+ N&\|D\mathcal F_{\mathrm{arch}}-I\|_\infty
+   &\|\mathcal F_{\mathrm{arch}}(V_*)-Y_{\mathrm{arch}}\|_\infty
+   &\|Y_{\mathrm{arch}}-V_*\|_\infty\\ \hline
+ 1024&<0.10310&<0.002610&<0.04681\\
+ 2048&<0.10402&<0.002610&<0.04708\\
+ 4096&<0.10725&<0.002610&<0.04708 .
+\end{array}
+\]
+
+The exact forward-based iteration is a contraction
+on a complete ball with uniform factor $0.10725$.
+For its self-map condition, the distance of the image
+of $V_*$ from $V_*$ is the record mismatch.
+The mismatch plus record noise must be at most
+$(1-0.10725)0.06$. The interval bounds give the
+stated noise budget and verify that the projected
+secant itself lies inside the ball without noise.
+Two compatible solutions in the ball obey the lower
+Lipschitz estimate with factor $1-0.10725$.
+This completes the certificate.
+\end{proof}
+
+The admissible-noise bound is a bound on the existence
+and uniqueness of the nearby decoded velocity.
+An arbitrary noisy secant need not serve as an initial
+iterate in the same ball; the original secant or a
+previous iterate in the certified ball can be used.
+The argument treats the exact finite-dimensional
+ordinary differential equations. In particular it
+does not impose transfer of these constants to the
+continuum or to the fourth-order stencil.
+
+
+\paragraph{All four recorded fields.}
+The same interval comparison can vary the stored
+$P,Q$ and momentum $M=e^{2P}Q_\tau$ as well as the
+normalized record. About the archived initial fields,
+allow
+\[
+ \|\Delta P\|_\infty\le0.002,\quad
+ \|e^{P_*}\Delta Q\|_\infty\le0.003,\quad
+ \|e^{-P_*}\Delta M\|_\infty\le0.00015 .
+\]
+Along a straight segment in these three measured
+variables, the scaled tangent of $Q_\tau$ begins with
+$e^{-P}\Delta M-2B\Delta P$ and the scale for
+$\Delta Q$ changes by at most $e^{0.002}$.
+The same positive comparison system therefore
+bounds the change in the normalized record at fixed
+velocity by $0.000347$ over the three grids.
+With these measured-field uncertainties, the uniform
+derivative defect remains below $0.10866$ and
+a further normalized secant error of $0.05052$
+fits inside the certificate. The stated norms
+make explicit how precision in the orbit momentum
+depends on the marked $P$ scale.

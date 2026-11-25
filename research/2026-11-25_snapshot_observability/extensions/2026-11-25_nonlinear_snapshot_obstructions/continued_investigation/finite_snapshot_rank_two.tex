@@ -1,0 +1,282 @@
+\section{Stable recovery from three fixed slices}
+\label{sec:rank-two-coercivity}
+Frequency-assigned sampling gives a general nonlinear recovery
+result. Parallel transport from the two characteristic directions
+can separate their contributions in a full orbit snapshot.
+This yields local nonlinear stability with a fixed number of
+slices near a broad class of inhomogeneous backgrounds,
+including the explicit Gowdy-to-Ernst backgrounds of
+Section~\ref{sec:rank-two}.
+
+Let $\bar U=(\bar P,\bar Q)$ be a smooth background, use
+$t=a+d$, and let $V$ be a linearized wave map with
+$V(a)=0$, $D_tV(a)=f e_P$. The smooth orthonormal frame
+$e_P=\partial_P$, $e_Q=e^{-\bar P}\partial_Q$ has connection
+one-form $\omega=e^{\bar P}d\bar Q$, with
+$D_\mu e_P=\omega_\mu e_Q$.
+Let $A_\pm(t,\theta)$ be the frame component vector obtained
+by transporting $e_P$ along the $\pm$ null rays from
+$(a,\theta\mp d)$ to $(t,\theta)$.
+For $h=\partial_\theta^{-1}(f-\langle f\rangle)$ of mean zero,
+the leading displacement in this frame is
+\begin{equation}
+ \sqrt{t/a}\,V(t,\theta)
+  =\frac12\left[A_-(t,\theta)h(\theta+d)
+                    -A_+(t,\theta)h(\theta-d)\right]+R_t f .
+ \label{eq:transport-leading}
+\end{equation}
+For integer $s\ge1$, $R_t$ maps $H^{s-1}$ boundedly to
+$H^{s+1}$ on any smooth regular-time interval in question.
+
+To verify the remainder estimate, multiply the covariant
+linearization by $\sqrt{t/a}$ to remove $t^{-1}D_t$.
+Its principal part is $D_t^2-D_\theta^2$ and its other
+terms are a smooth zeroth-order potential given by curvature
+and $1/(4t^2)$. Apply this operator to the leading expression
+in \eqref{eq:transport-leading}. The terms with $h''$
+cancel between equal-speed time and space derivatives.
+The terms with $h'$ vanish by the two transport equations
+$(D_t\pm D_\theta)A_\pm=0$.
+Only smooth coefficients times $h$ remain.
+At $a$ the leading expression is zero and its initial
+derivative equals $f-\langle f\rangle$ in the $e_P$ direction
+up to a smooth coefficient times $h$.
+The error therefore has zero initial displacement, initial
+velocity bounded in $H^s$ by $\|f\|_{H^{s-1}}$, and source
+with that same regularity. The linear energy estimate proves
+the claim. The formula is insensitive to the finite-rank
+choice of treatment of the mean.
+
+
+\subsection{A criterion from the relative null transport}
+At a chosen terminal time $c=a+d$, let $\alpha_\pm(\theta)$
+be the angles of $A_\pm$, defined by the signed integrals
+$-\int_{\gamma_\pm}\omega$ on the two null rays.
+Write $\rho=(\alpha_- -\alpha_+)/2$, $\beta=\sin\rho$,
+and rotate the output frame by the mean angle
+$(\alpha_-+\alpha_+)/2$.
+The two leading components in \eqref{eq:transport-leading},
+up to the common factor $1/2$, then read
+\[
+ \cos\rho\,\big(H-\mathcal T H\big),\qquad
+ \beta\,\big(H+\mathcal T H\big),
+ \quad H(\theta)=h(\theta+d),\quad
+ \mathcal T H(\theta)=H(\theta-2d).
+\]
+We use the conditions
+\begin{equation}
+ \inf_\theta|\cos\rho(\theta)|>0,\qquad
+ \inf_{\theta\in\mathbb T}\sum_{j=0}^{J}
+           |\beta(\theta-2jd)|^2>0
+ \quad\text{for some finite }J .
+ \label{eq:rotation-cover}
+\end{equation}
+For an irrational $d/\pi$ and $\beta\not\equiv0$,
+the second condition follows from density of
+circle-rotation orbits and a finite subcover of the
+translates of an open set where $|\beta|$ is bounded below.
+
+In particular the conditions hold at all sufficiently
+short delays after a slice where $Q_\theta(a)$ is
+nonzero somewhere. Indeed, expansion of the two ray
+integrals about $(a,\theta)$ gives
+\begin{equation}
+ 2\rho=2d\,\omega_\theta(a,\theta)
+        +d^2\big(\partial_t\omega_\theta-
+                  \partial_\theta\omega_t\big)(a,\theta)
+        +O(d^3).
+ \label{eq:relative-expansion}
+\end{equation}
+If $Q_\theta(a)\equiv0$ but $P_\theta(a)Q_t(a)$
+is nonzero somewhere, the first term vanishes and the
+coefficient of $d^2$ is nonzero on an interval since
+$d\omega=e^{P}dP\wedge dQ$. These two cases include any
+background of rank two at some point of the initial slice.
+In either case a fixed open arc has $|\beta|$ bounded
+below by a positive multiple of $d$ or $d^2$ for small
+$d$. If the arc is wider than $2d$, the first
+$\lceil\pi/d\rceil+1$ translates cover the circle.
+The short-delay result therefore holds for rational
+as well as irrational placements.
+
+For the explicit Gowdy-to-Ernst construction,
+$\omega_t=C e^{-P(w)}w_\theta$ and
+$\omega_\theta=C e^{-P(w)}w_t$.
+Set $B'(z)=C e^{-P(z)}$ with $B(0)=0$.
+The two rotations are $-B(w(c,\theta))$ and
+$+B(w(c,\theta))$, since the seed phase vanishes at $a$.
+For a small-amplitude seed of a single mode $k$,
+a time $c$ with nonzero mode amplitude and
+$2kd\notin\pi\mathbb Z$ satisfies both conditions,
+with $J=1$.
+
+\begin{theorem}
+\label{th:fixed-rank-two}
+Consider a smooth Gowdy background and a terminal time
+$c$ satisfying \eqref{eq:rotation-cover}. In addition to the initial
+$P(a),Q(a),Q_t(a)$ and the metric anchor, read $P,Q$ at $c$
+and finitely many low Fourier coefficients of $P$ at a
+suitably chosen $a+d_1\in(a,c)$.
+There is an $H^s$ neighborhood of the background initial
+$P_t$ for each integer $s\ge1$ in which the nonlinear
+observation is locally bi-Lipschitz from the missing
+velocity in $H^s$ to these observations, using $H^{s+1}$
+for the full orbit fields and a fixed finite-dimensional
+norm for the early coefficients. The same estimate applies on the
+periodic momentum-constraint subspace.
+\end{theorem}
+
+\begin{proof}
+The displayed principal components control
+$H-\mathcal T H$ and $\beta H$ in $L^2$.
+If $b_j(\theta)=\beta(\theta-2jd)$, then
+\[
+ b_j H = \mathcal T^j(\beta H)+b_j(H-\mathcal T^j H).
+\]
+Telescoping bounds the second term by
+$j\|\beta\|_\infty\|H-\mathcal T H\|_{L^2}$.
+Summing these estimates and using \eqref{eq:rotation-cover}
+controls $\|H\|_{L^2}$.
+Apply the same estimate to $\partial_\theta^{s+1}H$.
+Commutation through the smooth multiplication coefficients
+adds only terms bounded by $\|H\|_{H^s}$.
+Add the compact remainder from \eqref{eq:transport-leading}
+and the mean mode. For the exact derivative
+$\mathcal A_c:f\mapsto (\delta P(c),\delta Q(c))$,
+this gives
+\begin{equation}
+ \|f\|_{H^s}\le C
+    \big(\|\mathcal A_c f\|_{H^{s+1}}+\|f\|_{H^{s-1}}\big).
+ \label{eq:rank-two-compact}
+\end{equation}
+The frame factors and the scalar time rescaling
+are bounded invertible multipliers on the output space.
+
+
+The low-frequency reading can be chosen constructively.
+Let $C$ be the constant in \eqref{eq:rank-two-compact},
+and choose $K$ so that $C/\langle K\rangle<1/4$.
+The $H^{s-1}$ norm splits into the low part and a tail
+bounded by $\langle K\rangle^{-1}\|f\|_{H^s}$.
+For $d_1<\min(d,1/K)$, apply the free-wave Duhamel formula
+to the coordinate linearization from $a$ to $a+d_1$.
+The map $f\mapsto\Pi_K\delta P(a+d_1)/d_1$
+differs from the free diagonal map
+$\operatorname{sinc}(k d_1)\Pi_Kf$
+by a map bounded from $H^{s-1}$ to $H^{s-1}$ with norm
+$O(d_1)$. This follows from the smooth coefficient
+energy estimate and $|S_k(r)|\le r$.
+The free gains are at least $\sin(1)$.
+Choose $d_1$ smaller if needed to absorb
+the $O(d_1)\|f\|_{H^{s-1}}$ contribution into the
+left-hand side of \eqref{eq:rank-two-compact}.
+The joint derivative is bounded below.
+Equivalently, compactness in \eqref{eq:rank-two-compact}
+shows that the full-terminal kernel is finite dimensional,
+and the early reading removes it.
+
+For the nonlinear step, the first-order energy formulation
+with coordinate source $\mathcal F$ gives a $C^1$ solution
+map on a neighborhood of the smooth background, on the fixed
+time interval. One can obtain the derivative by subtracting the
+linearized equation from the difference equation and applying
+the same energy estimate to the quadratic Taylor remainder.
+The derivative is continuous in operator norm by a linear
+energy estimate on the difference of two coefficient fields.
+Thus on a sufficiently small convex ball the observation
+derivative differs from its value at the background by
+less than half the lower bound of the joint derivative.
+Integrating this operator difference along the segment between
+two velocities proves the pairwise lower Lipschitz estimate.
+The upper estimate follows from the local forward energy bound.
+The affine periodic momentum constraint can be imposed after
+the estimate.
+\end{proof}
+
+This result applies to full orbit observations at a time
+where the two null transports differ.
+At a common node of the seed phase, $\rho=0$ everywhere
+and the argument supplies only the translation difference.
+It does not give a stability estimate at the resonant
+two-metric pair. The construction uses two later time
+slots, and the earlier slot needs only finitely many
+low Fourier coefficients. It leaves open
+whether that extra reading can be omitted or replaced
+by a particular previously imposed terminal time.
+
+\subsection{When the full terminal orbit snapshot suffices}
+
+\begin{proposition}
+\label{prop:two-slice-open}
+There is an open class of smooth Cauchy backgrounds,
+including solutions with rank-two target differential on
+open sets, near which the nonlinear missing-velocity
+inverse is locally bi-Lipschitz from one full terminal
+orbit snapshot and the initial $P(a),Q(a),Q_t(a)$.
+The norms are $H^s$ for velocity and $H^{s+1}$ for the
+snapshot, for integer $s\ge1$.
+One explicit choice starts at a geodesic-image background
+$U=\gamma(w)$ with $\gamma$ a unit-speed nonvertical
+geodesic. Suppose $w(a,\theta)$ is nonconstant and its
+range lies in a compact segment on which
+$|\langle e_P,\dot\gamma\rangle|>0$.
+A sufficiently short delay $d=\pi/L$ with $L$ an integer
+gives the conclusion.
+\end{proposition}
+
+\begin{proof}
+On a geodesic-image background the tangential and normal
+linearized equations decouple in the frame parallel along
+$\gamma$. The curvature terms take values in the normal
+direction. Thus the tangent component $X$ obeys
+$X_{tt}+t^{-1}X_t-X_{\theta\theta}=0$ with initial
+position zero and velocity
+$X_t(a)=\langle e_P,\dot\gamma(w(a))\rangle f$.
+The full terminal orbit snapshot contains $X(c)$.
+The scalar rational-gap bound of
+Proposition~\ref{prop:safe-gap} gives, for sufficiently
+large $L$,
+\[
+ \|X_t(a)\|_{H^{s-1}}\le C\|X(c)\|_{H^{s+1}} .
+\]
+The multiplier $\langle e_P,\dot\gamma(w(a))\rangle$
+is smoothly invertible by hypothesis. In addition,
+$Q_\theta(a)$ is nonzero somewhere by nonverticality
+and nonconstant $w(a)$. The same short delay satisfies
+\eqref{eq:rotation-cover}. We may therefore use the
+tangent estimate to control the $H^{s-1}$ remainder
+in \eqref{eq:rank-two-compact} and obtain a bounded-below
+derivative for the single terminal full orbit snapshot.
+The $C^1$ argument of Theorem~\ref{th:fixed-rank-two}
+turns this into a local nonlinear inverse. Continuity
+in the background Cauchy data preserves the strictly
+positive lower bound at the same time. A small initial
+velocity perturbation perpendicular to the geodesic
+preserves the momentum constraint and creates rank two
+where $w_\theta(a)\ne0$. This gives genuinely rank-two
+members of the open class.
+\end{proof}
+
+\paragraph{Necessity of the cover at principal order.}
+When $\cos\rho$ is bounded away from zero,
+\eqref{eq:rotation-cover} is also necessary for the
+one-terminal linearized orbit observation to have an
+energy lower bound, before any lower-frequency
+obstruction is considered. Indeed, if the cover fails,
+compactness gives a point whose full forward rotation
+orbit lies in the zero set of $\beta$.
+For irrational rotation this forces $\beta\equiv0$,
+and the translation difference has arbitrarily small
+Fourier gains by rational approximation.
+For rational rotation the zero orbit is finite.
+Choose smooth, rotation-invariant envelopes supported in
+shrinking neighborhoods of that orbit and multiply them
+by arbitrarily high Fourier carriers invariant under the
+same rotation. The principal translation difference
+vanishes and the multiplication by $\beta$ becomes
+arbitrarily small. Taking the carrier large for each
+fixed envelope makes its contribution from the
+lower-order remainder tend to zero in the normalized
+energy scale. These sequences contradict the required
+lower bound. This argument concerns the full orbit
+snapshot without an additional terminal $\lambda$ reading.

@@ -1,0 +1,1217 @@
+{
+  "analytic": {
+    "amended_max": 3.1086244689504383e-15,
+    "passes": true,
+    "printed_max": 3.5873294885796434,
+    "rows": {
+      "false_amended": {
+        "P": 1.2524703496552547e-15,
+        "Q": 3.1086244689504383e-15
+      },
+      "false_printed": {
+        "P": 0.17536942372151354,
+        "Q": 3.5625647190132574
+      },
+      "true_amended": {
+        "P": 3.660266534311063e-16,
+        "Q": 2.0816681711721685e-17
+      },
+      "true_printed": {
+        "P": 3.5873294885796434,
+        "Q": 8.326672684688674e-17
+      }
+    }
+  },
+  "line": "E",
+  "outcome": "CBE-3T-R1-A",
+  "periodic_translation": {
+    "action": "integer cyclic shift of the centered periodic grid state",
+    "commutes_with_periodic_stencil": true,
+    "comparison": "the same cyclic shift applied to every exact slice",
+    "passes": true,
+    "score_radius": 0.8
+  },
+  "program": "BB-CBE-3T-R1",
+  "subcell_shift_cases": [
+    {
+      "case": "U1",
+      "centered": [
+        {
+          "N": 1024,
+          "actual_x0": 0.0,
+          "backward_sup_D": {
+            "2.0": 0.04196879519363582,
+            "4.0": 0.003619397345051013
+          },
+          "case": {
+            "name": "U1",
+            "q0": 0.3,
+            "q2": 0.17,
+            "w": 0.35,
+            "x0": 0.0
+          },
+          "component_x": [
+            -0.02454369260617026,
+            0.02454369260617026
+          ],
+          "dx": 0.006135923151542565,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.2999999999999931,
+            "q2": 0.17,
+            "w": 0.3500000000000039,
+            "x0": 0.0
+          },
+          "parameter_recovery_passes": true,
+          "passes": false,
+          "reconstruction_below_gate": false,
+          "recovery_errors": {
+            "q0_relative": 2.294460917558657e-14,
+            "q2_abs": 0.0,
+            "requested_x0_grid_offset": 0.0,
+            "w_abs": 3.941291737419306e-15,
+            "x0_abs": 0.0
+          },
+          "shift_cells": 0.0,
+          "true_component_count": 2
+        },
+        {
+          "N": 2048,
+          "actual_x0": 0.0,
+          "backward_sup_D": {
+            "2.0": 0.010536444883842727,
+            "4.0": 0.0009092760532975838
+          },
+          "case": {
+            "name": "U1",
+            "q0": 0.3,
+            "q2": 0.17,
+            "w": 0.35,
+            "x0": 0.0
+          },
+          "component_x": [
+            -0.02761165418194154,
+            0.02761165418194154
+          ],
+          "dx": 0.0030679615757712823,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.2999999999999931,
+            "q2": 0.17,
+            "w": 0.3500000000000039,
+            "x0": 0.0
+          },
+          "parameter_recovery_passes": true,
+          "passes": false,
+          "reconstruction_below_gate": false,
+          "recovery_errors": {
+            "q0_relative": 2.294460917558657e-14,
+            "q2_abs": 0.0,
+            "requested_x0_grid_offset": 0.0,
+            "w_abs": 3.941291737419306e-15,
+            "x0_abs": 0.0
+          },
+          "shift_cells": 0.0,
+          "true_component_count": 2
+        },
+        {
+          "N": 4096,
+          "actual_x0": 0.0,
+          "backward_sup_D": {
+            "2.0": 0.002636876946634357,
+            "4.0": 0.00022809469013031322
+          },
+          "case": {
+            "name": "U1",
+            "q0": 0.3,
+            "q2": 0.17,
+            "w": 0.35,
+            "x0": 0.0
+          },
+          "component_x": [
+            -0.0260776733940559,
+            0.0260776733940559
+          ],
+          "dx": 0.0015339807878856412,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.2999999999999931,
+            "q2": 0.17,
+            "w": 0.3500000000000039,
+            "x0": 0.0
+          },
+          "parameter_recovery_passes": true,
+          "passes": true,
+          "reconstruction_below_gate": true,
+          "recovery_errors": {
+            "q0_relative": 2.294460917558657e-14,
+            "q2_abs": 0.0,
+            "requested_x0_grid_offset": 0.0,
+            "w_abs": 3.941291737419306e-15,
+            "x0_abs": 0.0
+          },
+          "shift_cells": 0.0,
+          "true_component_count": 2
+        }
+      ],
+      "convergence_orders": {
+        "centered": {
+          "2.0": [
+            1.9939288807019793,
+            1.9984860147838757
+          ],
+          "4.0": [
+            1.9929592348733638,
+            1.9950854963085987
+          ]
+        },
+        "shifted": {
+          "2.0": [
+            1.948169135575046,
+            1.9871345595135617
+          ],
+          "4.0": [
+            2.0061999823946874,
+            2.0022396036902537
+          ]
+        }
+      },
+      "finest_below_1e-2": true,
+      "finest_translation_gap": 0.0023914626289115778,
+      "finite_all_resolutions": true,
+      "legacy_all_resolution_gate_passes": false,
+      "passes": true,
+      "positional_robustness_passes": true,
+      "second_order": true,
+      "shift": 0.4,
+      "shifted": [
+        {
+          "N": 1024,
+          "actual_x0": 0.401902966426038,
+          "backward_sup_D": {
+            "2.0": 0.03866100111530069,
+            "4.0": 0.042158820995478
+          },
+          "case": {
+            "name": "U1",
+            "q0": 0.3,
+            "q2": 0.17,
+            "w": 0.35,
+            "x0": 0.4
+          },
+          "component_x": [
+            0.4295146206079795
+          ],
+          "dx": 0.006135923151542565,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.29552520424499606,
+            "q2": 0.17000129967420569,
+            "w": 0.35444377519423154,
+            "x0": 0.40190296642603807
+          },
+          "parameter_recovery_passes": false,
+          "passes": false,
+          "reconstruction_below_gate": false,
+          "recovery_errors": {
+            "q0_relative": 0.01491598585001308,
+            "q2_abs": 1.2996742056736732e-06,
+            "requested_x0_grid_offset": 0.0019029664260379886,
+            "w_abs": 0.004443775194231558,
+            "x0_abs": 5.551115123125783e-17
+          },
+          "shift_cells": 65.5,
+          "true_component_count": 1
+        },
+        {
+          "N": 2048,
+          "actual_x0": 0.4003689856381523,
+          "backward_sup_D": {
+            "2.0": 0.010018800974218216,
+            "4.0": 0.010494508049277889
+          },
+          "case": {
+            "name": "U1",
+            "q0": 0.3,
+            "q2": 0.17,
+            "w": 0.35,
+            "x0": 0.4
+          },
+          "component_x": [
+            0.37429131224409645
+          ],
+          "dx": 0.0030679615757712823,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.2988729332328551,
+            "q2": 0.1700003254308173,
+            "w": 0.3511146807477001,
+            "x0": 0.40036898563815226
+          },
+          "parameter_recovery_passes": false,
+          "passes": false,
+          "reconstruction_below_gate": false,
+          "recovery_errors": {
+            "q0_relative": 0.003756889223816377,
+            "q2_abs": 3.2543081729397016e-07,
+            "requested_x0_grid_offset": 0.0003689856381522971,
+            "w_abs": 0.001114680747700103,
+            "x0_abs": 5.551115123125783e-17
+          },
+          "shift_cells": 130.5,
+          "true_component_count": 1
+        },
+        {
+          "N": 4096,
+          "actual_x0": 0.40113597603209517,
+          "backward_sup_D": {
+            "2.0": 0.0025271361572118006,
+            "4.0": 0.002619557319041891
+          },
+          "case": {
+            "name": "U1",
+            "q0": 0.3,
+            "q2": 0.17,
+            "w": 0.35,
+            "x0": 0.4
+          },
+          "component_x": [
+            0.37429131224409645,
+            0.4279806398200939
+          ],
+          "dx": 0.0015339807878856412,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.29971770732314196,
+            "q2": 0.17000008142102113,
+            "w": 0.3502789051667544,
+            "x0": 0.40113597603209517
+          },
+          "parameter_recovery_passes": true,
+          "passes": true,
+          "reconstruction_below_gate": true,
+          "recovery_errors": {
+            "q0_relative": 0.0009409755895267713,
+            "q2_abs": 8.142102111974303e-08,
+            "requested_x0_grid_offset": 0.0011359760320951429,
+            "w_abs": 0.00027890516675443955,
+            "x0_abs": 0.0
+          },
+          "shift_cells": 261.5,
+          "true_component_count": 2
+        }
+      ],
+      "subcell_offset": 0.5,
+      "translation_comparison": [
+        {
+          "N": 1024,
+          "distance_gaps": {
+            "2.0": 0.003307794078335126,
+            "4.0": 0.038539423650426986
+          }
+        },
+        {
+          "N": 2048,
+          "distance_gaps": {
+            "2.0": 0.000517643909624511,
+            "4.0": 0.009585231995980305
+          }
+        },
+        {
+          "N": 4096,
+          "distance_gaps": {
+            "2.0": 0.0001097407894225565,
+            "4.0": 0.0023914626289115778
+          }
+        }
+      ]
+    },
+    {
+      "case": "U2",
+      "centered": [
+        {
+          "N": 1024,
+          "actual_x0": 0.0,
+          "backward_sup_D": {
+            "2.0": 3.420984039110739e-05,
+            "4.0": 3.172442869906963e-06
+          },
+          "case": {
+            "name": "U2",
+            "q0": 0.8,
+            "q2": -0.11,
+            "w": 0.85,
+            "x0": 0.0
+          },
+          "component_x": [
+            -0.1595340019401067,
+            0.1595340019401067
+          ],
+          "dx": 0.006135923151542565,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.7999999999999994,
+            "q2": -0.11,
+            "w": 0.8500000000000001,
+            "x0": 0.0
+          },
+          "parameter_recovery_passes": true,
+          "passes": true,
+          "reconstruction_below_gate": true,
+          "recovery_errors": {
+            "q0_relative": 8.326672684688674e-16,
+            "q2_abs": 0.0,
+            "requested_x0_grid_offset": 0.0,
+            "w_abs": 1.1102230246251565e-16,
+            "x0_abs": 0.0
+          },
+          "shift_cells": 0.0,
+          "true_component_count": 2
+        },
+        {
+          "N": 2048,
+          "actual_x0": 0.0,
+          "backward_sup_D": {
+            "2.0": 8.555524765500367e-06,
+            "4.0": 7.93268183124412e-07
+          },
+          "case": {
+            "name": "U2",
+            "q0": 0.8,
+            "q2": -0.11,
+            "w": 0.85,
+            "x0": 0.0
+          },
+          "component_x": [
+            -0.1595340019401067,
+            0.1595340019401067
+          ],
+          "dx": 0.0030679615757712823,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.7999999999999994,
+            "q2": -0.11,
+            "w": 0.8500000000000001,
+            "x0": 0.0
+          },
+          "parameter_recovery_passes": true,
+          "passes": true,
+          "reconstruction_below_gate": true,
+          "recovery_errors": {
+            "q0_relative": 8.326672684688674e-16,
+            "q2_abs": 0.0,
+            "requested_x0_grid_offset": 0.0,
+            "w_abs": 1.1102230246251565e-16,
+            "x0_abs": 0.0
+          },
+          "shift_cells": 0.0,
+          "true_component_count": 2
+        },
+        {
+          "N": 4096,
+          "actual_x0": 0.0,
+          "backward_sup_D": {
+            "2.0": 2.1388227955264902e-06,
+            "4.0": 1.9880628681371082e-07
+          },
+          "case": {
+            "name": "U2",
+            "q0": 0.8,
+            "q2": -0.11,
+            "w": 0.85,
+            "x0": 0.0
+          },
+          "component_x": [
+            -0.1595340019401067,
+            0.1595340019401067
+          ],
+          "dx": 0.0015339807878856412,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.7999999999999994,
+            "q2": -0.11,
+            "w": 0.8500000000000001,
+            "x0": 0.0
+          },
+          "parameter_recovery_passes": true,
+          "passes": true,
+          "reconstruction_below_gate": true,
+          "recovery_errors": {
+            "q0_relative": 8.326672684688674e-16,
+            "q2_abs": 0.0,
+            "requested_x0_grid_offset": 0.0,
+            "w_abs": 1.1102230246251565e-16,
+            "x0_abs": 0.0
+          },
+          "shift_cells": 0.0,
+          "true_component_count": 2
+        }
+      ],
+      "convergence_orders": {
+        "centered": {
+          "2.0": [
+            1.9994831207755532,
+            2.0000393890748165
+          ],
+          "4.0": [
+            1.9997135931275112,
+            1.9964453059757745
+          ]
+        },
+        "shifted": {
+          "2.0": [
+            2.1028879693535476,
+            1.724901158920156
+          ],
+          "4.0": [
+            1.8581730106688128,
+            2.0361096038019397
+          ]
+        }
+      },
+      "finest_below_1e-2": true,
+      "finest_translation_gap": 3.856064072768558e-05,
+      "finite_all_resolutions": true,
+      "legacy_all_resolution_gate_passes": true,
+      "passes": true,
+      "positional_robustness_passes": true,
+      "second_order": true,
+      "shift": -0.55,
+      "shifted": [
+        {
+          "N": 1024,
+          "actual_x0": -0.5491651220630596,
+          "backward_sup_D": {
+            "2.0": 0.00012210826155823222,
+            "4.0": 0.0005763329515229099
+          },
+          "case": {
+            "name": "U2",
+            "q0": 0.8,
+            "q2": -0.11,
+            "w": 0.85,
+            "x0": -0.55
+          },
+          "component_x": [
+            -0.705631162427395,
+            -0.39269908169872414
+          ],
+          "dx": 0.006135923151542565,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.7999537670081397,
+            "q2": -0.10999808501660335,
+            "w": 0.850037057011398,
+            "x0": -0.5491651220630596
+          },
+          "parameter_recovery_passes": true,
+          "passes": true,
+          "reconstruction_below_gate": true,
+          "recovery_errors": {
+            "q0_relative": 5.779123982543877e-05,
+            "q2_abs": 1.9149833966475294e-06,
+            "requested_x0_grid_offset": 0.0008348779369404813,
+            "w_abs": 3.705701139800066e-05,
+            "x0_abs": 0.0
+          },
+          "shift_cells": -89.5,
+          "true_component_count": 2
+        },
+        {
+          "N": 2048,
+          "actual_x0": -0.5476311412751739,
+          "backward_sup_D": {
+            "2.0": 2.8425799732417523e-05,
+            "4.0": 0.00015896724126214564
+          },
+          "case": {
+            "name": "U2",
+            "q0": 0.8,
+            "q2": -0.11,
+            "w": 0.85,
+            "x0": -0.55
+          },
+          "component_x": [
+            -0.705631162427395,
+            -0.38963112012295287
+          ],
+          "dx": 0.0030679615757712823,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.7999884395934067,
+            "q2": -0.10999952051749105,
+            "w": 0.850009265134177,
+            "x0": -0.5476311412751738
+          },
+          "parameter_recovery_passes": true,
+          "passes": true,
+          "reconstruction_below_gate": true,
+          "recovery_errors": {
+            "q0_relative": 1.4450508241670157e-05,
+            "q2_abs": 4.794825089471377e-07,
+            "requested_x0_grid_offset": 0.0023688587248261728,
+            "w_abs": 9.26513417698338e-06,
+            "x0_abs": 1.1102230246251565e-16
+          },
+          "shift_cells": -178.5,
+          "true_component_count": 2
+        },
+        {
+          "N": 4096,
+          "actual_x0": -0.5499321124570024,
+          "backward_sup_D": {
+            "2.0": 8.599351547957383e-06,
+            "4.0": 3.875944701449929e-05
+          },
+          "case": {
+            "name": "U2",
+            "q0": 0.8,
+            "q2": -0.11,
+            "w": 0.85,
+            "x0": -0.55
+          },
+          "component_x": [
+            -0.7086991240031663,
+            -0.3911651009108385
+          ],
+          "dx": 0.0015339807878856412,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.7999971097813356,
+            "q2": -0.10999988003728928,
+            "w": 0.8500023163386873,
+            "x0": -0.549932112456986
+          },
+          "parameter_recovery_passes": true,
+          "passes": true,
+          "reconstruction_below_gate": true,
+          "recovery_errors": {
+            "q0_relative": 3.612773330496921e-06,
+            "q2_abs": 1.1996271072345355e-07,
+            "requested_x0_grid_offset": 6.788754299769106e-05,
+            "w_abs": 2.3163386873026326e-06,
+            "x0_abs": 1.63202784619898e-14
+          },
+          "shift_cells": -358.5,
+          "true_component_count": 2
+        }
+      ],
+      "subcell_offset": 0.5,
+      "translation_comparison": [
+        {
+          "N": 1024,
+          "distance_gaps": {
+            "2.0": 8.789842116712482e-05,
+            "4.0": 0.0005731605086530029
+          }
+        },
+        {
+          "N": 2048,
+          "distance_gaps": {
+            "2.0": 1.9870274966917156e-05,
+            "4.0": 0.00015817397307902123
+          }
+        },
+        {
+          "N": 4096,
+          "distance_gaps": {
+            "2.0": 6.460528752430892e-06,
+            "4.0": 3.856064072768558e-05
+          }
+        }
+      ]
+    }
+  ],
+  "unseen_cases": [
+    {
+      "case": "U1",
+      "centered": [
+        {
+          "N": 1024,
+          "actual_x0": 0.0,
+          "backward_sup_D": {
+            "2.0": 0.04196879519363582,
+            "4.0": 0.003619397345051013
+          },
+          "case": {
+            "name": "U1",
+            "q0": 0.3,
+            "q2": 0.17,
+            "w": 0.35,
+            "x0": 0.0
+          },
+          "component_x": [
+            -0.02454369260617026,
+            0.02454369260617026
+          ],
+          "dx": 0.006135923151542565,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.2999999999999931,
+            "q2": 0.17,
+            "w": 0.3500000000000039,
+            "x0": 0.0
+          },
+          "parameter_recovery_passes": true,
+          "passes": false,
+          "reconstruction_below_gate": false,
+          "recovery_errors": {
+            "q0_relative": 2.294460917558657e-14,
+            "q2_abs": 0.0,
+            "requested_x0_grid_offset": 0.0,
+            "w_abs": 3.941291737419306e-15,
+            "x0_abs": 0.0
+          },
+          "shift_cells": 0.0,
+          "true_component_count": 2
+        },
+        {
+          "N": 2048,
+          "actual_x0": 0.0,
+          "backward_sup_D": {
+            "2.0": 0.010536444883842727,
+            "4.0": 0.0009092760532975838
+          },
+          "case": {
+            "name": "U1",
+            "q0": 0.3,
+            "q2": 0.17,
+            "w": 0.35,
+            "x0": 0.0
+          },
+          "component_x": [
+            -0.02761165418194154,
+            0.02761165418194154
+          ],
+          "dx": 0.0030679615757712823,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.2999999999999931,
+            "q2": 0.17,
+            "w": 0.3500000000000039,
+            "x0": 0.0
+          },
+          "parameter_recovery_passes": true,
+          "passes": false,
+          "reconstruction_below_gate": false,
+          "recovery_errors": {
+            "q0_relative": 2.294460917558657e-14,
+            "q2_abs": 0.0,
+            "requested_x0_grid_offset": 0.0,
+            "w_abs": 3.941291737419306e-15,
+            "x0_abs": 0.0
+          },
+          "shift_cells": 0.0,
+          "true_component_count": 2
+        },
+        {
+          "N": 4096,
+          "actual_x0": 0.0,
+          "backward_sup_D": {
+            "2.0": 0.002636876946634357,
+            "4.0": 0.00022809469013031322
+          },
+          "case": {
+            "name": "U1",
+            "q0": 0.3,
+            "q2": 0.17,
+            "w": 0.35,
+            "x0": 0.0
+          },
+          "component_x": [
+            -0.0260776733940559,
+            0.0260776733940559
+          ],
+          "dx": 0.0015339807878856412,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.2999999999999931,
+            "q2": 0.17,
+            "w": 0.3500000000000039,
+            "x0": 0.0
+          },
+          "parameter_recovery_passes": true,
+          "passes": true,
+          "reconstruction_below_gate": true,
+          "recovery_errors": {
+            "q0_relative": 2.294460917558657e-14,
+            "q2_abs": 0.0,
+            "requested_x0_grid_offset": 0.0,
+            "w_abs": 3.941291737419306e-15,
+            "x0_abs": 0.0
+          },
+          "shift_cells": 0.0,
+          "true_component_count": 2
+        }
+      ],
+      "convergence_orders": {
+        "centered": {
+          "2.0": [
+            1.9939288807019793,
+            1.9984860147838757
+          ],
+          "4.0": [
+            1.9929592348733638,
+            1.9950854963085987
+          ]
+        },
+        "shifted": {
+          "2.0": [
+            1.9939288807019793,
+            1.9984860147838757
+          ],
+          "4.0": [
+            1.9929592348733638,
+            1.9950854963085987
+          ]
+        }
+      },
+      "finest_below_1e-2": true,
+      "finest_translation_gap": 0.0,
+      "finite_all_resolutions": true,
+      "legacy_all_resolution_gate_passes": true,
+      "passes": true,
+      "positional_robustness_passes": true,
+      "second_order": true,
+      "shift": 0.4,
+      "shifted": [
+        {
+          "N": 1024,
+          "actual_x0": 0.3988350048502667,
+          "backward_sup_D": {
+            "2.0": 0.04196879519363582,
+            "4.0": 0.003619397345051013
+          },
+          "case": {
+            "name": "U1",
+            "q0": 0.3,
+            "q2": 0.17,
+            "w": 0.35,
+            "x0": 0.4
+          },
+          "component_x": [
+            0.37429131224409645,
+            0.42337869745643697
+          ],
+          "dx": 0.006135923151542565,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.2999999999999931,
+            "q2": 0.17,
+            "w": 0.3500000000000039,
+            "x0": 0.3988350048502669
+          },
+          "parameter_recovery_passes": true,
+          "passes": false,
+          "reconstruction_below_gate": false,
+          "recovery_errors": {
+            "q0_relative": 2.294460917558657e-14,
+            "q2_abs": 0.0,
+            "requested_x0_grid_offset": 0.0011649951497333388,
+            "w_abs": 3.941291737419306e-15,
+            "x0_abs": 2.220446049250313e-16
+          },
+          "shift_cells": 65.0,
+          "true_component_count": 2
+        },
+        {
+          "N": 2048,
+          "actual_x0": 0.3988350048502667,
+          "backward_sup_D": {
+            "2.0": 0.010536444883842727,
+            "4.0": 0.0009092760532975838
+          },
+          "case": {
+            "name": "U1",
+            "q0": 0.3,
+            "q2": 0.17,
+            "w": 0.35,
+            "x0": 0.4
+          },
+          "component_x": [
+            0.3712233506683252,
+            0.42644665903220824
+          ],
+          "dx": 0.0030679615757712823,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.2999999999999931,
+            "q2": 0.17,
+            "w": 0.3500000000000039,
+            "x0": 0.3988350048502669
+          },
+          "parameter_recovery_passes": true,
+          "passes": false,
+          "reconstruction_below_gate": false,
+          "recovery_errors": {
+            "q0_relative": 2.294460917558657e-14,
+            "q2_abs": 0.0,
+            "requested_x0_grid_offset": 0.0011649951497333388,
+            "w_abs": 3.941291737419306e-15,
+            "x0_abs": 2.220446049250313e-16
+          },
+          "shift_cells": 130.0,
+          "true_component_count": 2
+        },
+        {
+          "N": 4096,
+          "actual_x0": 0.4003689856381523,
+          "backward_sup_D": {
+            "2.0": 0.002636876946634357,
+            "4.0": 0.00022809469013031322
+          },
+          "case": {
+            "name": "U1",
+            "q0": 0.3,
+            "q2": 0.17,
+            "w": 0.35,
+            "x0": 0.4
+          },
+          "component_x": [
+            0.37429131224409645,
+            0.42644665903220824
+          ],
+          "dx": 0.0015339807878856412,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.2999999999999931,
+            "q2": 0.17,
+            "w": 0.3500000000000039,
+            "x0": 0.40036898563815226
+          },
+          "parameter_recovery_passes": true,
+          "passes": true,
+          "reconstruction_below_gate": true,
+          "recovery_errors": {
+            "q0_relative": 2.294460917558657e-14,
+            "q2_abs": 0.0,
+            "requested_x0_grid_offset": 0.0003689856381522971,
+            "w_abs": 3.941291737419306e-15,
+            "x0_abs": 5.551115123125783e-17
+          },
+          "shift_cells": 261.0,
+          "true_component_count": 2
+        }
+      ],
+      "subcell_offset": 0.0,
+      "translation_comparison": [
+        {
+          "N": 1024,
+          "distance_gaps": {
+            "2.0": 0.0,
+            "4.0": 0.0
+          }
+        },
+        {
+          "N": 2048,
+          "distance_gaps": {
+            "2.0": 0.0,
+            "4.0": 0.0
+          }
+        },
+        {
+          "N": 4096,
+          "distance_gaps": {
+            "2.0": 0.0,
+            "4.0": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "case": "U2",
+      "centered": [
+        {
+          "N": 1024,
+          "actual_x0": 0.0,
+          "backward_sup_D": {
+            "2.0": 3.420984039110739e-05,
+            "4.0": 3.172442869906963e-06
+          },
+          "case": {
+            "name": "U2",
+            "q0": 0.8,
+            "q2": -0.11,
+            "w": 0.85,
+            "x0": 0.0
+          },
+          "component_x": [
+            -0.1595340019401067,
+            0.1595340019401067
+          ],
+          "dx": 0.006135923151542565,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.7999999999999994,
+            "q2": -0.11,
+            "w": 0.8500000000000001,
+            "x0": 0.0
+          },
+          "parameter_recovery_passes": true,
+          "passes": true,
+          "reconstruction_below_gate": true,
+          "recovery_errors": {
+            "q0_relative": 8.326672684688674e-16,
+            "q2_abs": 0.0,
+            "requested_x0_grid_offset": 0.0,
+            "w_abs": 1.1102230246251565e-16,
+            "x0_abs": 0.0
+          },
+          "shift_cells": 0.0,
+          "true_component_count": 2
+        },
+        {
+          "N": 2048,
+          "actual_x0": 0.0,
+          "backward_sup_D": {
+            "2.0": 8.555524765500367e-06,
+            "4.0": 7.93268183124412e-07
+          },
+          "case": {
+            "name": "U2",
+            "q0": 0.8,
+            "q2": -0.11,
+            "w": 0.85,
+            "x0": 0.0
+          },
+          "component_x": [
+            -0.1595340019401067,
+            0.1595340019401067
+          ],
+          "dx": 0.0030679615757712823,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.7999999999999994,
+            "q2": -0.11,
+            "w": 0.8500000000000001,
+            "x0": 0.0
+          },
+          "parameter_recovery_passes": true,
+          "passes": true,
+          "reconstruction_below_gate": true,
+          "recovery_errors": {
+            "q0_relative": 8.326672684688674e-16,
+            "q2_abs": 0.0,
+            "requested_x0_grid_offset": 0.0,
+            "w_abs": 1.1102230246251565e-16,
+            "x0_abs": 0.0
+          },
+          "shift_cells": 0.0,
+          "true_component_count": 2
+        },
+        {
+          "N": 4096,
+          "actual_x0": 0.0,
+          "backward_sup_D": {
+            "2.0": 2.1388227955264902e-06,
+            "4.0": 1.9880628681371082e-07
+          },
+          "case": {
+            "name": "U2",
+            "q0": 0.8,
+            "q2": -0.11,
+            "w": 0.85,
+            "x0": 0.0
+          },
+          "component_x": [
+            -0.1595340019401067,
+            0.1595340019401067
+          ],
+          "dx": 0.0015339807878856412,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.7999999999999994,
+            "q2": -0.11,
+            "w": 0.8500000000000001,
+            "x0": 0.0
+          },
+          "parameter_recovery_passes": true,
+          "passes": true,
+          "reconstruction_below_gate": true,
+          "recovery_errors": {
+            "q0_relative": 8.326672684688674e-16,
+            "q2_abs": 0.0,
+            "requested_x0_grid_offset": 0.0,
+            "w_abs": 1.1102230246251565e-16,
+            "x0_abs": 0.0
+          },
+          "shift_cells": 0.0,
+          "true_component_count": 2
+        }
+      ],
+      "convergence_orders": {
+        "centered": {
+          "2.0": [
+            1.9994831207755532,
+            2.0000393890748165
+          ],
+          "4.0": [
+            1.9997135931275112,
+            1.9964453059757745
+          ]
+        },
+        "shifted": {
+          "2.0": [
+            1.9994831207755532,
+            2.0000393890748165
+          ],
+          "4.0": [
+            1.9997135931275112,
+            1.9964453059757745
+          ]
+        }
+      },
+      "finest_below_1e-2": true,
+      "finest_translation_gap": 0.0,
+      "finite_all_resolutions": true,
+      "legacy_all_resolution_gate_passes": true,
+      "passes": true,
+      "positional_robustness_passes": true,
+      "second_order": true,
+      "shift": -0.55,
+      "shifted": [
+        {
+          "N": 1024,
+          "actual_x0": -0.5522330836388308,
+          "backward_sup_D": {
+            "2.0": 3.420984039110739e-05,
+            "4.0": 3.172442869906963e-06
+          },
+          "case": {
+            "name": "U2",
+            "q0": 0.8,
+            "q2": -0.11,
+            "w": 0.85,
+            "x0": -0.55
+          },
+          "component_x": [
+            -0.7117670855789375,
+            -0.39269908169872414
+          ],
+          "dx": 0.006135923151542565,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.7999999999999994,
+            "q2": -0.11,
+            "w": 0.8500000000000001,
+            "x0": -0.5522330836388307
+          },
+          "parameter_recovery_passes": true,
+          "passes": true,
+          "reconstruction_below_gate": true,
+          "recovery_errors": {
+            "q0_relative": 8.326672684688674e-16,
+            "q2_abs": 0.0,
+            "requested_x0_grid_offset": 0.0022330836388307906,
+            "w_abs": 1.1102230246251565e-16,
+            "x0_abs": 1.1102230246251565e-16
+          },
+          "shift_cells": -90.0,
+          "true_component_count": 2
+        },
+        {
+          "N": 2048,
+          "actual_x0": -0.5491651220630596,
+          "backward_sup_D": {
+            "2.0": 8.555524765500367e-06,
+            "4.0": 7.93268183124412e-07
+          },
+          "case": {
+            "name": "U2",
+            "q0": 0.8,
+            "q2": -0.11,
+            "w": 0.85,
+            "x0": -0.55
+          },
+          "component_x": [
+            -0.7086991240031663,
+            -0.38963112012295287
+          ],
+          "dx": 0.0030679615757712823,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.7999999999999994,
+            "q2": -0.11,
+            "w": 0.8500000000000001,
+            "x0": -0.5491651220630596
+          },
+          "parameter_recovery_passes": true,
+          "passes": true,
+          "reconstruction_below_gate": true,
+          "recovery_errors": {
+            "q0_relative": 8.326672684688674e-16,
+            "q2_abs": 0.0,
+            "requested_x0_grid_offset": 0.0008348779369404813,
+            "w_abs": 1.1102230246251565e-16,
+            "x0_abs": 0.0
+          },
+          "shift_cells": -179.0,
+          "true_component_count": 2
+        },
+        {
+          "N": 4096,
+          "actual_x0": -0.5506991028509451,
+          "backward_sup_D": {
+            "2.0": 2.1388227955264902e-06,
+            "4.0": 1.9880628681371082e-07
+          },
+          "case": {
+            "name": "U2",
+            "q0": 0.8,
+            "q2": -0.11,
+            "w": 0.85,
+            "x0": -0.55
+          },
+          "component_x": [
+            -0.7102331047910518,
+            -0.3911651009108385
+          ],
+          "dx": 0.0015339807878856412,
+          "embedded": true,
+          "fitted": {
+            "q0": 0.7999999999999994,
+            "q2": -0.11,
+            "w": 0.8500000000000001,
+            "x0": -0.5506991028509454
+          },
+          "parameter_recovery_passes": true,
+          "passes": true,
+          "reconstruction_below_gate": true,
+          "recovery_errors": {
+            "q0_relative": 8.326672684688674e-16,
+            "q2_abs": 0.0,
+            "requested_x0_grid_offset": 0.0006991028509450992,
+            "w_abs": 1.1102230246251565e-16,
+            "x0_abs": 2.220446049250313e-16
+          },
+          "shift_cells": -359.0,
+          "true_component_count": 2
+        }
+      ],
+      "subcell_offset": 0.0,
+      "translation_comparison": [
+        {
+          "N": 1024,
+          "distance_gaps": {
+            "2.0": 0.0,
+            "4.0": 0.0
+          }
+        },
+        {
+          "N": 2048,
+          "distance_gaps": {
+            "2.0": 0.0,
+            "4.0": 0.0
+          }
+        },
+        {
+          "N": 4096,
+          "distance_gaps": {
+            "2.0": 0.0,
+            "4.0": 0.0
+          }
+        }
+      ]
+    }
+  ]
+}

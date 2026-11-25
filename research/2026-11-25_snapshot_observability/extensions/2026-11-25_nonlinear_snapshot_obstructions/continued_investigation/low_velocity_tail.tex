@@ -1,0 +1,275 @@
+\section{From finite observations to a low-velocity asymptotic state}
+\label{sec:low-velocity-tail}
+
+A stable missing-velocity inverse can be composed with
+a stable evolution toward the singular end in a
+uniformly subcritical, small-data region. The following
+estimate gives one explicit overlap between those
+two restrictions. The asymptotic expansion itself
+belongs to the established low-velocity Gowdy
+theory \cite{ringstrom,ringstromavtd,libounces}.
+Here the estimate controls differences between
+limiting states by differences between finite
+measurements.
+
+Let $r=\tau-\tau_0\ge0$, fix $0<v_*<1$, and set
+\[
+ V=P_\tau,\quad W=e^{-\tau}P_\theta,\quad
+ X=e^P Q_\tau,\quad Y=e^{P-\tau}Q_\theta,\qquad
+ Z=(V-v_*,W,X,Y).
+\]
+Use the Sobolev norms with weights
+$\langle k\rangle^s=(1+k^2)^{s/2}$ and normalized
+Fourier coefficients on the $2\pi$ circle.
+Let $A_s=2^s(1+2(1+1/(2s-3)))^{1/2}$.
+This bounds the algebra and embedding constants at
+orders $s$ and $s-1$, by Fourier convolution and
+$\sum_{k\ge1}k^{-2(s-1)}\le1+1/(2s-3)$.
+Define the momentum $\Pi=e^{2P}Q_\tau$.
+The normalization of the limits uses the same $\tau_0$
+for all solutions, so the constants in the expansions
+are the intercepts relative to $r$.
+
+\begin{proposition}
+\label{prop:low-velocity-difference}
+Fix $s\ge3$, $\tau_0$ and $v_*$. Set
+$\delta=\min(v_*,1-v_*)/(16A_s)$.
+Every smooth periodic vacuum datum with
+$\|Z(\tau_0)\|_{H^s}<\delta$ and the Gowdy momentum
+constraint evolves to $\tau=\infty$. In a bounded
+set of the initial $H^s$ orbit fields, the map from
+initial orbit data, velocities and one metric anchor
+to
+\begin{align*}
+ (v,p,q)&=\lim_{r\to\infty}(P_\tau,P-rv,Q),\\
+ (\lambda_\infty,\Pi_\infty)&=
+                 \lim_{r\to\infty}(\lambda-rv^2,\Pi)
+\end{align*}
+is locally Lipschitz into
+$(H^{s-1})^2\times H^s\times H^{s-1}\times H^{s-2}$.
+Take the norm of the input difference to be
+\[
+ \mathcal I=\|Z(\tau_0)-\widehat Z(\tau_0)\|_{H^s}
+      +\|(P,Q,\lambda)(\tau_0)-
+                   (\widehat P,\widehat Q,\widehat\lambda)(\tau_0)\|_{H^s}.
+\]
+One may use the initial $H^{s+1}$ orbit fields, $H^s$
+velocities and the scalar metric anchor to bound
+$\mathcal I$. Here $v$ is the limiting hyperbolic
+speed, with $0<v<1$, and
+\begin{equation}
+ \partial_\theta\lambda_\infty
+ =
+ 2v\,\partial_\theta p+2\Pi_\infty\,\partial_\theta q .
+ \label{eq:tail-momentum}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+The first-order equations are
+\begin{align*}
+ V_\tau &= e^{-\tau}W_\theta+X^2-Y^2,\\
+ W_\tau &= e^{-\tau}V_\theta-W,\\
+ X_\tau &= e^{-\tau}Y_\theta-V X+W Y,\\
+ Y_\tau &= e^{-\tau}X_\theta+(V-1)Y-W X .
+\end{align*}
+Use the squared sum of the component $H^s$ norms
+for the energy. Each paired principal spatial
+term cancels by periodic integration by parts.
+For $D=(W,X,Y)$ and $c=\min(v_*,1-v_*)$,
+the diagonal terms give damping at least
+$c\|D\|_{H^s}^2$ in the half-energy derivative.
+Every nonlinear source contribution to it is
+bounded in sum by
+$3A_s\|Z\|_{H^s}\|D\|_{H^s}^2$, using the Sobolev
+algebra inequality. Smallness therefore gives
+\begin{equation}
+ \|Z(\tau)\|_{H^s}^2+
+             c\int_{\tau_0}^{\tau}\|D(\sigma)\|_{H^s}^2\,d\sigma
+     \le \|Z(\tau_0)\|_{H^s}^2.
+ \label{eq:low-velocity-energy}
+\end{equation}
+Sobolev embedding also gives
+$0<v_*/2<V< (1+v_*)/2<1$.
+The product-source system with symmetric
+spatial coupling continues on every finite interval
+by the energy estimate. Reconstruct $P$ and $Q$
+from $P_\tau=V$ and $Q_\tau=e^{-P}X$,
+with their initial values. The definitions of $W$
+and $Y$ persist by the $W,Y$ equations and the initial
+derivative identities. The usual
+propagation of the momentum constraint gives
+the periodic metric.
+
+In the damped three-component subsystem,
+the $X,Y$ spatial terms still cancel.
+At order $s-1$ the remaining spatial forcing
+of $W$ is bounded by $e^{-\tau}\|V-v_*\|_{H^s}$.
+The nonlinear terms in these three equations
+have two damped factors in the half-energy
+estimate and a coefficient of size $2A_s\delta$.
+Hence for some $\beta>0$ one has
+$\|D(\tau_0+r)\|_{H^{s-1}}\le C e^{-\beta r}$.
+This also follows by applying the scalar
+damped differential inequality to
+$\|D\|_{H^{s-1}}$ with input $e^{-\tau}\delta$.
+
+For the difference energy at order $s$, write
+$\Delta Z=Z-\widehat Z$. Every nonlinear term
+in the half-energy estimate is bounded by
+\[
+ 4A_s\delta\|\Delta D\|_{H^s}^2
+  +3A_s(\|D\|_{H^s}+\|\widehat D\|_{H^s})
+           \|\Delta Z\|_{H^s}\|\Delta D\|_{H^s}.
+\]
+The first term is absorbed by damping. Apply
+Young's inequality to the second, retaining
+damping and a coefficient bounded by
+$C(\|D\|_{H^s}^2+\|\widehat D\|_{H^s}^2)$
+on the difference energy.
+This coefficient is time-integrable by
+\eqref{eq:low-velocity-energy}. Consequently
+$\sup_r\|\Delta Z\|_{H^s}\le C\mathcal I$.
+The equation for $V_\tau$ now gives
+$\|\Delta V_\tau\|_{H^{s-1}}
+ \le C\mathcal I e^{-\beta r}$, reducing $\beta$
+if necessary. The same integrable bound holds for
+each solution's $V_\tau$ without $\mathcal I$.
+In particular,
+\[
+ \|v-\widehat v\|_{H^{s-1}}
+       +e^{\beta r}\|\Delta V(r)-(v-\widehat v)\|_{H^{s-1}}
+ \le C\mathcal I .
+\]
+The limits of $P-rv$ and of $\lambda-rv^2$ follow
+by integrating $V-v$ and
+$\lambda_\tau-v^2=V^2-v^2+|D|^2$ respectively.
+The differences of these integrands are
+$O(\mathcal I e^{-\beta r})$ in $H^{s-1}$.
+
+For the transverse limits, write
+$P=P(\tau_0)+v_*r+B$, where
+$\|B\|_{H^s}\le\delta r$.
+The Sobolev algebra exponential series bounds
+$\|e^{\pm B}\|_{H^s}\le C e^{A_s\delta r}$.
+The difference of any two such exponentials
+has the additional factor
+$C(1+r)\mathcal I$, by the product formula
+for the difference and
+$\|P-\widehat P\|_{H^s}\le(1+Cr)\mathcal I$.
+Thus $Q_\tau=e^{-P}X$ and its difference
+are integrable in $H^s$ since $A_s\delta<v_*$.
+The equation
+$\Pi_\tau=e^{-2\tau}\partial_\theta(e^{2P}Q_\theta)$
+and the uniform bound for $Q$ in $H^s$ give
+integrable bounds for $\Pi_\tau$ and its difference in
+$H^{s-2}$, using $A_s\delta<1-v_*$.
+The difference estimate has at most an additional
+polynomial factor in time. These estimates give the
+two remaining limits and their Lipschitz bounds.
+
+Finally $\lambda_\theta=2(V P_\theta+\Pi Q_\theta)$.
+Subtract $2rv\,v_\theta$ and take the limit
+in $H^{s-2}$ using the exponential remainders.
+This gives \eqref{eq:tail-momentum}.
+A periodic spatial primitive of the initial
+momentum equation bounds the initial $\lambda$
+norm by the initial orbit fields, velocities
+and its value at a fixed angle.
+\end{proof}
+
+\begin{proposition}
+\label{prop:from-observations-to-tail}
+There are smooth inhomogeneous rank-two
+backgrounds in the region of
+Proposition~\ref{prop:low-velocity-difference}
+for which the finite-snapshot data of
+Theorem~\ref{th:fixed-rank-two} determine all five
+asymptotic fields with Lipschitz dependence
+in the stated norms. One can also use the
+two-slice data of Proposition~\ref{prop:two-slice-open}
+on an open set of such backgrounds. If neither
+initial velocity is supplied, an explicit family
+in the same low-velocity region admits recovery
+from one full later orbit snapshot and a finite
+set of early low-mode orbit coefficients.
+\end{proposition}
+
+\begin{proof}
+Put $a=e^{-\tau_0}$. Start from
+$P=v_*\tau+P_0$, $Q=$ constant.
+Take a nearby nonvertical target geodesic
+$\gamma$ and replace its scalar wave parameter
+$v_*\tau+P_0$ by that parameter plus a small
+nonconstant smooth even scalar wave.
+The data at $a$ approach the vertical
+homogeneous data in the required norms as both
+perturbations vanish. Choose the geodesic and
+wave so its tangent has nonzero $e_P$ component
+on the range at $a$. This is the background
+of Proposition~\ref{prop:two-slice-open}.
+A small even perturbation of the initial
+$Q_t$ transverse to the scalar wave direction
+makes the target differential rank two on an open
+arc where $P_\theta\ne0$. All orbit fields
+and velocities at $a$ remain even, so the
+momentum constraint still holds. The finite-time
+inverse persists on a neighborhood. The tail
+condition also persists by strict smallness.
+Composition of the finite-time inverse with
+Proposition~\ref{prop:low-velocity-difference}
+gives the claim for fixed initial known fields.
+Local variation of those fields is allowed as
+well, by the upper Cauchy estimate and
+the same fixed-background lower bound for
+the missing velocity.
+
+For the two-velocity case, at $a$ take
+\[
+ P=P_h(a)+\epsilon\cos\theta,\quad
+ Q=\epsilon\sin\theta,\quad P_t=-v_*/a,\quad Q_t=0,
+ \qquad P_h(t)=P_h(a)-v_*\log(t/a).
+\]
+These data satisfy the periodic momentum constraint.
+They have rank two on open arcs and their
+$\|Z(\tau_0)\|_{H^s}$ is $O(|\epsilon|)$.
+At order one in $\epsilon$ the two displacement
+perturbations are $p_1(t)\cos\theta$ and
+$q_1(t)\sin\theta$. Their amplitudes start at one
+with derivative zero at $a$.
+At order two the orbit fields have Fourier modes
+only up to order two. These claims follow by
+differentiating the equations about the homogeneous
+background once and twice.
+Choose a sufficiently short rational delay
+$d=\pi/L$ with $L>2$ so that $p_1q_1>0$ up to
+$c=a+d$. The angle of the rotation in
+Proposition~\ref{prop:both-ray-holonomy} has circle
+mean $-2\int_a^c\overline{e^P Q_\theta}\,dt$.
+In the sum over $L$ shifted rotations all nonzero
+Fourier modes of order at most two cancel.
+The zero mode of $e^PQ_\theta$ at second order
+is $\epsilon^2 e^{P_h}p_1q_1/2$.
+Consequently the closed-transport angle equals
+\[
+ -L\epsilon^2\int_a^c e^{P_h(t)}p_1(t)q_1(t)\,dt
+   +O(\epsilon^3)
+\]
+uniformly on the circle. This is separated from
+zero modulo $2\pi$ for small nonzero $\epsilon$.
+The rational holonomy criterion and a suitably
+early finite set of orbit coefficients give the
+stable regular-time inverse for both velocities.
+Proposition~\ref{prop:low-velocity-difference}
+then gives the same asymptotic conclusion.
+Alternatively the same initial curves satisfy the
+independence condition of
+Theorem~\ref{th:full-metric-gramian}, allowing a
+short irrational delay when the terminal metric
+gradient is also supplied.
+\end{proof}
+
+The estimate applies to the low-velocity region
+defined at the recovered initial slice.
+It does not assert control through spike
+formation or a high-velocity transition.

@@ -1,0 +1,120 @@
+{
+  "platform": "Linux-7.0.0-42-generic-aarch64-with-glibc2.43",
+  "ratio": 2.718281828459045,
+  "checks": {
+    "2e-11": {
+      "linear_placement": 1.8065320588658047,
+      "predicted_placement_shift": -0.07297949750122701,
+      "predicted_speed_over_epsilon": 0.3361875661922734,
+      "amplitudes": {
+        "0.035": {
+          "nu": 1.80644266120817,
+          "a": 0.4516106653020425,
+          "b": 1.227605065028842,
+          "terminal_orbit_P_max_difference": 0.0,
+          "placement_shift_over_epsilon_squared": -0.07297767970171795,
+          "unretimed_terminal_radius_over_epsilon_cubed": -0.04100510336126165,
+          "limiting_speed": 0.011758478553067078,
+          "speed_over_epsilon": 0.33595653008763077
+        },
+        "0.07": {
+          "nu": 1.8061744949209482,
+          "a": 0.45154362373023704,
+          "b": 1.2274228271424519,
+          "terminal_orbit_P_max_difference": 0.0,
+          "placement_shift_over_epsilon_squared": -0.0729722336441901,
+          "unretimed_terminal_radius_over_epsilon_cubed": -0.04099160647697948,
+          "limiting_speed": 0.02346843641828898,
+          "speed_over_epsilon": 0.33526337740412826
+        },
+        "0.14": {
+          "nu": 1.8051022301721205,
+          "a": 0.4512755575430301,
+          "b": 1.2266941476969428,
+          "terminal_orbit_P_max_difference": 0.0,
+          "placement_shift_over_epsilon_squared": -0.07295044355531852,
+          "unretimed_terminal_radius_over_epsilon_cubed": -0.0409376931908562,
+          "limiting_speed": 0.04654862452653769,
+          "speed_over_epsilon": 0.3324901751895549
+        },
+        "0.28": {
+          "nu": 1.8008195779332468,
+          "a": 0.4502048944833117,
+          "b": 1.223783783757308,
+          "terminal_orbit_P_max_difference": 0.0,
+          "placement_shift_over_epsilon_squared": -0.07286327720099411,
+          "unretimed_terminal_radius_over_epsilon_cubed": -0.040723270881930514,
+          "limiting_speed": 0.08998990993160634,
+          "speed_over_epsilon": 0.3213925354700226
+        },
+        "0.45": {
+          "nu": 1.7918145026786183,
+          "a": 0.4479536256696546,
+          "b": 1.2176642006501672,
+          "terminal_orbit_P_max_difference": 0.0,
+          "placement_shift_over_epsilon_squared": -0.07267928981326616,
+          "unretimed_terminal_radius_over_epsilon_cubed": -0.04027710821923087,
+          "limiting_speed": 0.1341026432826046,
+          "speed_over_epsilon": 0.29800587396134354
+        }
+      }
+    },
+    "5e-13": {
+      "linear_placement": 1.8065320588658047,
+      "predicted_placement_shift": -0.07297949750122701,
+      "predicted_speed_over_epsilon": 0.3361875661922734,
+      "amplitudes": {
+        "0.035": {
+          "nu": 1.8064426612058215,
+          "a": 0.4516106653014554,
+          "b": 1.2276050650272459,
+          "terminal_orbit_P_max_difference": 0.0,
+          "placement_shift_over_epsilon_squared": -0.0729776816189145,
+          "unretimed_terminal_radius_over_epsilon_cubed": -0.04100510443808492,
+          "limiting_speed": 0.011758478553077474,
+          "speed_over_epsilon": 0.3359565300879278
+        },
+        "0.07": {
+          "nu": 1.8061744949186356,
+          "a": 0.4515436237296589,
+          "b": 1.2274228271408802,
+          "terminal_orbit_P_max_difference": 0.0,
+          "placement_shift_over_epsilon_squared": -0.07297223411614817,
+          "unretimed_terminal_radius_over_epsilon_cubed": -0.04099160674222274,
+          "limiting_speed": 0.023468436418309237,
+          "speed_over_epsilon": 0.33526337740441764
+        },
+        "0.14": {
+          "nu": 1.805102230169935,
+          "a": 0.4512755575424838,
+          "b": 1.2266941476954578,
+          "terminal_orbit_P_max_difference": 0.0,
+          "placement_shift_over_epsilon_squared": -0.07295044366681662,
+          "unretimed_terminal_radius_over_epsilon_cubed": -0.04093769325339602,
+          "limiting_speed": 0.04654862452657458,
+          "speed_over_epsilon": 0.3324901751898184
+        },
+        "0.28": {
+          "nu": 1.800819577931478,
+          "a": 0.4502048944828695,
+          "b": 1.2237837837561059,
+          "terminal_orbit_P_max_difference": 0.0,
+          "placement_shift_over_epsilon_squared": -0.07286327722355543,
+          "unretimed_terminal_radius_over_epsilon_cubed": -0.04072327089456795,
+          "limiting_speed": 0.08998990993165634,
+          "speed_over_epsilon": 0.3213925354702012
+        },
+        "0.45": {
+          "nu": 1.7918145026780181,
+          "a": 0.44795362566950453,
+          "b": 1.2176642006497593,
+          "terminal_orbit_P_max_difference": 1.1102230246251565e-16,
+          "placement_shift_over_epsilon_squared": -0.07267928981623004,
+          "unretimed_terminal_radius_over_epsilon_cubed": -0.04027710822063399,
+          "limiting_speed": 0.13410264328246127,
+          "speed_over_epsilon": 0.298005873961025
+        }
+      }
+    }
+  }
+}

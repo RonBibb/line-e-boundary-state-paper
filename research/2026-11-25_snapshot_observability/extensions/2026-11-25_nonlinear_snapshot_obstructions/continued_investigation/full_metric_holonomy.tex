@@ -1,0 +1,366 @@
+\section{The metric can remove irrational-time weak modes}
+\label{sec:full-metric-holonomy}
+
+The irrational-time obstruction in
+Proposition~\ref{prop:both-ray-holonomy}
+concerns observations of the orbit metric alone.
+The remaining spatial metric coefficient gives
+a scalar reading of the otherwise hidden
+transported velocity. This reading has a
+different principal symbol from the two orbit
+coordinates.
+
+Use the notation of Section~\ref{sec:both-velocities}.
+In addition to both orbit fields at $c$,
+measure the metric gradient $\lambda_\theta(c)$
+in $H^s$, equivalently the mean-zero metric
+potential in $H^{s+1}$. Use the initial orbit
+fields and a metric anchor at $a$.
+After the full orbit observation is used,
+the principal metric reading is proportional to
+\[
+ B(\theta)\cdot H(\theta),\qquad
+ B(\theta)=A_-^{-1}(c,\theta)U_\theta(c,\theta).
+\]
+In fact the derivative of the momentum constraint,
+after taking a spatial primitive, gives to principal order
+\[
+ -\Big(\langle A_-H,U_t+U_\theta\rangle
+       -\langle A_+\mathcal T H,U_t-U_\theta\rangle\Big).
+\]
+The contribution involving $U_t-U_\theta$ paired
+with $A_-H-A_+\mathcal T H$ is already observed.
+The remaining contribution is $-2 B\cdot H$.
+The common scale of this expression is $\sqrt{ac}$.
+Differentiating the transported primitive gives
+this expression by the momentum equation, whose
+linearization is
+$-2t(\langle D_t V,U_\theta\rangle+
+\langle U_t,D_\theta V\rangle)$.
+The differentiated transport coefficients and
+the forced error in \eqref{eq:transport-leading}
+give terms bounded from $H^{s-1}$ to $H^{s+1}$
+after the primitive. The mean is a finite-rank term.
+
+\begin{theorem}[The metric projection along successive rays]
+\label{th:full-metric-gramian}
+Let $d/\pi$ be irrational and let
+$B_j(\theta)=(\mathcal U_d^j B)(\theta)$.
+The linearized observation of the terminal
+orbit fields and metric gradient is bounded below
+in the $H^s$ velocity norm up to an
+$H^{s-1}$ remainder if and only if
+for some finite $J$ and $b>0$,
+\begin{equation}
+ \sum_{j=0}^J B_j(\theta)B_j(\theta)^\mathsf{T}\ \ge bI
+          \quad\text{for every }\theta .
+ \label{eq:metric-gramian}
+\end{equation}
+The sufficient direction holds at rational delays
+as well. Under \eqref{eq:metric-gramian},
+finitely many early orbit coefficients remove
+any finite-dimensional kernel, giving a local
+nonlinear Lipschitz inverse for both velocities.
+For sufficiently short irrational delays, the
+criterion holds if $U_\theta(a)$ and
+$D_\theta U_\theta(a)$ are independent at
+some angle of the initial orbit curve. In particular
+this applies at the common initial node of the
+Ernst pair, where the orbit curve is a nonconstant
+horocycle arc in the upper half-plane.
+\end{theorem}
+
+\begin{proof}
+Write $\mathcal U=\mathcal U_d$.
+Orthogonality of the transport gives the identity
+\[
+ B_j\cdot H
+    =\mathcal T^j(B\cdot H)
+         +B_j\cdot(H-\mathcal U^j H).
+\]
+The second term is controlled by telescoping
+$H-\mathcal U H$ and boundedness of $B_j$.
+Condition \eqref{eq:metric-gramian} then controls
+$\|H\|_{L^2}$ from the two readings.
+Applying the same argument to the top spatial
+derivative gives the Sobolev estimate up to
+one lower order. The smoothing terms in the
+linearized wave and metric maps give the
+claimed $H^{s-1}$ remainder.
+Reading the early low orbit modes and taking
+the nonlinear neighborhood
+uses the same proof as
+Theorem~\ref{th:fixed-rank-two}, with two
+components of initial velocity in the energy.
+
+Conversely, if \eqref{eq:metric-gramian}
+fails for every $J$, for arbitrarily long finite
+orbit segments there is a unit vector at one end
+orthogonal to all transported $B$ readings on
+that segment. Transport this vector back to the
+first angle of the segment. Place an $L^2$-unit
+smooth envelope $h_0$ around that angle, pointing
+in the transported vector direction. The supports
+of $\mathcal U^j h_0$ for $0\le j\le J$ can be
+made disjoint by irrationality.
+Their $B$ readings are uniformly as small as
+desired by continuity and the orthogonality at
+the centers, after choosing the envelope narrow
+enough for this finite segment.
+The normalized sum
+$(J+1)^{-1/2}\sum_{j=0}^J\mathcal U^j h_0$
+has unit norm and its difference under $I-\mathcal U$
+has norm at most $2/\sqrt{J+1}$.
+Multiplication by a high Fourier carrier with
+$e^{-2imd}$ arbitrarily near $1$ preserves these
+bounds up to an arbitrarily small error.
+Taking the carriers sufficiently high yields a
+weakly null sequence in $L^2$.
+Conjugating to $H^{s+1}$ and imposing the
+finite mean and momentum restrictions introduce
+only compact or finite-rank corrections, which
+vanish in this sequence. The claimed lower
+estimate must therefore fail.
+
+To see the short-delay criterion, compare
+$B_0$ and $B_1$ in the terminal frame at
+$(c,\theta)$ using $A_-(c,\theta)$.
+They become $U_\theta(c,\theta)$ and
+$U_\theta(c,\theta-2d)$ transported to $(c,\theta)$
+across the two rays with common initial point
+$(a,\theta-d)$. The first-order difference between
+these two vectors is $-2dD_\theta U_\theta(a,\theta)$.
+Indeed the spatial displacement is $2d$ and the
+first-order temporal contributions of the reversed
+and forward transports cancel. Thus the two
+vectors are independent on an open arc for
+sufficiently small $d$. By irrationality every
+rotation orbit enters that arc and finitely many
+translates cover the circle. Orthogonal transport
+preserves independence, giving
+\eqref{eq:metric-gramian} with finitely many
+readings in the principal estimate.
+\end{proof}
+
+\paragraph{The complete high-frequency test for two full metrics.}
+If the initial metric profile is supplied, its gradient
+also reads the initial velocity through
+$\delta\lambda_\theta(a)=-2a\langle f,U_\theta(a)\rangle$.
+After taking the spatial primitive and shifting,
+this adds the principal row
+$B^{(a)}(\theta)=U_\theta(a,\theta+d)$ in the initial
+orthonormal frame of $H$.
+The extra differentiated coefficient term is
+one order smoother. Denote the available rows by
+$B^{(\ell)}$, with $\ell$ running over the terminal
+metric row and the initial row if supplied.
+For irrational $d/\pi$ the same proof gives the
+necessary and sufficient test up to compact
+remainders with the sum in
+\eqref{eq:metric-gramian} taken over these rows.
+Their joint mean readings are finite rank.
+
+For rational $d/\pi=p/q$ the corresponding necessary
+and sufficient condition up to compact remainders is
+uniform positive definiteness of
+\begin{equation}
+ (I-\mathcal H_d)^\mathsf{T}(I-\mathcal H_d)
+ +\sum_{\ell}\sum_{j=0}^{q-1}
+   (\mathcal U_d^jB^{(\ell)})
+   (\mathcal U_d^jB^{(\ell)})^\mathsf{T}.
+ \label{eq:rational-full-metric}
+\end{equation}
+Indeed $(I-\mathcal H_d)H=H-\mathcal U_d^qH$
+is bounded by $q\|(I-\mathcal U_d)H\|$.
+Each projected row is controlled by the telescoping
+identity in the proof above. Conversely, if the
+displayed matrix is singular at an angle, choose
+a unit vector fixed by its closed transport and
+orthogonal to every projected row.
+Use normalized narrow envelopes about its finite
+rotation orbit with the transported vector
+directions. Choose their relative signs by the
+transport and sum them. The residual in
+$I-\mathcal U_d$ is small because the last
+transport returns the initial direction at the
+center of the envelope. All metric readings are
+small by orthogonality at the corresponding centers.
+Multiplying by arbitrarily high carriers at
+multiples of $q$ commutes with the shift and
+gives a weakly null sequence. The compact
+lower-order corrections then vanish, proving
+necessity. This test includes pure closed-ray
+holonomy when no metric row is supplied, and
+can still be positive at identity holonomy when
+the projected metric directions span the plane.
+
+\begin{proposition}[Two slices at irrational separation]
+\label{prop:irrational-metric}
+For every positive initial radius in the circular-loop
+family with zero initial radial velocity, all sufficiently
+short positive delays give a local energy-norm
+Lipschitz inverse for both velocities from the two
+induced metrics. The delays may be rational or irrational.
+One may replace the initial metric by the orbit
+part and use a single metric anchor. This stability
+persists in a neighborhood of the Cauchy data
+and on an open interval of nearby known observation
+delays.
+\end{proposition}
+
+\begin{proof}
+In the rotating orthonormal frame of the circular
+loop, $B=A_-^{-1}U_\theta$ is constant in $\theta$
+and is nonzero when the final radius is positive.
+The matrix $W_d$ is also constant in this frame.
+Choose the delay short enough that its rotation
+angle $-2k_0\int_a^c\cosh R(t)\,dt$ is strictly
+between $-\pi$ and zero.
+Then $B$ and $W_d B$ are independent and
+\eqref{eq:metric-gramian} holds with $J=1$.
+It remains to rule out an exact kernel. The linearized
+equations decompose in Fourier modes of the
+rotating frame. If the terminal orbit and
+metric readings vanish, the terminal orbit variation
+vanishes and the gradient constraint gives
+$\langle D_t V(c),U_\theta(c)\rangle=0$.
+Thus for each Fourier mode the terminal derivative
+is radial. Evolve the mode backward from zero
+terminal position and radial derivative $g e_R$.
+In the reversed time variable, after multiplying by
+$\sqrt{t/c}$ the exact linearized operator differs
+from the frozen-connection operator by a potential
+with norm at most $D_0+D_1|k|$, where
+\[
+ D_0=\sup_{[a,c]}\left(
+ |\Omega^2-\Omega_0^2|+\|K\|+\frac{1}{4t^2}\right),
+ \qquad
+ D_1=2\sup_{[a,c]}|\Omega-\Omega_0|.
+\]
+Here $\Omega(t)=k_0\cosh R(t)$, $\Omega_0=\Omega(c)$,
+and the curvature potential $K$ in the polar
+frame has diagonal entries $(k_0\sinh R)^2,-R_t^2$.
+Indeed the principal spatial operator on mode $k$
+is the square of $ikI+\Omega J$, with $J$ the
+rotation generator. The time rescaling removes
+$t^{-1}\partial_t$ and adds $1/(4t^2)$.
+
+For the frozen operator the two circular
+polarizations have frequencies $k\pm\Omega_0$.
+The radial vector has equal projection magnitude
+onto them. Put $q_k=\max(d^{-1},|k|)$
+and assume $\Omega_0d<\pi/4$ and $\Omega_0d<1/2$.
+The free reverse transfer from zero position
+is diagonal with entries $\sin((k\pm\Omega_0)r)/
+(k\pm\Omega_0)$, using the continuous value at
+zero. Its norm times $q_k$ is at most $2$ for
+$0\le r\le d$. At $r=d$ the radial input has
+output norm times $q_k$ at least
+\[
+ \frac{\sin(\Omega_0d)}{1+\Omega_0 d}|g|.
+\]
+This follows by bounding
+$|k\pm\Omega_0|\le(1+\Omega_0d)q_k$ and using the
+sum of the two squared sines. The weighted
+Duhamel formula bounds the correction by
+$2\big(\exp(2d(dD_0+D_1))-1\big)|g|$.
+The correction is $O(d^2)$ since $D_0$ is bounded
+and $D_1=O(d)$, while the free lower bound is of
+order $d$. Thus all sufficiently short delays
+force nonzero displacement at $a$ for any nonzero
+radial terminal derivative, uniformly over $k$.
+This rules out the kernel and also gives a direct
+lower estimate. For nonzero terminal readings,
+the momentum constraint controls the tangential
+terminal derivative by the gradient reading and
+$q_k$ times the terminal orbit displacement.
+Separating that tangential derivative and the measured
+displacement in the reverse problem, the same
+Duhamel estimate bounds their contribution at $a$
+in the $q_k$-weighted position norm. Since the
+position at $a$ is prescribed, the radial lower
+bound then controls the remaining terminal
+derivative by these readings. The regular-time
+energy estimate transfers this bound to the initial
+velocity. For example $a=1.6$,
+$k_0=4$, $R(a)=0.32$, $R_t(a)=0$ allow every
+$0<d\le0.02$. The decreasing radial energy
+gives $|R|\le0.32$, $|R_t|<1.31$ and $R>0.29$ on
+the interval. In particular $4\le\Omega_0<4.21$,
+$D_0<2.11$ and $D_1<3.44d$. These bounds
+make the correction less than $0.45d$
+and the displayed free gain greater than $3.68d$
+over that interval.
+
+The compact-remainder bound for the enlarged
+metric observation and injectivity now give the
+energy-norm lower bound. The nonlinear estimate
+again follows from continuity of the Cauchy derivative.
+
+The positive lower bound in the finite sum
+\eqref{eq:metric-gramian} persists continuously
+in the delay, along with the bounded lower-order
+remainder. Translation is strongly continuous on
+Sobolev spaces even though it need not be continuous
+in operator norm. If the full lower bound failed
+arbitrarily close to an injective delay $d_0$, take
+unit $H^s$ velocities $f_n$ at $d_n\to d_0$
+with terminal observations tending to zero.
+After a subsequence $f_n$ converges in $H^{s-1}$
+and weakly in $H^s$ to $f$.
+The regular-time energy bound and strong
+continuity in that weaker norm imply that $f$
+is invisible at $d_0$. Injectivity gives $f=0$,
+and the uniform lower bound up to an $H^{s-1}$
+remainder contradicts the unit $H^s$ norms.
+The Cauchy derivative varies with initial data
+in operator norm uniformly on the fixed compact
+time interval, so the nonlinear neighborhood
+can also be chosen uniformly on a smaller
+interval of delays.
+\end{proof}
+
+The orbit-only two-slice map still has the irrational
+weak modes of Proposition~\ref{prop:both-ray-holonomy}
+even on the circular backgrounds in this proposition.
+For instance, the two projected directions
+for a short circular loop are just the tangent
+of the orbit curve and its rotated copy.
+This makes the effect of the metric gradient visible
+in the same evolution and at the same observation times.
+
+\paragraph{Longer placements can make both full metrics weak.}
+The shortness hypothesis has geometric content even
+in the circular family. Use the smooth rotating
+frame defined by parallel transport along the signed
+radial geodesics, including at zero radius.
+For any winding, choose the later time so that
+\[
+  \int_a^c k_0\cosh R(t)\,dt=\pi .
+\]
+For every small positive initial radius this defines
+one delay near $\pi/k_0$, by strict monotonicity
+in $c$. It is strictly shorter than $\pi/k_0$ and
+depends analytically on the initial radius, so the
+delays fill a nontrivial interval and are irrational
+relative to $\pi$ outside a countable set of small
+radii. To see that the endpoint loop can stay
+nontrivial, take $a$ large with $k_0$ fixed.
+The normalized linear radial solution with zero
+initial derivative then approaches
+$\cos(k_0(t-a))$ uniformly on this interval
+as $a\to\infty$, by the scalar Duhamel formula
+with damping $1/t$. Its terminal value is negative
+for sufficiently large $a$ and remains so after
+dividing the nearby nonlinear radius by its
+initial amplitude.
+
+At the chosen delay $W_d$ is the identity in
+the rotating frame and the metric directions
+at the two times are both angular, since the
+single-ray rotation is a half turn. All their
+translates are collinear. For the irrational
+choices the two-full-metric criterion therefore
+fails. This gives arbitrarily weak energy-normalized
+velocity directions at longer exact placements,
+even when both full induced metrics are supplied.

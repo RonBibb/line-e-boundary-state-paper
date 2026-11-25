@@ -1,0 +1,140 @@
+{
+  "T0_solutionhood": {
+    "passes": true,
+    "residuals": {
+      "false_spike": [
+        {
+          "h": 0.002,
+          "residual_P": 7.817664779419253e-10,
+          "residual_Q": 2.116918862427042e-09
+        },
+        {
+          "h": 0.001,
+          "residual_P": 2.669307400116061e-09,
+          "residual_Q": 5.000925673570578e-09
+        },
+        {
+          "h": 0.0005,
+          "residual_P": 1.277972696764329e-08,
+          "residual_Q": 2.0512654630433502e-08
+        }
+      ],
+      "true_spike": [
+        {
+          "h": 0.002,
+          "residual_P": 8.310188648330552e-10,
+          "residual_Q": 1.6790140111577756e-10
+        },
+        {
+          "h": 0.001,
+          "residual_P": 3.11002485917089e-09,
+          "residual_Q": 6.351202480603391e-10
+        },
+        {
+          "h": 0.0005,
+          "residual_P": 1.481373146719478e-08,
+          "residual_Q": 2.1568415248252037e-09
+        }
+      ]
+    }
+  },
+  "T1_false": {
+    "label": "false spike",
+    "orders": [
+      1.99966721309987,
+      1.9999488637939133
+    ],
+    "passes": true,
+    "rows": [
+      {
+        "N": 1024,
+        "sup_dH2_error": 0.00024435389687653376
+      },
+      {
+        "N": 2048,
+        "sup_dH2_error": 6.110256714124975e-05
+      },
+      {
+        "N": 4096,
+        "sup_dH2_error": 1.527618323876459e-05
+      }
+    ]
+  },
+  "T1_true": {
+    "label": "true spike",
+    "orders": [
+      1.9997290284051317,
+      1.9997326014687018
+    ],
+    "passes": true,
+    "rows": [
+      {
+        "N": 1024,
+        "sup_dH2_error": 0.001315546586754039
+      },
+      {
+        "N": 2048,
+        "sup_dH2_error": 0.000328948425031461
+      },
+      {
+        "N": 4096,
+        "sup_dH2_error": 8.22523500334567e-05
+      }
+    ]
+  },
+  "T2_confusion": {
+    "exact_radius_at_tau_f": 0.06117903361020723,
+    "matrix": {
+      "false_spike": [
+        [
+          "TRANSIENT",
+          -0.023
+        ]
+      ],
+      "kasner": [],
+      "rotated_kasner": [],
+      "true_spike": [
+        [
+          "TRUE",
+          -0.0506
+        ],
+        [
+          "TRUE",
+          0.0506
+        ]
+      ]
+    },
+    "passes": true
+  },
+  "T3_information_loss": {
+    "1.0": {
+      "D_center_max": 0.2597801017517898,
+      "D_flank_max": 0.08719517827299182
+    },
+    "2.0": {
+      "D_center_max": 0.5715037363307021,
+      "D_flank_max": 0.03938820781414041
+    },
+    "4.0": {
+      "D_center_max": 0.3120125696541459,
+      "D_flank_max": 0.02366183748687651
+    }
+  },
+  "T4_spike_aware": {
+    "fitted": {
+      "q0_hat": 0.499999999999889,
+      "q2_hat": -2.617331807015788e-19,
+      "w_hat": 0.550000000000037,
+      "x0_hat": 0.0
+    },
+    "passes": true,
+    "sup_D_scored": {
+      "2.0": 0.00023812486803388133,
+      "4.0": 2.2420618112207826e-05
+    }
+  },
+  "line": "E",
+  "outcome": "CBE-3T-PASS \u2014 detector and spike taxonomy validated on the exact family; four-function VTD loss quantified (T3); spike-aware reconstruction restores equivalence for the exact family (T4). CBE-3 production finding upgraded to validated-class spike mismatch against four-function VTD; enlarged-data question for production spikes remains open (CBE-3b).",
+  "program": "BB-CBE-3T",
+  "spec": "BB_CBE3T_EXACT_SPIKE_CONTROL_SPEC_2026-08-04.md"
+}

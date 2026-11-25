@@ -1,0 +1,487 @@
+\documentclass[11pt]{article}
+\usepackage[hmargin=.9in,vmargin=.82in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,mathtools,needspace}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  pdftitle={Velocity Recovery from Partial Gowdy Snapshots},
+  pdfauthor={Ronald Bibb},
+  pdfsubject={Sharp thresholds, exact collisions, and resonances}
+}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newcommand{\sech}{\operatorname{sech}}
+\newcommand{\TT}{\mathbb{T}}
+\title{Velocity Recovery from Partial Gowdy Snapshots\protect\\
+Sharp Thresholds, Exact Collisions, and Resonances}
+\author{Ronald Bibb}
+\date{Working draft, 25 November 2026}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We ask when the finite areal-time data
+$P(a),Q(a),Q_t(a)$ and $P(b)$ determine the missing
+velocity $P_t(a)$ in the vacuum Gowdy equations.
+For homogeneous solutions of hyperbolic speed at most $V$,
+the sharp class-wide injectivity criterion is
+$V\log(b/a)\leq 2.399357\ldots$.
+Above this threshold the inverse has two branches for some data.
+In the inhomogeneous equations, exact subcritical pairs at
+resonant slices have identical induced spatial metrics and
+$Q_t$ at both slices, as well as the same metric potential
+at all times. A periodic Gowdy-to-Ernst transformation also gives
+exact collisions with two independent target directions.
+In that family a single off-node scalar reading separates
+the two full-metric branches.
+For constant initial position in the
+geodesic-image class, full orbit snapshots determine the
+history exactly when their scalar transfer functions have no
+common Fourier zero. An explicit short third placement gives
+an inverse with sharp one-derivative loss using that snapshot
+and the initial one.
+About a moving homogeneous background, parallel and transverse
+Jacobi channels can cancel to third order in inverse Fourier
+frequency, causing a sharp three-derivative loss for the
+normalized missing velocity. At a different moving background a
+full-metric linearized kernel rules out pairwise inverse
+H\"older exponents greater than $1/3$, and the corresponding
+nonlinear signed pair separates cubically.
+\end{abstract}
+
+\section{The observation map}
+A finite-window logarithmic slope and intercept of $P$, together
+with endpoint $Q$ and $e^{2P}Q_\tau$ in log time $\tau=-\log t$,
+are algebraically equivalent to the record
+\[
+ \mathcal O_0=(P(a),Q(a),Q_t(a),P(b)),\qquad 0<a<b.
+\]
+We may also retain the additive metric anchor $\lambda(a,0)$.
+The original finite-window study measured a large error when
+$P_\tau(a)$ was replaced with a secant \cite{old}.
+A later computation recovered the tested spike-region history with
+the same data by solving the PDE over the observation window.
+This raises a mathematical question about the observation map itself.
+Two-time observation and small-denominator results for scalar waves
+give an important comparison \cite{vest,cssw}. Gowdy forward and
+backward computation is established \cite{amorim}. We examine what
+changes when the two field channels of the vacuum system interact.
+
+Write $U=(P,Q)$ as a wave map to the upper half-plane with metric
+$dP^2+e^{2P}dQ^2$. The equations in areal time are
+\begin{equation}
+ D_t U_t+t^{-1}U_t-D_\theta U_\theta=0.
+ \label{wave}
+\end{equation}
+We take $\theta\in\TT=\mathbb R/(2\pi\mathbb Z)$ and use a fixed
+marking and Killing basis for the measured fields.
+The remaining metric potential is determined up to an additive
+constant by constraints, with
+$\lambda_t=-t(|U_t|^2+|U_\theta|^2)$ and
+$\lambda_\theta=-2t\langle U_t,U_\theta\rangle$ in the
+positive-$\lambda_\tau$ convention \cite{amorim}.
+In this convention the four-metric is
+\[
+ ds^2=t^{-1/2}e^{-\lambda/2}(-dt^2+d\theta^2)
+       +t\big[e^P(dx+Q\,dy)^2+e^{-P}dy^2\big].
+\]
+The wave-map formulation and homogeneous geodesics are standard
+\cite{ringstrom,lim}. The observation map above singles out a
+specific target-coordinate projection.
+
+\section{An exact nonlinear threshold}
+Put $s=\log(t/a)$, $\ell=\log(b/a)>0$ and let
+$g=P_s(a)$, $q=e^{P(a)}Q_s(a)$ and
+$\sigma=(g^2+q^2)^{1/2}$.
+Here $Q_s(a)=a Q_t(a)$ is known from the record.
+On homogeneous data, \eqref{wave} becomes geodesic motion in $s$.
+The conserved speed is $\sigma$, and $e^{2P}Q_s$ is constant.
+It follows that $u(s)=e^{P(s)-P(a)}$ obeys
+$u_{ss}=\sigma^2u$ with $(u(0),u_s(0))=(1,g)$. Thus the measured
+endpoint value is
+\begin{equation}
+ e^{P(b)-P(a)}
+ = F_{q,\ell}(g)
+ =\cosh(\sigma\ell)+\frac{g}{\sigma}\sinh(\sigma\ell).
+ \label{hom}
+\end{equation}
+The stationary case is read by continuity.
+
+\begin{theorem}
+\label{th:threshold}
+Let $h_*>0$ solve $h_*\tanh(h_*/2)=2$.
+Consider all homogeneous Gowdy data whose hyperbolic speed is at most $V$.
+The observation is injective on this entire class, with $q$ among
+the known data, if and only if $V\ell\le h_*$.
+If $V\ell>h_*$, some fixed observed $q$ has two distinct compatible
+velocities. If $V\ell<h_*$ the homogeneous inverse
+is uniformly Lipschitz in $P(b)$ at fixed $q$, with a constant
+depending on $V$ and $\ell$.
+With no speed bound and $q\ne0$, each observed level strictly above
+the minimum has exactly two preimages. The branches meet at a
+nondegenerate minimum.
+\end{theorem}
+
+\begin{proof}
+Nonvertical homogeneous orbits can be parametrized by
+$e^{-P}=R\sech r$, $Q=Q_c\pm R\tanh r$ with $r_s=\sigma$.
+This is an upper-half-plane semicircle.
+Let the initial and terminal parameters be $r_a,r_b$ with
+$r_b-r_a=h=\sigma\ell$. The components of $e_P=\partial_P$
+in the parallel tangent and normal frame can be chosen to be
+$\tanh r$ and $\sech r$.
+A velocity variation $\delta g$ at fixed $q$ has zero initial
+displacement. Its Jacobi multipliers along and across the target
+geodesic are $\ell$ and $\sinh h/\sigma$. Hence
+\[
+ \frac{\partial P(b)}{\partial g}
+ = \frac{\sech r_a\sech r_b}{\sigma}
+    \left[h\sinh r_a\sinh r_b+\sinh h\right].
+\]
+The product of the two hyperbolic sines has minimum
+$-\sinh^2(h/2)$, at $r_a=-h/2$. The lower factor in brackets
+equals $\sinh h\,[1-(h/2)\tanh(h/2)]$.
+For $q=0$ the map is $P(a)+g\ell$, including the stationary case.
+Below the threshold the derivative is strictly positive on the
+compact speed disc, including the vertical limit by the analytic
+expression \eqref{hom}. At equality the derivative is positive
+on every nontrivial open admissible interval and may vanish at
+its boundary. This proves uniqueness up to and including equality
+and the uniform estimate below it.
+
+If $V\ell>h_*$, pick $\sigma<V$ with $\sigma\ell>h_*$ and
+choose the semicircle parameter $r_a=-h/2$.
+At that velocity the derivative is negative.
+Keep $q$ fixed and let $g$ increase to zero, where the derivative
+is positive. Both velocities are inside the speed bound, and the
+interval between them lies in that bound. The map has a minimum
+strictly below both end values on this interval, giving a collision.
+
+For the last assertion, set
+$M=\left(\begin{smallmatrix}g&q\\q&-g\end{smallmatrix}\right)$.
+Then $F_{q,\ell}(g)=(e^{\ell M})_{11}$.
+In the time-ordered expansion about the diagonal matrix
+$\operatorname{diag}(g,-g)$, only even numbers of off-diagonal
+insertions contribute to this entry. Each term is a positive
+integral of $q^{2m}e^{g z}$ with $|z|\le\ell$.
+The zero-insertion term is $e^{g\ell}$.
+Termwise differentiation is justified by uniform convergence
+on compact $g$ intervals, and gives $F''(g)>0$.
+For fixed $q\ne0$, \eqref{hom} tends to infinity at both ends
+of the real $g$ axis. It has one minimum with positive
+second derivative. The logarithm has the same two branches
+and a positive second derivative at its minimum.
+\end{proof}
+
+For example, take $P(a)=Q(a)=0$, $\ell=3$ and
+$\sigma_1=0.95$. Set $q=\sigma_1\sech(3\sigma_1/2)$
+and $g_1=-\sigma_1\tanh(3\sigma_1/2)$.
+Then $P(b)=0$ by symmetry and the derivative at $g_1$ is negative.
+Since $F_{q,3}(0)>1$, there is a second admissible velocity
+$g_2\in(g_1,0)$ with $P(b)=0$.
+Both speeds are below one. The solution satisfying $g_2$ has
+speed about $0.66629$. With window length two the homogeneous
+stability bound applies to the entire speed-one class.
+The same window already admits a collision when the speed
+bound is increased above $h_*/2$, as shown by the example in
+Table~\ref{tab:collisions}.
+
+All homogeneous data in this proof satisfy the periodic momentum
+constraint. Their metric constants can give identical anchors at $a$.
+The two speeds of a collision differ, since
+$F_{q,\ell}(g)-F_{q,\ell}(-g)=2g\sinh(\sigma\ell)/\sigma$
+for nonzero $g$. In particular their metric derivatives differ.
+If one adds a measurement of $\lambda(b)$, then
+$\lambda(a)-\lambda(b)=\sigma^2\ell$ gives the speed.
+With $\sigma$ known, \eqref{hom} is affine in $g$ and can be inverted.
+A second full orbit measurement $Q(b)$ also resolves the ambiguity,
+since the initial point and full terminal point determine a unique
+target geodesic traversed in time $\ell$.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{ccrrrr}
+\toprule
+$\ell$ & $q$ & $g_1$ & $g_2$ & $\sigma_1$ & $\sigma_2$\\
+\midrule
+2 & 0.637644 & $-1.357722$ & $-0.693842$ & 1.500000 & 0.942341\\
+3 & 0.431979 & $-0.846105$ & $-0.507290$ & 0.950000 & 0.666294\\
+\bottomrule
+\end{tabular}
+\caption{Two collisions with $P(a)=P(b)=Q(a)=0$ in each row.
+At each gap both branches use the same initial $q$ and metric anchor.}
+\label{tab:collisions}
+\end{table}
+
+\input{exact_inhomogeneous.tex}
+\input{rank_two.tex}
+
+\section{Linearized inhomogeneous recovery}
+For a variation along a homogeneous background, take components
+$X,Y$ parallel and perpendicular to the target geodesic.
+With Fourier frequency $k\ge1$, covariant linearization of
+\eqref{wave} gives
+\[
+ X''+t^{-1}X'+k^2 X=0,\qquad
+ Y''+t^{-1}Y'+(k^2-\sigma^2/t^2)Y=0.
+\]
+The transverse sign also follows by representing the geodesic
+as a vertical target line with $P=\sigma\log t+$constant.
+The linearized $Q$ equation there has damping $(1+2\sigma)Q_t/t$.
+Its target-frame coordinate $Y=e^P\delta Q$ has the displayed
+negative potential. With the rescaling by $\sqrt t$ the two
+potentials become $\beta_+/t^2$ and $\beta_-/t^2$, where
+$\beta_+=1/4$, $\beta_-=1/4-\sigma^2$.
+
+Let $S_\beta(b;k)$ be the value at $b$ of the solution of
+$z''+(k^2+\beta/t^2)z=0$ with $z(a)=0$, $z'(a)=k$.
+Hold $P(a),Q(a),Q_t(a)$ fixed and vary $P_t(a)$.
+The single terminal observation $P(b)$ then has multiplier
+$\sqrt{a/b}\,T_k$ when the unknown is $\delta P_t(a)/k$, where
+\begin{equation}
+ T_k=A S_{\beta_+}(b;k)+B S_{\beta_-}(b;k),\qquad
+ A=\tanh r_a\tanh r_b,\quad B=\sech r_a\sech r_b .
+ \label{mix}
+\end{equation}
+Both the starting direction and the terminal projection are
+fixed by the observation protocol. Two Jacobi solutions are involved
+even though the measured terminal quantity is a scalar.
+
+\begin{theorem}
+\label{th:fourier}
+Take $b-a=\pi p/q_*$ with $p,q_*$ positive coprime integers.
+There is a subcritical background of speed $1/\sqrt2$
+for which $|T_k|\asymp k^{-3}$ on the large multiples of $q_*$,
+whereas it is bounded away from zero on all large nonmultiples.
+Outside a locally finite exceptional set of reference times
+the full linearized inverse exists. Its loss is exactly
+three derivatives for $\delta P_t(a)/k$.
+Adding $Q(b)$ or $\lambda(b)$ to the observation restores the
+one-derivative loss for this background, with the same exclusion
+of exceptional reference times.
+\end{theorem}
+
+\begin{proof}
+Choose the semicircle with $\sinh r_a\sinh r_b=1$.
+It exists because this product, as the center in log time varies,
+ranges from $-\sinh^2((r_b-r_a)/2)$ to infinity.
+Then $A=B>0$ and the two potentials have coefficients $\pm1/4$.
+In the standard Hankel expansion, after extracting
+$\sqrt{2/(\pi z)}e^{i(z-\nu\pi/2-\pi/4)}$ with
+$\nu^2=1/4-\beta$, the prefactor is
+\[
+ H_\beta(z)
+ =1-\frac{i\beta}{2z}-\frac{\beta(\beta+2)}{8z^2}
+       +\frac{i\beta(\beta+2)(\beta+6)}{48z^3}+O(z^{-4})
+\]
+\cite[\S 10.17]{dlmf}. The Bessel Wronskian gives
+$S_\beta(b;k)=\operatorname{Im}
+[e^{ik(b-a)}\overline{H_\beta(ka)}H_\beta(kb)]$,
+where the exact prefactor is used in this identity.
+At resonance, the order-$k^{-1}$ coefficient is
+$\beta(u-v)/2$ up to parity, with $u=1/a,v=1/b$.
+It cancels in \eqref{mix}. The even-in-$\beta$ coefficient
+of order $k^{-3}$ is
+\begin{equation}
+ -\beta^2(u-v)\left(\frac{u^2+v^2}{6}+\frac{uv}{24}\right),
+ \label{coefficient}
+\end{equation}
+also up to parity. It is nonzero. The order-$k^{-2}$ term is real
+before multiplication by $e^{ik(b-a)}$ and vanishes at resonance.
+For nonmultiples, the leading term is $2B\sin(k(b-a))$.
+These estimates are uniform for $a$ on compact positive subintervals.
+
+For completeness, each fixed nonzero mode has only isolated zeros
+as a function of $a$. The transfer is analytic in $a>0$ at fixed
+gap $d=b-a$. On a resonant mode, averaging the two Volterra
+series cancels all odd orders in the potential. As $a\to\infty$,
+the second-order term has leading value equal to that of a constant
+potential $\beta/a^2$, with an error $O(a^{-5})$, since
+$(a+x)^{-2}=a^{-2}+O(a^{-3})$ uniformly for $0\le x\le d$.
+Expanding $k\sin(d\sqrt{k^2+W})/\sqrt{k^2+W}$ for constant $W$
+gives second-order coefficient $(-1)^{kp/q_*}(-3d/(8k^3))$.
+Thus the averaged term is nonzero for sufficiently large $a$.
+Nonresonant modes approach the nonzero free multiplier as
+$a\to\infty$. Uniform high-frequency estimates then imply local
+finiteness of the exceptional set. The zero spatial mode has
+positive observation derivative on these backgrounds by the
+same-sign Jacobi weights in the preceding proof.
+
+Adding $Q(b)$ reads both target-frame components separately.
+Adding $\lambda(b)$ reads the tangent component instead:
+linearizing the metric quadrature along the geodesic gives
+$\delta\lambda(b)=-2\sigma X(b)$ for a fixed initial anchor.
+The tangential input component is nonzero here.
+At resonance the individual nonzero channels are of order
+$k^{-1}$ with opposite signs before projection, so either added
+measurement avoids the cancellation.
+Away from resonance, the original scalar observation has a
+uniform high-frequency lower bound. Finite modes use the
+nonvanishing hypothesis already established.
+\end{proof}
+
+For $a=\pi/4$ and $b=7\pi/16$, the predicted limit of
+$k^3|T_k|$ on the resonant subsequence is $0.01302349475$.
+High-precision Bessel evaluations at $k=16384$ give $0.01302349439$.
+The paired orbit measurement has $k$ times its normalized
+multiplier norm approaching $0.06820926$.
+Independent integrations of the coordinate linearization checked
+the trace formulas on modes $1,15,16,32,49$.
+The derivative loss above refers to the normalized velocity.
+Recovering the unscaled $P_t$ costs one additional derivative.
+
+\input{detuning.tex}
+
+\section{An exact linearized kernel and a cubic nonlinear separation}
+For $\sigma=1/2$ place $r_a=0$. The initial variation in $P_t$ lies
+entirely in the normal Jacobi channel and its effective potential
+after rescaling vanishes. Thus
+$T_k=\sech(r_b)\sin(k(b-a))$.
+At $k(b-a)\in\pi\mathbb{Z}$, both terminal orbit variations vanish.
+The first-order metric variation vanishes as well because
+$X=0$ throughout the interval. This example lies within the
+speed-one class and can satisfy the homogeneous positive
+threshold. The kernel involves inhomogeneous velocity
+perturbations and is absent from the purely homogeneous inverse.
+
+\begin{proposition}
+For any such resonant mode, the full nonlinear map that reads
+the two induced spatial metrics, along with the prescribed
+$Q_t(a)$, cannot have a pairwise local inverse with H\"older
+exponent exceeding $1/3$ for the missing $P_t(a)$.
+The same obstruction holds for the original smaller record.
+On the chosen signed Fourier perturbations the terminal $P$
+discrepancy has nonzero cubic order for sufficiently large
+reference $a$ at fixed resonant gap.
+\end{proposition}
+
+\begin{proof}
+Choose smooth initial data with identical $P(a),Q(a),Q_t(a)$
+and with $P_t(a)$ perturbed by $\pm\epsilon\cos(k\theta)$
+about the apex background.
+The initial position is homogeneous in $\theta$, so the periodic
+momentum constraint is satisfied and both initial metric
+anchors can be fixed identically.
+Regular-time smooth dependence on this scalar parameter follows from
+the semilinear wave system on the compact time interval,
+by differentiating its evolution equations and applying local
+energy estimates about the smooth background.
+The difference between the two observations has zero first-order
+coefficient by the kernel calculation. Its even terms cancel.
+It is $O(\epsilon^3)$ in any fixed Sobolev norm of the smooth
+output family. The missing initial velocities differ by order
+$\epsilon$. An inverse bound with exponent greater than $1/3$
+is therefore impossible for arbitrary pairs in such a neighborhood.
+
+To see the cubic mechanism, use Fermi coordinates $N,L$
+with target metric $dN^2+\cosh^2N\,dL^2$. On the background,
+$N_0=0$ and $L_0'=\sigma/t$.
+Reflection $N\mapsto-N$ makes $L$ even and $N$ odd in $\epsilon$.
+Write $N=\epsilon N_1+\epsilon^3N_3+O(\epsilon^5)$ and
+$L=L_0+\epsilon^2 L_2+O(\epsilon^4)$.
+The equation for $L_2$ is driven by $-2 L_0' N_1 N_{1,t}$.
+The cubic forcing in the normal equation is
+$2L_0' L_{2,t}N_1+(2/3)(L_0')^2N_1^3$.
+There is no initial cubic term because the fixed initial target
+point has an exactly linear velocity perturbation in the
+Fermi normal direction.
+
+Let $x=t-a$ and $d=b-a=m\pi/k$.
+For $a\to\infty$, the leading normal coefficient is
+$u(x)\cos(k\theta)$ with $u(x)=\sin(kx)/k$.
+On $[0,d]$, the mode-zero and mode-$2k$ time derivatives
+of $a L_2$ tend to
+$-\sigma u^2/2$ and $-\sigma x\sin(2kx)/(4k)$, respectively,
+by their forced constant-coefficient equations with zero initial data.
+The mode-$k$ forcing for $a^2N_3$ therefore tends to
+\[
+ -\frac{\sigma^2}{2}u^3
+ -\frac{\sigma^2}{4k}xu\sin(2kx).
+\]
+The Green function at $d$ is $(-1)^{m+1}u(x)$.
+Using $u^2\sin(2kx)=(k/2)(u^4)'$ and $u(0)=u(d)=0$
+gives the nonzero terminal limit
+\[
+ \lim_{a\to\infty} a^2(N_3)_k(b)
+ =(-1)^m\frac{9\sigma^2 d}{64 k^4}.
+\]
+The limit follows by continuous dependence for the finitely
+many forced harmonic equations for these coefficients.
+At the terminal slice $N_1=0$, so the odd cubic term of
+$P$ is the projection of $N_3$ onto $dP$, with factor
+$\sech(r_b)>0$. Thus this family has a genuine cubic separation
+for sufficiently large $a$.
+\end{proof}
+
+An independent numerical test used $a=1$, $b=1+\pi/2$ and $k=2$.
+A Fourier evolution of the full coordinate equations was compared
+with an ODE for the expansion coefficients in Fermi coordinates.
+At amplitude $0.025$, the $\cos(2\theta)$ coefficient of the terminal
+$P$ difference divided by $\epsilon^3$ was $-0.000736959$.
+The Fermi expansion gave $-0.000736964$. The combined terminal
+$P,Q,\lambda$ difference decreased by factors near eight when
+the signed perturbation amplitude was halved.
+This illustrates the cubic mechanism on regular finite slices.
+
+\input{archive_application.tex}
+
+\section{Consequence for finite-window reconstruction}
+For homogeneous data the sharp window bound gives a practical
+criterion for using the four original observables. A terminal
+metric potential or full orbit point resolves the homogeneous
+ambiguity. In the inhomogeneous problem the placement of extra
+measurements matters. Exact examples defeat both full metrics
+and the same velocity component at both times. A third time
+with no common scalar resonance restores uniqueness in the
+constant-initial-position geodesic-image class. The explicit
+short placement in Proposition~\ref{prop:safe-gap} also
+controls the derivative loss there.
+Around moving homogeneous solutions, the higher-order
+cancellation and cubic separation quantify how much stability
+can deteriorate even at subcritical speeds.
+The small tangent defect at the archived trajectory supports
+the finite-grid restart using the original four observables.
+A quantitative continuum neighborhood estimate there remains
+open.
+
+\begin{thebibliography}{9}
+\bibitem{amorim} P. Amorim, C. Bernardi and P. G. LeFloch,
+Computing Gowdy spacetimes via spectral evolution in future and past
+directions, \emph{Class. Quantum Grav.} 26 (2009), 025007.
+\href{https://arxiv.org/abs/0811.1266}{arXiv:0811.1266}.
+
+\bibitem{berger} B. K. Berger and V. Moncrief,
+Numerical investigation of cosmological singularities,
+\emph{Phys. Rev. D} 48 (1993), 4676--4687.
+\href{https://arxiv.org/abs/gr-qc/9307032}{arXiv:gr-qc/9307032},
+\S\S III--IV, especially Eq.~(3.19).
+
+\bibitem{cssw} J. Christensen, F. Gonzalez, T. Kakehi and J. Wang,
+The snapshot problem for the wave equation,
+\emph{Adv. Math.} 444 (2024), 109629.
+\href{https://arxiv.org/abs/2308.12208}{arXiv:2308.12208}.
+
+\bibitem{dlmf} NIST Digital Library of Mathematical Functions,
+\href{https://dlmf.nist.gov/10.17}{\S 10.17, Asymptotic Expansions for Large Argument}.
+
+\bibitem{lim} W. C. Lim, New explicit spike solutions---non-local component
+of the generalized Mixmaster attractor,
+\emph{Class. Quantum Grav.} 25 (2008), 045014.
+\href{https://arxiv.org/abs/0710.0628}{arXiv:0710.0628}, Eq.~(22).
+
+\bibitem{old} R. Bibb, Boundary-State Sufficiency in Gowdy Cosmology.
+\href{https://doi.org/10.5281/zenodo.21959052}{Zenodo preprint (2026)}.
+
+\bibitem{ringstrom} H. Ringstr\"om, On a wave map equation arising in
+general relativity, \emph{Comm. Pure Appl. Math.} 57 (2004), 657--703.
+\href{https://doi.org/10.1002/cpa.20015}{DOI}.
+
+\bibitem{rw} A. D. Rendall and M. Weaver,
+Manufacture of Gowdy spacetimes with spikes,
+\emph{Class. Quantum Grav.} 18 (2001), 2959--2976.
+\href{https://arxiv.org/abs/gr-qc/0103102}{arXiv:gr-qc/0103102}.
+
+\bibitem{vest} A. Vest, Observation of vibrating systems at different time
+instants, \emph{Electron. J. Qual. Theory Differ. Equ.} 2014, no.~14, 1--15.
+\href{https://arxiv.org/abs/1305.6461}{arXiv:1305.6461}.
+\end{thebibliography}
+\end{document}

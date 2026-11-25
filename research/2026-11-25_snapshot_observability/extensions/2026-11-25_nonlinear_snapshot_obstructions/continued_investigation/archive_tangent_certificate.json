@@ -1,0 +1,124 @@
+{
+  "platform": "Linux-7.0.0-42-generic-aarch64-with-glibc2.43",
+  "mpmath": "1.3.0",
+  "interval_digits": 55,
+  "results": {
+    "1024": {
+      "initial_velocity_radius": "0.06",
+      "certified_additional_observation_error_radius": 0.051205367242822236,
+      "velocity_distance_to_hidden_center_bound": 0.0029091345832134193,
+      "source_file": "cbe3b_slices_N1024.npz",
+      "source_sha256": "6955a6048c9fb81e6205b5c9f46072ae9dfd8c862174ab0fde1f8cd4c59a672b",
+      "initial_bounds": {
+        "minimum_V": 0.31705882631466514,
+        "maximum_V": 1.2665462274585126,
+        "B": 0.001198906608013165,
+        "C": 0.2168359190117239,
+        "Z": 0.23394184334001675,
+        "P_jump": 0.17305240760584087,
+        "vmd_maximum_C": 0.2616042365028021,
+        "vmd_maximum_speed": 0.6829411743594167,
+        "delta": 0.0061359231515425655,
+        "secant_center_distance": 0.046804198620223676,
+        "secant_vmd_distance": 2.5655126608378977e-06
+      },
+      "bootstrap_bounds": {
+        "xi": 1.834038203215891e-05,
+        "jump": 2.41,
+        "exp_jump": 11.133961145065305,
+        "spatial_P": 1.6213015350722899e-09,
+        "lower_V": 0.3146088230720621,
+        "upper_V": 1.4188982307011158,
+        "upper_B": 0.023459938395613934,
+        "upper_C": 0.2690903191193879,
+        "upper_Z": 0.9299293955207668,
+        "vmd_error": 0.007486082616585759,
+        "center_observation_mismatch_bound": 0.002609231855301981
+      },
+      "tangent_certificate": {
+        "matrix_row_norm": 1.465828004145351,
+        "exponential_series_tail": 3.460481277842127e-14,
+        "observation_defect_upper_bound": 0.10309001503126293,
+        "inverse_norm_upper_bound": 1.114939087265102
+      }
+    },
+    "2048": {
+      "initial_velocity_radius": "0.06",
+      "certified_additional_observation_error_radius": 0.051149980890525575,
+      "velocity_distance_to_hidden_center_bound": 0.0029121428289605924,
+      "source_file": "cbe3b_slices_N2048.npz",
+      "source_sha256": "e65aef55709c315706dff53174c0bd6634e8418b69fda41cb44384dc30c531a9",
+      "initial_bounds": {
+        "minimum_V": 0.3170506777195298,
+        "maximum_V": 1.2684985432769242,
+        "B": 0.0011989295523616333,
+        "C": 0.21685171479894003,
+        "Z": 0.22577778216695474,
+        "P_jump": 0.08660269409794454,
+        "vmd_maximum_C": 0.26160027357270615,
+        "vmd_maximum_speed": 0.6829493229509838,
+        "delta": 0.0030679615757712828,
+        "secant_center_distance": 0.04707527508709853,
+        "secant_vmd_distance": 2.5655778193334906e-06
+      },
+      "bootstrap_bounds": {
+        "xi": 3.668076406431782e-05,
+        "jump": 2.41,
+        "exp_jump": 11.133961145065305,
+        "spatial_P": 6.4852061402891595e-09,
+        "lower_V": 0.3146006647491176,
+        "upper_V": 1.4208505562473366,
+        "upper_B": 0.02619383756157212,
+        "upper_C": 0.26908638591300094,
+        "upper_Z": 0.8975116371664089,
+        "vmd_error": 0.007486112340294757,
+        "center_observation_mismatch_bound": 0.0026092422703050877
+      },
+      "tangent_certificate": {
+        "matrix_row_norm": 1.4732580768169496,
+        "exponential_series_tail": 3.929269008915839e-14,
+        "observation_defect_upper_bound": 0.10401294731948875,
+        "inverse_norm_upper_bound": 1.1160875561854546
+      }
+    },
+    "4096": {
+      "initial_velocity_radius": "0.06",
+      "certified_additional_observation_error_radius": 0.05095611674884301,
+      "velocity_distance_to_hidden_center_bound": 0.002922726608737537,
+      "source_file": "cbe3b_slices_N4096.npz",
+      "source_sha256": "790128605804a9f90c8db70bda452f8d44cd923775d01fad56e42b33740d1afa",
+      "initial_bounds": {
+        "minimum_V": 0.3170505024857959,
+        "maximum_V": 1.2684992923336709,
+        "B": 0.0011989724182511026,
+        "C": 0.21699666700684142,
+        "Z": 0.22138419220906866,
+        "P_jump": 0.043320792573034346,
+        "vmd_maximum_C": 0.2630171923404221,
+        "vmd_maximum_speed": 0.6829494981847153,
+        "delta": 0.0015339807878856414,
+        "secant_center_distance": 0.04707824369982073,
+        "secant_vmd_distance": 2.565594111221498e-06
+      },
+      "bootstrap_bounds": {
+        "xi": 7.336152812863564e-05,
+        "jump": 2.41,
+        "exp_jump": 11.133961145065305,
+        "spatial_P": 2.5940824561156638e-08,
+        "lower_V": 0.3146004506041468,
+        "upper_V": 1.4208513442153201,
+        "upper_B": 0.03166158363585246,
+        "upper_C": 0.27050342357555285,
+        "upper_Z": 0.8801147126710888,
+        "vmd_error": 0.00748623123513075,
+        "center_observation_mismatch_bound": 0.002609283685975418
+      },
+      "tangent_certificate": {
+        "matrix_row_norm": 1.4842146200080588,
+        "exponential_series_tail": 4.7333828534562136e-14,
+        "observation_defect_upper_bound": 0.10724332608635939,
+        "inverse_norm_upper_bound": 1.1201260424256805
+      }
+    }
+  }
+}

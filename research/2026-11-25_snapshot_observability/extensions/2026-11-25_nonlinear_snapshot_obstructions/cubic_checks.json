@@ -1,0 +1,144 @@
+{
+  "platform": "Linux-7.0.0-42-generic-aarch64-with-glibc2.43",
+  "a": 1.0,
+  "gap": 1.5707963267948966,
+  "k": 2,
+  "coefficient_checks": {
+    "1.0": {
+      "P_difference_cos1": -0.0007369635119608565,
+      "P_difference_cos3": -7.187699651663284e-05,
+      "a2_N3_cos1": -0.0004103148532597662
+    },
+    "8.0": {
+      "P_difference_cos1": -7.439908071292974e-05,
+      "P_difference_cos3": 7.926403567881415e-07,
+      "a2_N3_cos1": -0.002390341579602521
+    },
+    "32.0": {
+      "P_difference_cos1": -6.119430098209945e-06,
+      "P_difference_cos3": 1.8327790479957804e-07,
+      "a2_N3_cos1": -0.0031340476183007214
+    },
+    "128.0": {
+      "P_difference_cos1": -4.111425089388839e-07,
+      "P_difference_cos3": 1.4484903063228762e-08,
+      "a2_N3_cos1": -0.003368142067343985
+    },
+    "512.0": {
+      "P_difference_cos1": -2.6171593546937393e-08,
+      "P_difference_cos3": 9.57442495383466e-10,
+      "a2_N3_cos1": -0.003430367133026102
+    }
+  },
+  "runs": {
+    "48_1e-11": {
+      "0.4": {
+        "P_difference_cos1_per_eps3": -0.0007358764208794153,
+        "P_difference_cos3_per_eps3": -7.099279895484841e-05,
+        "P_Q_lambda_max_gap": 5.639109661195045e-05
+      },
+      "0.2": {
+        "P_difference_cos1_per_eps3": -0.0007366921553048723,
+        "P_difference_cos3_per_eps3": -7.165505063121303e-05,
+        "P_Q_lambda_max_gap": 7.06407248724472e-06
+      },
+      "0.1": {
+        "P_difference_cos1_per_eps3": -0.0007368955796473845,
+        "P_difference_cos3_per_eps3": -7.182145591563772e-05,
+        "P_Q_lambda_max_gap": 8.834838503384854e-07
+      },
+      "0.05": {
+        "P_difference_cos1_per_eps3": -0.0007369459765861443,
+        "P_difference_cos3_per_eps3": -7.186310965429865e-05,
+        "P_Q_lambda_max_gap": 1.1045173134744763e-07
+      },
+      "0.025": {
+        "P_difference_cos1_per_eps3": -0.0007369569825477463,
+        "P_difference_cos3_per_eps3": -7.187352731694728e-05,
+        "P_Q_lambda_max_gap": 1.3808344882522348e-08
+      }
+    },
+    "96_1e-11": {
+      "0.4": {
+        "P_difference_cos1_per_eps3": -0.0007358764240090633,
+        "P_difference_cos3_per_eps3": -7.099279915645806e-05,
+        "P_Q_lambda_max_gap": 5.6391097302584524e-05
+      },
+      "0.2": {
+        "P_difference_cos1_per_eps3": -0.0007366921852539301,
+        "P_difference_cos3_per_eps3": -7.165505118817573e-05,
+        "P_Q_lambda_max_gap": 7.064069126546343e-06
+      },
+      "0.1": {
+        "P_difference_cos1_per_eps3": -0.0007368957087620283,
+        "P_difference_cos3_per_eps3": -7.182145391584235e-05,
+        "P_Q_lambda_max_gap": 8.834838609965272e-07
+      },
+      "0.05": {
+        "P_difference_cos1_per_eps3": -0.0007369465648680054,
+        "P_difference_cos3_per_eps3": -7.18631072664186e-05,
+        "P_Q_lambda_max_gap": 1.104504332465637e-07
+      },
+      "0.025": {
+        "P_difference_cos1_per_eps3": -0.0007369592826267778,
+        "P_difference_cos3_per_eps3": -7.187352328990786e-05,
+        "P_Q_lambda_max_gap": 1.3806768324194712e-08
+      }
+    },
+    "192_1e-11": {
+      "0.4": {
+        "P_difference_cos1_per_eps3": -0.0007358764240656447,
+        "P_difference_cos3_per_eps3": -7.09927993947609e-05,
+        "P_Q_lambda_max_gap": 5.63910967934893e-05
+      },
+      "0.2": {
+        "P_difference_cos1_per_eps3": -0.0007366921851766406,
+        "P_difference_cos3_per_eps3": -7.16550513669975e-05,
+        "P_Q_lambda_max_gap": 7.064068444390999e-06
+      },
+      "0.1": {
+        "P_difference_cos1_per_eps3": -0.0007368957083085157,
+        "P_difference_cos3_per_eps3": -7.18214540512958e-05,
+        "P_Q_lambda_max_gap": 8.834838401452123e-07
+      },
+      "0.05": {
+        "P_difference_cos1_per_eps3": -0.0007369465631695033,
+        "P_difference_cos3_per_eps3": -7.186310748458894e-05,
+        "P_Q_lambda_max_gap": 1.1045034932060729e-07
+      },
+      "0.025": {
+        "P_difference_cos1_per_eps3": -0.0007369592762544587,
+        "P_difference_cos3_per_eps3": -7.187352467217701e-05,
+        "P_Q_lambda_max_gap": 1.3806771362727065e-08
+      }
+    },
+    "96_2e-13": {
+      "0.4": {
+        "P_difference_cos1_per_eps3": -0.0007358764240852487,
+        "P_difference_cos3_per_eps3": -7.09927994333184e-05,
+        "P_Q_lambda_max_gap": 5.6391096696826527e-05
+      },
+      "0.2": {
+        "P_difference_cos1_per_eps3": -0.0007366921851467989,
+        "P_difference_cos3_per_eps3": -7.165505140080283e-05,
+        "P_Q_lambda_max_gap": 7.0640685302749755e-06
+      },
+      "0.1": {
+        "P_difference_cos1_per_eps3": -0.0007368957080814308,
+        "P_difference_cos3_per_eps3": -7.182145410086999e-05,
+        "P_Q_lambda_max_gap": 8.834840055837683e-07
+      },
+      "0.05": {
+        "P_difference_cos1_per_eps3": -0.0007369465622249961,
+        "P_difference_cos3_per_eps3": -7.186310741039415e-05,
+        "P_Q_lambda_max_gap": 1.1045032325233616e-07
+      },
+      "0.025": {
+        "P_difference_cos1_per_eps3": -0.0007369592730162932,
+        "P_difference_cos3_per_eps3": -7.187352331635287e-05,
+        "P_Q_lambda_max_gap": 1.38067568451849e-08
+      }
+    }
+  },
+  "a2_N3_cos1_asymptotic": -0.0034514567727426926
+}

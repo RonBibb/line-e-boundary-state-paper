@@ -1,0 +1,5 @@
+d8b7a40173e43a4f663ee619f9fb3a87d1f9fe887c3ce96fba3e1c7532c4e66a  ../../reproduction/inputs/bb-cbe2i/run_cbe2i.py
+41d019ccc2efb11918fad95ac7b8dcaabe1c6459299457d545b757e11a6bce1d  ../../reproduction/inputs/bb-cbe3/run_cbe3.py
+d4d47cba8697b7bcc19ec57e830c882f6e7406f4ee8af7bc0eaa69b31493df59  ../../reproduction/inputs/bb-cbe3t/run_cbe3t.py
+6329332b6deae6417bb23174901b52cab5b9587136c783b4fe7536738e9fb792  ../../verification/run_e1_fg1.py
+863d3a1e10bdd55ead1c58080455582939f28752b1b4f6d0afc7006f1d246829  ../../CQG_BOUNDARY_STATE_SUFFICIENCY_SUBMISSION_2026-08-15.tex

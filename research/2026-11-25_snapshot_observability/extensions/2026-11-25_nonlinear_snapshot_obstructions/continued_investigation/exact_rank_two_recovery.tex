@@ -1,0 +1,197 @@
+\subsection{Replacing the blind terminal slice in the exact rank-two pair}
+\label{sec:exact-rank-recovery}
+
+\begin{theorem}
+\label{th:exact-rank-recovery}
+Take the pair of Theorem~\ref{th:rank-two}
+with $gq\ne0$ and a single-mode seed at nodes $a<b$.
+Write its phase as $w_\epsilon=\epsilon u_{k_0}(t)\cos(k_0\theta)$.
+There is an explicit rational delay $d=\pi/L$ with
+$0<d<b-a$ such that, for all sufficiently small
+nonzero $|\epsilon|$, the full orbit fields at
+$c=a+d$ give a locally bi-Lipschitz missing-$P_t(a)$
+inverse around either rank-two history.
+For each integer $s\ge1$, the snapshot is measured
+in $H^{s+1}$ and the velocity in $H^s$.
+The lower bound for the derivative can be taken
+to be a positive constant times $|\epsilon|$.
+\end{theorem}
+
+\begin{proof}
+Choose an integer $L>2k_0$ satisfying the short-gap
+conditions of Proposition~\ref{prop:safe-gap}, and
+large enough that $u_{k_0}(c)\ne0$.
+Let $\mathcal P_\epsilon$ and $\mathcal Q_\epsilon$
+denote the two linearized terminal observation
+operators in the scaled orthonormal frame of
+\eqref{eq:transport-leading}. Their dependence on
+$\epsilon$ in the operator norm $H^s\to H^{s+1}$
+is analytic on a small interval.
+At $\epsilon=0$ the transformed background is a
+vertical homogeneous solution with $Q$ constant.
+The $P$-variation then solves the scalar
+Euler--Poisson--Darboux equation and the $Q$-variation
+vanishes for the given missing-velocity direction.
+Moreover, the first derivative of the $P$-observation
+in $\epsilon$ vanishes. In the coordinate linearized
+$P$ equation the terms beyond the free damped wave
+are proportional to $Q_t^2-Q_\theta^2$ times
+$\delta P$, or to a first derivative of $Q$ times
+a first derivative of $\delta Q$.
+Both are quadratic in the amplitude at this
+reference. The time rescaling of $P$ is independent
+of $\epsilon$. Hence
+\[
+ \mathcal P_\epsilon=\mathcal P_0+O(\epsilon^2),
+ \qquad
+ \mathcal Q_\epsilon=\epsilon\mathcal Q_1+O(\epsilon^2)
+\]
+in the stated operator norms.
+
+On the multiples of $L$, the two shifts of the
+zero-mean primitive $h=\partial_\theta^{-1}f$ in
+\eqref{eq:transport-leading} agree, with sign
+$(-1)^{k/L}$ on mode $k$.
+The rotation angle has first derivative
+$q\,u_{k_0}(c)\cos(k_0\theta)$ at $\epsilon=0$,
+because $B'(0)=q$ for this normalization.
+Thus on the nonzero multiples of $L$ the leading
+part of $\mathcal Q_1$ is
+\[
+ f\longmapsto q\,u_{k_0}(c)\cos(k_0\theta)\,
+                 \mathcal J\,\partial_\theta^{-1}f ,
+\]
+where $\mathcal J$ is the sign operator
+$(-1)^{k/L}$.
+The differentiated remainder is bounded
+from $H^{s-1}$ to $H^{s+1}$, as follows by
+differentiating the smooth transport coefficients
+and the forced remainder equation.
+Multiplication by $\cos(k_0\theta)$ sends each
+multiple of $L$ to two disjoint sidebands
+$k\pm k_0$. They do not overlap with sidebands
+of any other multiple of $L$ because $L>2k_0$.
+The two shifted Sobolev weights are comparable to
+the unshifted ones. The displayed leading operator
+therefore has a uniform positive lower bound.
+After discarding finitely many resonant modes,
+the compact remainder has arbitrarily small norm
+on the remaining high resonant subspace.
+Consequently $\mathcal Q_1$ is bounded below there.
+
+Split $f=f_G+f_B$ into the complementary modes
+(the nonmultiples and finitely many small
+multiples of $L$) and the remaining large
+multiples. The scalar short-gap transfer
+$\mathcal P_0$ is bounded below on $G$ by the
+nonresonant free phases and the nonzero finite
+transfers of Proposition~\ref{prop:safe-gap}.
+Projecting the $P$ record onto $G$ thus gives
+\[
+ \|f_G\|_{H^s}\le C\big(
+    \|\mathcal P_\epsilon f\|_{H^{s+1}}+
+      \epsilon^2\|f\|_{H^s}\big).
+\]
+The first-order estimate on $B$, together with
+the triangle inequality for $\mathcal Q_1 f_G$,
+gives
+\[
+ \|f_B\|_{H^s}\le C'\left(
+   \frac{\|\mathcal Q_\epsilon f\|_{H^{s+1}}}{|\epsilon|}
+       +\|f_G\|_{H^s}+|\epsilon|\|f\|_{H^s}\right).
+\]
+Combining and absorbing the small-amplitude terms
+bounds the inverse by $O(|\epsilon|^{-1})$.
+The constants may depend on the selected times
+and the seed parameters.
+The two sign branches use the same argument.
+The local nonlinear inverse follows by continuity
+of the Cauchy derivative as in
+Theorem~\ref{th:fixed-rank-two}.
+\end{proof}
+
+The order of the lower gain is sharp as
+$\epsilon\to0$ for the rational placement used here.
+One can take arbitrarily high multiples of $L$.
+The scalar transfer of $\mathcal P_0$ then tends
+to zero in energy normalization, while the
+uniform remainder estimates give contributions of
+order $\epsilon^2$ and $|\epsilon|$ respectively
+in the $P$ and $Q$ channels.
+
+\subsection{Which extra terminal field supplies stable information}
+\begin{proposition}
+\label{prop:rank-two-fields}
+For the exact small-amplitude rank-two pair in
+Theorem~\ref{th:exact-rank-recovery}, the off-node
+observation $P(c),\lambda(c)$ gives the same local
+energy-norm stability even without a terminal $Q(c)$.
+It is enough to read $\lambda_\theta(c)$ in $H^s$.
+In contrast, no fixed finite collection of later $P$
+snapshots alone gives an energy-normalized local
+Lipschitz inverse at these backgrounds.
+\end{proposition}
+
+\begin{proof}
+Write the two transport vectors in the frame as
+$A_\pm=(\cos\rho,\mp\sin\rho)$.
+The momentum constraint gives the leading
+mean-zero part of the rescaled metric variation as
+\[
+ -\big(C_-H-C_+\mathcal T H\big),\qquad
+ C_-=\langle A_-,U_t+U_\theta\rangle,\quad
+ C_+=\langle A_+,U_t-U_\theta\rangle .
+\]
+Here the rescaling of $\delta\lambda$ is $\sqrt{c/a}/c$.
+This follows by substituting the two leading orbit
+transport terms in the momentum constraint and taking
+a spatial primitive, as in Section~\ref{sec:metric-positive}.
+All omitted terms map $H^{s-1}$ to $H^{s+1}$.
+In the Ernst family the half difference of the
+coefficients is
+\[
+ \frac{C_--C_+}{2}
+ =\cos\rho\,\widetilde P_\theta
+    +\sin\rho\,e^{\widetilde P}\widetilde Q_t
+ =w_\theta[-\cos\rho\,P_w+\sin\rho\,C e^{-P(w)}]
+ =-g w_\theta .
+\]
+The last equality holds because the seed geodesic
+tangent with initial components $(g,q)$ is parallel:
+its components at $w$ are obtained by a rotation
+through $-B(w)=-\rho$.
+At zero amplitude the linearized
+$\lambda_\theta(c)$ equals $2\delta P_\theta(c)$.
+Subtract this known channel and take the rescaled
+mean-zero primitive of the difference.
+Its linearization in amplitude, on modes that
+are multiples of $L$, has the principal term
+\[
+ -2g k_0u_{k_0}(c)\sin(k_0\theta)\,
+               \mathcal J\,\partial_\theta^{-1}f .
+\]
+This is bounded below on the high resonant
+subspace by the same disjoint-sideband argument,
+since $g\ne0$ and $L>2k_0$.
+The remainder and the good-mode $P$ bounds are
+the same as in Theorem~\ref{th:exact-rank-recovery}.
+Thus $P$ and the metric channel give a bounded-below
+derivative, and then a local nonlinear inverse.
+
+For the negative statement, at each later time $t_i$
+the leading $P$ component is a smooth multiplier
+$\cos\rho_i$ times the difference of the two translated
+primitives. The shifts are opposites and the $P$
+components of their transported vectors are equal.
+By simultaneous rational approximation choose a
+sequence $k_m\to\infty$ with
+$\max_i|\sin(k_m(t_i-a))|\to0$.
+The corresponding unit-velocity Fourier modes in $H^s$
+give leading $P$ norms tending to zero at every
+chosen time. The compact remainders tend to zero
+as well by \eqref{eq:transport-leading}.
+A pairwise local Lipschitz inverse for these $P$
+observations would imply a lower bound for the
+derivative at the reference background, a
+contradiction.
+\end{proof}

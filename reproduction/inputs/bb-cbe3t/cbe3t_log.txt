@@ -1,0 +1,79 @@
+/Users/ronbibb/Library/CloudStorage/OneDrive-Personal(2)/Documents/Academic/bb-cbe3/run_cbe3.py:57: RuntimeWarning: overflow encountered in exp
+  e2P = np.exp(2.0 * P)
+/Users/ronbibb/Library/CloudStorage/OneDrive-Personal(2)/Documents/Academic/bb-cbe3/run_cbe3.py:61: RuntimeWarning: invalid value encountered in add
+  e2 * d2(P, dx) + e2P * (Qt**2 - e2 * Qth**2),
+/Users/ronbibb/Library/CloudStorage/OneDrive-Personal(2)/Documents/Academic/bb-cbe3/run_cbe3.py:61: RuntimeWarning: invalid value encountered in subtract
+  e2 * d2(P, dx) + e2P * (Qt**2 - e2 * Qth**2),
+/Users/ronbibb/Library/CloudStorage/OneDrive-Personal(2)/Documents/Academic/bb-cbe3/run_cbe3.py:64: RuntimeWarning: invalid value encountered in multiply
+  Pt**2 + e2 * Pth**2 + e2P * (Qt**2 + e2 * Qth**2),
+/Users/ronbibb/Library/CloudStorage/OneDrive-Personal(2)/Documents/Academic/bb-cbe3/run_cbe3.py:75: RuntimeWarning: invalid value encountered in add
+  return [yi + dt / 6 * (a + 2 * b + 2 * c + d)
+/Users/ronbibb/Library/CloudStorage/OneDrive-Personal(2)/Documents/Academic/bb-cbe3/run_cbe3.py:35: RuntimeWarning: invalid value encountered in subtract
+  return (np.roll(f, -1) - np.roll(f, 1)) / (2.0 * dx)
+/Users/ronbibb/Library/CloudStorage/OneDrive-Personal(2)/Documents/Academic/bb-cbe3/run_cbe3.py:61: RuntimeWarning: overflow encountered in square
+  e2 * d2(P, dx) + e2P * (Qt**2 - e2 * Qth**2),
+/Users/ronbibb/Library/CloudStorage/OneDrive-Personal(2)/Documents/Academic/bb-cbe3/run_cbe3.py:63: RuntimeWarning: overflow encountered in multiply
+  e2 * d2(Q, dx) - 2.0 * (Pt * Qt - e2 * Pth * Qth),
+/Users/ronbibb/Library/CloudStorage/OneDrive-Personal(2)/Documents/Academic/bb-cbe3/run_cbe3.py:64: RuntimeWarning: overflow encountered in square
+  Pt**2 + e2 * Pth**2 + e2P * (Qt**2 + e2 * Qth**2),
+/Users/ronbibb/Library/CloudStorage/OneDrive-Personal(2)/Documents/Academic/bb-cbe3/run_cbe3.py:63: RuntimeWarning: invalid value encountered in subtract
+  e2 * d2(Q, dx) - 2.0 * (Pt * Qt - e2 * Pth * Qth),
+/Users/ronbibb/Library/CloudStorage/OneDrive-Personal(2)/Documents/Academic/bb-cbe3/run_cbe3.py:61: RuntimeWarning: invalid value encountered in multiply
+  e2 * d2(P, dx) + e2P * (Qt**2 - e2 * Qth**2),
+/Users/ronbibb/Library/CloudStorage/OneDrive-Personal(2)/Documents/Academic/bb-cbe3/run_cbe3.py:70: RuntimeWarning: invalid value encountered in add
+  return [ai + s * bi for ai, bi in zip(a, b)]
+/Users/ronbibb/Library/CloudStorage/OneDrive-Personal(2)/Documents/Academic/bb-cbe3/run_cbe3.py:61: RuntimeWarning: overflow encountered in multiply
+  e2 * d2(P, dx) + e2P * (Qt**2 - e2 * Qth**2),
+/Users/ronbibb/Library/CloudStorage/OneDrive-Personal(2)/Documents/Academic/bb-cbe3/run_cbe3.py:64: RuntimeWarning: overflow encountered in multiply
+  Pt**2 + e2 * Pth**2 + e2P * (Qt**2 + e2 * Qth**2),
+/Users/ronbibb/Library/CloudStorage/OneDrive-Personal(2)/Documents/Academic/bb-cbe3/run_cbe3.py:200: RuntimeWarning: invalid value encountered in divide
+  score += g / thr
+{
+  "T0": true,
+  "T1_true": true,
+  "T1_false": false,
+  "T2": true,
+  "T2_matrix": {
+    "true_spike": [
+      [
+        "TRUE",
+        -0.0506
+      ],
+      [
+        "TRUE",
+        0.0506
+      ]
+    ],
+    "false_spike": [
+      [
+        "TRANSIENT",
+        -0.023
+      ]
+    ],
+    "kasner": [],
+    "rotated_kasner": []
+  },
+  "T3": {
+    "1.0": {
+      "D_center_max": 0.2597801017517898,
+      "D_flank_max": 0.08719517827299182
+    },
+    "2.0": {
+      "D_center_max": 0.5715037363307021,
+      "D_flank_max": 0.03938820781414041
+    },
+    "4.0": {
+      "D_center_max": 0.3120125696541459,
+      "D_flank_max": 0.02366183748687651
+    }
+  },
+  "T4": {
+    "passes": false,
+    "sup_D": {
+      "2.0": 1.282118767253282,
+      "4.0": 2.9270138298033372
+    },
+    "w_hat": 0.7528401403220553
+  },
+  "outcome": "CBE-3T-FAIL \u2014 detector or evolution failed the exact control; CBE-3 wording retracted to 'localized feature mismatch'; CBE-D retained."
+}

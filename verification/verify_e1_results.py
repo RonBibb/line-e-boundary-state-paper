@@ -8,7 +8,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 PAPER = HERE.parent
-ACADEMIC = PAPER.parent
+INPUTS = PAPER / "reproduction" / "inputs"
 OUT = HERE / "E1_RESULT_VERIFICATION.json"
 
 
@@ -21,8 +21,8 @@ def check(name, condition, detail):
 
 
 def main():
-    cbe1 = read(ACADEMIC / "bb-cbe1" / "CBE1_STAGE0_STAGE1.json")
-    cbe2 = read(ACADEMIC / "bb-cbe2i" / "CBE2I.json")
+    cbe1 = read(INPUTS / "bb-cbe1" / "CBE1_STAGE0_STAGE1.json")
+    cbe2 = read(INPUTS / "bb-cbe2i" / "CBE2I.json")
     ra1 = read(PAPER / "reconstruction-adjudication" / "E1_RA1_RESULT.json")
     ra2 = read(PAPER / "reconstruction-adjudication" / "E1_RA2_RESULT.json")
     ra3 = read(PAPER / "reconstruction-adjudication" / "E1_RA3_RESULT.json")

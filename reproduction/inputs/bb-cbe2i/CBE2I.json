@@ -1,0 +1,218 @@
+{
+  "campaign": {
+    "depth16_N1024": {
+      "momentum_residual_collapse_end": 8.76006105530792e-06,
+      "spikes": {
+        "flagged": false,
+        "max_grad_v": 0.3449965205490883
+      },
+      "surfaces": {
+        "12.0": {
+          "D": 1.036972790147195e-05,
+          "lam_rho_relgap": 2.569105258053325e-05
+        },
+        "2.0": {
+          "D": 1.2552583926517961e-05,
+          "lam_rho_relgap": 2.5691058254900133e-05
+        },
+        "4.0": {
+          "D": 1.1058194303340509e-05,
+          "lam_rho_relgap": 2.5691058472018414e-05
+        },
+        "8.0": {
+          "D": 9.548653931880734e-06,
+          "lam_rho_relgap": 2.5691053304613485e-05
+        }
+      }
+    },
+    "depth16_N256": {
+      "momentum_residual_collapse_end": 0.00014017697693696274,
+      "spikes": {
+        "flagged": false,
+        "max_grad_v": 0.3449321059830546
+      },
+      "surfaces": {
+        "12.0": {
+          "D": 0.00016595066346647425,
+          "lam_rho_relgap": 0.0004110101127553035
+        },
+        "2.0": {
+          "D": 0.00020089053866252242,
+          "lam_rho_relgap": 0.00041101011545214997
+        },
+        "4.0": {
+          "D": 0.0001769755789748943,
+          "lam_rho_relgap": 0.00041101011431914704
+        },
+        "8.0": {
+          "D": 0.0001528130092458558,
+          "lam_rho_relgap": 0.0004110101133023284
+        }
+      }
+    },
+    "depth16_N512": {
+      "momentum_residual_collapse_end": 3.5039036056937615e-05,
+      "spikes": {
+        "flagged": false,
+        "max_grad_v": 0.34499289284832907
+      },
+      "surfaces": {
+        "12.0": {
+          "D": 4.1480307587327166e-05,
+          "lam_rho_relgap": 0.00010276187114848102
+        },
+        "2.0": {
+          "D": 5.0212623541435234e-05,
+          "lam_rho_relgap": 0.00010276187271525988
+        },
+        "4.0": {
+          "D": 4.42350019875852e-05,
+          "lam_rho_relgap": 0.0001027618723063723
+        },
+        "8.0": {
+          "D": 3.8196343229546643e-05,
+          "lam_rho_relgap": 0.00010276187210375621
+        }
+      }
+    },
+    "depth24_N1024": {
+      "momentum_residual_collapse_end": 8.26155730377743e-06,
+      "spikes": {
+        "flagged": false,
+        "max_grad_v": 0.34499652055773716
+      },
+      "surfaces": {
+        "12.0": {
+          "D": 1.539575614184878e-05,
+          "lam_rho_relgap": 3.7932677450925945e-05
+        },
+        "2.0": {
+          "D": 1.8534713150047505e-05,
+          "lam_rho_relgap": 3.793271638327493e-05
+        },
+        "4.0": {
+          "D": 1.6320569203725918e-05,
+          "lam_rho_relgap": 3.793269902643084e-05
+        },
+        "8.0": {
+          "D": 1.4123276900983784e-05,
+          "lam_rho_relgap": 3.793267507446115e-05
+        }
+      }
+    },
+    "depth24_N256": {
+      "momentum_residual_collapse_end": 0.00013212881555495145,
+      "spikes": {
+        "flagged": false,
+        "max_grad_v": 0.34493210597565427
+      },
+      "surfaces": {
+        "12.0": {
+          "D": 0.0002463921300992489,
+          "lam_rho_relgap": 0.0006067820002269642
+        },
+        "2.0": {
+          "D": 0.0002966507992206048,
+          "lam_rho_relgap": 0.00060678200422782
+        },
+        "4.0": {
+          "D": 0.00026122035311577647,
+          "lam_rho_relgap": 0.0006067820025667966
+        },
+        "8.0": {
+          "D": 0.00022602947882244262,
+          "lam_rho_relgap": 0.000606781999806716
+        }
+      }
+    },
+    "depth24_N512": {
+      "momentum_residual_collapse_end": 3.304817814935292e-05,
+      "spikes": {
+        "flagged": false,
+        "max_grad_v": 0.34499289283884793
+      },
+      "surfaces": {
+        "12.0": {
+          "D": 6.158460682359486e-05,
+          "lam_rho_relgap": 0.00015172385508496647
+        },
+        "2.0": {
+          "D": 7.414402442423653e-05,
+          "lam_rho_relgap": 0.00015172384876641578
+        },
+        "4.0": {
+          "D": 6.528682240564337e-05,
+          "lam_rho_relgap": 0.00015172385668541077
+        },
+        "8.0": {
+          "D": 5.649643872973649e-05,
+          "lam_rho_relgap": 0.00015172385642325752
+        }
+      }
+    }
+  },
+  "classification": "CBE-B extended to the polarized-inhomogeneous sector (CBE-2I-EQ): equivalence survives gradients; CBE-A not claimable, unpolarized/spiky sector untested",
+  "controls": {
+    "constraint": {
+      "orders": [
+        2.000247717563526,
+        2.000006515050233
+      ],
+      "passes": true,
+      "rows": [
+        {
+          "N": 256,
+          "residual": 0.00016755554751000682
+        },
+        {
+          "N": 512,
+          "residual": 4.188169497491921e-05
+        },
+        {
+          "N": 1024,
+          "residual": 1.0470376460568292e-05
+        }
+      ]
+    },
+    "homogeneous": {
+      "Omega_series": [
+        2.3024512491189606,
+        2.302451249118959,
+        2.302451249118959
+      ],
+      "Sigma2_series": [
+        3.325945649620175,
+        3.3259456496201745,
+        3.3259456496201736
+      ],
+      "backward_roundtrip_error": 1.6063539387545234e-15,
+      "invariant_drift": 1.7763568394002505e-15,
+      "passes": true
+    },
+    "manufactured": {
+      "orders": [
+        1.9997164297615062,
+        1.9999292594904998
+      ],
+      "passes": true,
+      "rows": [
+        {
+          "N": 128,
+          "sup_error": 0.010571324734474863
+        },
+        {
+          "N": 256,
+          "sup_error": 0.002643350698765645
+        },
+        {
+          "N": 512,
+          "sup_error": 0.0006608700787259503
+        }
+      ]
+    }
+  },
+  "controls_pass": true,
+  "line": "E",
+  "program": "BB-CBE-2I",
+  "spec": "BB_CBE2I_INHOMOGENEOUS_EQUIVALENCE_SPEC_2026-08-04.md"
+}

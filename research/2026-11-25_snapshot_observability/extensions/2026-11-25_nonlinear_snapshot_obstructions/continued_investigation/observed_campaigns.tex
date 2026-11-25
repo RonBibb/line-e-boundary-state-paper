@@ -1,0 +1,246 @@
+\section{Numerical checks and the production metric modulus}
+\label{sec:continued-numerics}
+These computations check specific formulas and finite-grid
+behavior. The continuum estimates above follow from the
+proved bounds.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{axis}[width=.47\textwidth,height=.32\textwidth,
+  xlabel={Fraction of the observation window},
+  ylabel={Relative orbit displacement},
+  ylabel style={font=\scriptsize},xlabel style={font=\small},
+  tick label style={font=\scriptsize},
+  ymin=-.27,ymax=.28,xmin=0,xmax=1,
+  legend style={font=\scriptsize,at={(.5,.03)},anchor=south,
+                legend columns=2,draw=none,fill=none}]
+\addplot[teal!75!black,thick] table[x=fraction,y=branch_a,col sep=comma]
+ {figures/collision_path.csv};
+\addlegendentry{First history}
+\addplot[orange!85!black,thick,dashed] table[x=fraction,y=branch_b,col sep=comma]
+ {figures/collision_path.csv};
+\addlegendentry{Second history}
+\addplot[gray,densely dotted,forget plot] coordinates {(.2666666667,-.27) (.2666666667,.28)};
+\end{axis}
+\end{tikzpicture}\hfill
+\begin{tikzpicture}
+\begin{loglogaxis}[width=.47\textwidth,height=.32\textwidth,
+  xlabel={Fourier frequency $k$},ylabel={Normalized orbit gain},
+  xlabel style={font=\small},ylabel style={font=\small},
+  tick label style={font=\scriptsize},
+  legend style={font=\scriptsize,at={(.03,.03)},anchor=south west,draw=none,fill=none}]
+\addplot[orange!85!black,thick,mark=square*] table[x=mode,y=nodal,col sep=comma]
+ {figures/null_gains.csv};
+\addlegendentry{Nodal slice}
+\addplot[teal!75!black,thick,mark=*] table[x=mode,y=placed,col sep=comma]
+ {figures/null_gains.csv};
+\addlegendentry{Off-node slice}
+\addplot[gray,densely dotted,forget plot] table[x=mode,y=principal,col sep=comma]
+ {figures/null_gains.csv};
+\end{loglogaxis}
+\end{tikzpicture}
+\caption{An exact rank-two collision on the marked torus.
+The left panel shows $\widetilde P$ at one angle after
+subtracting the common homogeneous background.
+The curves match at both ends. The dotted line marks
+the replacement terminal slice.
+The right panel compares the linearized orbit response
+on carriers that are in free resonance at both locations.
+The response decays at the original nodal slice and
+approaches the nonzero transport prediction (dotted)
+at the replacement slice.}
+\label{fig:null-numerics}
+\end{figure}
+
+For Fig.~\ref{fig:null-numerics}, the coordinate tangent
+equations were integrated independently of the null-ray
+transfer formula. The two ray angles agreed with
+direct line integration within $9\times10^{-16}$.
+The off-node normalized gain tends to the predicted
+$0.08559$ on the tested sequence, whereas the nodal
+gain falls from $0.03133$ at $k=64$ to $0.002041$
+at $k=1024$. At bandwidth $96$, two grids gave the
+minimum full-orbit singular gain $0.04090$ at the
+replacement slice and gains below $5\times10^{-13}$
+at the original nodal slice. A separate smaller-amplitude
+test verified quadratic variation of the $P$-operator
+and linear variation of the $Q$-operator as predicted
+in Theorem~\ref{th:exact-rank-recovery}.
+
+For nonlinear inversion at fixed times, an independent
+higher-grid Fourier evolution supplied a perturbed
+rank-two record. At bandwidth $96$, the two inverse
+resolutions agreed to the shown precision.
+Adding a normalized record error $3\times10^{-5}$ in
+one resonant $P$ mode gave a recovered velocity
+$H^1$ error $3.62\times10^{-4}$ from the full orbit
+fields. Reading $P$ alone gave an $H^1$ velocity
+error $0.06022$ despite a final position residual
+below $6\times10^{-11}$. With exact data the full
+orbit reconstruction reached a velocity error of
+about $5.3\times10^{-10}$.
+Reading $P$ and the terminal metric gradient in the
+same noisy run gave $5.21\times10^{-6}$ velocity
+error in the tested direction. These comparisons use
+the stated Fourier-weighted norms and a single, specified
+noise direction.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{loglogaxis}[width=.68\textwidth,height=.30\textwidth,
+  xlabel={Fourier frequency $k$},ylabel={Minimum normalized gain},
+  ymin=2e-5,ymax=.29,tick label style={font=\scriptsize},
+  xtick={153,467,624,1575,2352},xticklabels={153,467,624,1575,2352},
+  legend style={font=\scriptsize,at={(.03,.03)},anchor=south west,draw=none}]
+\addplot[orange!85!black,thick,mark=square*] table[x=mode,y=orbit,col sep=comma]
+ {figures/full_metric_gains.csv};
+\addlegendentry{Orbit fields}
+\addplot[teal!75!black,thick,mark=*] table[x=mode,y=metric,col sep=comma]
+ {figures/full_metric_gains.csv};
+\addlegendentry{Orbit fields and metric gradient}
+\end{loglogaxis}
+\end{tikzpicture}
+\caption{Both velocities are missing in the circular-loop
+example at an irrational delay. The plotted modes sample
+near cancellations of the orbit-only transfer.
+The metric gradient at the same terminal slice
+raises the normalized gain.}
+\label{fig:irrational-metric}
+\end{figure}
+
+Figure~\ref{fig:irrational-metric} compares smallest
+singular gains for both velocities at sampled modes on
+a circular-loop background at $d=0.02$.
+At $k=1575$ the orbit-only gain is about
+$4.23\times10^{-5}$ and the gain with the metric
+gradient is about $0.118$. At the longer
+illustrative gap $d=\pi\sqrt2/24$, the corresponding
+gains at $k=3356$ are about $1.4\times10^{-5}$
+and $0.678$. These are modal numerical comparisons.
+The all-frequency short-delay claim in
+Proposition~\ref{prop:irrational-metric} follows
+from the analytic reverse estimate.
+
+For the family of Proposition~\ref{prop:from-observations-to-tail},
+the computed holonomy angle divided by
+$\epsilon^2$ was $-2.94478497$ at
+$\epsilon=2.5\times10^{-4}$, against the
+quadratic prediction $-2.94478495$.
+Two spatial grids gave depth-28 estimates of
+the five asymptotic quantities agreeing to
+$8\times10^{-14}$ in the stated norms.
+The limiting momentum identity had residual
+$1.24\times10^{-14}$ in $H^1$ on the finer grid.
+These finite-depth checks illustrate the two
+steps of the result and the asymptotic constraint.
+
+The frequency-assigned experiment used a separate
+rank-two pair for which the two original orbit snapshots
+agreed within $1.3\times10^{-12}$ in direct forward
+evolution. The delayed sampling resolved their
+initial-velocity difference and had a normalized gain
+of about $0.891$ on that pair. At bandwidth $288$ four
+delayed slots gave a minimum free gain $0.529$,
+compared with $2.46\times10^{-4}$ using the baseline
+slot alone. The nonlinear reconstruction used an
+independent fourth-order spatial stencil. At that
+bandwidth it failed to converge on the coarsest
+inverse grid and the recovered velocity improved
+on the two finer grids. The mismatch is consistent
+with stencil dispersion at inadequate spatial
+resolution. Unknown timing offsets within the tested
+$1/K$ scale introduced visible bias, which was reduced
+when the true timestamps were used.
+Substituting the exact continuum damped-wave transfer
+for the stencil's free transfer removed the principal
+dispersion discrepancy. At bandwidth $288$ on the
+coarse grid the corrected inverse gave an $H^1$
+velocity error $3.60\times10^{-9}$ in two updates
+on the small-amplitude test. A more strongly coupled
+profile retained a nonzero nonlinear model discrepancy
+after the same correction. This separates finite-grid
+phase error from nonlinear model error.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{semilogyaxis}[width=.47\textwidth,height=.32\textwidth,
+  xlabel={Iteration from the secant},ylabel={Normalized record residual},
+  xlabel style={font=\small},ylabel style={font=\small},
+  tick label style={font=\scriptsize},
+  legend style={font=\scriptsize,at={(.97,.98)},anchor=north east,draw=none,fill=none}]
+\addplot[teal!75!black,thick,mark=*] table[x=iteration,y=residual,col sep=comma]
+ {figures/archive_iteration.csv};
+\addlegendentry{Archived grid $N=4096$}
+\addplot[gray,densely dashed] table[x=iteration,y=certified_upper,col sep=comma]
+ {figures/archive_iteration.csv};
+\addlegendentry{Certified contraction bound}
+\end{semilogyaxis}
+\end{tikzpicture}\hfill
+\begin{tikzpicture}
+\begin{loglogaxis}[width=.47\textwidth,height=.32\textwidth,
+  xlabel={Spatial grid size},ylabel={Absolute error in $c_\lambda$},
+  xtick={256,512,1024,2048},xticklabels={256,512,1024,2048},
+  xlabel style={font=\small},ylabel style={font=\small},
+  tick label style={font=\scriptsize},
+  legend style={font=\scriptsize,at={(.98,.54)},anchor=north east,draw=none,fill=none}]
+\addplot[orange!85!black,thick,mark=square*] table[x=grid,y=zero_tail_depth8,col sep=comma]
+ {figures/modulus_convergence.csv};
+\addlegendentry{Earlier anchor, zero tail}
+\addplot[teal!75!black,thick,mark=*] table[x=grid,y=bessel_tail_depth8,col sep=comma]
+ {figures/modulus_convergence.csv};
+\addlegendentry{Earlier anchor, Bessel tail}
+\end{loglogaxis}
+\end{tikzpicture}
+\caption{Left, the archived reconstruction error in the
+normalized record during the secant-started iteration,
+compared to the factor from Theorem~\ref{th:archive-certificate}.
+Right, the depth-eight smooth production metric-modulus
+estimate with the finite-depth anchor at $\tau=6$ and
+both field snapshots earlier than the discarded endpoint
+at depth eight. The error is against the independent
+continuum reference.}
+\label{fig:archive-modulus}
+\end{figure}
+
+On all three archived centered grids the secant-started
+replay took nine updates to reach a normalized residual
+below $6\times10^{-13}$. At $N=4096$ it returned to the
+held-out velocity within $4.1\times10^{-12}$ in
+supremum norm. The numerical replay used the same
+stencil as the archived tape. The separate interval
+certificate guarantees a contraction in a whole velocity
+ball for the exact semidiscrete evolution. A second
+interval calculation permits simultaneous variation
+of the recorded $P,Q$, weighted momentum and
+normalized secant, at the stated radii.
+
+The earlier modulus checklist proposed using the
+depth-16 versus depth-24 difference as a spatial
+convergence test. An independent Fourier--Bessel
+calculation from the production initial data gives
+$c_\lambda\simeq0.1180324739805121$ in the historical
+anchor normalization, with an analytic tail bound
+below $2.1\times10^{-28}$ after $\tau=34$.
+At depth eight, the pre-endpoint, zero-tail estimate
+has error close to $3.79\times10^{-4}$ on the fine grids.
+Using the exact Bessel tail with the same earlier
+anchor and two numerical field snapshots gives,
+over $N=256,512,1024,2048$, errors close to
+$8.93\times10^{-6},\,2.23\times10^{-6},\,
+5.58\times10^{-7},\,1.40\times10^{-7}$.
+The analytic semidiscrete reference reproduces those
+spatial errors. The pre-endpoint depth-16 and
+depth-24 zero-tail estimates differ by about
+$2.3$ to $2.8\times10^{-10}$ over the grids,
+without second-order decrease of that difference.
+The spatial error common to the two estimates
+cancels in the comparison, leaving the finite-depth
+bias and time-rounding effects.
+It is the errors against the independent continuum
+reference that establish spatial convergence.
+The tail calculation for this particular production
+profile uses its known finite Fourier support;
+the metric anchor remains part of the supplied data.

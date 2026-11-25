@@ -1,0 +1,17 @@
+{
+  "controls_pass": true,
+  "classification": {
+    "per_class": {
+      "ordinary": "intermediate",
+      "true_spike": "mismatch",
+      "transient_spike": "absent"
+    },
+    "aggregate": "intermediate/CBE-D \u2014 see per-class table",
+    "D_ordinary_fine": 3.0340171246637033,
+    "D_spike_fine": 0.8221535621247615,
+    "true_spike_widths": [
+      19,
+      19
+    ]
+  }
+}

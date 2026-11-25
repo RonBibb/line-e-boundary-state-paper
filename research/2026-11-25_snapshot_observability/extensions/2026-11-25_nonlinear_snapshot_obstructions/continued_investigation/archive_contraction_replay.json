@@ -1,0 +1,495 @@
+{
+  "platform": "Linux-7.0.0-42-generic-aarch64-with-glibc2.43",
+  "observation_noise_amplitude": 0.008,
+  "results": {
+    "1024": {
+      "noiseless": [
+        {
+          "iteration": 0,
+          "normalized_record_residual": 0.04402871111365769,
+          "distance_to_archived_velocity": 0.04680419862022367
+        },
+        {
+          "iteration": 1,
+          "normalized_record_residual": 0.002603885772876069,
+          "distance_to_archived_velocity": 0.0027754875065659768
+        },
+        {
+          "iteration": 2,
+          "normalized_record_residual": 0.0001609654699592511,
+          "distance_to_archived_velocity": 0.00017160173368990783
+        },
+        {
+          "iteration": 3,
+          "normalized_record_residual": 9.976902276775945e-06,
+          "distance_to_archived_velocity": 1.0636263732433093e-05
+        },
+        {
+          "iteration": 4,
+          "normalized_record_residual": 6.184861831570743e-07,
+          "distance_to_archived_velocity": 6.593614556571481e-07
+        },
+        {
+          "iteration": 5,
+          "normalized_record_residual": 3.834146333758781e-08,
+          "distance_to_archived_velocity": 4.087527960550119e-08
+        },
+        {
+          "iteration": 6,
+          "normalized_record_residual": 2.376889796096293e-09,
+          "distance_to_archived_velocity": 2.533819820627059e-09
+        },
+        {
+          "iteration": 7,
+          "normalized_record_residual": 1.4734524711457198e-10,
+          "distance_to_archived_velocity": 1.5693002453076588e-10
+        },
+        {
+          "iteration": 8,
+          "normalized_record_residual": 9.137579581874888e-12,
+          "distance_to_archived_velocity": 9.584777416193901e-12
+        },
+        {
+          "iteration": 9,
+          "normalized_record_residual": 5.684341886080801e-13,
+          "distance_to_archived_velocity": 4.4719783431901305e-13
+        }
+      ],
+      "noisy": [
+        {
+          "iteration": 0,
+          "normalized_record_residual": 0.04402386009834225,
+          "distance_to_archived_velocity": 0.049859241075845384
+        },
+        {
+          "iteration": 1,
+          "normalized_record_residual": 0.0026031619456363675,
+          "distance_to_archived_velocity": 0.00827155126109369
+        },
+        {
+          "iteration": 2,
+          "normalized_record_residual": 0.000160892685899805,
+          "distance_to_archived_velocity": 0.008107929190926733
+        },
+        {
+          "iteration": 3,
+          "normalized_record_residual": 9.970645083123841e-06,
+          "distance_to_archived_velocity": 0.008105411747474478
+        },
+        {
+          "iteration": 4,
+          "normalized_record_residual": 6.179900255975923e-07,
+          "distance_to_archived_velocity": 0.008105373008201022
+        },
+        {
+          "iteration": 5,
+          "normalized_record_residual": 3.830399131210527e-08,
+          "distance_to_archived_velocity": 0.008105372412065992
+        },
+        {
+          "iteration": 6,
+          "normalized_record_residual": 2.3741526522513823e-09,
+          "distance_to_archived_velocity": 0.008105372402899658
+        },
+        {
+          "iteration": 7,
+          "normalized_record_residual": 1.4715184626368227e-10,
+          "distance_to_archived_velocity": 0.00810537240275011
+        },
+        {
+          "iteration": 8,
+          "normalized_record_residual": 9.11470898756761e-12,
+          "distance_to_archived_velocity": 0.00810537240275333
+        },
+        {
+          "iteration": 9,
+          "normalized_record_residual": 5.722089468918057e-13,
+          "distance_to_archived_velocity": 0.00810537240275122
+        }
+      ],
+      "normalized_noisy_velocity_difference": 1.0131715503523264,
+      "all_record_fields_perturbed": {
+        "history": [
+          {
+            "iteration": 0,
+            "normalized_record_residual": 0.044592892535828654,
+            "distance_to_archived_velocity": 0.04680419862022367
+          },
+          {
+            "iteration": 1,
+            "normalized_record_residual": 0.002631400811730189,
+            "distance_to_archived_velocity": 0.005972171163131701
+          },
+          {
+            "iteration": 2,
+            "normalized_record_residual": 0.00016239807605400447,
+            "distance_to_archived_velocity": 0.005972204161114547
+          },
+          {
+            "iteration": 3,
+            "normalized_record_residual": 1.0049383301180548e-05,
+            "distance_to_archived_velocity": 0.005972204161298678
+          },
+          {
+            "iteration": 4,
+            "normalized_record_residual": 6.21970644432146e-07,
+            "distance_to_archived_velocity": 0.005972204161298067
+          },
+          {
+            "iteration": 5,
+            "normalized_record_residual": 3.849503704689283e-08,
+            "distance_to_archived_velocity": 0.0059722041612983445
+          },
+          {
+            "iteration": 6,
+            "normalized_record_residual": 2.3825356132434194e-09,
+            "distance_to_archived_velocity": 0.005972204161298178
+          },
+          {
+            "iteration": 7,
+            "normalized_record_residual": 1.474701472048423e-10,
+            "distance_to_archived_velocity": 0.0059722041612984555
+          },
+          {
+            "iteration": 8,
+            "normalized_record_residual": 9.118594768153798e-12,
+            "distance_to_archived_velocity": 0.005972204161297845
+          },
+          {
+            "iteration": 9,
+            "normalized_record_residual": 5.63660229602192e-13,
+            "distance_to_archived_velocity": 0.0059722041612981225
+          }
+        ],
+        "normalized_record_noise_sup": 0.005971503890986253,
+        "velocity_difference_sup": 0.0059722041613031185
+      }
+    },
+    "2048": {
+      "noiseless": [
+        {
+          "iteration": 0,
+          "normalized_record_residual": 0.04430276887832996,
+          "distance_to_archived_velocity": 0.04707527508709852
+        },
+        {
+          "iteration": 1,
+          "normalized_record_residual": 0.0026047235630670684,
+          "distance_to_archived_velocity": 0.0027764231532214634
+        },
+        {
+          "iteration": 2,
+          "normalized_record_residual": 0.00016105477042316352,
+          "distance_to_archived_velocity": 0.00017169959017038217
+        },
+        {
+          "iteration": 3,
+          "normalized_record_residual": 9.9847733974201e-06,
+          "distance_to_archived_velocity": 1.0644819757876789e-05
+        },
+        {
+          "iteration": 4,
+          "normalized_record_residual": 6.191190440318906e-07,
+          "distance_to_archived_velocity": 6.600463604566897e-07
+        },
+        {
+          "iteration": 5,
+          "normalized_record_residual": 3.838968254399333e-08,
+          "distance_to_archived_velocity": 4.0927318201156027e-08
+        },
+        {
+          "iteration": 6,
+          "normalized_record_residual": 2.380430075277218e-09,
+          "distance_to_archived_velocity": 2.5376356571626957e-09
+        },
+        {
+          "iteration": 7,
+          "normalized_record_residual": 1.47602818856285e-10,
+          "distance_to_archived_velocity": 1.5720558188547784e-10
+        },
+        {
+          "iteration": 8,
+          "normalized_record_residual": 9.162448577626492e-12,
+          "distance_to_archived_velocity": 9.61164481338983e-12
+        },
+        {
+          "iteration": 9,
+          "normalized_record_residual": 5.684341886080801e-13,
+          "distance_to_archived_velocity": 1.7492673975993966e-12
+        }
+      ],
+      "noisy": [
+        {
+          "iteration": 0,
+          "normalized_record_residual": 0.04427379009648558,
+          "distance_to_archived_velocity": 0.050310254847202196
+        },
+        {
+          "iteration": 1,
+          "normalized_record_residual": 0.0026039994361719554,
+          "distance_to_archived_velocity": 0.008271643928096983
+        },
+        {
+          "iteration": 2,
+          "normalized_record_residual": 0.00016098193963665075,
+          "distance_to_archived_velocity": 0.008109841454655764
+        },
+        {
+          "iteration": 3,
+          "normalized_record_residual": 9.978510739694357e-06,
+          "distance_to_archived_velocity": 0.008107476001336544
+        },
+        {
+          "iteration": 4,
+          "normalized_record_residual": 6.186223304727179e-07,
+          "distance_to_archived_velocity": 0.008107440354791495
+        },
+        {
+          "iteration": 5,
+          "normalized_record_residual": 3.835216788594664e-08,
+          "distance_to_archived_velocity": 0.008107439817612527
+        },
+        {
+          "iteration": 6,
+          "normalized_record_residual": 2.37768404964811e-09,
+          "distance_to_archived_velocity": 0.00810743980952322
+        },
+        {
+          "iteration": 7,
+          "normalized_record_residual": 1.474058652917165e-10,
+          "distance_to_archived_velocity": 0.008107439809391992
+        },
+        {
+          "iteration": 8,
+          "normalized_record_residual": 9.139577983319214e-12,
+          "distance_to_archived_velocity": 0.008107439809397543
+        },
+        {
+          "iteration": 9,
+          "normalized_record_residual": 5.668798763736049e-13,
+          "distance_to_archived_velocity": 0.008107439809394212
+        }
+      ],
+      "normalized_noisy_velocity_difference": 1.0134299761695442,
+      "all_record_fields_perturbed": {
+        "history": [
+          {
+            "iteration": 0,
+            "normalized_record_residual": 0.04461614436960759,
+            "distance_to_archived_velocity": 0.04707527508709852
+          },
+          {
+            "iteration": 1,
+            "normalized_record_residual": 0.002632243712119675,
+            "distance_to_archived_velocity": 0.005972171169818907
+          },
+          {
+            "iteration": 2,
+            "normalized_record_residual": 0.00016248795500806157,
+            "distance_to_archived_velocity": 0.005972204168468331
+          },
+          {
+            "iteration": 3,
+            "normalized_record_residual": 1.0057299113186424e-05,
+            "distance_to_archived_velocity": 0.005972204168653794
+          },
+          {
+            "iteration": 4,
+            "normalized_record_residual": 6.226063474779053e-07,
+            "distance_to_archived_velocity": 0.005972204168653628
+          },
+          {
+            "iteration": 5,
+            "normalized_record_residual": 3.854340901998654e-08,
+            "distance_to_archived_velocity": 0.005972204168652573
+          },
+          {
+            "iteration": 6,
+            "normalized_record_residual": 2.3860954323495775e-09,
+            "distance_to_archived_velocity": 0.005972204168651962
+          },
+          {
+            "iteration": 7,
+            "normalized_record_residual": 1.4771173173500074e-10,
+            "distance_to_archived_velocity": 0.005972204168652684
+          },
+          {
+            "iteration": 8,
+            "normalized_record_residual": 9.150569191263003e-12,
+            "distance_to_archived_velocity": 0.005972204168652517
+          },
+          {
+            "iteration": 9,
+            "normalized_record_residual": 5.70765656959793e-13,
+            "distance_to_archived_velocity": 0.005972204168652351
+          }
+        ],
+        "normalized_record_noise_sup": 0.005971503890986253,
+        "velocity_difference_sup": 0.005972204168660344
+      }
+    },
+    "4096": {
+      "noiseless": [
+        {
+          "iteration": 0,
+          "normalized_record_residual": 0.0443053102762061,
+          "distance_to_archived_velocity": 0.04707824369982072
+        },
+        {
+          "iteration": 1,
+          "normalized_record_residual": 0.002613332345939412,
+          "distance_to_archived_velocity": 0.002785318507881329
+        },
+        {
+          "iteration": 2,
+          "normalized_record_residual": 0.0001613399015241157,
+          "distance_to_archived_velocity": 0.00017198616196500982
+        },
+        {
+          "iteration": 3,
+          "normalized_record_residual": 9.987135573652495e-06,
+          "distance_to_archived_velocity": 1.0646950618364848e-05
+        },
+        {
+          "iteration": 4,
+          "normalized_record_residual": 6.192766850432463e-07,
+          "distance_to_archived_velocity": 6.602171195302375e-07
+        },
+        {
+          "iteration": 5,
+          "normalized_record_residual": 3.8401697821655034e-08,
+          "distance_to_archived_velocity": 4.094043448699125e-08
+        },
+        {
+          "iteration": 6,
+          "normalized_record_residual": 2.3813200300537574e-09,
+          "distance_to_archived_velocity": 2.538747323477253e-09
+        },
+        {
+          "iteration": 7,
+          "normalized_record_residual": 1.4766676770250342e-10,
+          "distance_to_archived_velocity": 1.5742729342349548e-10
+        },
+        {
+          "iteration": 8,
+          "normalized_record_residual": 9.157119507108291e-12,
+          "distance_to_archived_velocity": 9.760525720992064e-12
+        },
+        {
+          "iteration": 9,
+          "normalized_record_residual": 5.684341886080801e-13,
+          "distance_to_archived_velocity": 4.0708547643930615e-12
+        }
+      ],
+      "noisy": [
+        {
+          "iteration": 0,
+          "normalized_record_residual": 0.044276328959669264,
+          "distance_to_archived_velocity": 0.050313223459924394
+        },
+        {
+          "iteration": 1,
+          "normalized_record_residual": 0.002610887811617335,
+          "distance_to_archived_velocity": 0.008284139842108296
+        },
+        {
+          "iteration": 2,
+          "normalized_record_residual": 0.0001610943634848816,
+          "distance_to_archived_velocity": 0.008123825082477887
+        },
+        {
+          "iteration": 3,
+          "normalized_record_residual": 9.9804694857486e-06,
+          "distance_to_archived_velocity": 0.008121383903091806
+        },
+        {
+          "iteration": 4,
+          "normalized_record_residual": 6.187798311518833e-07,
+          "distance_to_archived_velocity": 0.008121346724039635
+        },
+        {
+          "iteration": 5,
+          "normalized_record_residual": 3.836417605818099e-08,
+          "distance_to_archived_velocity": 0.008121346157799803
+        },
+        {
+          "iteration": 6,
+          "normalized_record_residual": 2.3785704517109707e-09,
+          "distance_to_archived_velocity": 0.00812134614918325
+        },
+        {
+          "iteration": 7,
+          "normalized_record_residual": 1.4746270871057732e-10,
+          "distance_to_archived_velocity": 0.008121346149050579
+        },
+        {
+          "iteration": 8,
+          "normalized_record_residual": 9.137801626479813e-12,
+          "distance_to_archived_velocity": 0.008121346149047581
+        },
+        {
+          "iteration": 9,
+          "normalized_record_residual": 5.739853037312059e-13,
+          "distance_to_archived_velocity": 0.008121346149044584
+        }
+      ],
+      "normalized_noisy_velocity_difference": 1.015168268641481,
+      "all_record_fields_perturbed": {
+        "history": [
+          {
+            "iteration": 0,
+            "normalized_record_residual": 0.0446933998335749,
+            "distance_to_archived_velocity": 0.04707824369982072
+          },
+          {
+            "iteration": 1,
+            "normalized_record_residual": 0.0026333641772852134,
+            "distance_to_archived_velocity": 0.005972171171505336
+          },
+          {
+            "iteration": 2,
+            "normalized_record_residual": 0.00016251032698966217,
+            "distance_to_archived_velocity": 0.005972204170323958
+          },
+          {
+            "iteration": 3,
+            "normalized_record_residual": 1.00592705424285e-05,
+            "distance_to_archived_velocity": 0.005972204170505868
+          },
+          {
+            "iteration": 4,
+            "normalized_record_residual": 6.227647043610673e-07,
+            "distance_to_archived_velocity": 0.005972204170508366
+          },
+          {
+            "iteration": 5,
+            "normalized_record_residual": 3.855546870656923e-08,
+            "distance_to_archived_velocity": 0.0059722041705073114
+          },
+          {
+            "iteration": 6,
+            "normalized_record_residual": 2.386980058055599e-09,
+            "distance_to_archived_velocity": 0.005972204170508477
+          },
+          {
+            "iteration": 7,
+            "normalized_record_residual": 1.4777212786754035e-10,
+            "distance_to_archived_velocity": 0.0059722041705074225
+          },
+          {
+            "iteration": 8,
+            "normalized_record_residual": 9.154121904941803e-12,
+            "distance_to_archived_velocity": 0.005972204170508144
+          },
+          {
+            "iteration": 9,
+            "normalized_record_residual": 5.63660229602192e-13,
+            "distance_to_archived_velocity": 0.005972204170507978
+          }
+        ],
+        "normalized_record_noise_sup": 0.005971503890986253,
+        "velocity_difference_sup": 0.005972204170503759
+      }
+    }
+  }
+}

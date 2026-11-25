@@ -1,0 +1,33 @@
+{
+  "platform": "Linux-7.0.0-42-generic-aarch64-with-glibc2.43",
+  "scalar_virial": {
+    "initial_mean": -0.36,
+    "initial_energy": 1.17,
+    "limiting_mean_slope": 0.8623198382584008,
+    "mean_times_intercept": -0.14806588799029835,
+    "mean_modulus_from_exact_boundary_identity": -0.20038572624869916,
+    "mean_modulus_from_independent_quadrature": -0.20038572624870038
+  },
+  "asymmetric_pair": {
+    "a": 4.00763690134753e-07,
+    "b": 2.5084343094094823,
+    "ratio": 6259135.67310962,
+    "even_harmonic_relative_size": 0.035,
+    "zeros_of_limiting_seed_velocity": [
+      1.5959437053540797,
+      4.694325340570137
+    ],
+    "positive_sign_fraction": 0.5068772471702149,
+    "exact_limiting_mean_metric_difference": -0.0653197534355942,
+    "observed_mean_metric_differences": {
+      "32.0": 3.4942528073660116e-09,
+      "128.0": 5.3940907477711515e-05,
+      "512.0": -0.04544696996162456,
+      "2048.0": -0.06380515540967026,
+      "8192.0": -0.06522414438257093,
+      "32768.0": -0.0653137861544902
+    },
+    "common_velocity_range_lower_bound": 0.9828481731111522,
+    "common_velocity_range_upper_bound": 1.0
+  }
+}

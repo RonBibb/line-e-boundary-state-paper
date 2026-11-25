@@ -1,0 +1,37 @@
+/Users/ronbibb/Library/CloudStorage/OneDrive-Personal(2)/Documents/Academic/bb-cbe3/run_cbe3.py:200: RuntimeWarning: invalid value encountered in divide
+  score += g / thr
+{
+  "outcome": "3b-D",
+  "zero_measure": false,
+  "O": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "spike_reading": "S-LIM-D",
+  "fits": {
+    "1024": {
+      "w": 0.09180979686466068,
+      "q0": 0.26908649651615446,
+      "q2": 0.9301783408920472,
+      "J": 493.60571407179583
+    },
+    "2048": {
+      "w": 0.09180014624293459,
+      "q0": 0.2691008575892134,
+      "q2": 0.9301783449083278,
+      "J": 493.0550670853959
+    },
+    "4096": {
+      "w": 0.09179617544719887,
+      "q0": 0.2690577526848724,
+      "q2": 0.930178377601576,
+      "J": 492.76881020107976
+    }
+  },
+  "validation": {
+    "sup_D_18": 26074.269937566944,
+    "profile": 15.879724473814997
+  }
+}

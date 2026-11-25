@@ -1,0 +1,165 @@
+{
+  "checks": [
+    {
+      "name": "footprint N1024 tau12.0",
+      "ok": true,
+      "detail": "3.000466 vs 3.000466"
+    },
+    {
+      "name": "footprint N1024 tau14.0",
+      "ok": true,
+      "detail": "3.006602 vs 3.006602"
+    },
+    {
+      "name": "footprint N1024 tau16.0",
+      "ok": true,
+      "detail": "3.006602 vs 3.006602"
+    },
+    {
+      "name": "footprint N1024 tau18.0",
+      "ok": true,
+      "detail": "3.000466 vs 3.000466"
+    },
+    {
+      "name": "footprint N2048 tau12.0",
+      "ok": true,
+      "detail": "2.997398 vs 2.997398"
+    },
+    {
+      "name": "footprint N2048 tau14.0",
+      "ok": true,
+      "detail": "3.006602 vs 3.006602"
+    },
+    {
+      "name": "footprint N2048 tau16.0",
+      "ok": true,
+      "detail": "3.006602 vs 3.006602"
+    },
+    {
+      "name": "footprint N2048 tau18.0",
+      "ok": true,
+      "detail": "3.003534 vs 3.003534"
+    },
+    {
+      "name": "footprint N4096 tau12.0",
+      "ok": true,
+      "detail": "2.997398 vs 2.997398"
+    },
+    {
+      "name": "footprint N4096 tau14.0",
+      "ok": true,
+      "detail": "3.005068 vs 3.005068"
+    },
+    {
+      "name": "footprint N4096 tau16.0",
+      "ok": true,
+      "detail": "3.006602 vs 3.006602"
+    },
+    {
+      "name": "footprint N4096 tau18.0",
+      "ok": true,
+      "detail": "3.003534 vs 3.003534"
+    },
+    {
+      "name": "mask fraction",
+      "ok": true,
+      "detail": "0.042725"
+    },
+    {
+      "name": "O2 sup N1024 tau14.0",
+      "ok": true,
+      "detail": "3.933e-04"
+    },
+    {
+      "name": "O2 sup N1024 tau16.0",
+      "ok": true,
+      "detail": "2.496e-04"
+    },
+    {
+      "name": "O2 sup N1024 tau18.0",
+      "ok": true,
+      "detail": "1.580e-04"
+    },
+    {
+      "name": "O2 sup N2048 tau14.0",
+      "ok": true,
+      "detail": "4.041e-04"
+    },
+    {
+      "name": "O2 sup N2048 tau16.0",
+      "ok": true,
+      "detail": "2.552e-04"
+    },
+    {
+      "name": "O2 sup N2048 tau18.0",
+      "ok": true,
+      "detail": "1.609e-04"
+    },
+    {
+      "name": "O2 sup N4096 tau14.0",
+      "ok": true,
+      "detail": "4.093e-04"
+    },
+    {
+      "name": "O2 sup N4096 tau16.0",
+      "ok": true,
+      "detail": "2.580e-04"
+    },
+    {
+      "name": "O2 sup N4096 tau18.0",
+      "ok": true,
+      "detail": "1.623e-04"
+    },
+    {
+      "name": "O4 sup N1024 tau16.0",
+      "ok": true,
+      "detail": "2.221e-03"
+    },
+    {
+      "name": "O4 sup N1024 tau18.0",
+      "ok": true,
+      "detail": "4.713e-03"
+    },
+    {
+      "name": "O4 sup N2048 tau16.0",
+      "ok": true,
+      "detail": "2.282e-03"
+    },
+    {
+      "name": "O4 sup N2048 tau18.0",
+      "ok": true,
+      "detail": "4.837e-03"
+    },
+    {
+      "name": "O4 sup N4096 tau16.0",
+      "ok": true,
+      "detail": "2.311e-03"
+    },
+    {
+      "name": "O4 sup N4096 tau18.0",
+      "ok": true,
+      "detail": "4.898e-03"
+    },
+    {
+      "name": "fit w (N=4096)",
+      "ok": true,
+      "detail": "0.09179618 vs 0.09179618"
+    },
+    {
+      "name": "fit q0 (N=4096)",
+      "ok": true,
+      "detail": "0.26905775 vs 0.26905775"
+    },
+    {
+      "name": "fit q2 (N=4096)",
+      "ok": true,
+      "detail": "0.93017838 vs 0.93017838"
+    },
+    {
+      "name": "outcome mapping",
+      "ok": true,
+      "detail": "recomputed 3b-D vs declared 3b-D"
+    }
+  ],
+  "failures": 0
+}

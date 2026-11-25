@@ -1,0 +1,181 @@
+\section{Exact collisions with two independent target directions}
+\label{sec:rank-two}
+The preceding examples use geodesic images in the hyperbolic
+target. A periodic Gowdy-to-Ernst transformation carries the
+full-metric collision to a pair of solutions whose target maps
+have differential of rank two on open subsets.
+The transformation is standard \cite[\S 2, Eq.~(7)]{rw}.
+Its action on this observation record follows from the common
+current and metric sources of the pair.
+
+\begin{theorem}
+\label{th:rank-two}
+For every $R>1$ there is a placement $b/a=R$ at which two
+distinct vacuum Gowdy solutions with rank-two target
+differential on open sets give the same induced spatial
+metrics and the same $Q_t$ at both times, with different
+$P_t(a)$. The measured $Q$ is spatially nonconstant at both
+times. There is also a two-mode example for which no
+time-orientation-preserving isometry that preserves the two
+boundary slices and intertwines the torus actions can relate
+the solutions, even if the Killing basis is allowed to change.
+\end{theorem}
+
+\begin{proof}
+Use the geodesic-image pair of Theorem~\ref{th:exact-inhomogeneous}.
+Its conserved target current is
+$e^{2P}\,dQ/dw=q e^{P_0}=C$ on both branches.
+Denote the transformed fields by tildes. In areal time,
+\begin{equation}
+ \widetilde P=-P-\log t,\quad
+ \widetilde Q_t=Ct w_\theta,\quad
+ \widetilde Q_\theta=Ct w_t,\quad
+ \widetilde\lambda=\lambda-2P-\log t+C_0 .
+ \label{eq:ernst}
+\end{equation}
+The last formula follows by substituting the first three into
+both metric constraints. The same constant $C_0$ is used
+on both branches.
+The $\widetilde Q$ derivatives form an exact one-form on
+the cylinder. Closedness follows from the scalar equation.
+The angular period vanishes because $w$ has zero spatial mean.
+Thus $\widetilde Q$ can be chosen equal on the two histories
+for all times, with a common additive constant.
+At both nodes $w=w_\theta=0$, so $\widetilde P$ and
+$\widetilde\lambda$ agree and
+$\widetilde Q_t=0$. At each node $w_t$ is nonzero as a
+function of $\theta$, by uniqueness of the scalar ODE.
+Consequently $\widetilde Q$ is nonconstant there.
+At the initial slice
+\[
+ \det \frac{\partial(\widetilde P,\widetilde Q)}
+                  {\partial(t,\theta)}
+     =-C w_t(1+aP_w w_t),\qquad
+ \widetilde P_t=-P_w w_t-1/a,\qquad P_w=\pm g.
+\]
+For a nonzero sufficiently small amplitude the determinant
+does not vanish where $w_t\ne0$. This persists on open sets,
+and the measured time velocities of $\widetilde P$ differ
+between the branches.
+
+To exclude boundary reparametrizations in one example,
+write $\nu_j(R)^2$ for the $j$th radial Dirichlet eigenvalue
+on $[1,R]$ used in \eqref{eq:invisible}.
+The ratio $\nu_2(R)/\nu_1(R)$ varies continuously in $R$.
+Rescaling the interval to length one and applying the
+min--max principle gives a ratio tending to $2$ as $R\downarrow1$.
+Rescaling the outer radius to one gives
+$R\nu_j(R)\to j_{0,j}$ as $R\to\infty$, where $j_{0,j}$
+is the $j$th positive zero of $J_0$.
+To see the latter limit, extend annulus eigenfunctions by zero
+in the hole for the lower eigenvalue bound. For the upper bound,
+multiply the disk radial eigenfunctions by a cutoff that is
+zero below $R^{-1}$ and rises linearly in log radius to one
+at $R^{-1/2}$. Its squared radial gradient norm is
+$2/\log R$, so the finite-dimensional disk trial space is
+approximated in the weighted energy norm. The disk ratio
+$j_{0,2}/j_{0,1}\simeq 2.295$ exceeds $13/6$.
+Hence we can choose $a=\nu_1(R)/6$ and $b=Ra$ with
+$13a=\nu_2(R)$. The modes of frequencies $6$ and $13$
+then have simultaneous nodes. Take a nonzero sum of these
+modes in $w$, choosing phases so that the common initial
+$\widetilde Q$ after subtracting its mean is
+\[
+ F(\theta)=A_6\cos(6\theta)+A_{13}\cos(13\theta+\phi),
+ \qquad A_6A_{13}\ne0,\quad \phi/\pi\notin\mathbb Q .
+\]
+All previous observations and the rank argument apply to
+this phase, since they require only zero mean and both nodes.
+
+On the initial slice the quotient circle metric is constant,
+so an isometry compatible with the torus actions induces
+$\theta\mapsto\pm\theta+c$ on that circle. A change of Killing
+basis induces a hyperbolic isometry on the orbit shapes. Here
+the initial orbit shapes range over an arc of a horocycle
+of constant $\widetilde P$. A hyperbolic isometry that
+carries this arc into the same horocycle therefore fixes
+its ideal point and restricts to
+$\widetilde Q\mapsto \pm\widetilde Q+\text{constant}$.
+Taking means reduces the isometry condition on orbit shapes
+to $F(\pm\theta+c)=\pm F(\theta)$.
+Comparing the two Fourier coefficients shows that only the
+identity on the quotient circle satisfies this condition.
+The frequencies are coprime with opposite parity, so a
+translation preserving both coefficients is the identity
+and none flips both signs. A reflection would force
+$\phi/\pi$ rational.
+The two branches have different $\widetilde\lambda_t$
+on the initial slice by \eqref{eq:ernst}.
+The lapse agrees there and the determinant of the induced
+metric is $t^{3/2}e^{-\widetilde\lambda/2}$.
+Their mean curvatures thus differ as functions of this same
+quotient circle. Preservation of the oriented initial
+hypersurface would preserve mean curvature, a contradiction.
+\end{proof}
+
+The single-mode transformed examples approach a homogeneous
+background of asymptotic speed one as the amplitude tends to
+zero. Their parent solutions have uniformly subcritical
+speed. In the transformed solutions the limiting speed
+is $1-\sigma|\lim_{t\downarrow 0}t w_t|$ for sufficiently
+small amplitude, reaching one where this limit vanishes.
+This follows from the two ends of a nonvertical target
+geodesic and from $t e^{\widetilde P}\widetilde Q_t
+=Ct e^{-P}w_\theta\to0$. The rank-two result therefore concerns
+finite-window recovery on smooth regular slices.
+An illustrative two-mode computation gave $a=0.00173979$,
+$b=0.453934$, and a maximum interior difference in
+$\widetilde P$ of $0.10280$.
+
+\begin{proposition}
+\label{prop:ernst-fiber}
+In the Gowdy-to-Ernst family just constructed, fix the common
+initial metric, with a nonconstant $\widetilde Q(a)$, and
+$\widetilde Q_t(a)=0$. If the underlying scalar phase has a
+node at $b$, the original four observations leave a
+one-parameter family of compatible histories. Adding the
+terminal induced metric determines the magnitude of that
+parameter and gives exactly two histories when the magnitude
+is positive. One scalar reading of $\widetilde P$ at any
+point with nonzero scalar phase then distinguishes the two.
+\end{proposition}
+
+\begin{proof}
+Normalize the seed current by using the scalar
+$\psi=Cw$ as the geodesic parameter.
+The initial position of the seed is fixed in $P$ by
+$\widetilde P(a)=-P_0-\log a$.
+The seed $Q$ shift is immaterial to the transformed fields.
+The initial $\widetilde Q$ determines $\psi_t(a)$ from
+$a\psi_t(a)=\widetilde Q_\theta(a)$, with
+$\psi(a)=0$. Thus $\psi$ is fixed on the whole interval.
+The free parameter is $\zeta=P_\psi(0)$.
+Current one gives $Q_\psi(0)=e^{-2P_0}$,
+so the seed speed is
+$\kappa=(\zeta^2+e^{-2P_0})^{1/2}$.
+Its orbit value reads
+\begin{equation}
+ e^{-\widetilde P(t,\theta)-\log t-P_0}
+  = \cosh(\kappa\psi)
+       +\frac{\zeta}{\kappa}\sinh(\kappa\psi).
+ \label{eq:ernst-fiber}
+\end{equation}
+At a node this is one for every $\zeta$, so the partial
+record leaves the full family.
+
+At a terminal node the metric difference is
+\[
+ \widetilde\lambda(b)-\widetilde\lambda(a)
+   =-\kappa^2 I-\log(b/a),\qquad
+ I=\int_a^b t(\psi_t^2+\psi_\theta^2)\,dt .
+\]
+The integral is constant on the quotient circle because
+its angular derivative is $2[t\psi_t\psi_\theta]_a^b=0$.
+It is positive by spatial averaging and the nontrivial
+initial $\widetilde Q$. The terminal $\lambda$ therefore
+determines $\kappa$, leaving precisely the two signs of
+$\zeta$ when $\zeta\ne0$. Equation~\eqref{eq:ernst-fiber}
+is affine in $\zeta$ at fixed $\kappa$, with a nonzero
+coefficient wherever $\psi\ne0$. A scalar reading there
+gives the sign and the value.
+\end{proof}

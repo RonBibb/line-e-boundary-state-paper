@@ -16,8 +16,8 @@ import numpy as np
 
 
 HERE = Path(__file__).resolve().parent
-ACADEMIC = HERE.parents[1]
-SOURCE = ACADEMIC / "bb-cbe2i" / "run_cbe2i.py"
+INPUTS = HERE.parent / "reproduction" / "inputs"
+SOURCE = INPUTS / "bb-cbe2i" / "run_cbe2i.py"
 OUTPUT = HERE / "E1_DEPTH_NORM_SENSITIVITY_RESULT.json"
 
 DEPTHS = (8.0, 12.0, 16.0, 24.0)

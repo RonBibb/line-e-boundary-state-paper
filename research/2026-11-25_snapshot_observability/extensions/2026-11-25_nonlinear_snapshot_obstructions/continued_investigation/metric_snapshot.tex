@@ -1,0 +1,101 @@
+\subsection{Observing the terminal metric potential}
+\label{sec:metric-positive}
+The spatial derivative of the remaining metric potential
+measures an additional component of the orbit velocity.
+This produces a positive result even at polarized
+inhomogeneous backgrounds, where the two orbit transports
+coincide.
+
+For the linearized displacement of
+\eqref{eq:transport-leading} put $X=\sqrt{c/a}\,V(c)$.
+Linearizing the momentum constraint at $c$ gives
+\[
+ -\frac{\sqrt{c/a}}{2c}\,\delta\lambda_\theta(c)
+  =\langle D_t X-X/(2c),U_\theta\rangle
+   +\langle D_\theta X,U_t\rangle ,
+\]
+where $X$ in its time derivative denotes the full
+time-rescaled displacement. The measured terminal orbit
+fields determine the terms containing only $X$ and
+its spatial derivative. Thus an observation of
+$\lambda_\theta(c)$ gives $\langle D_tX,U_\theta\rangle$.
+Its mean-zero spatial primitive has principal term
+\[
+ \tfrac12\left[\langle U_\theta,A_-\rangle H+
+                    \langle U_\theta,A_+\rangle\mathcal T H\right].
+\]
+Indeed, the derivative of the two shifted primitives
+in \eqref{eq:transport-leading} has the sum sign,
+and commuting the spatial primitive through a smooth
+coefficient gains an additional derivative.
+The mean terms are finite rank.
+The same forced-wave energy estimate used in
+\eqref{eq:transport-leading} gives this principal
+formula modulo a map from $H^{s-1}$ to $H^{s+1}$.
+
+With $e_b$ the unit bisector from the mean rotation,
+define $b_2=\cos\rho\,\langle U_\theta,e_b\rangle$.
+Subtract the already observed translation difference
+from the last principal expression. This controls
+$b_2H$ in addition to $\beta H$.
+Consequently the proof of
+\eqref{eq:rank-two-compact} and
+Theorem~\ref{th:fixed-rank-two} applies with
+\[
+ \inf_\theta\sum_{j=0}^{J}
+  \big(|\beta(\theta-2jd)|^2+|b_2(\theta-2jd)|^2\big)>0
+\]
+and with $\cos\rho$ bounded away from zero.
+For sufficiently short delays this holds if either
+$P_\theta(a)$ or $Q_\theta(a)$ is nonzero somewhere.
+For the first condition, $b_2$ converges uniformly to
+$P_\theta(a)$ as $c\downarrow a$.
+For the second, use \eqref{eq:relative-expansion}.
+In either case the nonzero interval is covered by
+finitely many translations. The resulting local estimate
+uses the full terminal induced metric, plus a finite
+low-mode $P$ reading if a lower-frequency kernel remains.
+
+\begin{proposition}
+\label{prop:two-metric-polarized}
+Near a polarized background with nonconstant $P(a)$,
+one sufficiently short rational terminal placement gives
+a locally bi-Lipschitz missing-$P_t$ inverse from the
+full terminal induced metric and the original initial
+data. The same conclusion holds on an open class of
+nearby Cauchy backgrounds. The observation norm includes
+$\lambda_\theta(c)$ in $H^s$ in addition to
+$P(c),Q(c)$ in $H^{s+1}$.
+\end{proposition}
+
+\begin{proof}
+At the polarized reference, the $P$-variation solves
+the scalar Euler--Poisson--Darboux equation and the $Q$
+variation vanishes for the specified perturbation.
+Apply the one-derivative scalar estimate at a short
+rational gap as in Proposition~\ref{prop:safe-gap}
+to bound the $H^{s-1}$ norm of the missing velocity by
+the terminal $H^{s+1}$ norm of $P$.
+Use it to remove the lower-order term of the
+full-metric estimate above. Continuity of the
+derivative and integration along a small neighborhood
+give the local nonlinear statement.
+For continuity on the unconstrained velocity space
+one may use the periodic constraint source
+$-2t\langle U_t,U_\theta\rangle$ as the output for all
+reduced solutions. On periodic vacuum solutions it is
+exactly $\lambda_\theta$. Restriction to initial
+velocities compatible with the momentum constraint
+therefore gives the claimed geometric observation.
+\end{proof}
+
+The analytic-path argument of Theorem~\ref{th:generic-two}
+also applies to this full-metric output when $P(a)$ is
+nonconstant. Keep $P(a)$ fixed, interpolate to a
+polarized comparison state, and enforce the constraint
+by subtracting a multiple of $P_\theta(a)$ from $P_t(a)$.
+The geometric cover remains uniform along the path
+because the same nonzero arc of $P_\theta(a)$ persists.
+This gives nearby admissible backgrounds with stable
+two-slice full-metric recovery at a common short delay
+when either initial orbit field is spatially nonconstant.

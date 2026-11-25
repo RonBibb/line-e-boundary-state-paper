@@ -1,0 +1,94 @@
+\section{An extension to nontrivial torus bundles}
+\label{sec:twisted}
+The Gowdy-to-Ernst examples on the three-torus with
+matched full metrics use a periodic transformed $Q$,
+so their scalar seed has zero-mean time velocity.
+On a nontrivial torus bundle a nonzero current period is
+admissible. This yields a rank-two collision for the
+original four-field record with asymptotic speed
+strictly between zero and one at every angle.
+
+For an integer $n\ne0$ impose the type-II identification
+\[
+ (\theta,x,y)\sim(\theta+2\pi,x-ny,y),
+ \qquad x,y\in\mathbb R/\mathbb Z.
+\]
+Take periodic $P,\lambda$ and
+$Q(t,\theta+2\pi)=Q(t,\theta)+n$.
+The orbit form $dx+Q\,dy$ descends under the displayed
+identification. This is the standard unipotent
+monodromy in twisted Gowdy \cite{rendall-twisted}.
+
+\begin{proposition}
+\label{prop:twisted}
+For $n=1$ there are two distinct locally Gowdy vacuum
+metrics with this compact torus-bundle topology, having
+rank-two target maps on open sets and the same
+$P(a),Q(a),Q_t(a),P(b)$ and initial metric anchor
+in the common marked bundle coordinates.
+Their asymptotic speeds are uniformly in $(0,1)$.
+In the normalized current-one family generated from a
+constant initial seed position, the terminal metric
+potential distinguishes the two branches if the common
+angular current period is nonzero.
+\end{proposition}
+
+\begin{proof}
+Take the two geodesics from the subcritical row
+of Table~\ref{tab:collisions}. Their speeds differ,
+but they have common $q>0$ and common $P$ value
+at both phase values $0$ and $\ell=3$.
+Translate the initial $P$ to $P_0$ and rescale $Q$
+by $e^{-P_0}$ to preserve the orthonormal components
+of their initial velocities. Choose
+$C=q e^{P_0}=1/(2\pi)$.
+Use the phase
+\[
+ w(t,\theta)=\log(t/a)+\epsilon u_{k_0}(t)\cos(k_0\theta),
+ \qquad u_{k_0}(a)=u_{k_0}(b)=0,\quad b/a=e^3 .
+\]
+Both seed metric potentials are periodic because
+the initial orbit positions are constant, so the
+periodic momentum constraint holds.
+Apply \eqref{eq:ernst}. The transformed angular
+period of $Q$ is
+$C\int_0^{2\pi}t w_t\,d\theta=1$,
+the required monodromy. The transformed metric potential
+is periodic and the transformed $Q$ can be chosen common.
+At both nodes $w_\theta=0$, and the initial
+$Q_t$ and the measured $P$ values therefore agree.
+The initial metric anchor can be taken common.
+The missing initial velocities differ by a nonzero
+multiple of $1+\epsilon\cos(k_0\theta)$.
+The rank formula of Theorem~\ref{th:rank-two} still
+holds at $a$, since $w_\theta(a)=0$.
+Its factor $1+aP_w w_t$ is nonzero for both branches
+for sufficiently small amplitudes: at zero amplitude
+it is $1+g_j>0$.
+
+The limit $t w_t\to1+\epsilon J_0(k_0a)\cos(k_0\theta)$
+is positive everywhere for small $\epsilon$.
+Then $w\to-\infty$ uniformly and $P_w\to-\sigma_j$
+on each seed orbit. The transverse contribution
+$t e^{\widetilde P}\widetilde Q_t$
+vanishes as $t\downarrow0$.
+The transformed speed is therefore
+$1-\sigma_j(1+\epsilon J_0(k_0a)\cos(k_0\theta))$,
+strictly within $(0,1)$ for both subcritical speeds
+in the selected row and small enough amplitude.
+
+For the final claim, normalize the seed current as
+in Proposition~\ref{prop:ernst-fiber}.
+The initial transformed $Q$ fixes the entire scalar
+phase $\psi$, including the mean drift.
+The energy comparison at the common angular origin
+uses the integral $I$ in that proposition, positive
+there whenever the common terminal phase is
+nonzero. If terminal $P$ agrees, equality of terminal
+$\lambda$ fixes the common $\kappa^2$ because the
+$-2P-\log t$ terms in the transform agree.
+Equality of terminal $P$ and \eqref{eq:ernst-fiber}
+then determine $\zeta$ wherever $\psi(b)\ne0$.
+For nonzero monodromy the mean terminal phase is
+nonzero as $b>a$, so such an angle exists.
+\end{proof}

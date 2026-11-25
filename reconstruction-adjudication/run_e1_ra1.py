@@ -14,8 +14,8 @@ import numpy as np
 
 
 HERE = Path(__file__).resolve().parent
-ACADEMIC = HERE.parents[1]
-SOURCE = ACADEMIC / "bb-cbe2i" / "run_cbe2i.py"
+INPUTS = HERE.parent / "reproduction" / "inputs"
+SOURCE = INPUTS / "bb-cbe2i" / "run_cbe2i.py"
 OUTPUT = HERE / "E1_RA1_RESULT.json"
 
 RESOLUTIONS = (256, 512, 1024)
@@ -206,7 +206,7 @@ def summarize(cases, original):
 
 def main():
     m = load_frozen_module()
-    original = json.loads((ACADEMIC / "bb-cbe2i" / "CBE2I.json").read_text())
+    original = json.loads((INPUTS / "bb-cbe2i" / "CBE2I.json").read_text())
     cases = {}
     for depth in DEPTHS:
         for n in RESOLUTIONS:

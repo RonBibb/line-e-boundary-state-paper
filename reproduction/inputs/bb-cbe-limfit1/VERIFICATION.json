@@ -1,0 +1,73 @@
+{
+  "all_pass": true,
+  "checks": [
+    {
+      "detail": "",
+      "name": "program identity",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "Line E identity",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "spec hash",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "extra-fine quarantine declared",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "all controls pass",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "symmetry gate",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "sealed input hashes",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "center arithmetic",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "no admissible permanent-spike root",
+      "pass": true
+    },
+    {
+      "detail": "0.2664010411912763",
+      "name": "rejection margin arithmetic",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "resolution convergence",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "footprint ledger bounds",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "outcome mapping",
+      "pass": true
+    }
+  ],
+  "passed": 13,
+  "program": "BB-CBE-LIMFIT-1 verifier",
+  "total": 13
+}

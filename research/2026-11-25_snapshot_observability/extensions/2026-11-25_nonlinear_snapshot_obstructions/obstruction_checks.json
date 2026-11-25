@@ -1,0 +1,134 @@
+{
+  "platform": "Linux-7.0.0-42-generic-aarch64-with-glibc2.43",
+  "sharp_speed_times_log_gap": 2.3993572805154897,
+  "collisions": [
+    {
+      "log_gap": 2.0,
+      "fixed_q": 0.6376440524134207,
+      "branches": [
+        {
+          "initial_P_s": -1.3577223804672995,
+          "speed": 1.5,
+          "P_b": 0.0,
+          "Q_b": 4.2585589101896355,
+          "lambda_b_minus_a": -4.5,
+          "coordinate_ODE_error": 9.769962616701378e-14
+        },
+        {
+          "initial_P_s": -0.6938415914036032,
+          "speed": 0.9423407512888816,
+          "P_b": -8.881784197001256e-16,
+          "Q_b": 2.176266174764682,
+          "lambda_b_minus_a": -1.7760121830793876,
+          "coordinate_ODE_error": 2.4646951146678475e-14
+        }
+      ]
+    },
+    {
+      "log_gap": 3.0,
+      "fixed_q": 0.43197857291320396,
+      "branches": [
+        {
+          "initial_P_s": -0.8461054972897125,
+          "speed": 0.95,
+          "P_b": 0.0,
+          "Q_b": 3.917349379547664,
+          "lambda_b_minus_a": -2.7075,
+          "coordinate_ODE_error": 7.771561172376096e-14
+        },
+        {
+          "initial_P_s": -0.5072895803676741,
+          "speed": 0.6662943837417056,
+          "P_b": 0.0,
+          "Q_b": 2.3486793659536533,
+          "lambda_b_minus_a": -1.3318446174172176,
+          "coordinate_ODE_error": 1.9761969838327786e-14
+        }
+      ]
+    }
+  ],
+  "fourier": {
+    "a": 0.7853981633974483,
+    "b": 1.3744467859455345,
+    "collision_center": 0.2929515550297418,
+    "predicted_k3_limit": 0.01302349474995536,
+    "asymptotic": {
+      "16": {
+        "abs_partial_k3": 0.012661755373079264,
+        "full_target_norm_k": 0.06782186854927046
+      },
+      "64": {
+        "abs_partial_k3": 0.012999752379528901,
+        "full_target_norm_k": 0.06818456747806277
+      },
+      "256": {
+        "abs_partial_k3": 0.013022006021195796,
+        "full_target_norm_k": 0.06820771598839453
+      },
+      "1024": {
+        "abs_partial_k3": 0.013023401685426315,
+        "full_target_norm_k": 0.06820916473383014
+      },
+      "4096": {
+        "abs_partial_k3": 0.013023488933348119,
+        "full_target_norm_k": 0.06820925528811358
+      },
+      "16384": {
+        "abs_partial_k3": 0.013023494386417117,
+        "full_target_norm_k": 0.06820926094778636
+      }
+    },
+    "coordinate_linearization": {
+      "cancelled_1": {
+        "independent_error": 9.020562075079397e-16,
+        "P_trace": 0.40397221480577594,
+        "Q_trace": -0.07260814724812141
+      },
+      "cancelled_15": {
+        "independent_error": 8.881784197001252e-15,
+        "P_trace": 0.026929967334422374,
+        "Q_trace": -0.004740129878864148
+      },
+      "cancelled_16": {
+        "independent_error": 9.176742562696236e-15,
+        "P_trace": 1.4604778127922532e-07,
+        "Q_trace": -0.00012069622109136697
+      },
+      "cancelled_32": {
+        "independent_error": 1.2399880837004997e-14,
+        "P_trace": -9.32100047615584e-09,
+        "Q_trace": 3.0302646616508915e-05
+      },
+      "cancelled_49": {
+        "independent_error": 1.1553258350005535e-14,
+        "P_trace": -0.008243889408323022,
+        "Q_trace": 0.0014026213037320611
+      },
+      "exact_kernel_1": {
+        "independent_error": 1.0408340855860843e-15,
+        "P_trace": 0.40405107855971073,
+        "Q_trace": -0.11019574869810292
+      },
+      "exact_kernel_15": {
+        "independent_error": 7.788908407135864e-15,
+        "P_trace": 0.026936738570647382,
+        "Q_trace": -0.007346383246540195
+      },
+      "exact_kernel_16": {
+        "independent_error": 8.114169058881515e-15,
+        "P_trace": 7.734861829863812e-67,
+        "Q_trace": -2.1095077717810398e-67
+      },
+      "exact_kernel_32": {
+        "independent_error": 1.1117680127209484e-14,
+        "P_trace": -7.734861788919037e-67,
+        "Q_trace": 2.109507760614283e-67
+      },
+      "exact_kernel_49": {
+        "independent_error": 1.012211148232467e-14,
+        "P_trace": -0.008245940378769606,
+        "Q_trace": 0.002248892830573529
+      }
+    }
+  }
+}

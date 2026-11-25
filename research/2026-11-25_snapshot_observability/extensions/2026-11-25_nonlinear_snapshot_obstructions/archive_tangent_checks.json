@@ -1,0 +1,81 @@
+{
+  "platform": "Linux-7.0.0-42-generic-aarch64-with-glibc2.43",
+  "archive": "bb-cbe3b",
+  "results": {
+    "1024": {
+      "tangent_runs": [
+        {
+          "colors": 8,
+          "max_step": 0.04,
+          "maximum_row_defect": 0.061992477120451105,
+          "largest_off_diagonal_sum": 8.886101684086162e-11,
+          "diagonal_range": [
+            0.9380075229658272,
+            0.999999999910441
+          ],
+          "maximum_row_defect_index": 453,
+          "sampled_local_generator_norm": 2.2074562998645786,
+          "sampled_adjacent_generator_norm": 8.14968413102725e-06,
+          "locality_tail_scale_from_sampled_bounds": 1.2156851456586237e-19,
+          "archive_P_at_16_absolute_difference": 8.704148513061227e-13
+        }
+      ],
+      "FD_direction_absolute_gap": 7.753915842734216e-10
+    },
+    "2048": {
+      "tangent_runs": [
+        {
+          "colors": 8,
+          "max_step": 0.04,
+          "maximum_row_defect": 0.06200699241553108,
+          "largest_off_diagonal_sum": 3.549996951910172e-10,
+          "diagonal_range": [
+            0.9379930079285413,
+            0.9999999996443408
+          ],
+          "maximum_row_defect_index": 906,
+          "sampled_local_generator_norm": 2.2086422734968805,
+          "sampled_adjacent_generator_norm": 1.62264379727325e-05,
+          "locality_tail_scale_from_sampled_bounds": 1.9150844019849414e-18,
+          "archive_P_at_16_absolute_difference": 3.5065284009760944e-12
+        }
+      ],
+      "FD_direction_absolute_gap": 8.691205533040147e-10
+    },
+    "4096": {
+      "tangent_runs": [
+        {
+          "colors": 8,
+          "max_step": 0.04,
+          "maximum_row_defect": 0.062010609962967644,
+          "largest_off_diagonal_sum": 1.4195552684698414e-09,
+          "diagonal_range": [
+            0.9379893914122818,
+            0.9999999985797937
+          ],
+          "maximum_row_defect_index": 1812,
+          "sampled_local_generator_norm": 2.208645218563145,
+          "sampled_adjacent_generator_norm": 3.241291622572645e-05,
+          "locality_tail_scale_from_sampled_bounds": 3.049187898983073e-17,
+          "archive_P_at_16_absolute_difference": 8.149925179168349e-12
+        },
+        {
+          "colors": 16,
+          "max_step": 0.02,
+          "maximum_row_defect": 0.06201060996290647,
+          "largest_off_diagonal_sum": 1.4195552684696297e-09,
+          "diagonal_range": [
+            0.9379893914123429,
+            0.9999999985797938
+          ],
+          "maximum_row_defect_index": 1812,
+          "sampled_local_generator_norm": 2.208645218563156,
+          "sampled_adjacent_generator_norm": 3.241291622557747e-05,
+          "locality_tail_scale_from_sampled_bounds": 3.2052899027896987e-37,
+          "archive_P_at_16_absolute_difference": 8.149925179168349e-12
+        }
+      ],
+      "FD_direction_absolute_gap": 7.668469192978478e-10
+    }
+  }
+}

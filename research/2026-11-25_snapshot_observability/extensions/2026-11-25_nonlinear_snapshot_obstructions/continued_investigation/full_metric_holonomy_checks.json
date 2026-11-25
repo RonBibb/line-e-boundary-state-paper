@@ -1,0 +1,184 @@
+{
+  "platform": "Linux-7.0.0-42-generic-aarch64-with-glibc2.43",
+  "short_delay_interval_check": {
+    "certifies_delays_up_to": "0.02",
+    "radius_lower_interval": "[0.29396085090950935361312681846381735102774344424849, 0.29396085090950935361312681846381735102774344433607]",
+    "potential_upper_interval": "[2.0779694819483457965275742600160672571452811165711, 2.0779694819483457965275742600160672571452811190234]",
+    "connection_perturbation_slope_upper_interval": "[3.3901864267839992846838095988177107992315489501793, 3.3901864267839992846838095988177107992315489533322]",
+    "reverse_error_over_delay_upper_interval": "[0.43937031111468890248366349383553306158354188726215, 0.4393703111146889024836634938355330615835418879628]",
+    "frozen_gain_over_delay_lower_interval": "[3.6852382626559690089330194346348414531217663797122, 3.6852382626559690089330194346348414531217663811135]"
+  },
+  "normalization": "sqrt(c/a) on orbit, sqrt(c/a)/c on metric gradient",
+  "experiments": [
+    {
+      "circular_radius": 0.08,
+      "areal_delay": 0.18512012242326525,
+      "gramian_minimum_eigenvalue": 0.052219799708062835,
+      "minimum_orbit_gain_through_128": 0.005062921978865125,
+      "minimum_metric_gain_through_128": 0.16839838226314285,
+      "high_modes": [
+        {
+          "mode": 140,
+          "orbit_gain": 0.04290571200274681,
+          "full_metric_gain": 0.3120487058124995
+        },
+        {
+          "mode": 505,
+          "orbit_gain": 0.01946866353564403,
+          "full_metric_gain": 0.3163537463723188
+        },
+        {
+          "mode": 581,
+          "orbit_gain": 0.0018229392251149828,
+          "full_metric_gain": 0.3204500188039738
+        },
+        {
+          "mode": 1735,
+          "orbit_gain": 0.001506105123636628,
+          "full_metric_gain": 0.3205295003629915
+        },
+        {
+          "mode": 4043,
+          "orbit_gain": 0.0008657494582886875,
+          "full_metric_gain": 0.3204203181121385
+        }
+      ]
+    },
+    {
+      "circular_radius": 0.16,
+      "areal_delay": 0.18512012242326525,
+      "gramian_minimum_eigenvalue": 0.21072921461321473,
+      "minimum_orbit_gain_through_128": 0.0017364284480266225,
+      "minimum_metric_gain_through_128": 0.1678720231666825,
+      "high_modes": [
+        {
+          "mode": 140,
+          "orbit_gain": 0.03684861271845262,
+          "full_metric_gain": 0.5246713157866048
+        },
+        {
+          "mode": 505,
+          "orbit_gain": 0.013530758744189445,
+          "full_metric_gain": 0.536928893898892
+        },
+        {
+          "mode": 598,
+          "orbit_gain": 0.0023265487689882246,
+          "full_metric_gain": 0.5371175804160366
+        },
+        {
+          "mode": 1752,
+          "orbit_gain": 0.0020180384038487173,
+          "full_metric_gain": 0.5380577800303721
+        },
+        {
+          "mode": 4060,
+          "orbit_gain": 0.0013801500342865878,
+          "full_metric_gain": 0.5382135245659738
+        }
+      ]
+    },
+    {
+      "circular_radius": 0.32,
+      "areal_delay": 0.18512012242326525,
+      "gramian_minimum_eigenvalue": 0.8706771194289906,
+      "minimum_orbit_gain_through_128": 0.0016002525067139207,
+      "minimum_metric_gain_through_128": 0.16573960344679858,
+      "high_modes": [
+        {
+          "mode": 140,
+          "orbit_gain": 0.012673098887682052,
+          "full_metric_gain": 0.6609842488698651
+        },
+        {
+          "mode": 471,
+          "orbit_gain": 0.0006725373132989711,
+          "full_metric_gain": 0.6818306977503747
+        },
+        {
+          "mode": 683,
+          "orbit_gain": 0.0012222888755153223,
+          "full_metric_gain": 0.6737630092164526
+        },
+        {
+          "mode": 1625,
+          "orbit_gain": 0.00044695444395324705,
+          "full_metric_gain": 0.6784385098482489
+        },
+        {
+          "mode": 3356,
+          "orbit_gain": 1.3911894796593777e-05,
+          "full_metric_gain": 0.6777452494035507
+        }
+      ]
+    }
+  ],
+  "strict_tolerance_recheck": {
+    "circular_radius": 0.32,
+    "areal_delay": 0.18512012242326525,
+    "gramian_minimum_eigenvalue": 0.8706771194132364,
+    "minimum_orbit_gain_through_128": 0.0016002525069321494,
+    "minimum_metric_gain_through_128": 0.16573960344679914,
+    "high_modes": [
+      {
+        "mode": 140,
+        "orbit_gain": 0.012673098887780232,
+        "full_metric_gain": 0.6609842488664465
+      },
+      {
+        "mode": 471,
+        "orbit_gain": 0.0006725373133779935,
+        "full_metric_gain": 0.6818306977469144
+      },
+      {
+        "mode": 683,
+        "orbit_gain": 0.0012222888756851988,
+        "full_metric_gain": 0.6737630092130603
+      },
+      {
+        "mode": 1625,
+        "orbit_gain": 0.0004469542188797084,
+        "full_metric_gain": 0.6784385098705163
+      },
+      {
+        "mode": 3356,
+        "orbit_gain": 1.406375223707803e-05,
+        "full_metric_gain": 0.677745275314878
+      }
+    ]
+  },
+  "explicit_short_delay": {
+    "circular_radius": 0.32,
+    "areal_delay": 0.02,
+    "gramian_minimum_eigenvalue": 0.023765659951002417,
+    "minimum_orbit_gain_through_128": 0.019974037495923108,
+    "minimum_metric_gain_through_128": 0.019974037495923108,
+    "high_modes": [
+      {
+        "mode": 153,
+        "orbit_gain": 0.0025209365803775456,
+        "full_metric_gain": 0.11972512954595906
+      },
+      {
+        "mode": 467,
+        "orbit_gain": 0.0006305624627208565,
+        "full_metric_gain": 0.11978735355099575
+      },
+      {
+        "mode": 624,
+        "orbit_gain": 0.002218993752024982,
+        "full_metric_gain": 0.12064647395793215
+      },
+      {
+        "mode": 1575,
+        "orbit_gain": 4.2286728012104764e-05,
+        "full_metric_gain": 0.11794940112447247
+      },
+      {
+        "mode": 2352,
+        "orbit_gain": 0.0002353790572337954,
+        "full_metric_gain": 0.11833084948119636
+      }
+    ]
+  }
+}

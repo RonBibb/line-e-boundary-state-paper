@@ -10,8 +10,8 @@ import numpy as np
 
 
 HERE = Path(__file__).resolve().parent
-ACADEMIC = HERE.parents[1]
-SOURCE = ACADEMIC / "bb-cbe2i" / "run_cbe2i.py"
+INPUTS = HERE.parent / "reproduction" / "inputs"
+SOURCE = INPUTS / "bb-cbe2i" / "run_cbe2i.py"
 OUTPUT = HERE / "E1_RA2_RESULT.json"
 CS = (-2.0, 1.0, 3.0)
 TOL = 1.0e-11

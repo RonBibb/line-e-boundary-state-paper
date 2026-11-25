@@ -1,0 +1,60 @@
+\begin{proposition}
+\label{prop:safe-gap}
+For each $a>0$ and each $b>a$, a full orbit snapshot
+at a specified $c\in(a,b)$ gives a quantitative
+inverse on the constant-initial-position geodesic-image
+class. Set $M=1/(4a^2)$ and choose an integer
+$L>\max\{\pi/(b-a),\,2M+2\}$.
+Take $c=a+\pi/L$.
+Using just the full orbit snapshots at $a$ and $c$,
+recovery of the initial velocity in energy normalization
+has sharp loss one. In particular, for each real $s$,
+\[
+ \|U_t(a)-\widehat U_t(a)\|_{H^{s-1}}
+ \le C(a,c)\|
+       \log_{U_0}U(c)-\log_{U_0}\widehat U(c)
+      \|_{H^{s+1}} .
+\]
+Both solutions start at the same constant target point $U_0$.
+The velocity difference is taken in $T_{U_0}\mathbb H^2$.
+\end{proposition}
+
+\begin{proof}
+The Riemannian logarithm turns a geodesic through $U_0$
+into a straight line in $T_{U_0}\mathbb H^2$;
+therefore $Z=\log_{U_0}U$ satisfies the scalar
+equation componentwise, also when comparing two
+different geodesics. On frequency $k\ge1$, rescale
+by $\sqrt t$ and normalize the initial slope to $k$.
+Writing the resulting solution as
+$z=\rho\sin\varphi$, $z'=k\rho\cos\varphi$ gives
+\[
+ \varphi'=k+\frac{W(t)}{k}\sin^2\varphi,\qquad
+ \frac{\rho'}{\rho}=-\frac{W(t)}{2k}\sin(2\varphi),
+ \qquad W(t)=\frac1{4t^2}.
+\]
+The starting values are $\rho(a)=1$, $\varphi(a)=0$.
+With $d=\pi/L$, the correction to the free phase at $c$
+is strictly between zero and $Md/k$. If $k>M$,
+this is less than the spacing $d$ of the free phases
+modulo $\pi$. No mode can reach a zero. If $k\le M$,
+the phase is between zero and $(k+M/k)d\le 2Md<\pi$.
+There are thus no finite-frequency zeros.
+
+For large $k$ the same phase bounds hold at every time
+in the window, so
+\[
+ \varphi(c)-kd
+ =\frac1k\int_a^c W(t)\sin^2(k(t-a))\,dt+O(k^{-2})
+ =\frac1{2k}\int_a^c W(t)\,dt+O(k^{-2}).
+\]
+The second equality uses integration by parts.
+The amplitude is $1+O(k^{-1})$.
+On multiples of $L$, the multiplier is therefore of
+order $k^{-1}$ with a nonzero leading coefficient.
+On large nonmultiples it is bounded away from zero.
+The zero-mode transfer is $a\log(c/a)$
+for the unscaled velocity. This proves the estimate.
+Taking single high modes on one target geodesic shows
+sharpness for the pair $a,c$.
+\end{proof}

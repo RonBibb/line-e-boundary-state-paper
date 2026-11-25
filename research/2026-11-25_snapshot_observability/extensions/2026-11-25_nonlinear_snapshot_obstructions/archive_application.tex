@@ -1,0 +1,50 @@
+\section{Tangent measurement on the archived spike-region history}
+\label{sec:archive}
+The recovered finite-window history used the archived
+CBE3b data at $\tau=18,16$ with $\tau=-\log t$.
+To check conditioning at this trajectory, restart the centered
+second-order spatial method at the recorded $\tau=18$ data and
+measure
+\[
+ J=-\frac12 \frac{\partial P(16)}{\partial P_\tau(18)}
+      \bigg|_{P(18),Q(18),Q_\tau(18)} .
+\]
+The normalization gives the identity for free motion in $\tau$.
+The linearization was integrated jointly with the replay.
+Its nearest-neighbor structure in the variables
+$(\delta P,\delta P_\tau,e^P\delta Q,e^P\delta Q_\tau)$
+allowed periodic coloring of tangent seeds.
+
+The computed maximum row defects from the identity at
+$N=1024,2048,4096$ were $0.0619925$, $0.0620070$, and
+$0.0620106$. At the finest resolution the diagonal ran
+from $0.937989$ to $1.000000$ to the shown precision, and the
+estimated maximum off-diagonal row sum was $1.42\times10^{-9}$.
+Refining both the time step ceiling and the number of colors
+changed the maximum defect by less than $7\times10^{-14}$.
+A centered finite difference in a fixed mixed Fourier
+direction matched the tangent evolution to within
+$8.7\times10^{-10}$ at all three resolutions. The terminal
+$P$ replay matched the archival value within $8.2\times10^{-12}$.
+
+To track possible color aliasing, suppose the exact scaled
+generator has uniform in-time bounds $D$ and $E$ on its
+block-diagonal and adjacent-site parts in maximum row norm.
+The block-diagonal propagator preserves support and each
+adjacent-site insertion moves support by at most one site.
+For an interval of duration $\Delta$, the norm of transfer
+outside radius $m$ is thus at most
+\[
+ e^{\Delta(D+E)}
+   \frac{(\Delta E)^{m+1}}{(m+1)!}.
+\]
+Apply the same factor $1/\Delta$ used in $J$ to its projected
+tail. The sampled $D,E$ at $N=4096$ give a diagnostic tail
+scale of $3.05\times10^{-17}$ for radius three. These
+generator maxima were sampled in time. They and the tangent
+results are numerical evidence at the stated discretizations.
+An independently verified bound of $0.0621$ on the full defect
+would imply $\|J^{-1}\|_\infty\leq 1.067$ there by the
+Neumann series. The observed small defect provides a local
+explanation for the successful nonlinear restart and is
+consistent with the exact failures at other observation windows.

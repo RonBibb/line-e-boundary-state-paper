@@ -1,0 +1,442 @@
+{
+  "platform": "Linux-7.0.0-42-generic-aarch64-with-glibc2.43",
+  "runs": [
+    {
+      "bandwidth": 48,
+      "reference_grid": 768,
+      "inverse_grid": 384,
+      "noise_norm": 0.0,
+      "delay": 0.19634954084936207,
+      "initial_velocity_norm": 0.670391448582638,
+      "results": {
+        "only_P": {
+          "smallest_gain_at_secant": 0.00016618469082823082,
+          "linear_noise_amplification_in_injected_direction": null,
+          "iterations": [
+            {
+              "iteration": 0,
+              "record_residual": 0.025797637928212602,
+              "velocity_H1_error": 0.05848443825399323
+            },
+            {
+              "iteration": 1,
+              "record_residual": 1.9021476897783623e-08,
+              "velocity_H1_error": 3.6547439403173676e-06
+            },
+            {
+              "iteration": 2,
+              "record_residual": 9.638748509678761e-12,
+              "velocity_H1_error": 4.924217025889559e-09
+            }
+          ]
+        },
+        "full_orbit": {
+          "smallest_gain_at_secant": 0.00622076182782077,
+          "linear_noise_amplification_in_injected_direction": null,
+          "iterations": [
+            {
+              "iteration": 0,
+              "record_residual": 0.02579907433938087,
+              "velocity_H1_error": 0.05848443825399323
+            },
+            {
+              "iteration": 1,
+              "record_residual": 6.046906997882945e-07,
+              "velocity_H1_error": 9.595236591668391e-05
+            },
+            {
+              "iteration": 2,
+              "record_residual": 1.9875741820657636e-09,
+              "velocity_H1_error": 3.15646795120061e-07
+            },
+            {
+              "iteration": 3,
+              "record_residual": 2.3465052588696817e-11,
+              "velocity_H1_error": 1.0374163608712044e-09
+            }
+          ]
+        },
+        "P_and_metric": {
+          "smallest_gain_at_secant": 0.05304097558545418,
+          "linear_noise_amplification_in_injected_direction": null,
+          "iterations": [
+            {
+              "iteration": 0,
+              "record_residual": 0.06926754310511854,
+              "velocity_H1_error": 0.05848443825399323
+            },
+            {
+              "iteration": 1,
+              "record_residual": 0.0030528506423694274,
+              "velocity_H1_error": 0.006362071541497628
+            },
+            {
+              "iteration": 2,
+              "record_residual": 0.000381696430336402,
+              "velocity_H1_error": 0.0011453153629452275
+            },
+            {
+              "iteration": 3,
+              "record_residual": 4.992753964305342e-05,
+              "velocity_H1_error": 0.00020714992015849734
+            },
+            {
+              "iteration": 4,
+              "record_residual": 7.0729792167701095e-06,
+              "velocity_H1_error": 3.7670822255644476e-05
+            },
+            {
+              "iteration": 5,
+              "record_residual": 1.0883126568561993e-06,
+              "velocity_H1_error": 6.821998326679669e-06
+            },
+            {
+              "iteration": 6,
+              "record_residual": 1.7898771484684018e-07,
+              "velocity_H1_error": 1.2295006603695587e-06
+            }
+          ]
+        }
+      }
+    },
+    {
+      "bandwidth": 96,
+      "reference_grid": 1536,
+      "inverse_grid": 512,
+      "noise_norm": 0.0,
+      "delay": 0.19634954084936207,
+      "initial_velocity_norm": 0.670460273405538,
+      "results": {
+        "only_P": {
+          "smallest_gain_at_secant": 8.309692827009234e-05,
+          "linear_noise_amplification_in_injected_direction": null,
+          "iterations": [
+            {
+              "iteration": 0,
+              "record_residual": 0.02579763794058979,
+              "velocity_H1_error": 0.05926814142861195
+            },
+            {
+              "iteration": 1,
+              "record_residual": 1.905787640733122e-08,
+              "velocity_H1_error": 9.238972577029179e-06
+            },
+            {
+              "iteration": 2,
+              "record_residual": 1.450218864663926e-11,
+              "velocity_H1_error": 2.1000054196007667e-06
+            }
+          ]
+        },
+        "full_orbit": {
+          "smallest_gain_at_secant": 0.006202109545903546,
+          "linear_noise_amplification_in_injected_direction": null,
+          "iterations": [
+            {
+              "iteration": 0,
+              "record_residual": 0.02579914358709615,
+              "velocity_H1_error": 0.05926814142861195
+            },
+            {
+              "iteration": 1,
+              "record_residual": 6.35565481302437e-07,
+              "velocity_H1_error": 0.00010097451725998865
+            },
+            {
+              "iteration": 2,
+              "record_residual": 2.0959379400569175e-09,
+              "velocity_H1_error": 3.318752499692071e-07
+            },
+            {
+              "iteration": 3,
+              "record_residual": 1.7775754793243937e-10,
+              "velocity_H1_error": 1.3463977160755177e-09
+            },
+            {
+              "iteration": 4,
+              "record_residual": 1.802828866478882e-10,
+              "velocity_H1_error": 5.122149687627778e-10
+            },
+            {
+              "iteration": 5,
+              "record_residual": 1.7905454907820085e-10,
+              "velocity_H1_error": 5.195902622264883e-10
+            },
+            {
+              "iteration": 6,
+              "record_residual": 1.7711843588610662e-10,
+              "velocity_H1_error": 5.175466479960746e-10
+            }
+          ]
+        },
+        "P_and_metric": {
+          "smallest_gain_at_secant": 0.05257338905998791,
+          "linear_noise_amplification_in_injected_direction": null,
+          "iterations": [
+            {
+              "iteration": 0,
+              "record_residual": 0.06927917396589234,
+              "velocity_H1_error": 0.05926814142861195
+            },
+            {
+              "iteration": 1,
+              "record_residual": 0.0030615254226360176,
+              "velocity_H1_error": 0.006589942402245415
+            },
+            {
+              "iteration": 2,
+              "record_residual": 0.0003844781372795045,
+              "velocity_H1_error": 0.0011956714450824866
+            },
+            {
+              "iteration": 3,
+              "record_residual": 5.067719774523502e-05,
+              "velocity_H1_error": 0.0002172265985996035
+            },
+            {
+              "iteration": 4,
+              "record_residual": 7.25344825362465e-06,
+              "velocity_H1_error": 3.959017225119735e-05
+            },
+            {
+              "iteration": 5,
+              "record_residual": 1.1273207850244152e-06,
+              "velocity_H1_error": 7.177897522655305e-06
+            },
+            {
+              "iteration": 6,
+              "record_residual": 1.8675595339424494e-07,
+              "velocity_H1_error": 1.2944851398450194e-06
+            }
+          ]
+        }
+      }
+    },
+    {
+      "bandwidth": 96,
+      "reference_grid": 1536,
+      "inverse_grid": 768,
+      "noise_norm": 0.0,
+      "delay": 0.19634954084936207,
+      "initial_velocity_norm": 0.670460273405538,
+      "results": {
+        "only_P": {
+          "smallest_gain_at_secant": 8.309693095269877e-05,
+          "linear_noise_amplification_in_injected_direction": null,
+          "iterations": [
+            {
+              "iteration": 0,
+              "record_residual": 0.02579763794059001,
+              "velocity_H1_error": 0.05926814142861162
+            },
+            {
+              "iteration": 1,
+              "record_residual": 1.905905366403853e-08,
+              "velocity_H1_error": 9.493458707153621e-06
+            },
+            {
+              "iteration": 2,
+              "record_residual": 1.8233190162814478e-11,
+              "velocity_H1_error": 2.112020493537831e-06
+            }
+          ]
+        },
+        "full_orbit": {
+          "smallest_gain_at_secant": 0.006202109545951668,
+          "linear_noise_amplification_in_injected_direction": null,
+          "iterations": [
+            {
+              "iteration": 0,
+              "record_residual": 0.025799143587090078,
+              "velocity_H1_error": 0.05926814142861162
+            },
+            {
+              "iteration": 1,
+              "record_residual": 6.355646818672433e-07,
+              "velocity_H1_error": 0.00010097438442659402
+            },
+            {
+              "iteration": 2,
+              "record_residual": 2.095462365237863e-09,
+              "velocity_H1_error": 3.318776601704556e-07
+            },
+            {
+              "iteration": 3,
+              "record_residual": 1.7853213171306937e-10,
+              "velocity_H1_error": 1.3356965436994641e-09
+            },
+            {
+              "iteration": 4,
+              "record_residual": 1.7476057505004208e-10,
+              "velocity_H1_error": 5.168735567024883e-10
+            },
+            {
+              "iteration": 5,
+              "record_residual": 1.7911212076244254e-10,
+              "velocity_H1_error": 5.099138659168786e-10
+            },
+            {
+              "iteration": 6,
+              "record_residual": 1.8211314687648365e-10,
+              "velocity_H1_error": 5.23482243314462e-10
+            }
+          ]
+        },
+        "P_and_metric": {
+          "smallest_gain_at_secant": 0.052573389059936686,
+          "linear_noise_amplification_in_injected_direction": null,
+          "iterations": [
+            {
+              "iteration": 0,
+              "record_residual": 0.06927917396490817,
+              "velocity_H1_error": 0.05926814142861162
+            },
+            {
+              "iteration": 1,
+              "record_residual": 0.0030615254177970824,
+              "velocity_H1_error": 0.006589942277143457
+            },
+            {
+              "iteration": 2,
+              "record_residual": 0.0003844781359579415,
+              "velocity_H1_error": 0.0011956714245577958
+            },
+            {
+              "iteration": 3,
+              "record_residual": 5.06771979474387e-05,
+              "velocity_H1_error": 0.00021722659929707756
+            },
+            {
+              "iteration": 4,
+              "record_residual": 7.253448726857675e-06,
+              "velocity_H1_error": 3.9590184029755273e-05
+            },
+            {
+              "iteration": 5,
+              "record_residual": 1.127320032687878e-06,
+              "velocity_H1_error": 7.177890750168617e-06
+            },
+            {
+              "iteration": 6,
+              "record_residual": 1.8675525748963254e-07,
+              "velocity_H1_error": 1.2944815117900234e-06
+            }
+          ]
+        }
+      }
+    },
+    {
+      "bandwidth": 96,
+      "reference_grid": 1536,
+      "inverse_grid": 768,
+      "noise_norm": 3e-05,
+      "delay": 0.19634954084936207,
+      "initial_velocity_norm": 0.670460273405538,
+      "results": {
+        "only_P": {
+          "smallest_gain_at_secant": 8.309693095269877e-05,
+          "linear_noise_amplification_in_injected_direction": 2007.4617287760714,
+          "iterations": [
+            {
+              "iteration": 0,
+              "record_residual": 0.025797647399226197,
+              "velocity_H1_error": 0.05926814142861162
+            },
+            {
+              "iteration": 1,
+              "record_residual": 1.8790010203166022e-08,
+              "velocity_H1_error": 0.06022031737622429
+            },
+            {
+              "iteration": 2,
+              "record_residual": 5.882843655071724e-11,
+              "velocity_H1_error": 0.06021884878076066
+            }
+          ]
+        },
+        "full_orbit": {
+          "smallest_gain_at_secant": 0.006202109545951668,
+          "linear_noise_amplification_in_injected_direction": 12.102428103404364,
+          "iterations": [
+            {
+              "iteration": 0,
+              "record_residual": 0.025799153045174255,
+              "velocity_H1_error": 0.05926814142861162
+            },
+            {
+              "iteration": 1,
+              "record_residual": 2.9916622114406536e-05,
+              "velocity_H1_error": 0.00033024961074712216
+            },
+            {
+              "iteration": 2,
+              "record_residual": 2.991001607207595e-05,
+              "velocity_H1_error": 0.0003620221281915815
+            },
+            {
+              "iteration": 3,
+              "record_residual": 2.991001576384541e-05,
+              "velocity_H1_error": 0.00036187517105844795
+            },
+            {
+              "iteration": 4,
+              "record_residual": 2.9910015762508035e-05,
+              "velocity_H1_error": 0.00036187565702973265
+            },
+            {
+              "iteration": 5,
+              "record_residual": 2.991001576428329e-05,
+              "velocity_H1_error": 0.00036187565543162835
+            },
+            {
+              "iteration": 6,
+              "record_residual": 2.9910015763421655e-05,
+              "velocity_H1_error": 0.0003618756554146549
+            }
+          ]
+        },
+        "P_and_metric": {
+          "smallest_gain_at_secant": 0.052573389059936686,
+          "linear_noise_amplification_in_injected_direction": 0.16831545465296996,
+          "iterations": [
+            {
+              "iteration": 0,
+              "record_residual": 0.06927917748704182,
+              "velocity_H1_error": 0.05926814142861162
+            },
+            {
+              "iteration": 1,
+              "record_residual": 0.003061660690009762,
+              "velocity_H1_error": 0.006587915293192622
+            },
+            {
+              "iteration": 2,
+              "record_residual": 0.00038564804315724806,
+              "velocity_H1_error": 0.0011975700472340461
+            },
+            {
+              "iteration": 3,
+              "record_residual": 5.8885628977504055e-05,
+              "velocity_H1_error": 0.0002152554155838338
+            },
+            {
+              "iteration": 4,
+              "record_residual": 3.08650399133528e-05,
+              "velocity_H1_error": 4.1809266662021477e-05
+            },
+            {
+              "iteration": 5,
+              "record_residual": 3.001990434465332e-05,
+              "velocity_H1_error": 6.505950631368863e-06
+            },
+            {
+              "iteration": 6,
+              "record_residual": 2.999966281146257e-05,
+              "velocity_H1_error": 5.203493470130353e-06
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

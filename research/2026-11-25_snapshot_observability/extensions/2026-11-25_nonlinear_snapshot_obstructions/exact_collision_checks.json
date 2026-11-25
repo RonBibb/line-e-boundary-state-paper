@@ -1,0 +1,87 @@
+{
+  "platform": "Linux-7.0.0-42-generic-aarch64-with-glibc2.43",
+  "inhomogeneous_exact_pair": {
+    "a": 0.038127840627907895,
+    "b": 0.7658181507332589,
+    "k": 4,
+    "epsilon": 0.02,
+    "ratio": 20.085536923187668,
+    "determinant": -2.7755575615628914e-16,
+    "two_snapshot_observation_max_difference": 0.0,
+    "interior_P_max_difference": 0.3547303940850243,
+    "initial_Qs_peak_to_peak": 0.017279142916528212,
+    "terminal_Q_difference": 1.5686700135940108,
+    "uniform_asymptotic_speed_bounds": [
+      [
+        0.9311103231396448,
+        0.9688896768603551
+      ],
+      [
+        0.6530458725809158,
+        0.6795428949024953
+      ]
+    ]
+  },
+  "full_metric_collision": {
+    "a": 0.4516330147164512,
+    "b": 1.2276658170359058,
+    "interior_sample": 0.8396494158761785,
+    "k": 4,
+    "epsilon": 0.02,
+    "ratio": 2.718281828459045,
+    "determinant": -1.3877787807814457e-16,
+    "both_snapshots_P_Q_Qt_max_difference": 0.0,
+    "all_sampled_metric_gradient_max_difference": 2.168404344971009e-19,
+    "initial_Pt_max_difference": 0.048712116437750384,
+    "third_snapshot_P_max_difference": 0.00875931164404456,
+    "uniform_asymptotic_speed_upper_bound": 0.004456990096628337
+  },
+  "added_snapshot": {
+    "a": 0.4516330147164512,
+    "b": 1.2276658170359058,
+    "c": 1.0799515454344097,
+    "L": 5,
+    "predicted_resonant_limit": 0.1610274551296162,
+    "k_times_absolute_transfer": {
+      "5": 0.14156501091129306,
+      "50": 0.16074381304961433,
+      "500": 0.16102460049815995,
+      "5000": 0.16102742658145328
+    }
+  },
+  "linearized_detunings": {
+    "predicted_limit": 0.3970136175373235,
+    "rows": {
+      "16": {
+        "A_over_B_shift": 0.0015178368258902458,
+        "k2_times_shift": 0.3885662274279029,
+        "detuned_scaled_null": 0.0
+      },
+      "64": {
+        "A_over_B_shift": 9.679145531791818e-05,
+        "k2_times_shift": 0.39645780098219285,
+        "detuned_scaled_null": 0.0
+      },
+      "256": {
+        "A_over_B_shift": 6.057415155065931e-06,
+        "k2_times_shift": 0.39697875960240087,
+        "detuned_scaled_null": 0.0
+      },
+      "1024": {
+        "A_over_B_shift": 3.7861961216641953e-07,
+        "k2_times_shift": 0.39701143844701553,
+        "detuned_scaled_null": 1.5557538194652854e-61
+      },
+      "4096": {
+        "A_over_B_shift": 2.366384752645165e-08,
+        "k2_times_shift": 0.39701348134234504,
+        "detuned_scaled_null": 0.0
+      },
+      "16384": {
+        "A_over_B_shift": 1.4789909460586688e-09,
+        "k2_times_shift": 0.39701360902513017,
+        "detuned_scaled_null": 0.0
+      }
+    }
+  }
+}

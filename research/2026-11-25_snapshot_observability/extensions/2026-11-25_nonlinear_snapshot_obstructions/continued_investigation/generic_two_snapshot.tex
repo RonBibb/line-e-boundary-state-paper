@@ -1,0 +1,101 @@
+\subsection{Generic two-slice stability near inhomogeneous Cauchy data}
+\label{sec:generic-two}
+
+\begin{theorem}
+\label{th:generic-two}
+Fix any smooth periodic vacuum Gowdy Cauchy background
+at a regular time $a>0$ with $Q(a,\theta)$ nonconstant.
+There is a common short rational delay $d=\pi/L$ and
+a smooth analytic path of admissible Cauchy data starting
+at this background, keeping $Q(a)$ fixed, such that
+the full orbit snapshot at $a+d$ has a locally
+bi-Lipschitz missing-$P_t$ inverse at every point of
+the path outside a finite exceptional set.
+The velocity and snapshot norms are respectively
+$H^s$ and $H^{s+1}$ for integer $s\ge1$.
+In particular the given background can be approximated
+by admissible backgrounds with stable two-slice
+recovery, using the same delay. Stability persists
+in an open neighborhood of each nonexceptional point.
+\end{theorem}
+
+\begin{proof}
+Choose a nonvertical target geodesic whose $Q$ range
+contains the range of the given $Q(a)$ on a compact
+subarc away from its turning point. This is possible by
+taking a sufficiently large upper-half-plane semicircle
+with its center to one side of the prescribed range.
+Set the comparison initial $P$ to the value on that
+arc and take both comparison velocities zero.
+These data have a geodesic-image evolution.
+They meet the hypotheses of Proposition~\ref{prop:two-slice-open}.
+
+Interpolate the initial $P,P_t,Q_t$ linearly in a
+parameter $\zeta\in[0,1]$, from the given data to this
+comparison datum, keeping $Q(a)$ fixed.
+To impose the vacuum periodic momentum constraint,
+replace the trial $Q_t$ by
+\[
+ Q_t-\frac{\int_{\mathbb T}
+        (P_\theta P_t+e^{2P}Q_\theta Q_t)\,d\theta}
+       {\int_{\mathbb T}e^{2P}Q_\theta^2\,d\theta}\,Q_\theta .
+\]
+The denominator is strictly positive on the whole
+path. The correction vanishes at the endpoints.
+All Cauchy data vary real analytically in $\zeta$ in
+all fixed smooth Sobolev norms.
+
+There is a common short time interval of forward
+existence, including a small real extension of the
+parameter path beyond both endpoints. On a fixed
+arc $|\omega_\theta(a)|=e^{P(a)}|Q_\theta(a)|$
+has a uniform positive lower bound, since $Q(a)$
+is fixed. The expansion \eqref{eq:relative-expansion}
+therefore gives \eqref{eq:rotation-cover} uniformly
+for a sufficiently short $d>0$ on the path.
+Choose $d=\pi/L$ small enough for the same conclusion
+and the scalar tangent estimate at the comparison datum.
+
+Let $\mathcal A_\zeta:H^s\to (H^{s+1})^2$
+be the derivative of the full terminal orbit snapshot
+with respect to the missing initial $P_t$.
+The estimate \eqref{eq:rank-two-compact} holds for
+all real $\zeta$ in a neighborhood of the path.
+Thus $\mathcal A_\zeta$ has closed range and finite
+kernel, and its Hilbert normal operator
+$B_\zeta=\mathcal A_\zeta^\ast\mathcal A_\zeta$
+is Fredholm of index zero.
+The first-order energy formulation is real analytic
+in Cauchy data on a common small time interval.
+For instance, one may complexify the energy spaces and
+use the analytic implicit function theorem on the
+Duhamel equation on short subintervals, since the
+coordinate nonlinearity is analytic on the Sobolev
+algebra. This also gives analyticity of the observation
+derivative in bounded-operator norm.
+The normal operators consequently extend to a holomorphic
+Fredholm family on an open connected complex
+neighborhood of the real parameter path, using
+$B_z=\mathcal A_{\bar z}^\ast\mathcal A_z$.
+Fredholmness on a possibly thinner neighborhood follows
+from its openness in operator norm.
+
+At the comparison endpoint, the tangent argument in
+Proposition~\ref{prop:two-slice-open} gives a
+bounded-below $\mathcal A_1$; hence $B_1$ is invertible.
+The analytic Fredholm theorem makes the real
+noninvertibility set discrete in a neighborhood of
+$[0,1]$, and therefore finite on that compact interval.
+At any remaining point the derivative is bounded below.
+Continuity of the derivative and the same pairwise
+integration argument as in
+Theorem~\ref{th:fixed-rank-two} give the nonlinear
+inverse on its Cauchy neighborhood.
+\end{proof}
+
+There is no contradiction between density of stable
+nearby backgrounds at a short chosen delay and the exact
+different histories at the specially resonant delays.
+The theorem varies a Cauchy background at a fixed short
+delay; it makes no claim about a specified background
+and a specified arbitrary observation gap.

@@ -1,0 +1,108 @@
+{
+  "platform": "Linux-7.0.0-42-generic-aarch64-with-glibc2.43",
+  "period_lcm": 84,
+  "two_delays": [
+    0.2617993877991494,
+    0.1121997376282069
+  ],
+  "two_time_sidebands": {
+    "168": [
+      {
+        "input_frame_component": 0,
+        "observed_projected_sidebands": [
+          2.714566645226789e-05,
+          2.7241892972680343e-05
+        ],
+        "predicted_projected_sidebands": [
+          2.6499974299174513e-05,
+          2.7891280703245873e-05
+        ]
+      },
+      {
+        "input_frame_component": 1,
+        "observed_projected_sidebands": [
+          2.656404207969547e-05,
+          2.7826888433243976e-05
+        ],
+        "predicted_projected_sidebands": [
+          2.6564447413256758e-05,
+          2.7827399477121527e-05
+        ]
+      }
+    ],
+    "336": [
+      {
+        "input_frame_component": 0,
+        "observed_projected_sidebands": [
+          2.7171019387976018e-05,
+          2.7219105141581275e-05
+        ],
+        "predicted_projected_sidebands": [
+          2.6847969863113098e-05,
+          2.7543619755550824e-05
+        ]
+      },
+      {
+        "input_frame_component": 1,
+        "observed_projected_sidebands": [
+          2.6879770291303834e-05,
+          2.7511196644596946e-05
+        ],
+        "predicted_projected_sidebands": [
+          2.6880130245720537e-05,
+          2.7511607307608646e-05
+        ]
+      }
+    ],
+    "672": [
+      {
+        "input_frame_component": 0,
+        "observed_projected_sidebands": [
+          2.7183363057049234e-05,
+          2.720740249857483e-05
+        ],
+        "predicted_projected_sidebands": [
+          2.702192435661065e-05,
+          2.7369748889067507e-05
+        ]
+      },
+      {
+        "input_frame_component": 1,
+        "observed_projected_sidebands": [
+          2.7037631280051435e-05,
+          2.7353344854486456e-05
+        ],
+        "predicted_projected_sidebands": [
+          2.7037985783751732e-05,
+          2.7353724443259857e-05
+        ]
+      }
+    ]
+  },
+  "single_time_holonomy": [
+    {
+      "amplitude": 0.03,
+      "mean_angle_divided_by_amplitude_squared": 0.017680211191196792,
+      "max_angular_variation": 2.475496417824862e-12,
+      "predicted_ratio": 0.017680215316984865
+    },
+    {
+      "amplitude": 0.06,
+      "mean_angle_divided_by_amplitude_squared": 0.017680198813790095,
+      "max_angular_variation": 3.9607816253671956e-11,
+      "predicted_ratio": 0.017680215316984865
+    },
+    {
+      "amplitude": 0.12,
+      "mean_angle_divided_by_amplitude_squared": 0.01768014930354936,
+      "max_angular_variation": 6.337358174584966e-10,
+      "predicted_ratio": 0.017680215316984865
+    },
+    {
+      "amplitude": 0.24,
+      "mean_angle_divided_by_amplitude_squared": 0.017679951252729365,
+      "max_angular_variation": 1.0140498208927734e-08,
+      "predicted_ratio": 0.017680215316984865
+    }
+  ]
+}

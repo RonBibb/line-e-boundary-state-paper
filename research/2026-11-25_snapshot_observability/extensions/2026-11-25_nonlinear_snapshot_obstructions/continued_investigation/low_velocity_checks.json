@@ -1,0 +1,162 @@
+{
+  "platform": "Linux-7.0.0-42-generic-aarch64-with-glibc2.43",
+  "reference_speed": 0.36,
+  "analytic_H3_radius": 0.0014687802221262005,
+  "reference_solution": {
+    "initial_H3_distance_to_vertical": 0.0007071068333218622,
+    "max_normalized_H3_state_increase": 0.0,
+    "initial_momentum_constraint_defect": 0.0,
+    "sample_tail_depths": [
+      0.0,
+      4.0,
+      8.0,
+      12.0,
+      16.0,
+      20.0,
+      24.0,
+      28.0
+    ],
+    "damped_H2_norms": [
+      0.0005000000190429688,
+      5.706174257135709e-05,
+      1.327674783725335e-05,
+      3.140115851332691e-06,
+      7.438573807897833e-07,
+      1.762377018400521e-07,
+      4.175561241304453e-08,
+      9.893086276667105e-09
+    ],
+    "tail_errors_against_depth_28": [
+      [
+        0.0001555813965246052,
+        6.226449380297277e-05,
+        0.0003164147871604776,
+        4.483043782906514e-05,
+        0.00016691714875296935
+      ],
+      [
+        4.78426798232502e-08,
+        2.2210582826002776e-07,
+        2.6001776231784325e-05,
+        1.595937667730358e-07,
+        4.6742303647914265e-07
+      ],
+      [
+        2.3001566442829538e-10,
+        2.1502918075320235e-09,
+        1.4610433889334743e-06,
+        1.3300268290950774e-09,
+        2.5741566996746876e-09
+      ],
+      [
+        1.257725870579867e-11,
+        1.6838812895999742e-10,
+        8.201573415031615e-08,
+        1.0866683716449188e-10,
+        1.530978833111393e-11
+      ],
+      [
+        7.118929900724715e-13,
+        1.2271208099256702e-11,
+        4.603220843941893e-09,
+        8.12950918879353e-12,
+        9.146802098024986e-14
+      ],
+      [
+        9.830675907506169e-14,
+        8.438714715219836e-13,
+        2.576359483208024e-10,
+        5.681060025705639e-13,
+        5.465940211170894e-16
+      ],
+      [
+        8.051104672205095e-14,
+        5.281753074820014e-14,
+        1.3693880700558316e-11,
+        3.6007617731149876e-14,
+        3.292910425976547e-18
+      ]
+    ],
+    "limiting_momentum_identity_H1_error": 1.2353402970372735e-14,
+    "Pi_direct_versus_conservation_H1_error": 1.0198426106354536e-12
+  },
+  "output_field_order": [
+    "v",
+    "p",
+    "q",
+    "lambda_infinity",
+    "Pi_infinity"
+  ],
+  "depth_28_grid_comparison": [
+    3.3054088519426136e-14,
+    7.976650549207634e-14,
+    7.18391690874977e-15,
+    5.74121775358609e-14,
+    2.315850276163718e-15
+  ],
+  "coarse_momentum_identity_H1_error": 3.355876647742711e-16,
+  "positive_angle_test": [
+    {
+      "amplitude": 0.00025,
+      "predicted_angle_divided_by_amplitude_squared": -2.944784953480295,
+      "observed_mean_divided_by_amplitude_squared": -2.9447849709675897,
+      "smallest_absolute_angle": 1.8404906066002495e-07,
+      "angle_variation": 5.034086212121758e-17
+    },
+    {
+      "amplitude": 0.002,
+      "predicted_angle_divided_by_amplitude_squared": -2.944784953480295,
+      "observed_mean_divided_by_amplitude_squared": -2.9447860726409756,
+      "smallest_absolute_angle": 1.1779144290453619e-05,
+      "angle_variation": 2.3109769306528527e-16
+    },
+    {
+      "amplitude": 0.02,
+      "predicted_angle_divided_by_amplitude_squared": -2.944784953480295,
+      "observed_mean_divided_by_amplitude_squared": -2.944896859739424,
+      "smallest_absolute_angle": 0.0011779587438916408,
+      "angle_variation": 8.418613028915445e-15
+    }
+  ],
+  "perturbation_comparisons": [
+    {
+      "velocity_perturbation_amplitude": 3e-05,
+      "two_later_snapshot_H4_difference": 0.0004994746668258734,
+      "asymptotic_differences": [
+        2.374370502330779e-05,
+        7.131207251768361e-05,
+        1.946086633764979e-05,
+        5.134884010899973e-05,
+        4.649183126489676e-05
+      ],
+      "largest_individual_output_over_input_ratio": 0.14277415303335975,
+      "initial_H3_distance_to_vertical": 0.0010031201691375142
+    },
+    {
+      "velocity_perturbation_amplitude": 1.5e-05,
+      "two_later_snapshot_H4_difference": 0.00024973733545553405,
+      "asymptotic_differences": [
+        1.1871852474705991e-05,
+        3.56560363580289e-05,
+        9.730433007674494e-06,
+        2.567441988099799e-05,
+        2.324591557943961e-05
+      ],
+      "largest_individual_output_over_input_ratio": 0.14277415226277806,
+      "initial_H3_distance_to_vertical": 0.0007915570565224404
+    },
+    {
+      "velocity_perturbation_amplitude": 7.5e-06,
+      "two_later_snapshot_H4_difference": 0.00012486867366763533,
+      "asymptotic_differences": [
+        5.9359262296877894e-06,
+        1.7828018210759177e-05,
+        4.865216548941719e-06,
+        1.2837209901709e-05,
+        1.1622957778492216e-05
+      ],
+      "largest_individual_output_over_input_ratio": 0.14277414572539032,
+      "initial_H3_distance_to_vertical": 0.0007291369547145928
+    }
+  ]
+}

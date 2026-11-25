@@ -1,0 +1,51 @@
+/Users/ronbibb/Library/CloudStorage/OneDrive-Personal(2)/Documents/Academic/bb-cbe3/run_cbe3.py:200: RuntimeWarning: invalid value encountered in divide
+  score += g / thr
+{
+  "T0": true,
+  "T1_true": true,
+  "T1_false": true,
+  "T2": true,
+  "T2_matrix": {
+    "true_spike": [
+      [
+        "TRUE",
+        -0.0506
+      ],
+      [
+        "TRUE",
+        0.0506
+      ]
+    ],
+    "false_spike": [
+      [
+        "TRANSIENT",
+        -0.023
+      ]
+    ],
+    "kasner": [],
+    "rotated_kasner": []
+  },
+  "T3": {
+    "1.0": {
+      "D_center_max": 0.2597801017517898,
+      "D_flank_max": 0.08719517827299182
+    },
+    "2.0": {
+      "D_center_max": 0.5715037363307021,
+      "D_flank_max": 0.03938820781414041
+    },
+    "4.0": {
+      "D_center_max": 0.3120125696541459,
+      "D_flank_max": 0.02366183748687651
+    }
+  },
+  "T4": {
+    "passes": true,
+    "sup_D": {
+      "2.0": 0.00023812486803388133,
+      "4.0": 2.2420618112207826e-05
+    },
+    "w_hat": 0.550000000000037
+  },
+  "outcome": "CBE-3T-PASS \u2014 detector and spike taxonomy validated on the exact family; four-function VTD loss quantified (T3); spike-aware reconstruction restores equivalence for the exact family (T4). CBE-3 production finding upgraded to validated-class spike mismatch against four-function VTD; enlarged-data question for production spikes remains open (CBE-3b)."
+}

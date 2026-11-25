@@ -1,0 +1,501 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,mathtools}
+\usepackage[hidelinks]{hyperref}
+\usepackage{pgfplots,needspace}
+\pgfplotsset{compat=1.18}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newcommand{\T}{\mathbb T}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\HS}[1]{H^{#1}(\T)}
+\title{Recovery of Polarized Gowdy Fields from Two Time Slices}
+\author{Ronald Bibb}
+\date{Working draft, 25 November 2026}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We consider two full spatial snapshots of a polarized Gowdy field on
+a marked torus at finite areal times. For a rational separation
+$b-a=\pi p/q$ and outside a locally finite set of base times, the
+two-snapshot map determines every smooth field solution. Its stability
+depends on the target. Field slices on the lattice $a+(\pi/q)\Z$
+can be recovered without loss of Sobolev regularity. Every other fixed
+positive target time costs exactly one derivative. Recovery of the limiting
+log-time slope at the singular end costs exactly three halves.
+The distinction comes from an order-$k^{-1}$ shift of the high-frequency
+phase. This shift lifts the leading-order resonances, while the target
+slice can cancel their contribution. Numerical checks compare the exact
+Bessel transfer with an independent ODE integration. Sampling each
+frequency band at its own time gives uniform conditioning with two
+stored coefficients per mode and an order-logarithmic number of
+observation times. A finite-window test in nonlinear vacuum Gowdy
+illustrates the effect of the reconstruction rule. For the original
+production case, the localized score falls from $0.822$ to $0.00298$
+using the same observations and a different restart.
+\end{abstract}
+
+\section{Two snapshots and the choice of target}
+The polarized Gowdy equations in areal time $t>0$ include
+\begin{equation}
+ f_{tt}+t^{-1}f_t-f_{\theta\theta}=0,\qquad \theta\in\T=\mathbb R/(2\pi\Z).
+ \label{wave}
+\end{equation}
+Here $f$ is the polarized wave field $P$, or an identically evolving
+rescaled massless scalar in the symmetric Einstein--scalar model. We hold
+the coordinate period and the marking fixed. Two measurements of $f$
+can be encoded by a secant slope and an intercept. The conditioning of
+recovery depends on the evolution represented by those measurements.
+A large error from a prescribed restart rule alone leaves both the
+injectivity and the stability of the underlying observation map open.
+
+For constant-coefficient waves, pointwise-in-time observation theory
+relates stability to arithmetic properties of the sampling times. Vest's
+loaded-string result treats two rationally spaced measurements with
+a one-derivative loss \cite{szi,vest}. Christensen et al. identify
+a lattice of determined snapshots for the free wave equation on
+$\mathbb R^n$ \cite[Theorems 2.6--2.7]{snapshot}. For Gowdy,
+Amorim, Bernardi and LeFloch give two numerical evolution schemes,
+examine sharp profiles, and propose a Cauchy-to-asymptotic-to-Cauchy
+strategy \cite[Sections 3 and 4.2.4--4.2.5]{amorim}. We ask which
+specific targets are stable under the same finite-time observation map.
+The result uses a phase correction from the $t^{-1}f_t$ term and a
+comparison of its effect at the observation and target times.
+It gives sharp estimates for the field and the limiting slope on the same
+data. Li's Kasner scattering estimates describe the regularity of singular
+data when full Cauchy data are given \cite[Theorem 1.3]{li}. In our
+two-snapshot problem, recovering a missing Cauchy component contributes
+an additional loss.
+
+\section{Sharp finite- and infinite-depth estimates}
+Set $y=\sqrt t\,f$ and $W(t)=1/(4t^2)$. For each nonzero Fourier mode
+write $k$ for the magnitude of the mode number. Then
+\begin{equation}
+ y_k''+(k^2+W)y_k=0 .
+ \label{ode}
+\end{equation}
+Let $C_k(t)$ and $S_k(t)$ have data $(1,0)$ and $(0,k)$, respectively,
+at $a$. The exact snapshot formulas are
+\begin{equation}
+ \frac{y_k'(a)}{k}=\frac{y_k(b)-C_k(b)y_k(a)}{S_k(b)},\qquad
+ y_k(c)=C_k(c)y_k(a)+\frac{S_k(c)}{S_k(b)}
+ [y_k(b)-C_k(b)y_k(a)].
+ \label{multipliers}
+\end{equation}
+The zero mode of $f$ is $A+B\log t$ and is determined at any two
+distinct positive times. Let $M_s=\|f(a)\|_{\HS{s}}+\|f(b)\|_{\HS{s}}$.
+The estimates below also apply to differences of solutions.
+
+\begin{theorem}
+\label{thm}
+Fix $L=\pi p/q>0$ with $p,q$ positive and coprime. For $a>0$ set
+$b=a+L$. There is a locally finite set of exceptional $a$.
+Outside this set, the two snapshots determine a unique smooth solution.
+A sufficient condition for exclusion from the exceptional set is
+$\int_a^b W(u)\,du<\pi/q$. The alternative sufficient bound $\int_a^b W(u)\,du<\pi/(p+1)$ permits pairs arbitrarily near zero by reducing the gap.
+For every real $s$ the following hold.
+\begin{enumerate}
+\item The Cauchy field velocity $f_t(a)$ has
+$\|f_t(a)\|_{\HS{s-2}}\lesssim M_s$ with sharp loss two for the unscaled
+velocity. Equivalently, relative to the usual order-one differentiation
+in the Cauchy-data norm, reconstruction costs one additional derivative.
+\item For fixed $c>0$, if $q(c-a)/\pi$ is an integer, then
+$\|f(c)\|_{\HS{s}}\lesssim M_s$. Otherwise
+$\|f(c)\|_{\HS{s-1}}\lesssim M_s$, and every smaller loss fails.
+\item For smooth solutions let $v=-\lim_{t\downarrow0}t f_t$.
+Then $\|v\|_{\HS{s-3/2}}\lesssim M_s$, and every smaller loss fails.
+\end{enumerate}
+The constants can depend on the fixed times. The estimates with
+Sobolev data extend from smooth data by continuity.
+\end{theorem}
+
+\begin{proof}
+On each compact time interval in $(0,\infty)$ containing $a$, a
+Volterra representation gives
+\begin{align}
+ C_k(t)&=\cos(k(t-a))+O(k^{-1}),\\
+ S_k(t)&=\sin(k(t-a))
+       +\frac{\cos(k(t-a))}{2k}\int_a^t W(u)\,du+O(k^{-2}).
+ \label{phase}
+\end{align}
+For the second equation, substitute the leading sine once into
+$S_k(t)=\sin(k(t-a))-k^{-1}\int_a^t \sin(k(t-u))W(u)S_k(u)\,du$.
+The product-to-sum formula gives the displayed correction. Integration
+by parts controls the oscillatory term. A Volterra bound controls the
+second and higher iterations. These estimates are uniform for $a,b$ in
+a compact subset of the positive times. For $q\nmid k$, the leading
+sine at $b$ is bounded away from zero for $q>1$. For $q\mid k$, the
+first correction is nonzero and $|S_k(b)|\asymp k^{-1}$.
+
+For the sufficient condition, write
+$S_k=r_k\sin\varphi_k$,
+$S_k'/k=r_k\cos\varphi_k$, with $r_k(a)=1$ and $\varphi_k(a)=0$.
+Then $\varphi_k'=k+(W/k)\sin^2\varphi_k$ and $r_k>0$.
+The phase at $b$ is strictly greater than $kL$ by at most
+$k^{-1}\int_a^b W(u)\,du$. The sufficient bound places that phase
+strictly below the next multiple of $\pi$, including when $kL$
+starts at a multiple. For the alternative bound set $I=\int_a^b W$.
+The first argument applies if $I/k<\pi/q$. In the remaining modes
+$kL+I/k\le pI+I<\pi$, with positive phase. For general $a$, the large-$k$ bounds exclude
+all but finitely many modes on each compact subinterval of $a>0$.
+For each remaining mode $S_k(a+L)$ is analytic as a function of $a$
+by the Bessel formula for \eqref{ode}. It is nonzero for sufficiently
+large $a$ by the sufficient condition. Its zeros are isolated. These
+facts give local finiteness of the exceptional set. The inverse
+of \eqref{multipliers} has polynomial growth outside this set.
+This also yields the smooth-data existence statement for arbitrary
+smooth snapshot pairs.
+
+The first part follows from \eqref{multipliers}. For sharpness take
+one mode at a time with $y_k(a)=0$, $y_k'(a)=k$ and $k$ divisible by
+$q$. Its sole nonzero snapshot amplitude is of order $k^{-1}$,
+and its Cauchy velocity amplitude is of order $k$.
+These real single-mode fields satisfy the polarized momentum
+integrability condition when taken as vacuum $P$ data.
+For the second part use $S_k(c)/S_k(b)$ in \eqref{multipliers}.
+It is bounded for $q\nmid k$. For $q\mid k$ the quotient is
+bounded when $q(c-a)/\pi\in\Z$, since both leading sines vanish.
+At any other $c$ there are infinitely many $k=qm$ with
+$|\sin(k(c-a))|$ bounded below. For rational noninteger
+$q(c-a)/\pi$ take a nonzero residue class. For irrational values use
+density of the irrational rotation. Along that sequence the same
+single-mode examples have target amplitude bounded below and
+snapshot amplitude $O(k^{-1})$. Multiplication by the constant
+factors $\sqrt a,\sqrt b,\sqrt c$ leaves all exponents unchanged.
+
+For the last part write
+$f_k(t)=A_kJ_0(kt)+B_kY_0(kt)$.
+The Wronskian is $2/(\pi t)$ in areal time. Thus
+\[
+ B_k=\frac{\pi}{2}\sqrt a\left[
+ J_0(ka)y'_k(a)
+ -\left(kJ'_0(ka)+\frac{J_0(ka)}{2a}\right)y_k(a)\right].
+\]
+The slope is $-2B_k/\pi$. The small-argument limits and high-frequency
+amplitudes of $J_0$ and its derivative imply
+$|v_k|\lesssim \sqrt k (|y_k(a)|+|y'_k(a)|/k)$
+\cite[Sections 10.5, 10.7 and 10.17]{dlmf}. This gives the upper
+bound. On the single-mode tests $|v_k|=k\sqrt a |J_0(ka)|$.
+Along an infinite subsequence of $k=qm$, $ka$ approaches $0$ modulo
+$\pi$, or equals $0$ modulo $\pi$ when $qa/\pi$ is rational.
+The leading phase of $J_0$ is $ka-\pi/4$, so the slope is bounded
+below by a constant times $\sqrt k$ along that subsequence.
+The ratio to the snapshot amplitude is at least order $k^{3/2}$.
+The zero mode obeys finite-dimensional bounds. Modewise convergence
+defining $v$ for smooth data is consistent with the smooth polarized
+asymptotics \cite{cim}. This completes the proof.
+\end{proof}
+
+The finite-time target result also holds for the transformed periodic
+wave equation with a time-only $C^1$ potential on the compact interval
+of interest, provided its signed integral between the observations
+is nonzero and every low-mode denominator in \eqref{multipliers}
+is nonzero. Indeed these are the hypotheses used for the quotient
+bounds and the off-lattice counterexamples. A strictly positive
+potential and the small-integral condition give a uniform way to
+verify the low-mode hypothesis. The limiting slope claim uses the
+inverse-square Gowdy potential.
+
+Actual collisions can occur when the observation multiplier vanishes. For fixed $a$ and a nonzero mode $k$, the
+nontrivial $S_k$ has positive-time zeros beyond $a$ by Sturm comparison
+with the constant coefficient $k^2$. Select one such $b$.
+The polarized vacuum fields $P=0$ and
+$P=\epsilon S_k(t)\cos(k\theta)/\sqrt t$ agree at $a,b$
+and differ at intervening slices. Both satisfy the periodic
+momentum constraint. Each solution's free metric constant
+can be chosen to give the same single metric anchor at $a$.
+One history then has a spatially varying $P$ at the target,
+and the other has constant $P$. This supplies a case of actual
+non-injectivity for selected finite snapshots and a different sampling
+regime from Theorem~\ref{thm}.
+
+\paragraph{Marked geometry at a stable field slice.}
+The field $P$ gives half the logarithm of the ratio of the squared
+lengths of the two marked Killing generators on a polarized slice.
+Stability of this field target need not extend to its normal
+derivative. In vacuum the directional expansion asymmetry is
+$s_P=(H_x-H_y)/\Theta=-4P_\tau/(3+\lambda_\tau)$ in the convention
+below. Linearize about $P=0$, $\lambda=0$ with fixed metric anchor.
+The first variation is $-4\delta P_\tau/3$.
+For a lattice time $c$, the same single-mode input used above has
+$|S_k'(c)|\asymp k$ on $q\mid k$, by the differentiated Volterra
+formula. Thus the linearized $s_P$ costs exactly two derivatives from
+two field snapshots even when the intrinsic field $P(c)$ has no loss.
+The upper estimate follows from $|S_k'|+|C_k'|=O(k)$ and the inverse
+multiplier. This claim concerns the derivative of the observable map
+at a homogeneous background.
+
+\Needspace{6\baselineskip}
+\begin{proposition}[Timing tolerance at a finite bandwidth]
+Under the nonvanishing hypothesis of Theorem~\ref{thm}, consider a
+spectral cutoff $K$ and an on-lattice target $c>0$. Allow the known
+actual observation time and target to be $b+\epsilon$ and $c+\eta$.
+There are fixed $\epsilon_0,\eta_0>0$ such that the target gain remains
+bounded independently of $K$ for $|\epsilon|\le\epsilon_0 K^{-2}$
+and $|\eta|\le\eta_0 K^{-2}$.
+The scale $K^{-2}$ is sharp in two senses.
+\begin{enumerate}
+\item For all sufficiently large $k$ divisible by $q$ there is a blind
+observation time
+\[
+ b_k=b-\frac{1}{2k^2}\int_a^b W(u)\,du+O(k^{-3}).
+\]
+Allowing two-sided observation perturbations on a scale asymptotically
+larger than $K^{-2}$ eventually includes a kernel at some $k\le K$.
+\item With observation times fixed, a target-time tolerance $r_K$
+such that $K^2r_K\to\infty$ gives unbounded worst-case target gain on
+$|\eta|\le r_K$.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+On fixed compact intervals $|C_k|\lesssim1$ and
+$|S_k'|\lesssim k$ by differentiation of the Volterra formula.
+For $k\le K$ the change in $S_k(b)$ is at most
+$O(k|\epsilon|)\le O(\epsilon_0/k)$, and
+$|S_k(b)|\gtrsim1/k$ on all modes with $k\ge1$.
+Choose $\epsilon_0$ to retain half of this lower bound.
+On multiples of $q$, $S_k(c)=O(k^{-1})$, and this remains true
+when $|\eta|\le\eta_0K^{-2}$. On nonmultiples the denominator
+starts uniformly bounded below and can also retain half of that bound.
+Use the multiplier formula and the explicit zero mode to obtain
+the uniform estimate. All perturbations are small enough to keep
+times positive and the observation pair distinct.
+
+For the first sharpness statement, $S_k(b)=(-1)^{kp/q}
+(\int_a^b W/(2k))+O(k^{-2})$ when $q\mid k$.
+For $|t-b|=O(k^{-2})$ the differentiated Volterra formula yields
+$S_k'(t)=(-1)^{kp/q} k+O(1)$. The intermediate value theorem
+and this derivative give the unique nearby root and its expansion.
+Taking the largest multiple of $q$ at most $K$ gives the stated
+obstruction. For the second sharpness statement, use that same mode
+and take $\eta=\min(r_K,1/(2k))$, further capped if needed to stay
+on a fixed compact positive interval. The leading sine at $c+\eta$
+has absolute value $\gtrsim k\eta$. Dividing by $S_k(b)$ gives
+growth at least a constant times $\min(k^2 r_K,k)$ up to a bounded
+error. The multiplier of the second snapshot alone is that quotient.
+\end{proof}
+
+\section{A frequency-dependent storage rule}
+\label{schedule}
+The arithmetic obstruction comes from storing every mode at the
+same second time. For a simulation with access to Fourier coefficients
+during evolution, keep one coefficient at the reference slice and
+one at a band-dependent time. Each nonzero mode uses the same number
+of stored coefficients as in two complete snapshots.
+
+\begin{proposition}[Band-dependent observation times]
+Fix $a>0$, a compact right observation interval $[a,a+T]$, and a
+frequency cutoff $K$. There is a schedule using
+$1+\lfloor\log_2 K\rfloor$ distinct additional times with uniform
+reconstruction of $(y_k(a),y_k'(a)/k)$ for $1\le k\le K$.
+Each mode uses one additional measurement.
+The order $\log K$ is necessary for uniform modewise conditioning
+with the maximum norm on the measured coefficients, even if all modes
+are available at each time and the times may depend on $K$.
+\end{proposition}
+
+\begin{proof}
+Let $W_* = \sup_{[a,a+T]} W$. Choose $0<d\le
+\min\{T,\pi/[4(2+W_*)]\}$. For $2^j\le k<2^{j+1}$
+save the second coefficient at $t_j=a+d\,2^{-j}$.
+The Pr\"ufer phase there lies between $d$ and $(2+W_*)d\le\pi/4$.
+The amplitude is bounded below uniformly because
+$|r_k'/r_k|\le W_*/(2k)$.
+Consequently $S_k(t_j)$ is bounded away from zero uniformly.
+The zero mode uses $t_0$ and its elementary two-time formula.
+Solving \eqref{multipliers} with $b=t_j$ gives the conclusion.
+With the natural Sobolev norm on the sequence of stored coefficients,
+every fixed positive-time field is recovered without loss, and the
+limiting slope still costs one half derivative from its high-frequency
+Bessel factor. The single-mode tests with $ka$ near $0$ modulo $\pi$
+show sharpness of the half derivative.
+
+For the lower bound, suppose that an estimate with constant $M$,
+independent of $K$, holds for the missing normalized velocity in the
+maximum norm of the observed coefficients. Setting the reference
+coefficient to zero and normalized velocity to one gives
+$1\le M\max_i |S_k(t_i)|$ for all $1\le k\le K$.
+On the fixed time interval, \eqref{phase} gives an error bounded by
+$B/k$ in replacing $S_k(t_i)$ by $\sin(k(t_i-a))$.
+Fix an integer $\ell> 4MB$ with $\ell\ge1$ and an integer
+$R>4\pi M$ with $R\ge2$.
+Partition the unit $m$-cube into $R^m$ equal boxes and compare
+$R^m+1$ multiples of the vector with entries
+$\ell(t_i-a)/\pi$ modulo one. Two inhabit the same box.
+Their positive index difference gives a mode
+$\ell\le k\le \ell R^m$ with $|\sin(k(t_i-a))|\le\pi/R$
+for every $i$. If $\ell R^m\le K$ this contradicts the uniform
+bound. Thus $m>\log_R(K/\ell)$.
+\end{proof}
+
+The schedule assumes full spatial data at the chosen times or
+the ability to compute a Fourier band in situ. It stores as many
+coefficients as two complete snapshots, while requiring access at
+more distinct times. Perturbing a band time by at most a sufficiently
+small multiple of $1/K$ retains the uniform bound through cutoff $K$,
+since $S_k'=O(k)$. This tradeoff is different from observability
+using a fixed number of time instants and a weakened Cauchy norm
+\cite[Theorem 4.1]{vest}. It is related to dynamical sampling, which
+combines measurements at different times under a specified evolution
+\cite{aldroubi}.
+
+\paragraph{Euler--Poisson--Darboux extension.}
+The finite-time result and the storage rule extend to
+$f_{tt}+(\alpha/t)f_t-f_{\theta\theta}=0$ for $0<\alpha<2$.
+Indeed $y=t^{\alpha/2}f$ gives
+$W=\alpha(2-\alpha)/(4t^2)>0$. The same analysis gives a sharp
+snapshot-to-singular-flux loss $2-\alpha/2$ with a rational pair,
+and $1-\alpha/2$ with the band schedule. Here the target flux is
+$\lim_{t\downarrow0}t^\alpha f_t$.
+To see the new exponent, put $\nu=(\alpha-1)/2$ and use
+$f_k=t^{-\nu}(A_kJ_\nu(kt)+B_kY_\nu(kt))$.
+For $\nu\ne0$ the term proportional to $t^{-2\nu}$ in $f_k$
+has coefficient a nonzero constant times $k^{-\nu}B_k$, by the
+$J_{-\nu}$ term in the connection formula for $Y_\nu$. The
+constant term in $f_k$ has zero limiting flux. The $\nu=0$
+calculation gives the logarithmic case above.
+The Wronskian for $\sqrt tJ_\nu(kt),\sqrt tY_\nu(kt)$ gives
+$|B_k|\lesssim k^{1/2}(|y_k(a)|+|y_k'(a)|/k)$. On the
+single-mode witnesses with $y_k(a)=0$ and $y_k'(a)=k$, the
+leading Bessel phase gives $|B_k|\gtrsim\sqrt k$ along the
+subsequence with $ka\to0$ modulo $\pi$. The temporal inversion
+factors then give the claimed losses. At $k=0$ integrate the
+power-law solution directly. Sharp regularity estimates for
+the singular Cauchy problem for this PDE predate the present
+observation problem \cite{epd}.
+
+\section{Numerical transfer check}
+Choose $a=\pi/4$ and $b=a+3\pi/16$. The target $c=a+4\pi/16$
+lies on the stable lattice; $c'=a+3.5\pi/16$ lies off it.
+For observations of $y$ the Euclidean gain to one $y$ coefficient is
+\[
+ G_k(c)=\left(\left|C_k(c)-C_k(b)S_k(c)/S_k(b)\right|^2+
+                      \left|S_k(c)/S_k(b)\right|^2\right)^{1/2}.
+\]
+On modes $1$ through $65536$ the largest sampled gain at $c$ was
+$6.04$. At $c'$ it reached $1.36\times10^6$ at mode $65520$,
+on the predicted linear-growth subsequence. On near-resonant modes
+$|kS_k(b)|$ approaches $\frac12\int_a^b W=0.0682093$.
+Six comparisons between the exact Bessel formula and a separate
+DOP853 integration gave maximum error $2.51\times10^{-12}$ in
+the two transfer components. These computations illustrate
+the continuum argument, whose bounds and lower witnesses follow
+from \eqref{phase}. Shifting the second observation to a modal
+root gave $k^2(b-b_k)=0.0682023$ at $k=128$ and $0.06820925$
+at $k=8192$. Moving the lattice target by $1/k^2$ gave gain
+close to $21.69$ on those tested modes. Moving it by $1/(2k)$
+raised the gains from about $1.27\times10^3$ to $8.14\times10^4$.
+The band schedule used 17 additional times, with one coefficient
+from those times per mode. Its maximum sampled normalized
+velocity gain was 4.29. Figure~\ref{fig:gains} compares the
+field gain at the two target slices.
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\begin{loglogaxis}[
+  width=0.92\linewidth,height=6.2cm,
+  xlabel={Spatial Fourier mode $k$},ylabel={Gain to the weighted field $y$},
+  grid=major,major grid style={gray!20},
+  legend cell align=left,legend pos=north west,
+  tick label style={font=\small},legend style={font=\footnotesize,draw=none}
+]
+\addplot+[red!70!black,mark=triangle*,thick] table[x=k,y=fixed_offset,col sep=comma]{mode_gains.csv};
+\addlegendentry{Fixed pair, off-lattice target}
+\addplot+[blue!70!black,mark=*,thick] table[x=k,y=fixed_aligned,col sep=comma]{mode_gains.csv};
+\addlegendentry{Fixed pair, lattice target}
+\addplot+[teal!75!black,mark=square*,dashed,thick] table[x=k,y=band_offset,col sep=comma]{mode_gains.csv};
+\addlegendentry{Band schedule, off-lattice target}
+\end{loglogaxis}
+\end{tikzpicture}
+\caption{Selected modes $k=16(2m+1)$ on the near-resonant subsequence.
+The two targets differ in areal time by $\pi/32$.
+The band schedule uses the same number of stored coefficients per mode.}
+\label{fig:gains}
+\end{figure}
+
+\paragraph{A late-window check.}
+For comparison with the original extraction window, use backward log
+time $u=\tau_f-\tau$ and let $L_k(u)$ be the unit initial derivative
+solution of $L_k''+k^2e^{-2(\tau_f-u)}L_k=0$ with $L_k(0)=0$.
+If $M=K^2e^{-2(\tau_f-\Delta)}$ and $\Delta\sqrt M<\pi$,
+Sturm comparison gives $L_k>0$ on $(0,\Delta]$ for $k\le K$.
+Concavity gives $L_k(u)\le u$. The Volterra formula then gives
+\[
+  1-M\Delta^2/6\ \le\ L_k(\Delta)/\Delta\ \le 1.
+\]
+For $\Delta=2$ and the Nyquist bound $K=2048$, the relative bound
+$M\Delta^2/6$ is $5.8\times10^{-3}$ at $\tau_f=12$ and
+$3.6\times10^{-8}$ at $\tau_f=18$. These are statements about the
+polarized continuum modal evolution over the recorded window.
+They exclude a linear phase ambiguity through this bandwidth
+for those windows. The nonlinear coupling can still give a
+substantial bias to a slope-based velocity estimate.
+
+\input{corrected_benchmarks.tex}
+
+\clearpage
+\begin{thebibliography}{99}
+\bibitem{aldroubi} A. Aldroubi, C. Cabrelli, U. Molter and S. Tang,
+Dynamical sampling, \href{https://arxiv.org/abs/1409.8333}{arXiv:1409.8333}.
+\bibitem{amorim} P. Amorim, C. Bernardi and P. G. LeFloch,
+Computing Gowdy spacetimes via spectral evolution in future and past directions,
+\emph{Class. Quantum Grav.} 26 (2009), 025007.
+\href{https://doi.org/10.1088/0264-9381/26/2/025007}{DOI}.
+
+\bibitem{epd} P. Amorim and P. G. LeFloch, Sharp estimates for periodic
+solutions to the Euler--Poisson--Darboux equation,
+\emph{Port. Math.} 65 (2008), 387--429.
+\href{https://ems.press/content/serial-article-files/44605}{Full text}.
+
+\bibitem{beyer} F. Beyer and P. G. LeFloch, Second-order hyperbolic
+Fuchsian systems. Gowdy spacetimes and the Fuchsian numerical algorithm,
+\href{https://arxiv.org/abs/1006.2525}{arXiv:1006.2525}.
+
+\bibitem{cim} P. T. Chru\'sciel, J. Isenberg and V. Moncrief,
+Strong cosmic censorship in polarized Gowdy spacetimes,
+\emph{Class. Quantum Grav.} 7 (1990), 1671--1680.
+\href{https://homepage.univie.ac.at/piotr.chrusciel/papers/chrusciel/PolarisedGowdyCQG.pdf}{Full text}.
+
+\bibitem{snapshot} J. Christensen, F. Gonzalez, T. Kakehi and J. Wang,
+The snapshot problem for the wave equation,
+\emph{Advances in Mathematics} 444 (2024), 109629.
+\href{https://arxiv.org/abs/2308.12208}{Preprint}.
+
+\bibitem{li} W. Li, Scattering towards the singularity for the wave
+equation and the linearized Einstein--scalar field system in Kasner spacetimes,
+\href{https://arxiv.org/abs/2401.08437}{arXiv:2401.08437}.
+
+\bibitem{lim} W. C. Lim, New explicit spike solutions---non-local
+component of the generalized Mixmaster attractor,
+\emph{Class. Quantum Grav.} 25 (2008), 045014.
+\href{https://doi.org/10.1088/0264-9381/25/4/045014}{DOI}.
+
+\bibitem{lim2} W. C. Lim, L. Andersson, D. Garfinkle and F. Pretorius,
+Spikes in the mixmaster regime of $G_2$ cosmologies,
+\emph{Phys. Rev. D} 79 (2009), 123526.
+\href{https://arxiv.org/abs/0904.1546}{Preprint}.
+
+\bibitem{rw} A. D. Rendall and M. Weaver,
+Manufacture of Gowdy spacetimes with spikes,
+\emph{Class. Quantum Grav.} 18 (2001), 2959--2975.
+\href{https://arxiv.org/abs/gr-qc/0103102}{Preprint}.
+
+\bibitem{szi} A. Sz\'ij\'art\'o and J. Heged\H{u}s,
+Observation problems posed for the Klein--Gordon equation,
+\emph{Electron. J. Qual. Theory Differ. Equ.} 2012, No. 7, 1--13.
+\href{https://doi.org/10.14232/ejqtde.2012.1.7}{DOI}.
+
+\bibitem{vest} A. Vest, Observation of vibrating systems at different time
+instants, \emph{Electron. J. Qual. Theory Differ. Equ.} 2014, No. 14, 1--15.
+\href{https://www.math.u-szeged.hu/ejqtde/p2411.pdf}{Full text}.
+
+\bibitem{dlmf} NIST Digital Library of Mathematical Functions,
+Chapter 10, Bessel Functions. \href{https://dlmf.nist.gov/10}{Chapter}.
+
+\bibitem{earlier} R. Bibb, Boundary-State Sufficiency in Gowdy Cosmology:
+Smooth Closure Does Not Extend Through Spikes, v1.0.
+\href{https://doi.org/10.5281/zenodo.21959052}{Zenodo (2026)}.
+\end{thebibliography}
+\end{document}

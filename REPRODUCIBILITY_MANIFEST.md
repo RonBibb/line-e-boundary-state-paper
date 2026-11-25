@@ -1,5 +1,7 @@
 # Paper E1 reproducibility manifest
 
+The [November continuation](research/2026-11-25_snapshot_observability/extensions/2026-11-25_nonlinear_snapshot_obstructions/continued_investigation/READOUT.md) contains the current working manuscript, evidence, and self-contained research replay. This manifest also records the historical E1 workflows.
+
 ## Environment
 
 - Python 3.14.4
@@ -21,38 +23,37 @@ Pinned Python packages are listed in `requirements-lock.txt`.
   records and scripts.
 - `reconstruction-adjudication/`: predictive holdout, ablation, global-mode,
   and Jacobian specifications, scripts, and outputs.
-- sibling directory `bb-cbe2i/`: frozen production evolution used read-only by
-  the Paper E1 verification scripts.
-- sibling directories `bb-cbe3/`, `bb-cbe3t/`, and `bb-cbe3b/`: nonlinear
-  unpolarized production, exact spike controls, and independent footprint
-  verification.
-- `bb-cbe3c/CBE3C_R1_RESULTS.json` and
-  `bb-cbe-deep40-cp1/CP1_GATE_B_RESULT.json`: preserved architectural and
+- `reproduction/inputs/bb-cbe2i/`: frozen production evolution used read-only
+  by the Paper E1 verification scripts.
+- Under `reproduction/inputs/`, the `bb-cbe3/`, `bb-cbe3t/`, and `bb-cbe3b/`
+  directories contain nonlinear unpolarized production, exact spike controls,
+  and independent footprint verification.
+- Under `reproduction/inputs/`,
+  `bb-cbe3c/CBE3C_R1_RESULTS.json` and `bb-cbe-deep40-cp1/CP1_GATE_B_RESULT.json`: preserved architectural and
   numerical stop records; neither is treated as favorable physical evidence.
 
 ## Reproduction commands
 
-Run from the common directory containing `line-e-boundary-state-paper/` and
-`bb-cbe2i/`:
+From the repository root, using the [documented reproduction environment](reproduction/README.md):
 
-```text
-python3 line-e-boundary-state-paper/verification/run_e1_depth_norm_sensitivity.py
-python3 bb-cbe3/run_cbe3.py
-python3 bb-cbe3t/run_cbe3t_r1.py
-python3 bb-cbe3b/verify_cbe3b.py
-python3 line-e-boundary-state-paper/verification/verify_e1_unpolarized_extension.py
-python3 line-e-boundary-state-paper/verification/verify_e1_results.py
-python3 line-e-boundary-state-paper/figures/build_figures.py
-python3 line-e-boundary-state-paper/build_review_pdf.py
+```sh
+python -B verification/run_e1_depth_norm_sensitivity.py
+python -B verification/verify_e1_unpolarized_extension.py
+python -B verification/verify_e1_results.py
+python -B figures/build_figures.py
+python -B build_review_pdf.py
 ```
 
-The first command is the shallow-depth and norm-sensitivity extension. The
-next three reproduce the nonlinear unpolarized result, unseen exact-family
-qualification, and independent footprint checks. The two Paper-E1 verifiers
-admit the bounded extension and then verify the complete result chain. The
-figure and manuscript builders consume preserved machine-readable records;
-they do not rerun the physical evolution unless an explicit verification
-script is invoked.
+The first command reproduces the shallow-depth and norm-sensitivity extension.
+The two verifiers read the bundled frozen records. The figure and manuscript
+builders consume machine-readable records. To regenerate the original
+nonlinear results, run these from a scratch copy of `reproduction/inputs/`:
+
+```sh
+python -B bb-cbe3/run_cbe3.py
+python -B bb-cbe3t/run_cbe3t_r1.py
+python -B bb-cbe3b/verify_cbe3b.py
+```
 
 ## Gate edge case
 

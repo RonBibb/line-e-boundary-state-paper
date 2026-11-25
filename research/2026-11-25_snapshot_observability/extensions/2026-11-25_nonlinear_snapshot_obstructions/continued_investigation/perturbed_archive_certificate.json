@@ -1,0 +1,27 @@
+{
+  "platform": "Linux-7.0.0-42-generic-aarch64-with-glibc2.43",
+  "velocity_radius": "0.06",
+  "P_sup_radius": "0.002",
+  "weighted_Q_sup_radius": "0.003",
+  "weighted_momentum_sup_radius": "0.00015",
+  "results": {
+    "1024": {
+      "bounds_for_data_change": 0.00033371885022616995,
+      "still_available_normalized_secant_error": 0.05079204332881778,
+      "inverse_norm_upper_bound": 1.1165748389328511,
+      "derivative_defect_upper_bound": 0.10440396368260067
+    },
+    "2048": {
+      "bounds_for_data_change": 0.0003371638654203819,
+      "still_available_normalized_secant_error": 0.05072703831765219,
+      "inverse_norm_upper_bound": 1.1178554605311377,
+      "derivative_defect_upper_bound": 0.10542996361545694
+    },
+    "4096": {
+      "bounds_for_data_change": 0.00034674060631358626,
+      "still_available_normalized_secant_error": 0.050524047407958336,
+      "inverse_norm_upper_bound": 1.12189820359394,
+      "derivative_defect_upper_bound": 0.10865353309546777
+    }
+  }
+}

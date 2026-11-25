@@ -1,0 +1,121 @@
+\section{Corrected polarized Einstein--scalar benchmark}
+\label{metric}
+Write $\tau=-\log t$, take $8\pi G=1$, and let $\varphi$ denote
+the canonical massless scalar. Use $\phi=\sqrt{2}\varphi$ for the
+equal-coefficient field variable. With positive metric quadratures
+the metric is
+\begin{align}
+ ds^2={}&e^{(\tau-\lambda)/2}(-e^{-2\tau}d\tau^2+d\theta^2)\notag\\
+   &+e^{-\tau}(e^Pdx^2+e^{-P}dy^2),\\
+ \lambda_\tau={}& P_\tau^2+\phi_\tau^2
+                 +e^{-2\tau}(P_\theta^2+\phi_\theta^2),\\
+ \lambda_\theta={}& 2(P_\tau P_\theta+\phi_\tau\phi_\theta).
+ \label{constraint}
+\end{align}
+The original preprint used the opposite sign for $\lambda$ in the
+metric and a different scalar density normalization \cite{earlier}.
+In the convention with $e^{(\tau+\lambda)/2}$, as in Lim,
+both quadratures change sign \cite[Eqs.~(1), (4)--(5)]{lim}.
+With normal pointing toward increasing $\tau$, the lapse and
+geometric rates are
+\begin{align}
+ N&=e^{(-\lambda-3\tau)/4},\qquad
+ H_\theta=\frac{1-\lambda_\tau}{4N},\\
+ H_x&=\frac{P_\tau-1}{2N},\qquad H_y=\frac{-P_\tau-1}{2N},\\
+ \Theta&=-\frac{3+\lambda_\tau}{4N},\\
+ \rho&=\frac{\phi_\tau^2+e^{-2\tau}\phi_\theta^2}{4N^2}.
+\end{align}
+Let $H=\Theta/3$, $\Omega=\rho/(3H^2)$,
+$\Sigma^2=\sum_i(H_i-H)^2/(6H^2)$, and $s_P=(H_x-H_y)/\Theta$.
+The comparison uses these quantities on equal areal slices and the
+dimensionless rate $\Theta e^{-\tau/2}$. A separate relative difference
+in $\rho^{-1/2}$ compares density scales on the same slices.
+If the unit normal is reversed, $\Theta$ changes sign and the
+three normalized shape quantities stay fixed.
+
+Among allowed asymptotic fields $P=v_P\tau+P_\infty+o(1)$,
+$\phi=v_\phi\tau+\phi_\infty+o(1)$, assume differentiable asymptotics
+of sufficient order to integrate the quadratures. The periodic
+compatibility condition is
+$\int_{\T}(v_PP_\infty'+v_\phi\phi_\infty')\,d\theta=0$.
+With $q_0=v_P^2+v_\phi^2$, one has
+$\lambda=q_0\tau+\lambda_\infty+o(1)$ and
+$\lambda_\infty'=2(v_PP_\infty'+v_\phi\phi_\infty')$.
+The integration constant $c_\lambda=\lambda_\infty(0)$ is
+independent on the fixed marked torus \cite[Eq.~(3.19)]{beyer}. The shift
+$\lambda\mapsto\lambda+c$ rescales $N$ and the transverse proper
+length by $e^{-c/4}$, and normal rates by $e^{c/4}$.
+These factors cancel from the normalized shape score.
+The score also misses a constant shift of $P$, which changes
+the two marked orbit lengths in reciprocal directions.
+The full-state reconstruction of the marked metric requires
+retaining its actual field data and integration constant.
+
+The smooth production example has
+$P=0.6\cos\theta$, $P_\tau=0.4+0.3\cos 2\theta$,
+$\phi=0.5\sin\theta$, and $\phi_\tau=0.8-0.2\cos 2\theta$
+at $\tau=0$, with $\lambda(0,0)=0$.
+The reconstruction fits the two fields from the slices
+$\tau_f-4$ and $\tau_f-2$ and estimates
+$c_\lambda$ from $\lambda(\tau_f-2,0)-\widehat q_0(0)(\tau_f-2)$.
+This supplies one pre-endpoint metric measurement in addition to
+the field samples. Truth at the restart surface is withheld
+from the main estimator. Centered second-order spatial differences
+and RK4 evolve both branches.
+
+At $N=1024$ the maximum geometric comparison distances on
+$\tau=2,4$, for $\tau_f=8,12,16,24$, were
+$4.759\times10^{-4}$, $1.060\times10^{-5}$,
+$9.786\times10^{-6}$, and $9.786\times10^{-6}$ respectively.
+At depths 16 and 24 each resolution doubling from 256 to 512 and
+1024 lowered the error by about four. At depth 8 the refinement
+sequence approached a finite-window error floor. Setting the estimated
+constant to zero while retaining the four field functions produces
+a score of about $0.232$ at the finest grid across all four depths.
+In the analytic multimode Bessel benchmark the depth-16 fine-grid
+scores were $1.3344\times10^{-5}$ both when the limiting coefficients
+were supplied and when pre-endpoint holdout was used. The analytic
+arm's finite-time metric truth uses the constrained quadrature of
+the known fields. These results verify the declared outputs in the
+chosen family and areal slicing.
+
+\input{nonlinear_benchmarks.tex}
+
+\section{Conclusions}
+In the polarized problem, the same pair of field snapshots has
+different regularity costs for different targets. A rational gap can
+make the field reconstruction stable at specified slices while the
+missing velocity remains sensitive to high-frequency errors.
+Assigning a sampling time to each band removes that additional
+loss in the energy-normalized velocity.
+The nonlinear comparison shows that the large error in the
+original finite-window test can be removed with the same inputs
+by fitting the PDE evolution across that window.
+A uniform nonlinear inverse estimate near true spikes remains
+open. The analytic statements concern a fixed periodic marking and
+the specified finite-time observation maps.
+
+\appendix
+\section{Derivation of the scalar and metric signs}
+In areal time write the base metric as $h=e^{2\sigma}(-dt^2+d\theta^2)$,
+where $\sigma=-(\log t+\lambda)/4$.
+The two one-dimensional warped directions have logarithmic
+factors $A=(\log t+P)/2$ and $B=(\log t-P)/2$.
+The base components of the four-dimensional Ricci tensor are
+$R_{ab}(h)-\nabla^h_a\nabla^h_b(A+B)-A_{,a}A_{,b}-B_{,a}B_{,b}$.
+Its mixed component and the sum of the two diagonal components are
+\begin{align*}
+ R_{t\theta}&=-\lambda_\theta/(4t)-P_tP_\theta/2,\\
+ R_{tt}+R_{\theta\theta}
+   &=-\lambda_t/(2t)-(P_t^2+P_\theta^2)/2 .
+\end{align*}
+Apply $R_{ab}=\partial_a\varphi\,\partial_b\varphi$ to obtain
+\eqref{constraint}. The remaining base difference follows by
+differentiating those quadratures and using the wave equations.
+The two orbit equations reduce to \eqref{wave} for $P$.
+The scalar d'Alembertian gives the same equation for $\varphi$.
+As a check on homogeneous slices, their intrinsic scalar curvature
+vanishes, so $G(n,n)=H_\theta H_x+H_xH_y+H_yH_\theta$.
+With $P_\tau=p$, $\phi_\tau=v$ and $\lambda_\tau=p^2+v^2$
+the expression reduces to $v^2/(4N^2)$. The vacuum example $p=1,v=0$
+and the stiff isotropic example $p=0,v=\sqrt{3}$ pass this constraint.

@@ -1,0 +1,119 @@
+\subsection{Strictly subcritical collisions in the circular-loop family}
+\label{sec:circular-loop}
+A distinct exact construction avoids velocity-one sites on
+the marked three-torus. It uses the known circular-loop
+Gowdy solutions, locally of Bianchi type $\mathrm{VII}_0$
+\cite[Section~3]{rendall-twisted} \cite{grubisic}.
+The information comparison and the nonlinear shift of the
+nodal placement follow directly from their radius equation.
+
+Use hyperbolic geodesic-polar coordinates at a target point
+$U_0$. For integer $k\ge1$ write the two maps as
+\[
+ U_\pm(t,\theta)=\exp_{U_0}\!\left(
+ R(t)[\pm\cos(k\theta)e_P+\sin(k\theta)e_Q]\right).
+\]
+Here the two basis vectors are evaluated at $U_0$,
+and a signed radius makes the maps smooth at zero.
+The circular-loop reduction gives
+\begin{equation}
+ R_{tt}+t^{-1}R_t+k^2\sinh R\cosh R=0.
+ \label{eq:circular-ode}
+\end{equation}
+The spatial and temporal target derivatives are orthogonal.
+The metric potential is independent of $\theta$ and
+the same on both branches with a common anchor.
+The target differential has rank two where
+$R R_t\ne0$.
+
+\begin{proposition}
+\label{prop:circular-loop}
+Fix any areal-time ratio $\mathcal R>1$.
+For arbitrarily small prescribed nonzero logarithmic
+initial radius velocity, there are times $a,b$ with
+$b/a=\mathcal R$ and a circular-loop pair with
+identical induced spatial metrics and identical $Q_t$
+at both times and with identical $\lambda$ throughout.
+Their initial $P_t$ differ in the marked data.
+The shared asymptotic speed is strictly between zero
+and one and is spatially constant.
+If $\nu_0=ka$ is a simple linear Dirichlet frequency
+for the ratio $\mathcal R$, the small-amplitude
+placement has the expansion
+\[
+ \nu(\epsilon)=\nu_0-
+       \frac{\nu_0}{3}
+        \frac{\int_1^{\mathcal R} r\,u(r)^4\,dr}
+             {\int_1^{\mathcal R} r\,u(r)^2\,dr}
+              \epsilon^2+O(\epsilon^4),
+\]
+where $u$ has initial derivative one at $r=1$ and
+vanishes at both ends.
+\end{proposition}
+
+\begin{proof}
+In the coordinate $r=t/a$ prescribe
+$R(1)=0$, $R'(1)=\epsilon$ and set $\nu=ka$.
+The equation is
+$-(rR')'=\nu^2 r\sinh R\cosh R$.
+The quotient $R/\epsilon$ extends analytically and
+evenly in $\epsilon$ near zero and follows the
+linear radial Dirichlet equation at zero amplitude.
+For a linear eigenfrequency $\nu_0$, the derivative
+of the terminal value with respect to $\nu$ is
+nonzero. Green's identity expresses its product
+with $\mathcal R u'(\mathcal R)$ as
+$2\nu_0\int_1^{\mathcal R}r u^2\,dr$.
+The implicit function theorem gives the nearby
+exact placement as an even analytic function of
+$\epsilon$. Substitute
+$R=\epsilon u+\epsilon^3 R_3+O(\epsilon^5)$,
+$\nu=\nu_0+\epsilon^2\nu_2+O(\epsilon^4)$.
+Projecting the cubic equation against $u$
+and using $\sinh R\cosh R=R+\frac23 R^3+O(R^5)$
+gives the stated $\nu_2$.
+
+At the nodal times both maps return to $U_0$.
+Their $Q_t$ equals $e^{-P_0}R_t\sin(k\theta)$
+on those slices, and their $P_t$ are
+$\pm R_t\cos(k\theta)$.
+The equal metric potentials follow from equal
+wave-map energy sources and the zero momentum source.
+
+For the limit as $t\downarrow0$, set
+$x=\log(a/t)\ge0$. The radius solves
+$R_{xx}+\nu^2e^{-2x}\sinh R\cosh R=0$ and
+\[
+ \frac{d}{dx}\left[\frac12 R_x^2+
+                \frac12\nu^2e^{-2x}\sinh^2R\right]
+ =-\nu^2e^{-2x}\sinh^2R .
+\]
+Hence $|R_x|\le|\epsilon|$ and
+$|R|\le|\epsilon|x$ for all $x\ge0$.
+For $|\epsilon|<1$ the restoring force is integrable
+there, so $R_x$ has a limit.
+The limit divided by $\epsilon$ tends to
+$-J_0(\nu_0)$ as $\epsilon\to0$: this is the
+normalized linear Bessel limit, and the force
+integral converges under the uniform bound just
+obtained and dominated convergence.
+One can choose a linear Dirichlet frequency with
+$J_0(\nu_0)\ne0$ for any fixed ratio.
+Indeed $\nu_j=j\pi/(\mathcal R-1)+O(j^{-1})$,
+whereas the positive zeros of $J_0$ have expansion
+$(m-\tfrac14)\pi+O(m^{-1})$.
+If every sufficiently large $\nu_j$ were such a zero,
+successive differences would force
+$1/(\mathcal R-1)$ to be an integer, contradicting
+the quarter-phase shift. Thus the speed is nonzero
+for small enough nonzero amplitude and strictly
+below one, with the same value at every angle.
+\end{proof}
+
+In this circular-loop example a reflection of the
+quotient circle exchanges the two histories.
+The collision is stated for the marked record.
+The separate two-mode Ernst construction supplies
+non-equivalence under boundary-preserving
+torus-equivariant isometries when quotient
+reflections are also allowed.

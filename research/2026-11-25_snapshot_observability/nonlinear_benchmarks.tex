@@ -1,0 +1,133 @@
+\section{A finite-window nonlinear inverse}
+\label{nonlinear}
+For vacuum unpolarized Gowdy let $V=P_\tau$ and $R=Q_\tau$.
+Given $P(f-\Delta),P(f),Q(f),R(f)$, the earlier method initialized
+$V$ at $f$ to the trailing secant $v=(P(f)-P(f-\Delta))/\Delta$.
+Its stored values were
+\[
+ (v, P(f)-fv, Q(f)+R(f)/(2v_{\rm safe}), e^{2P(f)}R(f)).
+\]
+At a known depth the original code's clipping convention makes
+those values algebraically equivalent to the observations used
+here. Thus the secant restart copies $P,Q,R$ at the endpoint.
+It changes the missing $V$ component. The change in backward
+field history measures the performance of the restart rule.
+
+A finite-window inverse estimates $V$ by integrating the reduced
+equations back to $f-\Delta$ from a trial endpoint velocity $V_n$.
+If $P_{\mathrm{trial}}(f-\Delta;V_n)$ is the resulting field, the
+iteration is
+\[
+ V_{n+1}=V_n+
+ \frac{P_{\mathrm{trial}}(f-\Delta;V_n)-P(f-\Delta)}{\Delta}.
+\]
+Only the specified observations are used in this iteration.
+The endpoint truth velocity and earlier comparison times are
+reserved for evaluation. To see why the iteration can work, write
+$P_{\mathrm{trial}}(f-\Delta;V)=P(f)-\Delta V+J(V)$, where
+$J(V)=\int_0^\Delta(\Delta-u)P_{\tau\tau}(f-u;V)\,du$.
+For a fixed finite-dimensional discretization, a state-flow
+Lipschitz bound $e^{Lu}$ and acceleration Lipschitz bound $L_F$
+make $J/\Delta$ Lipschitz with constant at most
+$\frac12\Delta L_F e^{L\Delta}$ on an admissible ball. An
+invariant ball and a bound below one would give local convergence.
+We do not use this sufficient bound as a certificate for the
+simulations.
+
+At a homogeneous polarized vacuum background,
+a finite Fourier Galerkin system gives a further analytic check.
+When the initial $Q$ and $Q_t$ perturbations vanish, the
+linearized equation for the unmeasured $P_t$ component
+is the polarized equation. If all the retained two-time
+multipliers are nonzero, the derivative of the map from that
+velocity to the second field snapshot is invertible.
+The finite-dimensional inverse function theorem then gives
+a local inverse of this reduced observation map.
+The neighborhood and constants can depend on the bandwidth.
+
+The exact true-spike family from Lim provides a local
+known-answer control \cite{lim,lim2}. The corrected form for
+$Q$ already occurs in Appendix A of \cite{lim2}. For fixed
+time, $e^{-P(x)}$ is quadratic about the spike center.
+The center can be estimated from the vertex using sampled
+$P$ alone. Evaluating the two fitted quadratics there gives
+the finite-window center slope and fixes the family velocity
+parameter. Center values of $P$ and $Q$ then determine the
+remaining family parameters. This procedure uses information
+available in the original tuple and the formulas of a known
+family. An off-cell center can be recovered without providing
+its grid shift. The calculation is local in $x$ and does not
+identify a general periodic feature as a Lim solution.
+
+The original production example had $P=R=0$,
+$V=2+1.5\cos\theta$, and $Q=\cos\theta$ at $\tau=0$.
+The ordinary secant and the inverse receive identical observations
+at $f-2,f$ with $f=12$ or $18$. We retain the original mask at
+depth 18, while also scoring the full periodic domain.
+For two states, let $d_H$ be hyperbolic distance in the $(Q,e^{-P})$
+upper half-plane, $s=(V^2+e^{2P}R^2)^{1/2}$, and
+$E=s^2+e^{-2\tau}(P_\theta^2+e^{2P}Q_\theta^2)$.
+The score is the sampled supremum of
+$\bigl(d_H^2+(\Delta s)^2+[(\Delta E)/(1+|E_{\mathrm{ref}}|)]^2\bigr)^{1/2}$.
+It involves the reduced fields and their derivatives.
+The comparison omits the value of the metric potential.
+
+At $f=18$ the following scores are measured at the held-out
+slice $\tau=2$. The legacy forward stencil is second order.
+The two inverse columns use a fourth-order restart. The
+privileged case supplies the endpoint velocity from the reference.
+\begin{center}
+\begin{tabular}{rccccc}
+\toprule
+ & \multicolumn{2}{c}{Secant, legacy stencil} &
+ \multicolumn{2}{c}{Window inverse, fourth order} & Privileged \\
+$N$ & Mask & Full circle & Mask & Full circle & Full circle\\
+\midrule
+1024 & $0.82012$ & $2.73288$ & $0.04666$ & $0.04666$ & $0.04734$\\
+2048 & $0.81689$ & $3.09459$ & $0.01186$ & $0.01186$ & $0.01203$\\
+4096 & $0.82215$ & $3.03402$ & $0.00298$ & $0.00298$ & $0.00302$\\
+\bottomrule
+\end{tabular}
+\end{center}
+At depth 18 the window fit residual divided by the observation
+gap is below $10^{-10}$ at every tested grid. On the finest
+grid the inverse gives $1.15\times10^{-3}$ and $1.55\times10^{-4}$
+at $\tau=4$ and $8$. Depth 12 has no flagged component.
+There the fine-grid full-circle score at $\tau=2$ falls from
+$0.43207$ to $9.95\times10^{-5}$.
+A same-stencil inverse is also recorded and tests inversion of its
+own discretization. An analytic periodic geodesic wave-map control
+provides snapshots independently of the solver. Its fourth-order
+window inverse reduces the $\tau=2$, $N=1024$ score from
+$0.02577$ to $1.62\times10^{-9}$.
+For the two noiseless local Lim controls, the estimated half-cell
+center errors were at most $1.45\times10^{-15}$ in coordinates.
+Those controls test recovery within a specified family.
+
+For a separate nonlinear check, evolve from $P=0$,
+$V=2+1.4\cos\theta$, $Q=0.9\cos\theta+0.1\sin2\theta$,
+and $R=0.025\cos3\theta$, with a periodic primitive of the
+momentum source. Observe at $\tau=10,12$ using a fourth-order
+spatial stencil. Reconstruct using the historical second-order
+stencil and compare at $\tau=2$.
+Apply the same reduced full-circle score.
+
+\begin{center}
+\begin{tabular}{rccc}
+\toprule
+$N$ & Secant & Window inverse & Exact endpoint velocity\\
+\midrule
+512  & $0.23690$ & $0.009585$ & $0.009876$\\
+1024 & $0.23614$ & $0.002405$ & $0.002479$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The matched-window score is close to that of a restart supplied
+with the exact numerical endpoint velocity. On the finer grid,
+adding an absolute error of $10^{-7}$ to the earlier $P$
+observation in a single cosine mode gave gains of 5.17 and 8.36
+in the comparison score at modes 1 and 128, respectively.
+These are two directional measurements for this IVP. They
+provide no infinite-band bound. The thin-feature classification
+and the asymptotic regime of nonlinear unpolarized Gowdy
+remain questions distinct from finite-window reconstruction.

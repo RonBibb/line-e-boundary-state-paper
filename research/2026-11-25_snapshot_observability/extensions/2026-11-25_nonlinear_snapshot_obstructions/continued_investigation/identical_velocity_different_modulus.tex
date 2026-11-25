@@ -1,0 +1,115 @@
+\subsection{Equal finite metrics and asymptotic speed with different limiting moduli}
+\label{sec:same-speed-different-modulus}
+
+The exact rank-two pair also separates asymptotic speed
+from marked metric scale. Both branches have the same
+limiting speed function. Nevertheless a suitable two-mode
+phase gives different circle means of the limiting
+metric potential even when both induced metrics
+were equal at the measured times.
+
+Let $w(\tau,\theta)=A(\theta)\tau+B(\theta)+o(1)$ be
+a finite sum of Dirichlet-node seed modes, and let
+$\sigma$ be the common speed of the two seed geodesics
+with orthonormal initial tangent components $(\pm g,q)$.
+Assume $g>0$ and $q\ne0$.
+The seed metric potential is identical on both histories.
+Write
+\[
+ D=\log\frac{1+g/\sigma}{1-g/\sigma}.
+\]
+The explicit hyperbolic geodesics give, wherever
+$A(\theta)\ne0$,
+\[
+ \lim_{\tau\to\infty}
+     (\widetilde P_+-\widetilde P_-)
+      =-D\operatorname{sgn} A(\theta),\qquad
+ \lim_{\tau\to\infty}
+     (\widetilde\lambda_+-\widetilde\lambda_-)
+      =-2D\operatorname{sgn} A(\theta).
+\]
+Indeed $e^{P_\pm-P_0}
+=\cosh(\sigma w)\pm(g/\sigma)\sinh(\sigma w)$,
+and the Ernst transformation changes the metric
+potential difference by the same factor two.
+The transformed limiting speed of each branch is
+$1-\sigma|A(\theta)|$ for sufficiently small amplitude.
+At a zero of $A$ the position difference instead tends
+to its finite value evaluated at $w=B(\theta)$.
+At a simple zero $\theta_0$, the limit with
+$\theta=\theta_0+\xi/\tau$ is the corresponding
+explicit geodesic ratio evaluated at
+$B(\theta_0)+A'(\theta_0)\xi$.
+This gives the angular scale of the marked profile
+transition. Wherever $A\ne0$, the ratio of the marked
+$x$-cycle lengths tends to
+$\exp(-D\operatorname{sgn} A/2)$.
+
+\begin{proposition}
+\label{prop:same-speed-different-modulus}
+There are smooth vacuum three-torus Gowdy pairs with
+rank-two target differential on open sets, identical
+induced metrics and $Q_t$ at the two measured slices,
+and identical asymptotic speed at every angle, whose
+limiting metric potentials have different circle means.
+\end{proposition}
+
+\begin{proof}
+Choose a radial annulus ratio $R$ such that the fifth
+Dirichlet frequency is six times the first.
+For the rescaled outer radius one, let $z_j=R\nu_j(R)$.
+Interval brackets for the first and fifth roots of
+$J_0(z/R)Y_0(z)-Y_0(z/R)J_0(z)$ are
+\[
+\begin{array}{c|cc}
+ R & z_1 & z_5\\ \hline
+64 & (2.850,2.852) & (15.737,15.739)\\
+10^{10} & (2.473,2.475) & (15.007,15.009).
+\end{array}
+\]
+These are verified by the power series for $J_0,Y_0$
+with interval arithmetic and geometric bounds on the
+series tails. The indices follow from
+$j_{0,j}\le z_j\le j\pi/(1-1/R)$:
+the lower bound is comparison with the disk by zero
+extension in the hole and the upper bound follows
+from the transformed radial operator
+$-\partial_r^2-1/(4r^2)$.
+Continuity gives the required ratio at some $R>64$.
+Set $a=z_1/R$ and $b=z_1$, so the angular modes
+$1$ and $6$ have common nodes. The upper bound on $z_1$
+gives $6a<0.30$, and both relevant $J_0$ values at the
+inner radius are positive.
+
+We can then use the two scalar modes with coefficients
+chosen to give
+\[
+ A(\theta)=A_0\big(\cos\theta+\eta\cos(6\theta+\phi)\big)
+\]
+for small $A_0>0$, small nonzero $\eta$, and
+$\phi/\pi$ irrational with $\cos\phi\ne0$.
+Indeed the logarithmic slope of each mode is a nonzero
+multiple of $J_0(ka)$. The sign-positive set has
+length $\pi-2\eta\cos\phi+O(\eta^2)$ by
+implicit differentiation at the two zeros
+$\pi/2$ and $3\pi/2$. Thus
+$\overline{\operatorname{sgn}A}\ne0$.
+The initial and terminal metrics and velocities
+obey Theorem~\ref{th:rank-two}; the same rank
+argument works for the two-mode phase.
+
+To pass to the circle mean, the finite-Bessel seed
+expansion is uniform and its metric remainder is bounded.
+Also $P_\pm(w)-\sigma|w|$ is uniformly bounded,
+so the transformed potentials after subtracting their
+common leading $\tau(1-\sigma|A|)^2$ have pointwise
+limits and uniform domination. Their circle-mean
+difference is therefore
+$-2D\,\overline{\operatorname{sgn}A}\ne0$.
+\end{proof}
+
+The ratio argument concerns the marked regular-slice
+geometry and the displayed asymptotic observables.
+It does not infer a change of global spacetime fate
+from the velocity-one sites or from the coordinate scale
+of the transition.
